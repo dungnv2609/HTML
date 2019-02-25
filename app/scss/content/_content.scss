@@ -1,0 +1,19 @@
+@import "mixins/custom-mixins";
+  
+/* ----- Section News ----- */
+
+.news__list {
+  dl {
+    padding: 20px 0;
+    width: 100%;
+    @inlcude box-sizing(border-box);
+    dt {
+      float: left;
+      width: 15%;
+    }
+    dd {
+      float: none;
+      width: auto;
+    }
+  }
+}

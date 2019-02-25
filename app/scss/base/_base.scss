@@ -4,8 +4,9 @@
 }
 
 html {
-	font-family: 'Oxygen', sans-serif;
+	font-family: 'Meiryo', Arial, sans-serif;
 	font-weight: 300;
+  font-size: 62.5%;
 }
 
 ul, li {
@@ -15,4 +16,13 @@ ul, li {
 
 a {
 	text-decoration: none;
+  &:hover {
+    opacity: .8;
+  }
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
 }

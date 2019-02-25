@@ -1,0 +1,14 @@
+@import "mixins/custom-mixins";
+
+.banner__img {
+  position: relative;
+  background: url();
+}
+
+.banner__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  @include translate(-50%, -50%);
+}
