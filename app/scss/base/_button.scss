@@ -1,0 +1,43 @@
+@import "mixins/custom-mixins";
+
+$btn_trans: 0.1s all ease-in; // button transition
+$btn_fs: 1.4rem; // button font-size
+$btn_lh: 1.2; // button line-height
+$btn_pd: 12px 0; // button padding top, bottom
+$btn_ls: 0.1em; // button letter-spacing
+
+%btn {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+  text-align: center;
+  @include border-radius(8px);
+}
+
+.btn {
+  @extend %btn;
+  background-color: $orange;
+  color: $white;
+  font-size: $btn_fs;
+  line-height: $btn_lh;
+  transition: $btn_trans;
+  padding: $btn_pd;
+  letter-spacing: $btn_ls;
+  position: relative;
+  &:before {
+    @include pseudo;
+    @include abs-pos(50%, 8.5%);
+    @include size(15px, 15px);
+    @include border-radius(50%);
+    @include translate(0, -50%);
+    background-color: $white;
+  }
+  &:after {
+    @include pseudo;
+    @include abs-pos(50%, 10%);
+    @include size(0, 0);
+    @include triangle-right(3px, 6px, $orange);
+    @include translate(0, -50%);
+  }
+}

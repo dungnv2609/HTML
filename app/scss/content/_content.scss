@@ -1,0 +1,103 @@
+@import "variables";
+@import "mixins/custom-mixins";
+
+#main__img img {
+  width: 100%;
+  max-width: 100%;
+}
+
+#present {
+  background-color: $green;
+  padding: 30px 0;
+}
+
+.pres__img {
+  flex-basis: 30%;
+}
+
+.pres__txt {
+  flex-basis: 70%;
+  text-align: center;
+  color: $white;
+}
+
+/* ----- Section News ----- */
+
+.info__list {
+  dl {
+    padding: 20px 0;
+    width: 100%;
+    @inlcude box-sizing(border-box);
+
+    dt {
+      float: left;
+      width: 15%;
+    }
+
+    dd {
+      float: none;
+      width: auto;
+    }
+  }
+}
+
+footer {
+  background-color: $green;
+}
+
+.ft__logo {
+  background-color: #f9f9f9;
+  padding: 22px 0 23px;
+
+  img {
+    margin: 0 auto;
+  }
+}
+
+.ft__info {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0 70px;
+  h3 {
+    color: $white;
+  }
+}
+
+.ft__info--right {
+  display: flex;
+}
+
+.ft__menu {
+  margin-right: 20px;
+  min-width: 100px;
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  li {
+    padding-bottom: 10px;
+  }
+  a {
+    color: $white;
+    font-size: 1.2rem;
+  }
+}
+
+.ft__contact {
+  min-width: 245px;
+}
+
+.box__contact {
+  border: 2px solid $white;
+  padding: 10px 0;
+  color: $white;
+  text-align: center;
+  margin-top: 20px;
+  @include border-radius(8px);
+}
+
+.ft__copyright {
+  color: $white;
+  text-align: center;
+  padding: 10px 0;
+}

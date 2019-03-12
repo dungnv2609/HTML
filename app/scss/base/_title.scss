@@ -1,0 +1,21 @@
+$title_fs: 5.6rem;
+$title_color: #333;
+$title_ls: 0.1em;
+$title_lh: 1.2;
+
+$sub_fs: 2.4rem;
+
+.title__h2 {
+  font-size: $title_fs;
+  color: $title_color;
+  letter-spacing: $title_ls;
+  line-height: $title_lh;
+  text-align: center;
+}
+
+.title__sub {
+  font-size: $sub_fs;
+  color: $title_color;
+  letter-spacing: $title_ls;
+  display: block;
+}

@@ -1,7 +1,56 @@
-@import "mixins/custom-mixins";
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Meiryo', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 62.5%;
+}
+
+ul,
+li {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+  a:hover img {
+  opacity: .8;
+}
+
+img {
+  display: block;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row__center {
+  justify-content: center;
+}
 
 header {
-  border-bottom: 10px solid $green;
+  border-bottom: 10px solid #298445;
 }
 
 .header__inner {
@@ -18,56 +67,51 @@ header {
   align-items: center;
 }
 
-.nav {
-  > ul {
-    display: flex;
-  }
+.nav > ul {
+  display: flex;
+}
 
-  li {
-    position: relative;
-    padding: 0 15px;
+.nav li {
+  position: relative;
+  padding: 0 15px;
+}
 
-    a,
-    span {
-      border-bottom: 1px solid $white;
-    }
+.nav li a,
+  .nav li span {
+  border-bottom: 1px solid #fff;
+}
 
-    &:hover {
-      a,
-      span {
-        color: $green;
-        border-bottom: 1px solid $green;
-      }
-    }
-  }
+.nav li:hover a,
+  .nav li:hover span {
+  color: #298445;
+  border-bottom: 1px solid #298445;
+}
 
-  a,
-  span {
-    padding: 2px 0;
-    *zoom: 1;
-    cursor: pointer;
-    display: inline-block;
-  }
+.nav a,
+.nav span {
+  padding: 2px 0;
+  *zoom: 1;
+  cursor: pointer;
+  display: inline-block;
 }
 
 /* sub lists */
-
 .nav__sub {
   position: absolute;
   left: -9999px;
   z-index: 100;
+}
 
-  li {
-    padding: 0;
+.nav__sub li {
+  padding: 0;
+}
 
-    a {
-      display: block;
-      background: #eee;
-      position: relative;
-      z-index: 100;
-      border-top: 1px solid #fff;
-    }
-  }
+.nav__sub li a {
+  display: block;
+  background: #eee;
+  position: relative;
+  z-index: 100;
+  border-top: 1px solid #fff;
 }
 
 .nav > li.hover > ul.nav__sub {
@@ -139,7 +183,7 @@ header {
     margin-top: -5px;
     background: #ccc;
     background: none\9;
-    /* IE8 */
+    /* IE8 */;
   }
 
   .nav li span:after {
@@ -155,7 +199,7 @@ header {
     margin-top: -5px;
     background: #f5f5f5;
     background: none\9;
-    /* IE8 */
+    /* IE8 */;
   }
 
   .nav a:hover,
@@ -163,7 +207,6 @@ header {
     background: none;
     text-decoration: none;
   }
-
   /* Sub Lists */
   .sub {
     margin: 0;
@@ -205,7 +248,6 @@ header {
 }
 
 @media screen and (max-width: 600px) {
-
   .nav a,
   .nav span {
     color: #ffffff;
@@ -226,7 +268,6 @@ header {
 }
 
 @media screen and (max-width: 600px) {
-
   .nav li,
   .nav li span:after {
     background: #4dc1d5;
@@ -251,4 +292,91 @@ header {
 
 .nav__btn {
   padding-left: 15px;
+}
+
+.banner__img {
+  position: relative;
+  background: url();
+}
+
+.banner__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.btn {
+  background-color: #f1a647;
+  color: #fff;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  transition: 0.1s all ease-in;
+  padding: 12px 0;
+  letter-spacing: 0.1em;
+  position: relative;
+}
+
+.btn:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 8.5%;
+  bottom: auto;
+  left: auto;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  background-color: #fff;
+}
+
+.btn:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  bottom: auto;
+  left: auto;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 3px solid transparent;
+  border-left: 6px solid #f1a647;
+  border-bottom: 3px solid transparent;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+.title__h2 {
+  font-size: 5.6rem;
+  color: #333;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.title__sub {
+  font-size: 2.4rem;
+  color: #333;
+  letter-spacing: 0.1em;
+  display: block;
 }

@@ -1,0 +1,79 @@
+@mixin box-sizing($box-model) {
+  -webkit-box-sizing: $box-model;
+     -moz-box-sizing: $box-model;
+          box-sizing: $box-model;
+}
+
+@mixin translate($x, $y) {
+  -webkit-transform: translate($x, $y);
+      -ms-transform: translate($x, $y);
+          transform: translate($x, $y);
+}
+
+@mixin rotate($deg) {
+  -webkit-transform: rotate($deg);
+      -ms-transform: rotate($deg);
+          transform: rotate($deg);
+}
+
+@mixin mix-trans($deg1, $deg2) {
+  -webkit-transform: rotate($deg1) skew($deg2, $deg2);
+      -ms-transform: rotate($deg1) skew($deg2, $deg2);
+          transform: rotate($deg1) skew($deg2, $deg2);
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+@mixin abs-pos ($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  position: absolute;
+}
+
+@mixin border($direction, $size, $color) {
+  border-#{$direction}: $size solid $color;
+}
+
+@mixin triangle-top($size1, $size2, $color) {
+  border-left:    $size1 solid transparent;
+  border-right:   $size1 solid transparent;
+  border-bottom:  $size2 solid $color;
+}
+
+@mixin triangle-bottom($size1, $size2, $color) {
+  border-left:    $size1 solid transparent;
+  border-right:   $size1 solid transparent;
+  border-top:     $size2 solid $color;
+}
+
+@mixin triangle-left($size1, $size2, $color) {
+  border-top:     $size1 solid transparent;
+  border-right:   $size2 solid $color;
+  border-bottom:  $size1 solid transparent;
+}
+
+@mixin triangle-right($size1, $size2, $color) {
+  border-top:     $size1 solid transparent;
+  border-left:    $size2 solid $color;
+  border-bottom:  $size1 solid transparent;
+}
+
+@mixin border-radius ($rad) {
+  border-radius: $rad;
+}
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin transition($time, $effect) {
+  -webkit-transition: all $time $effect;
+          transition: all $time $effect;
+}
