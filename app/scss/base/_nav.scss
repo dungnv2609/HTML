@@ -1,0 +1,254 @@
+@import "mixins/custom-mixins";
+
+header {
+  border-bottom: 10px solid $green;
+}
+
+.header__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0 23px;
+}
+
+.gnav {
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  > ul {
+    display: flex;
+  }
+
+  li {
+    position: relative;
+    padding: 0 15px;
+
+    a,
+    span {
+      border-bottom: 1px solid $white;
+    }
+
+    &:hover {
+      a,
+      span {
+        color: $green;
+        border-bottom: 1px solid $green;
+      }
+    }
+  }
+
+  a,
+  span {
+    padding: 2px 0;
+    *zoom: 1;
+    cursor: pointer;
+    display: inline-block;
+  }
+}
+
+/* sub lists */
+
+.nav__sub {
+  position: absolute;
+  left: -9999px;
+  z-index: 100;
+
+  li {
+    padding: 0;
+
+    a {
+      display: block;
+      background: #eee;
+      position: relative;
+      z-index: 100;
+      border-top: 1px solid #fff;
+    }
+  }
+}
+
+.nav > li.hover > ul.nav__sub {
+  left: 0;
+}
+
+.nav li li.hover ul {
+  left: 100%;
+  top: 0;
+}
+
+@media screen and (max-width: 600px) {
+  #gnav {
+    background: none;
+    height: auto;
+    width: 100%;
+  }
+
+  .nav {
+    display: none;
+    border: none;
+  }
+
+  .nav li {
+    border: none;
+  }
+
+  .nav > li {
+    float: none;
+  }
+
+  .nav ul {
+    display: block;
+    width: 100%;
+  }
+
+  .nav > li.hover > ul,
+  .nav li li.hover ul {
+    position: static;
+  }
+
+  .nav li {
+    background: #f5f5f5;
+    border-top: 1px solid #fff;
+    text-align: left;
+    position: relative;
+    display: block;
+  }
+
+  .nav li.first,
+  .nav > li {
+    width: 100% !important;
+  }
+
+  .nav li span {
+    padding-right: 40px;
+  }
+
+  .nav li span:before {
+    display: block;
+    content: "";
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 15px;
+    right: 15px;
+    width: 15px;
+    height: 15px;
+    margin-top: -5px;
+    background: #ccc;
+    background: none\9;
+    /* IE8 */
+  }
+
+  .nav li span:after {
+    display: block;
+    content: "";
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 12px;
+    right: 15px;
+    width: 15px;
+    height: 15px;
+    margin-top: -5px;
+    background: #f5f5f5;
+    background: none\9;
+    /* IE8 */
+  }
+
+  .nav a:hover,
+  .nav span:hover {
+    background: none;
+    text-decoration: none;
+  }
+
+  /* Sub Lists */
+  .sub {
+    margin: 0;
+  }
+
+  .sub li {
+    background: #ddd;
+    border-top: none;
+  }
+
+  .sub li a {
+    border-top: 1px solid #ddd;
+    background: #ededed;
+  }
+
+  .sub li a:hover {
+    background: none #ededed;
+    text-decoration: none;
+  }
+
+  .nav li,
+  .sub li {
+    width: 100%;
+  }
+}
+
+.nav > li.hover > ul {
+  width: 100%;
+}
+
+.sub li {
+  width: 100%;
+}
+
+.nav a,
+.nav span {
+  color: #333;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+
+  .nav a,
+  .nav span {
+    color: #ffffff;
+  }
+
+  .sub a {
+    color: #333;
+  }
+}
+
+.sub li a {
+  background: #b9f5ff;
+}
+
+.sub li a:hover {
+  opacity: 1;
+  background: #4dc1d5;
+}
+
+@media screen and (max-width: 600px) {
+
+  .nav li,
+  .nav li span:after {
+    background: #4dc1d5;
+  }
+
+  .sub li a {
+    border-top: 1px solid #fff;
+  }
+
+  .nav li span:after {
+    transition: all 0.6s;
+  }
+
+  .nav li span:hover:after {
+    background: #4dc1d5;
+  }
+
+  .nav li span:before {
+    background: #fff;
+  }
+}
+
+.nav__btn {
+  padding-left: 15px;
+}
