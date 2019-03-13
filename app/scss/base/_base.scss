@@ -9,6 +9,11 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
 ul,
 li {
   padding: 0;
@@ -17,6 +22,8 @@ li {
 
 a {
   text-decoration: none;
+  color: #333;
+
   &:hover,
   &:hover img {
     opacity: .8;
@@ -46,4 +53,12 @@ img {
 
 .row__center {
   justify-content: center;
+}
+
+.row__mid {
+  align-items: center;
+}
+
+.center {
+  text-align: center;
 }
