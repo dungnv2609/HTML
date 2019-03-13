@@ -9,6 +9,11 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
 ul,
 li {
   padding: 0;
@@ -17,6 +22,7 @@ li {
 
 a {
   text-decoration: none;
+  color: #333;
 }
 
 a:hover,
@@ -47,6 +53,14 @@ img {
 
 .row__center {
   justify-content: center;
+}
+
+.row__mid {
+  align-items: center;
+}
+
+.center {
+  text-align: center;
 }
 
 header {
@@ -313,6 +327,7 @@ header {
   display: block;
   width: 100%;
   max-width: 250px;
+  min-width: 250px;
   margin: 0 auto;
   text-align: center;
   border-radius: 8px;
@@ -367,16 +382,29 @@ header {
 }
 
 .title__h2 {
-  font-size: 5.6rem;
+  font-size: 3rem;
   color: #333;
   letter-spacing: 0.1em;
   line-height: 1.2;
   text-align: center;
+  display: inline-block;
+  position: relative;
+}
+
+.title__h2:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 22px;
+  width: 100%;
+  height: 1px;
+  background-color: #298445;
 }
 
 .title__sub {
-  font-size: 2.4rem;
+  font-size: 1.2rem;
   color: #333;
   letter-spacing: 0.1em;
   display: block;
+  padding-top: 10px;
 }

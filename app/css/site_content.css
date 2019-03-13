@@ -1,3 +1,4 @@
+/* ----- Main Image ----- */
 #main__img img {
   width: 100%;
   max-width: 100%;
@@ -16,27 +17,141 @@
   flex-basis: 70%;
   text-align: center;
   color: #fff;
+  line-height: 2.23;
+}
+
+.pres__txt h2 {
+  margin-bottom: 20px;
 }
 
 /* ----- Section News ----- */
+#info {
+  padding: 65px 0 80px;
+}
+
+.info__list {
+  padding: 5px 150px 0;
+}
+
 .info__list dl {
-  padding: 20px 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 15px 0;
   width: 100%;
-  @inlcude box-sizing(border-box);
+  font-size: 1.4rem;
 }
 
 .info__list dl dt {
   float: left;
-  width: 15%;
+  width: 10%;
+  color: #298445;
+  margin-right: 40px;
+  line-height: 2.3;
 }
 
 .info__list dl dd {
-  float: none;
-  width: auto;
+  float: left;
+  width: 85%;
+  line-height: 2.3;
 }
 
+.info__img {
+  padding: 0 150px;
+}
+
+.info__img ul {
+  margin-left: calc(10% + 40px);
+}
+
+.info__img li {
+  margin-right: 30px;
+}
+
+.info__img li:last-child {
+  margin-right: 0;
+}
+
+/* ----- Business Information ----- */
+#bus__info {
+  background-color: #c3d673;
+  padding: 80px 0 65px;
+}
+
+.bus__item {
+  background-color: #fff;
+  padding: 20px;
+  flex-basis: 30%;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  position: relative;
+  transition: .2s all ease-in-out;
+}
+
+.bus__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.bus__item:hover {
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.bus__item .btn {
+  margin: 15px 0;
+}
+
+.bus__number {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 6rem;
+  font-style: italic;
+  color: #298445;
+}
+
+.bus__txt {
+  line-height: 2;
+}
+
+/* ----- Profile + Recruit ----- */
+.info__box {
+  text-align: center;
+  flex-basis: 33.67%;
+  min-height: 460px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info__img {
+  flex-basis: 66.33%;
+}
+
+#profile h2 {
+  margin-bottom: 50px;
+}
+
+#profile .info__img {
+  background: url(../../images/top_bg01.png) center no-repeat;
+  background-size: cover;
+}
+
+#recruit h2 {
+  margin-bottom: 70px;
+}
+
+#recruit .info__img {
+  background: url(../../images/top_bg01.png) center no-repeat;
+  background-size: cover;
+}
+
+/* ----- Footer ----- */
 footer {
   background-color: #298445;
+  margin-top: 170px;
+  color: #fff;
 }
 
 .ft__logo {
@@ -52,10 +167,6 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 30px 0 70px;
-}
-
-.ft__info h3 {
-  color: #fff;
 }
 
 .ft__info--right {
@@ -88,14 +199,12 @@ footer {
 .box__contact {
   border: 2px solid #fff;
   padding: 10px 0;
-  color: #fff;
   text-align: center;
   margin-top: 20px;
   border-radius: 8px;
 }
 
 .ft__copyright {
-  color: #fff;
   text-align: center;
   padding: 10px 0;
 }
