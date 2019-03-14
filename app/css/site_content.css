@@ -147,64 +147,78 @@
   background-size: cover;
 }
 
-/* ----- Footer ----- */
-footer {
-  background-color: #298445;
-  margin-top: 170px;
-  color: #fff;
-}
-
-.ft__logo {
-  background-color: #f9f9f9;
-  padding: 22px 0 23px;
-}
-
-.ft__logo img {
-  margin: 0 auto;
-}
-
-.ft__info {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 0 70px;
-}
-
-.ft__info--right {
-  display: flex;
-}
-
-.ft__menu {
+/* ----- Page 2 ----- */
+.feature__box {
+  flex-basis: calc((100% - 40px) / 3);
   margin-right: 20px;
-  min-width: 100px;
+  margin-bottom: 20px;
+  background-color: #f0f3f5;
+  padding: 70px 5px 50px;
 }
 
-.ft__menu h3 {
-  font-size: 1.5rem;
+.feature__box:nth-child(3n) {
+  margin-right: 0;
+}
+
+.feature__box span {
+  font-size: 9.4rem;
+  font-weight: 600;
+}
+
+.feature__box h3 {
+  margin-bottom: 20px;
+}
+
+.feature__box .feature__txt {
+  max-width: 250px;
+}
+
+/* ----- Page 3-7 ----- */
+.title__box {
+  flex-basis: 48%;
+  margin-right: 40px;
+}
+
+.title__box:nth-child(2n) {
+  margin-right: 0;
+}
+
+.title__box img {
   margin-bottom: 15px;
 }
 
-.ft__menu li {
-  padding-bottom: 10px;
+.title__box h3 {
+  margin-bottom: 10px;
 }
 
-.ft__menu a {
-  color: #fff;
-  font-size: 1.2rem;
+.comment {
+  margin-bottom: 90px;
 }
 
-.ft__contact {
-  min-width: 245px;
+.comment > .row {
+  margin-bottom: 60px;
 }
 
-.box__contact {
-  border: 2px solid #fff;
-  padding: 10px 0;
-  text-align: center;
-  margin-top: 20px;
-  border-radius: 8px;
+.comment__img {
+  flex-basis: 40%;
 }
 
-.ft__copyright {
-  text-align: center;
-  padding: 10px 0;
+.comment__txt {
+  flex-basis: 60%;
+}
+
+.comment__txt h4 {
+  font-size: 3rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.comment__txt p {
+  font-size: 1.3rem;
+  line-height: 2.4;
+}
+
+.comment__txt .comment__author {
+  font-weight: 600;
+  text-align: right;
 }

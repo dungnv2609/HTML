@@ -63,6 +63,10 @@ img {
   text-align: center;
 }
 
+.mg__bt0 {
+  margin-bottom: 0 !important;
+}
+
 header {
   border-bottom: 10px solid #298445;
 }
@@ -407,4 +411,111 @@ header {
   letter-spacing: 0.1em;
   display: block;
   padding-top: 10px;
+}
+
+.title__page {
+  padding: 105px 0 94px;
+}
+
+.title__page h2 {
+  font-size: 3.6rem;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* ----- Footer Top page ----- */
+.top footer {
+  background-color: #298445;
+  margin-top: 170px;
+  color: #fff;
+}
+
+.ft__logo {
+  background-color: #f9f9f9;
+  padding: 22px 0 23px;
+}
+
+.ft__logo img {
+  margin: 0 auto;
+}
+
+.ft__info {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0 70px;
+}
+
+.ft__info--right {
+  display: flex;
+}
+
+.ft__menu {
+  margin-right: 20px;
+  min-width: 100px;
+}
+
+.ft__menu h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.ft__menu li {
+  padding-bottom: 10px;
+}
+
+.ft__menu a {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.ft__contact {
+  min-width: 245px;
+}
+
+.box__contact {
+  border: 2px solid #fff;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.ft__copyright {
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* ----- Footer Child page ----- */
+.ft__inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0 23px;
+}
+
+.ft__inner .ft__logo {
+  background: none;
+}
+
+.ft__nav {
+  display: flex;
+  align-items: center;
+}
+
+.ft__nav ul {
+  display: flex;
+}
+
+.ft__nav li {
+  padding: 0 15px;
+}
+
+.ft__nav li a {
+  border-bottom: 1px solid #fff;
+}
+
+.ft__nav li:hover a {
+  border-bottom: 1px solid #298445;
 }

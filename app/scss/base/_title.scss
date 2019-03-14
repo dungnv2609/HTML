@@ -16,6 +16,7 @@ $sub_fs: 1.2rem;
   text-align: center;
   display: inline-block;
   position: relative;
+
   &:after {
     @include pseudo;
     bottom: 22px;
@@ -31,4 +32,14 @@ $sub_fs: 1.2rem;
   letter-spacing: $title_ls;
   display: block;
   padding-top: 10px;
+}
+
+.title__page {
+  padding: 105px 0 94px;
+
+  h2 {
+    font-size: 3.6rem;
+    text-align: center;
+    margin-bottom: 60px;
+  }
 }
