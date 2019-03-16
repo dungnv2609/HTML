@@ -1,3 +1,22 @@
+.tabs {
+  display: flex;
+  margin-top: 90px;
+}
+
+.tabs li {
+  border: 2px solid #333;
+  margin-right: 30px;
+  flex: 1 1 0;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 600;
+  padding: 32px 0;
+}
+
+.tabs li:last-child {
+  margin-right: 0;
+}
+
 /* ----- Main Image ----- */
 #main__img img {
   width: 100%;
@@ -221,4 +240,21 @@
 .comment__txt .comment__author {
   font-weight: 600;
   text-align: right;
+}
+
+/* ----- Page 9 ----- */
+.info__contact {
+  margin: 215px 0;
+}
+
+.info__left,
+.info__right {
+  flex-basis: 50%;
+  text-align: center;
+  border: 1px solid #333;
+  background-color: #f0f3f5;
+  min-height: 128px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 }
