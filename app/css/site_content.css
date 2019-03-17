@@ -218,14 +218,6 @@
   margin-bottom: 60px;
 }
 
-.comment__img {
-  flex-basis: 40%;
-}
-
-.comment__txt {
-  flex-basis: 60%;
-}
-
 .comment__txt h4 {
   font-size: 3rem;
   line-height: 1.7;
@@ -242,7 +234,98 @@
   text-align: right;
 }
 
+.box__user {
+  max-width: 1366px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.box__user.large {
+  align-items: center;
+}
+
+.box__user.large .comment__img,
+  .box__user.large .comment__txt {
+  flex-basis: 50%;
+}
+
+.box__txt {
+  margin-top: 30px;
+}
+
+.box__txt h4 {
+  font-size: 3rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.box__txt p {
+  font-size: 1.3rem;
+  line-height: 2.4;
+}
+
 /* ----- Page 9 ----- */
+.tab__main {
+  margin-top: 60px;
+}
+
+.tab__main .title__page {
+  padding: 0 140px;
+}
+
+.tab__main .title__page p {
+  padding: 0 160px;
+  line-height: 2.1;
+}
+
+.box__img {
+  flex-basis: 48%;
+  margin-right: 40px;
+  margin-bottom: 60px;
+}
+
+.box__img:nth-child(2n) {
+  margin-right: 0;
+}
+
+.box__img h3 {
+  font-size: 3.5rem;
+  margin-bottom: 40px;
+}
+
+.box__img_inner {
+  display: flex;
+}
+
+.box__left {
+  margin-right: 15px;
+}
+
+.box__right p {
+  line-height: 2.1;
+  margin-bottom: 25px;
+}
+
+table tr {
+  border-bottom: 1px solid #333;
+}
+
+table tr td {
+  border-bottom: 1px solid #cdd6dd;
+  padding: 20px 0 25px;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+table tr td:first-child {
+  width: 30%;
+}
+
+table tr td a {
+  color: #2699fb;
+  text-decoration: underline;
+}
+
 .info__contact {
   margin: 215px 0;
 }
@@ -257,4 +340,30 @@
   display: flex;
   flex-flow: column;
   justify-content: center;
+}
+
+/* ----- Page 10 ----- */
+.tbl__list {
+  padding: 0 95px;
+}
+
+/* ----- Page 11 ----- */
+.diagram {
+  padding: 0 155px;
+}
+
+.diagram__box {
+  flex-basis: 46%;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.diagram__box:nth-child(2n) {
+  margin-right: 0;
+}
+
+/* ----- Page 12 ----- */
+.comment__itv {
+  margin-left: -43px;
+  margin-right: -43px;
 }
