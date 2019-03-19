@@ -98,3 +98,13 @@
     }
   }
 }
+
+.btn_toppage {
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 50px;
+    right: 40px;
+  }
+}
