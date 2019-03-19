@@ -173,6 +173,10 @@
 }
 
 /* ----- Page 2 ----- */
+.feature__wrap {
+  flex-flow: row wrap;
+}
+
 .feature__box {
   flex-basis: calc((100% - 40px) / 3);
   margin-right: 20px;
@@ -463,6 +467,7 @@ table tr td a {
 /* ----- Page 11 ----- */
 .diagram {
   padding: 0 155px;
+  flex-flow: row wrap;
 }
 
 .diagram__box {
@@ -640,4 +645,8 @@ textarea {
   width: 100%;
   min-height: 250px;
   resize: none;
+}
+
+.col__txtarea {
+  padding: 18px 0;
 }
