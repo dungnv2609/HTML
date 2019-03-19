@@ -525,3 +525,13 @@ header {
 .ft__nav li:hover a {
   border-bottom: 1px solid #298445;
 }
+
+.btn_toppage {
+  position: relative;
+}
+
+.btn_toppage img {
+  position: absolute;
+  top: 50px;
+  right: 40px;
+}

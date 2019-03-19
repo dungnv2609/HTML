@@ -156,18 +156,18 @@ function resizeH(eleH) {
 
 //Scroll to top
 $(document).ready(function () {
-  /*$(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
-      $('#btnTop').fadeIn();
+  $(window).scroll(function () {
+    if ($(window).scrollTop() + $(window).height() > $(document).height() - 500) {
+      $('.btn_toppage img').fadeIn();
     } else {
-      $('#btnTop').fadeOut();
+      $('.btn_toppage img').fadeOut();
     }
-  });*/
+  });
 
   $('.btn_toppage img').click(function () {
     $('html, body').animate({
       scrollTop: 0
-    }, 800);
+    }, 0);
     return false;
   });
 
