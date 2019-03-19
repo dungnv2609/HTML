@@ -1,5 +1,6 @@
 .tabs {
   display: flex;
+  justify-content: center;
   margin-top: 90px;
 }
 
@@ -11,6 +12,7 @@
   font-size: 2.2rem;
   font-weight: 600;
   padding: 32px 0;
+  max-width: 296px;
 }
 
 .tabs li:last-child {
@@ -95,6 +97,10 @@
 #bus__info {
   background-color: #c3d673;
   padding: 80px 0 65px;
+}
+
+.bus__info__inner {
+  flex-flow: row wrap;
 }
 
 .bus__item {
@@ -264,6 +270,113 @@
   line-height: 2.4;
 }
 
+/* ----- Page 8 ----- */
+#message {
+  margin-top: 100px;
+  padding: 0 95px;
+}
+
+.mess__txt {
+  flex-basis: 70%;
+  margin-right: 60px;
+}
+
+.mess__txt h3 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.mess__txt p {
+  font-size: 1.4rem;
+  line-height: 2.4;
+}
+
+.mess__txt .mess__author {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: right;
+  line-height: 1.8;
+  display: block;
+}
+
+.mess__img {
+  flex-basis: 30%;
+}
+
+#overview {
+  padding: 0 225px;
+}
+
+#overview table tr,
+  #overview table td {
+  border-bottom: none;
+}
+
+#overview table td:first-child {
+  border-right: 3px solid #333;
+  font-weight: 600;
+  width: 30%;
+}
+
+#overview table td:last-child {
+  padding-left: 50px;
+}
+
+#timeline {
+  padding: 50px 225px;
+}
+
+.timeline__main {
+  position: relative;
+}
+
+.center__line {
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  top: 0;
+  left: 30%;
+  background: #333;
+  z-index: -1;
+}
+
+.timeline__content {
+  padding: 0 0 60px;
+}
+
+.timeline__article {
+  position: relative;
+  min-height: 60px;
+  margin: 25px 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timeline__left {
+  width: 30%;
+}
+
+.timeline__date {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  width: 60px;
+  height: 60px;
+  margin-left: -30px;
+  color: #fff;
+  background-color: #333;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline__date .date {
+  text-align: center;
+}
+
 /* ----- Page 9 ----- */
 .tab__main {
   margin-top: 60px;
@@ -366,4 +479,165 @@ table tr td a {
 .comment__itv {
   margin-left: -43px;
   margin-right: -43px;
+}
+
+/* ----- Page 14 - 15 ----- */
+.form__regis {
+  padding: 0 47px;
+  font-size: 2rem;
+  margin-bottom: 50px;
+}
+
+.form__row {
+  display: flex;
+}
+
+.form__row .col__label,
+  .form__row .col__input {
+  border: 1px solid #333;
+  min-height: 85px;
+  display: flex;
+  align-items: center;
+}
+
+.form__row .col__label {
+  width: 25%;
+  background-color: #f0f3f5;
+  font-weight: 600;
+  padding: 0 12px;
+}
+
+.form__row .col__label .require {
+  color: #ff0000;
+  margin-left: 10px;
+}
+
+.form__row .col__input {
+  width: 75%;
+  padding: 0 18px;
+}
+
+.form__term {
+  padding: 0 47px;
+}
+
+.form__term__inner {
+  background-color: #f0f3f5;
+  padding: 40px 98px;
+  margin-bottom: 70px;
+}
+
+.form__term__inner p {
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+.form__term__inner .term__content {
+  border: 1px solid #707070;
+  background-color: #fff;
+  padding: 14px 18px;
+  font-size: 1.6rem;
+  line-height: 2;
+  max-height: 260px;
+  overflow-y: scroll;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked),
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+}
+
+[type="radio"]:checked + label:after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: #333;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+[type="checkbox"]:checked + label,
+[type="checkbox"]:not(:checked) + label {
+  position: relative;
+  padding-left: 40px;
+  padding-top: 8px;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 15px;
+}
+
+[type="checkbox"]:checked + label:before,
+[type="checkbox"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+[type="checkbox"]:checked + label:after {
+  content: '';
+  position: absolute;
+  left: 12px;
+  top: 8px;
+  width: 7px;
+  height: 12px;
+  border: solid #333;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+[type="text"] {
+  width: 100%;
+  font-size: 1.6rem;
+  padding: 9px 5px;
+}
+
+select {
+  width: 160px;
+  font-size: 1.6rem;
+  line-height: 1;
+  padding: 8px 0 11px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 250px;
+  resize: none;
 }
