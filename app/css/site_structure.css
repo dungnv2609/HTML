@@ -73,6 +73,24 @@ table {
   margin-bottom: 0 !important;
 }
 
+.pc {
+  display: block !important;
+}
+
+.sp {
+  display: none !important;
+}
+
+@media screen and (max-width: 767px) {
+  .pc {
+    display: none !important;
+  }
+
+  .sp {
+    display: block !important;
+  }
+}
+
 header {
   border-bottom: 10px solid #298445;
 }
@@ -271,7 +289,7 @@ header {
   font-size: 1.5rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .nav a,
   .nav span {
     color: #ffffff;
@@ -291,10 +309,10 @@ header {
   background: #4dc1d5;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
   .nav li,
   .nav li span:after {
-    background: #4dc1d5;
+    background: #298445;
   }
 
   .sub li a {

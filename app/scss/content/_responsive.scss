@@ -1,0 +1,197 @@
+@media screen and (max-width: 1360px) {
+  .container {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+
+  .bus__container {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .bus__container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .btn {
+    min-width: initial;
+  }
+
+  .title__page {
+    padding: 40px 0 40px;
+  }
+  
+  .title__page h2 {
+    font-size: 3rem;
+  }
+  
+  .pres__txt h2 {
+    margin-bottom: 0;
+  }
+
+  .info__list {
+    padding: 0;
+
+    dl {
+
+      dt,
+      dd {
+        float: none;
+        width: 100%;
+      }
+    }
+  }
+
+  .img__list {
+    margin-left: 0;
+  }
+
+  .bus__info.center {
+    padding-top: 40px;
+  }
+
+  .bus__item {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+
+  .info__box {
+    min-height: 300px;
+  }
+
+  .info__box__inner {
+    flex: 1 1 auto;
+
+    h2 {
+      margin-bottom: 30px;
+    }
+  }
+
+  #message {
+    margin-top: 40px;
+    padding: 0;
+  }
+
+  .mess__txt {
+    margin-right: 0;
+  }
+
+  #overview {
+    padding: 0;
+  }
+
+  #timeline {
+    padding: 0;
+  }
+
+  table tr td {
+    font-size: 1.4rem;
+    padding: 10px 5px;
+  }
+
+  #overview table td:first-child {
+    width: 35%;
+  }
+
+  #overview table td:last-child {
+    padding-left: 25px;
+  }
+
+  .center__line {
+    left: 35%;
+  }
+  
+  .timeline__article {
+    align-items: normal;
+  }
+  
+  .timeline__left {
+    width: 35%;
+    padding-top: 10px;
+  }
+
+  .timeline__right {
+    width: 45%;
+  }
+
+  .timeline__date {
+    left: 35%;
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+  }
+
+  .header__inner {
+    padding: 22px 0 0;
+    display: block;
+  }
+
+  .nav__logo {
+    padding: 0 10px 20px;
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
+      img {
+        width: auto;
+        height: 45px;
+      }
+    }
+  }
+
+  .right__box {
+    width: 50px;
+
+    span {
+      display: block;
+      height: 3px;
+      width: 100%;
+      background: #333;
+      margin-bottom: 18px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .gnav {
+    display: block;
+  }
+
+  .ft__info {
+    flex-flow: column wrap;
+  }
+
+  .ft__info--left {
+    margin-bottom: 30px;
+  }
+
+  .ft__info--right {
+    flex-flow: column wrap;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .title__page h2 {
+    font-size: 2.5rem;
+  }
+  
+  .tabs {
+    margin-top: 40px;
+
+    li {
+      font-size: 1.8rem;
+      padding: 20px 5px;
+      margin-right: 10px;
+    }
+  }
+}

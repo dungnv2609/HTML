@@ -80,7 +80,7 @@
   }
 }
 
-.info__img {
+.img__list {
   padding: 0 150px;
 
   ul {
@@ -133,11 +133,12 @@
 
 .bus__number {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 0;
+  left: 0;
   font-size: 6rem;
   font-style: italic;
   color: $green;
+  line-height: 1;
 }
 
 .bus__txt {
@@ -596,8 +597,8 @@ table {
   position: absolute;
   left: 0;
   top: 0;
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   border: 1px solid #ddd;
   border-radius: 100%;
   background: #fff;

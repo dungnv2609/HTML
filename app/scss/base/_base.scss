@@ -72,3 +72,21 @@ table {
 .mg__bt0 {
   margin-bottom: 0 !important;
 }
+
+.pc {
+  display: block !important;
+}
+
+.sp {
+  display: none !important;
+}
+
+@media screen and (max-width: 767px) {
+  .pc {
+    display: none !important;
+  }
+
+  .sp {
+    display: block !important;
+  }
+}
