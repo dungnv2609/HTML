@@ -21,6 +21,7 @@ $sub_fs: 2rem;
     padding-right: 55px;
     display: inline-block;
     margin: 0 25px;
+
     &:after {
       content: '';
       position: absolute;
@@ -36,22 +37,28 @@ $sub_fs: 2rem;
     font-size: $sub_fs;
     color: #333;
     letter-spacing: 0;
-    display: block;
+    display: inline-block;
     padding-top: 10px;
     position: relative;
-    display: flex;
-    align-items: center;
-    &:before {
-      content: '';
-      border-top: 2px solid #333;
-      margin-right: 20px;
-      flex: 1 0 20px;
-    }
+
+    &:before,
     &:after {
-      content: '';
-      border-top: 2px solid #333;
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 200%;
+      background: #333;
+      top: 25px;
+    }
+
+    &:before {
+      right: 100%;
+      margin-right: 20px;
+    }
+
+    &:after {
+      left: 100%;
       margin-left: 20px;
-      flex: 1 0 20px;
     }
   }
 }
@@ -59,9 +66,10 @@ $sub_fs: 2rem;
 .news__list {
   background: rgba(255, 255, 255, .9);
   margin: 0 120px 100px;
+  font-family: $font-family-alt;
 
   dl {
-    padding: 31px 180px;
+    padding: 26px 180px;
     width: 100%;
 
     dt {

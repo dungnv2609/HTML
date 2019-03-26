@@ -1,10 +1,20 @@
+@font-face {
+  font-family: 'Hannari';
+  src: url(../fonts/Hannari.otf);
+}
+
+@font-face {
+  font-family: 'KozukaGothicPrN-R';
+  src: url(../fonts/KozukaGothicPrN-R.otf);
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
 }
 
 html {
-  font-family: 'Meiryo', Arial, sans-serif;
+  font-family: $font-family-sans-serif;
   font-weight: 300;
   font-size: 62.5%;
   scroll-behavior: smooth;
