@@ -1,16 +1,12 @@
 @import "mixins/custom-mixins";
 
-header {
-  border-bottom: 10px solid $green;
-}
-
 .header__inner {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px 0 23px;
+  padding: 13px 0 14px;
 }
 
 .gnav {
@@ -25,18 +21,15 @@ header {
 
   li {
     position: relative;
-    padding: 0 15px;
-
-    a,
-    span {
-      border-bottom: 1px solid $white;
+    padding-right: 15px;
+    &:last-child {
+      padding-right: 0;
     }
 
     &:hover {
       a,
       span {
-        color: $green;
-        border-bottom: 1px solid $green;
+        color: $orange;
       }
     }
   }
@@ -47,6 +40,18 @@ header {
     *zoom: 1;
     cursor: pointer;
     display: inline-block;
+  }
+}
+
+.nav__logo {
+  img {
+    height: 48px;
+  }
+}
+
+.nav__btn {
+  img {
+    height: 73px;
   }
 }
 

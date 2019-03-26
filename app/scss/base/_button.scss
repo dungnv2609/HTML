@@ -9,36 +9,67 @@ $btn_ls: 0.1em; // button letter-spacing
 %btn {
   display: block;
   width: 100%;
-  max-width: 250px;
-  min-width: 250px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   text-align: center;
-  @include border-radius(8px);
 }
 
-.btn {
+.btn_round {
   @extend %btn;
   background-color: $orange;
   color: $white;
-  font-size: $btn_fs;
+  font-size: 2.2rem;
   line-height: $btn_lh;
   transition: $btn_trans;
-  padding: $btn_pd;
+  padding: 24px 10px;
   letter-spacing: $btn_ls;
   position: relative;
+  max-width: 600px;
+  margin-bottom: 80px;
+  -webkit-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
+  @include border-radius(8px);
+
   &:before {
     @include pseudo;
-    @include abs-pos(50%, 8.5%);
-    @include size(15px, 15px);
+    @include abs-pos(50%, 28.5%);
+    @include size(20px, 20px);
     @include border-radius(50%);
     @include translate(0, -50%);
     background-color: $white;
   }
+
   &:after {
     @include pseudo;
-    @include abs-pos(50%, 10%);
+    @include abs-pos(50%, 29.5%);
     @include size(0, 0);
-    @include triangle-right(3px, 6px, $orange);
+    @include triangle-right(4px, 6px, $orange);
     @include translate(0, -50%);
   }
+
+  &:hover {
+    color: $white !important;
+    opacity: .9;
+  }
+}
+
+.btn_style1 {
+  @extend %btn;
+  background: $orange;
+  color: $white;
+  font-size: 1.8rem;
+  padding: 15px 10px 14px;
+
+  &:hover {
+    color: $white !important;
+    opacity: .9;
+  }
+}
+
+.btn_style2 {
+  @extend %btn;
+  color: $white;
+  font-size: 1.8rem;
+  border: 2px solid $white;
+  padding: 13px 10px 12px;
 }

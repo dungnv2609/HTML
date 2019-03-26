@@ -13,6 +13,8 @@ html {
 body {
   font-size: 1.5rem;
   line-height: 1.2;
+  letter-spacing: .05em;
+  color: #333;
 }
 
 ul,
@@ -25,14 +27,18 @@ a {
   text-decoration: none;
   color: #333;
 
-  &:hover,
+  &:hover {
+    color: $orange !important;
+  }
+
   &:hover img {
     opacity: .8;
   }
 }
 
 img {
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 table {
@@ -47,28 +53,36 @@ table {
   clear: both;
 }
 
-.container {
-  max-width: 1280px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.row {
-  display: flex;
-}
-
-.row__center {
-  justify-content: center;
-}
-
-.row__mid {
-  align-items: center;
-}
-
 .center {
   text-align: center;
 }
 
 .mg__bt0 {
   margin-bottom: 0 !important;
+}
+
+.pc {
+  display: block !important;
+}
+
+.sp {
+  display: none !important;
+}
+
+@media screen and (max-width: 767px) {
+  .pc {
+    display: none !important;
+  }
+
+  .sp {
+    display: block !important;
+  }
+}
+
+.green {
+  color: $green;
+}
+
+.orange {
+  color: $orange;
 }

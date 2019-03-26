@@ -4,45 +4,67 @@
 
 .home footer {
   background-color: $green;
-  margin-top: 170px;
   color: $white;
 }
 
-.ft__logo {
-  background-color: #f9f9f9;
-  padding: 22px 0 23px;
+.ft__top {
+  background-color: $white;
+  padding: 10px 0;
+  color: #333;
+}
 
+.ft__logo {
   img {
-    margin: 0 auto;
+    height: 73px;
+    margin-right: 10px;
+  }
+
+  p:first-child {
+    margin-right: 10px;
   }
 }
 
-.ft__info {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 0 70px;
+.ft__bot {
+  padding: 100px 0 10px;
 }
 
-.ft__info--right {
-  display: flex;
+.ft__info {}
+
+.ft__address {
+  margin-bottom: 50px;
+
+  p {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    letter-spacing: .15em;
+  }
+
+  p:nth-child(2) {
+    font-size: 2.8rem;
+    margin-bottom: 18px;
+  }
 }
 
 .ft__menu {
-  margin-right: 20px;
-  min-width: 100px;
 
-  h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-  }
+  ul {
+    display: flex;
+    margin-bottom: 70px;
 
-  li {
-    padding-bottom: 10px;
-  }
+    li {
+      font-size: 1.2rem;
+      margin-right: 20px;
+      min-width: 115px;
 
-  a {
-    color: $white;
-    font-size: 1.2rem;
+      ul {
+        margin-top: 10px;
+        margin-bottom: 0;
+      }
+
+      a {
+        color: $white;
+      }
+    }
   }
 }
 
@@ -59,8 +81,10 @@
 }
 
 .ft__copyright {
+  font-size: 1rem;
   text-align: center;
   padding: 10px 0;
+  margin-top: 80px;
 }
 
 /* ----- Footer Child page ----- */
@@ -104,7 +128,7 @@
 
   img {
     position: absolute;
-    top: 50px;
-    right: 40px;
+    right: 0;
+    bottom: -180px;
   }
 }
