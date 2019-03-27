@@ -42,8 +42,10 @@
   .container {
     padding: 0 20px !important;
   }
-  
-  .col-6 {
+
+  .col-4,
+  .col-6,
+  .col-8 {
     flex-basis: 100%;
   }
 }

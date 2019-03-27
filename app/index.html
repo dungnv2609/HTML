@@ -15,10 +15,16 @@
     <div class="header__inner">
       <div class="nav__logo">
         <h1><a href=""><img src="images/logo.png" alt="logo"></a></h1>
-        <div class="nav__btn sp">
-          <a href="javascript:void(0)"><img src="images/btn_search_sp.svg" alt="空室検索"></a>
-          <a href="javascript:void(0)"><img src="images/btn_menu_sp.svg" alt="menu"></a>
-          <a href="javascript:void(0)"><img src="images/btn_menu_close.svg" alt="menu"></a>
+        <div class="sp">
+          <div class="nav__btn">
+            <div>
+              <a href="javascript:void(0)"><img src="images/btn_search_sp.svg" alt="空室検索"></a>
+            </div>
+            <div class="toggleMenu">
+              <img class="img_show" src="images/btn_menu_sp.svg" alt="menu">
+              <img class="img_hide" src="images/btn_menu_close.svg" alt="menu">
+            </div>
+          </div>
         </div>
       </div>
       <div class="gnav">
@@ -37,7 +43,7 @@
         </div>
 
         <div class="sp">
-          <nav class="nav">
+          <nav class="nav" style="display: block !important;">
             <div class="menu__title">MENU</div>
             <ul>
               <li><a href="#">美を堪能できる施設</a></li>
@@ -82,12 +88,7 @@
 
   <section id="sec_1">
     <div class="container">
-      <div class="news__list">
-        <dl class="clearfix">
-          <dt>2019.01.11</dt>
-          <dd><a href="#">お知らせが入ります。お知らせが入ります。</a></dd>
-        </dl>
-      </div>
+      <div class="news__list" id="sec1_rss"></div>
       <div class="intro">
         <div class="row__mid">
           <div class="col-6 intro__left">
@@ -250,20 +251,7 @@
           <p><span>Information</span></p>
         </div>
       </div>
-      <div class="news__list">
-        <dl class="clearfix">
-          <dt>2019.01.11</dt>
-          <dd><a href="#">お知らせが入ります。お知らせが入ります。</a></dd>
-        </dl>
-        <dl class="clearfix">
-          <dt>2019.01.11</dt>
-          <dd><a href="#">お知らせが入ります。お知らせが入ります。お知らせが入ります。</a></dd>
-        </dl>
-        <dl class="clearfix">
-          <dt>2019.01.11</dt>
-          <dd><a href="#">お知らせが入ります。お知らせが入ります。</a></dd>
-        </dl>
-      </div>
+      <div class="news__list" id="sec3_rss"></div>
       <div><a class="btn_round" href="#">お知らせ一覧を見る</a></div>
       <div class="banner center">
         <img class="pc" src="images/top_img03.png" alt="">
@@ -287,7 +275,7 @@
     <div class="ft__bot">
       <div class="container">
         <div class="row">
-          <div class="ft__info col-8">
+          <div class="ft__info col-8 pc">
             <div class="ft__address">
               <p>養老温泉</p>
               <p>ゆせんの里 ホテルなでしこ</p>
@@ -317,8 +305,8 @@
             </div>
           </div>
           <div class="ft__btn col-4">
-            <a class="btn btn_style1" href="#">ご予約はこちら→</a>
-            <a class="btn btn_style2" href="#">お問い合わせはこちら→</a>
+            <div class="pc"><a class="btn btn_style1" href="#">ご予約はこちら→</a></div>
+            <div class="pc"><a class="btn btn_style2" href="#">お問い合わせはこちら→</a></div>
             <ul class="social__list">
               <li><a href="#"><img src="images/ic_instagram.svg" alt="Instagram"></a></li>
               <li><a href="#"><img src="images/ic_facebook.svg" alt="Facebook"></a></li>
@@ -335,6 +323,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="js/mainjs.js"></script>
+  <script src="js/rss_feed.js"></script>
 </body>
 
 </html>

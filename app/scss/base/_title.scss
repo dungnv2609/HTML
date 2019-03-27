@@ -136,4 +136,16 @@ $sub_fs: 2rem;
       }
     }
   }
+
+  .social__list {
+    justify-content: center;
+
+    li {
+      margin-right: 50px;
+
+      img {
+        height: 60px;
+      }
+    }
+  }
 }
