@@ -11,6 +11,17 @@ $(document).ready(function () {
     };
   })
   adjustMenu(ww);
+  $(window).on('scroll', function () {
+    if ($(window).scrollTop() >= 100) {
+      $('header').css({
+        'background': 'rgba(255, 255, 255, 1)'
+      });
+    } else {
+      $('header').css({
+        'background': 'rgba(255, 255, 255, .9)'
+      });
+    }
+  });
 });
 
 function adjustMenu(ww) {
@@ -60,6 +71,18 @@ $("#gnav ul.nav li a").click(function () {
   }
 });
 
+$(window).on('scroll', function () {
+  if ($(window).scrollTop() >= 100) {
+    $('header').css({
+      'background:': 'rgba(0, 0, 0, 0.9)'
+    });
+  } else {
+    $('header').css({
+      'background:': 'rgba(0, 0, 0, 0.9)'
+    });
+  }
+});
+
 $(window).bind('resize orientationchange', function () {
   //ww = document.body.clientWidth;
   ww = window.innerWidth;
@@ -84,9 +107,13 @@ if (ua.search(/iPad/) != -1) {
   $("body").addClass("ipad");
 }
 
-//sitemapにclass付与
-if ($("#sitemap")[0]) {
-  $("body").addClass("sitemap");
+/* Add class for mac */
+if (navigator.appVersion.indexOf("Win") != -1) {
+  $('body').addClass('window-os');
+}
+
+if (navigator.platform.toUpperCase().indexOf('MAC') >= 0) {
+  $('body').addClass('mac-os');
 }
 
 

@@ -64,7 +64,7 @@ $sub_fs: 2rem;
 }
 
 .news__list {
-  background: rgba(255, 255, 255, .9);
+  background: rgba(255, 255, 255, .7);
   margin: 0 120px 100px;
   font-family: $font-family-alt;
 
@@ -99,6 +99,41 @@ $sub_fs: 2rem;
 
     img {
       height: 36px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .title {
+    h2 {
+      padding-right: 50px;
+
+      &:after {
+        top: 14px;
+        width: 38px;
+        height: 33px;
+      }
+    }
+  }
+
+  .news__list {
+    background: $white;
+    margin: 0 0 80px;
+
+    dl {
+      padding: 15px;
+
+      dt {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
+
+      dd {
+        float: none;
+        width: 100%;
+      }
     }
   }
 }

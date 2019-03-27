@@ -98,3 +98,16 @@
     }
   }
 }
+
+@mixin background_sp() {
+  @for $i from 1 to 7 {
+    .feature_#{$i} {
+      background: url(/images/bg_top0#{$i+1}_sp.jpg) center no-repeat;
+      background-size: cover;
+      padding: 0;
+      .container {
+        padding: 0 !important;
+      }
+    }
+  }
+}

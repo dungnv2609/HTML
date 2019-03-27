@@ -136,9 +136,23 @@ table {
 }
 
 @media screen and (max-width: 767px) {
+  .container {
+    padding: 0 20px !important;
+  }
+
   .col-6 {
     flex-basis: 100%;
   }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 10;
+  transition: .2s all ease-in-out;
 }
 
 .header__inner {
@@ -155,26 +169,22 @@ table {
   align-items: center;
 }
 
-.nav > ul {
+.nav__pc > ul {
   display: flex;
 }
 
-.nav li {
+.nav__pc li {
   position: relative;
   padding-right: 15px;
 }
 
-.nav li:last-child {
-  padding-right: 0;
-}
-
-.nav li:hover a,
-  .nav li:hover span {
+.nav__pc li:hover a,
+  .nav__pc li:hover span {
   color: #e18a50;
 }
 
-.nav a,
-.nav span {
+.nav__pc a,
+.nav__pc span {
   padding: 2px 0;
   *zoom: 1;
   cursor: pointer;
@@ -187,6 +197,19 @@ table {
 
 .nav__btn img {
   height: 73px;
+}
+
+@media screen and (max-width: 767px) {
+  .header__inner {
+    display: block;
+    padding: 0;
+  }
+
+  .nav__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 /* sub lists */
@@ -384,10 +407,6 @@ table {
   }
 }
 
-.nav__btn {
-  padding-left: 15px;
-}
-
 .banner__img {
   position: relative;
   background: url();
@@ -544,7 +563,7 @@ table {
 }
 
 .news__list {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.7);
   margin: 0 120px 100px;
   font-family: "KozukaGothicPrN-R", Arial, sans-serif;
 }
@@ -581,6 +600,39 @@ table {
 
 .social__list li img {
   height: 36px;
+}
+
+@media screen and (max-width: 767px) {
+  .title h2 {
+    padding-right: 50px;
+  }
+
+  .title h2:after {
+    top: 14px;
+    width: 38px;
+    height: 33px;
+  }
+
+  .news__list {
+    background: #fff;
+    margin: 0 0 80px;
+  }
+
+  .news__list dl {
+    padding: 15px;
+  }
+
+  .news__list dl dt {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .news__list dl dd {
+    float: none;
+    width: 100%;
+  }
 }
 
 /* ----- Footer Top page ----- */
@@ -705,4 +757,10 @@ table {
   position: absolute;
   right: 0;
   bottom: -180px;
+}
+
+@media screen and (max-width: 767px) {
+  .btn_toppage {
+    display: none;
+  }
 }

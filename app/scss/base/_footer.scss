@@ -132,3 +132,9 @@
     bottom: -180px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .btn_toppage {
+    display: none;
+  }
+}

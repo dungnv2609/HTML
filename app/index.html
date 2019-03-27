@@ -6,7 +6,6 @@
   <title>Homepage</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/site_structure.css">
   <link rel="stylesheet" href="css/site_content.css">
 </head>
@@ -15,10 +14,15 @@
   <header>
     <div class="header__inner">
       <div class="nav__logo">
-        <h1><a href=""><img src="images/logo.svg" alt="logo"></a></h1>
+        <h1><a href=""><img src="images/logo.png" alt="logo"></a></h1>
+        <div class="nav__btn sp">
+          <a href="javascript:void(0)"><img src="images/btn_search_sp.svg" alt="空室検索"></a>
+          <a href="javascript:void(0)"><img src="images/btn_menu_sp.svg" alt="menu"></a>
+          <a href="javascript:void(0)"><img src="images/btn_menu_close.svg" alt="menu"></a>
+        </div>
       </div>
       <div class="gnav">
-        <nav class="nav">
+        <nav class="nav__pc pc">
           <ul>
             <li><a href="#">美を堪能できる施設</a></li>
             <li><a href="#">４種の天然温泉</a></li>
@@ -28,8 +32,32 @@
             <li><a href="#">養老を旅する</a></li>
           </ul>
         </nav>
-        <div class="nav__btn">
+        <div class="nav__btn pc">
           <a href="#"><img src="images/btn_search.svg" alt="空室検索"></a>
+        </div>
+
+        <div class="sp">
+          <nav class="nav">
+            <div class="menu__title">MENU</div>
+            <ul>
+              <li><a href="#">美を堪能できる施設</a></li>
+              <li><span class="parent">４種の天然温泉</span>
+                <ul class="sub">
+                  <li><a href="#">養老汗蒸幕</a></li>
+                </ul>
+              </li>
+              <li><a href="#">南欧を感じるお部屋</a></li>
+              <li><a href="#">体に優しいお食事</a></li>
+              <li><a href="#">日帰りで楽しむ</a></li>
+              <li><a href="#">養老を旅する</a></li>
+              <li><a href="#">イベント一覧</a></li>
+              <li><a href="#">お知らせ一覧</a></li>
+              <li><a href="#">交通・アクセス</a></li>
+              <li><a href="#">リクルート</a></li>
+              <li><a href="#">会社案内・個人情報</a></li>
+              <li><a href="#">お問い合わせ</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
@@ -44,11 +72,11 @@
       <img class="show" src="images/slider1.jpg" alt="mainimage">
     </div>
     <div id="slider_sp" class="main_img sp">
-      <img class="" src="images/slider5.jpg" alt="mainimage">
-      <img class="" src="images/slider4.jpg" alt="mainimage">
-      <img class="" src="images/slider3.jpg" alt="mainimage">
-      <img class="" src="images/slider2.jpg" alt="mainimage">
-      <img class="show" src="images/slider1.jpg" alt="mainimage">
+      <img class="" src="images/slider5_sp.jpg" alt="mainimage">
+      <img class="" src="images/slider4_sp.jpg" alt="mainimage">
+      <img class="" src="images/slider3_sp.jpg" alt="mainimage">
+      <img class="" src="images/slider2_sp.jpg" alt="mainimage">
+      <img class="show" src="images/slider1_sp.jpg" alt="mainimage">
     </div>
   </div>
 
@@ -63,28 +91,38 @@
       <div class="intro">
         <div class="row__mid">
           <div class="col-6 intro__left">
-            <div class="txt__sml">
+            <div class="txt__sml pc">
               <p>当館の温泉は、源泉かけ流しの天然温泉。<br>
-              泉質はナトリウム・カルシウム‐塩化物泉で、<br>
-              健康増進、疲労回復、心の癒しに最適です。<br>
-              雄大な養老山脈を望む露天風呂をはじめ、<br>
-              内湯やサウナ、ボディケアや足つぼ。<br>
-              心安らぐ癒しのひとときをお楽しみください。</p>
+                泉質はナトリウム・カルシウム‐塩化物泉で、<br>
+                健康増進、疲労回復、心の癒しに最適です。<br>
+                雄大な養老山脈を望む露天風呂をはじめ、<br>
+                内湯やサウナ、ボディケアや足つぼ。<br>
+                心安らぐ癒しのひとときをお楽しみください。</p>
             </div>
             <div class="txt__lrg">
               <p>大人に嬉しい<span class="orange">癒やし</span>と<br>
-              <span class="orange">美</span>を心ゆくまで。<br>
-              <span class="green">養老の自然</span>に心が<br>
-              潤わされる。</p>
+                <span class="orange">美</span>を心ゆくまで。<br>
+                <span class="green">養老の自然</span>に心が<br>
+                潤わされる。</p>
             </div>
           </div>
           <div class="col-6 intro__right">
-            <img src="images/top_img01.png" alt="">
+            <img class="pc" src="images/top_img01.png" alt="">
+            <img class="sp" src="images/top_img01_sp.jpg" alt="">
           </div>
         </div>
+        <div class="txt__sml sp">
+          <p>当館の温泉は、源泉かけ流しの天然温泉。</p>
+          <p>泉質はナトリウム・カルシウム‐塩化物泉で、</p>
+          <p>健康増進、疲労回復、心の癒しに最適です。</p>
+          <p>雄大な養老山脈を望む露天風呂をはじめ、</p>
+          <p>内湯やサウナ、ボディケアや足つぼ。</p>
+          <p>心安らぐ癒しのひとときをお楽しみください。</p>
+        </div>
       </div>
-      <div class="center">
-        <img src="images/top_img02.png" alt="">
+      <div class="banner center">
+        <img class="pc" src="images/top_img02.png" alt="">
+        <img class="sp" src="images/top_img02_sp.jpg" alt="">
       </div>
     </div>
   </section>
@@ -99,6 +137,22 @@
                 <p class="txt__top">女性に嬉しい施設が充実</p>
                 <hr>
                 <p class="txt__bot">美を堪能する施設</p>
+              </div>
+              <p class="txt__under">YUSENNOSATO</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="feature_4 sp">
+      <div class="container">
+        <div class="feature__row">
+          <div class="feature__box">
+            <div class="feature__wrap hBody">
+              <div class="feature__txt">
+                <p class="txt__top">食材を厳選した<br>体に優しいお料理</p>
+                <hr>
+                <p class="txt__bot">お料理</p>
               </div>
               <p class="txt__under">YUSENNOSATO</p>
             </div>
@@ -122,7 +176,7 @@
         </div>
       </div>
     </div>
-    <div class="feature_3">
+    <div class="feature_3 pc">
       <div class="container">
         <div class="feature__row">
           <div class="feature__box">
@@ -138,7 +192,7 @@
         </div>
       </div>
     </div>
-    <div class="feature_4">
+    <div class="feature_4 pc">
       <div class="container">
         <div class="feature__row">
           <div class="feature__box">
@@ -211,7 +265,10 @@
         </dl>
       </div>
       <div><a class="btn_round" href="#">お知らせ一覧を見る</a></div>
-      <div class="center"><img src="images/top_img03.png" alt=""></div>
+      <div class="banner center">
+        <img class="pc" src="images/top_img03.png" alt="">
+        <img class="sp" src="images/top_img03_sp.jpg" alt="">
+      </div>
       <div class="btn_toppage">
         <a href="javascript:void(0)"><img src="images/btn_top.png" alt="toppage"></a>
       </div>
@@ -222,7 +279,7 @@
       <div class="container">
         <div class="ft__logo row__cen_mid">
           <p>養老の自然と美容で癒やされる</p>
-          <a href=""><img src="images/logo.svg" alt="logo"></a>
+          <a href=""><img src="images/logo.png" alt="logo"></a>
           <p>心も身体も潤う養老温泉</p>
         </div>
       </div>

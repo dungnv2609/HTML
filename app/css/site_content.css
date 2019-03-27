@@ -74,6 +74,10 @@
   white-space: nowrap;
 }
 
+.banner img {
+  margin: 0 auto;
+}
+
 /* ----- Section 2 ----- */
 .feature_1 {
   background: url(/images/bg_top02.png) center no-repeat;
@@ -201,100 +205,148 @@
   padding: 80px 0 200px;
 }
 
-[type="radio"]:checked,
-[type="radio"]:not(:checked),
-[type="checkbox"]:checked,
-[type="checkbox"]:not(:checked) {
-  position: absolute;
-  left: -9999px;
-}
+/* ----- Media Queries ----- */
+@media screen and (max-width: 767px) {
+  /* ----- Section 1 ----- */
+  .intro {
+    margin-bottom: 70px;
+  }
 
-[type="radio"]:checked + label,
-[type="radio"]:not(:checked) + label {
-  position: relative;
-  padding-left: 30px;
-  cursor: pointer;
-  display: inline-block;
-  margin-right: 15px;
-}
+  .intro > .row__mid {
+    align-items: initial;
+    margin-bottom: 50px;
+  }
 
-[type="radio"]:checked + label:before,
-[type="radio"]:not(:checked) + label:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 18px;
-  height: 18px;
-  border: 1px solid #ddd;
-  border-radius: 100%;
-  background: #fff;
-}
+  .intro__left {
+    margin-right: 0;
+    width: 45%;
+    flex-basis: auto;
+  }
 
-[type="radio"]:checked + label:after {
-  content: '';
-  width: 12px;
-  height: 12px;
-  background: #333;
-  position: absolute;
-  top: 4px;
-  left: 4px;
-  border-radius: 100%;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
+  .intro__left > div {
+    display: block;
+  }
 
-[type="checkbox"]:checked + label,
-[type="checkbox"]:not(:checked) + label {
-  position: relative;
-  padding-left: 40px;
-  padding-top: 8px;
-  cursor: pointer;
-  display: inline-block;
-  margin-right: 15px;
-}
+  .intro__left .txt__lrg {
+    line-height: 1.5;
+  }
 
-[type="checkbox"]:checked + label:before,
-[type="checkbox"]:not(:checked) + label:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 32px;
-  height: 32px;
-  border: 1px solid #ddd;
-  background: #fff;
-}
+  .intro__right {
+    width: 55%;
+    flex-basis: auto;
+  }
 
-[type="checkbox"]:checked + label:after {
-  content: '';
-  position: absolute;
-  left: 12px;
-  top: 8px;
-  width: 7px;
-  height: 12px;
-  border: solid #333;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
+  .intro__right img {
+    width: 100%;
+  }
 
-[type="text"] {
-  width: 100%;
-  font-size: 1.6rem;
-  padding: 9px 5px;
-}
+  .intro .txt__sml {
+    font-size: 2.8rem;
+    line-height: 1.7;
+  }
 
-select {
-  width: 160px;
-  font-size: 1.6rem;
-  line-height: 1;
-  padding: 8px 0 11px;
-}
+  .banner img {
+    width: 100%;
+  }
+  /* ----- Section 2 ----- */
+  .feature_1 {
+    background: url(/images/bg_top02_sp.jpg) center no-repeat;
+    background-size: cover;
+    padding: 0;
+  }
 
-textarea {
-  width: 100%;
-  min-height: 250px;
-  resize: none;
+  .feature_1 .container {
+    padding: 0 !important;
+  }
+
+  .feature_2 {
+    background: url(/images/bg_top03_sp.jpg) center no-repeat;
+    background-size: cover;
+    padding: 0;
+  }
+
+  .feature_2 .container {
+    padding: 0 !important;
+  }
+
+  .feature_3 {
+    background: url(/images/bg_top04_sp.jpg) center no-repeat;
+    background-size: cover;
+    padding: 0;
+  }
+
+  .feature_3 .container {
+    padding: 0 !important;
+  }
+
+  .feature_4 {
+    background: url(/images/bg_top05_sp.jpg) center no-repeat;
+    background-size: cover;
+    padding: 0;
+  }
+
+  .feature_4 .container {
+    padding: 0 !important;
+  }
+
+  .feature_5 {
+    background: url(/images/bg_top06_sp.jpg) center no-repeat;
+    background-size: cover;
+    padding: 0;
+  }
+
+  .feature_5 .container {
+    padding: 0 !important;
+  }
+
+  .feature_6 {
+    background: url(/images/bg_top07_sp.jpg) center no-repeat;
+    background-size: cover;
+    padding: 0;
+  }
+
+  .feature_6 .container {
+    padding: 0 !important;
+  }
+
+  .feature_2 .feature__box,
+  .feature_6 .feature__box {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .feature_5 .feature__box {
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .feature__box {
+    max-width: 330px;
+    padding: 6px;
+  }
+
+  .feature__wrap {
+    padding: 45px 20px 10px;
+  }
+
+  .feature__txt .txt__top {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    padding-top: 58px;
+  }
+
+  .feature__txt .txt__top:before {
+    width: 27px;
+    height: 32px;
+  }
+
+  .feature__txt .txt__bot {
+    font-size: 3.2rem;
+    margin-bottom: 85px;
+    letter-spacing: -.05em;
+  }
+  /* ----- Section 3 ----- */
+  #sec_3 {
+    padding: 65px 0 80px;
+  }
 }

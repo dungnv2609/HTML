@@ -1,5 +1,15 @@
 @import "mixins/custom-mixins";
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, .9);
+  z-index: 10;
+  transition: .2s all ease-in-out;
+}
+
 .header__inner {
   max-width: 1200px;
   margin: 0 auto;
@@ -14,7 +24,7 @@
   align-items: center;
 }
 
-.nav {
+.nav__pc {
   > ul {
     display: flex;
   }
@@ -22,11 +32,9 @@
   li {
     position: relative;
     padding-right: 15px;
-    &:last-child {
-      padding-right: 0;
-    }
 
     &:hover {
+
       a,
       span {
         color: $orange;
@@ -52,6 +60,19 @@
 .nav__btn {
   img {
     height: 73px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__inner {
+    display: block;
+    padding: 0;
+  }
+
+  .nav__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -252,8 +273,4 @@
   .nav li span:before {
     background: #fff;
   }
-}
-
-.nav__btn {
-  padding-left: 15px;
 }
