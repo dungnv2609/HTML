@@ -26,6 +26,10 @@
 
 .ft__bot {
   padding: 100px 0 10px;
+
+  .row {
+    flex-flow: row wrap;
+  }
 }
 
 .ft__info {}
@@ -156,5 +160,28 @@
 
   .btn_toppage {
     display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ft__logo {
+    img {
+      height: 60px;
+    }
+  }
+
+  .ft__bot {
+    padding: 50px 0 20px;
+  }
+
+  .ft__copyright {
+    font-size: 1.8rem;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .ft__copyright {
+    font-size: 1.4rem;
   }
 }

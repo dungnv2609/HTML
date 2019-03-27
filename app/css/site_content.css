@@ -45,9 +45,6 @@
   background: url(/images/bg_trans01.png) center no-repeat;
   background-size: cover;
   margin-right: 66px;
-  padding: 50px 30px 50px 35px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .intro__left > div {
@@ -60,22 +57,18 @@
   margin-right: 15px;
 }
 
-.intro__left .txt__lrg {
-  font-size: 3.6rem;
-  line-height: 1.7;
-}
-
-.intro__left p {
-  -webkit-writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  direction: ltr;
-  white-space: nowrap;
-}
-
-.banner img {
+.banner1 img,
+.banner2 img {
   margin: 0 auto;
+  width: 100%;
+}
+
+.banner1 img {
+  max-width: 640px;
+}
+
+.banner2 img {
+  max-width: 960px;
 }
 
 /* ----- Section 2 ----- */
@@ -227,10 +220,6 @@
     display: block;
   }
 
-  .intro__left .txt__lrg {
-    line-height: 1.5;
-  }
-
   .intro__right {
     width: 55%;
     flex-basis: auto;
@@ -245,8 +234,18 @@
     line-height: 1.7;
   }
 
-  .banner img {
+  .img__txt {
+    flex-basis: 100%;
+  }
+
+  .img__txt img {
     width: 100%;
+    margin: 0 auto;
+  }
+
+  .banner1 img,
+  .banner2 img {
+    max-width: 670px;
   }
   /* ----- Section 2 ----- */
   .feature_1 {
@@ -348,5 +347,80 @@
   /* ----- Section 3 ----- */
   #sec_3 {
     padding: 65px 0 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #sec_1 {
+    padding: 40px 0;
+  }
+
+  .intro {
+    margin-bottom: 40px;
+  }
+
+  .intro > .row__mid {
+    margin-bottom: 40px;
+  }
+
+  .intro .txt__sml {
+    font-size: 2.3rem;
+  }
+
+  .feature__box {
+    max-width: 280px;
+    padding: 5px;
+  }
+
+  .feature__wrap {
+    padding: 35px 15px 10px;
+  }
+
+  .feature__txt .txt__top {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    padding-top: 40px;
+  }
+
+  .feature__txt .txt__top:before {
+    width: 27px;
+    height: 32px;
+  }
+
+  .feature__txt .txt__bot {
+    font-size: 2.6rem;
+    margin-bottom: 60px;
+    letter-spacing: -.05em;
+  }
+
+  #sec_3 {
+    padding: 40px 0 50px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .intro .txt__sml {
+    font-size: 2rem;
+  }
+
+  .feature__box {
+    max-width: 250px;
+    padding: 5px;
+  }
+
+  .feature__wrap {
+    padding: 35px 10px 10px;
+  }
+
+  .feature__txt .txt__top {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    padding-top: 45px;
+  }
+
+  .feature__txt .txt__bot {
+    font-size: 2.6rem;
+    margin-bottom: 65px;
+    letter-spacing: -.05em;
   }
 }

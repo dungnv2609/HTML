@@ -54,6 +54,10 @@ header {
 }
 
 .nav__logo {
+  a {
+    display: block;
+  }
+
   img {
     height: 48px;
   }
@@ -63,6 +67,14 @@ header {
   img {
     height: 73px;
   }
+}
+
+.img_show {
+  display: inline-block;
+}
+
+.img_hide {
+  display: none;
 }
 
 @media screen and (max-width: 767px) {
@@ -165,31 +177,64 @@ header {
       }
     }
   }
-}
 
-/* ----- sub lists ----- */
+  /* ----- sub lists ----- */
 
-.sub {
-  position: absolute;
-  left: -9999px;
-  z-index: 100;
+  .sub {
+    position: absolute;
+    left: -9999px;
+    z-index: 100;
 
-  li {
-    padding: 0;
+    li {
+      padding: 0;
 
-    a {
-      display: block;
-      position: relative;
-      z-index: 100;
-      padding-left: 30px;
+      a {
+        display: block;
+        position: relative;
+        z-index: 100;
+        padding-left: 30px;
+      }
     }
   }
 }
 
-.img_show {
-  display: inline-block;
-}
+@media screen and (max-width: 600px) {
+  .nav__logo {
+    h1 {
+      img {
+        height: 40px;
+      }
+    }
+  }
 
-.img_hide {
-  display: none;
+  .nav__btn {
+    img {
+      height: 60px;
+    }
+  }
+
+  .menu__title {
+    font-size: 3.5rem;
+    padding: 8px 0 17px;
+  }
+
+  .nav {
+    li {
+
+      a,
+      span {
+        font-size: 2.1rem;
+        padding: 14px 15px 20px;
+      }
+
+      span:before,
+      span:after {
+        top: 20px;
+      }
+    }
+  }
+
+  .sub li a {
+    padding-left: 30px;
+  }
 }

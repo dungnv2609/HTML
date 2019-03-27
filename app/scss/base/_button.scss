@@ -75,5 +75,40 @@ $btn_ls: 0.1em; // button letter-spacing
 }
 
 @media screen and (max-width: 767px) {
-  
+  .btn_round {
+    &:before {
+      @include abs-pos(50%, 26.5%);
+    }
+
+    &:after {
+      @include abs-pos(50%, 27.5%);
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .btn_round {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    padding: 16px 10px 22px;
+    &:before {
+      @include abs-pos(50%, 20.5%);
+    }
+
+    &:after {
+      @include abs-pos(50%, 22%);
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .btn_round {
+    &:before {
+      @include abs-pos(50%, 13.5%);
+    }
+
+    &:after {
+      @include abs-pos(50%, 15.5%);
+    }
+  }
 }
