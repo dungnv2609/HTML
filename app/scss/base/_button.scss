@@ -74,6 +74,20 @@ $btn_ls: 0.1em; // button letter-spacing
   padding: 9px 10px 16px;
 }
 
+.mac-os {
+  .btn_round {
+    padding: 23px 10px 27px;
+  }
+
+  .btn_style1 {
+    padding: 14px 10px 15px;
+  }
+
+  .btn_style2 {
+    padding: 12px 10px 13px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .btn_round {
     &:before {
@@ -91,6 +105,7 @@ $btn_ls: 0.1em; // button letter-spacing
     font-size: 2rem;
     margin-bottom: 40px;
     padding: 16px 10px 22px;
+
     &:before {
       @include abs-pos(50%, 20.5%);
     }

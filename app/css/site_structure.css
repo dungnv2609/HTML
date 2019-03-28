@@ -258,6 +258,7 @@ header {
 
   .nav ul {
     padding: 0 20px;
+    max-height: 500px;
     overflow-y: scroll;
   }
 
@@ -461,6 +462,18 @@ header {
   font-size: 1.8rem;
   border: 2px solid #fff;
   padding: 9px 10px 16px;
+}
+
+.mac-os .btn_round {
+  padding: 23px 10px 27px;
+}
+
+.mac-os .btn_style1 {
+  padding: 14px 10px 15px;
+}
+
+.mac-os .btn_style2 {
+  padding: 12px 10px 13px;
 }
 
 @media screen and (max-width: 767px) {
