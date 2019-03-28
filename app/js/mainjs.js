@@ -23,9 +23,11 @@ $(document).ready(function () {
       });
     }
   });
-  
+
   var screenH = window.screen.availHeight;
-  if(ww <= 767) {
+  if (ww <= 767) {
+    $('.nav > ul').css('max-height', screenH - 180);
+  } else if (ww <= 600) {
     $('.nav > ul').css('max-height', screenH - 120);
   }
 });
@@ -43,9 +45,11 @@ function adjustMenu(ww) {
       if ($(".toggleMenu").hasClass("active")) {
         $('.toggleMenu .img_show').css('display', 'none');
         $('.toggleMenu .img_hide').css('display', 'inline-block');
+        $('body').css('overflow', 'hidden');
       } else {
         $('.toggleMenu .img_show').css('display', 'inline-block');
         $('.toggleMenu .img_hide').css('display', 'none');
+        $('body').css('overflow', 'auto');
       }
     });
     $(".nav li").unbind('mouseenter mouseleave');
@@ -104,6 +108,7 @@ $(window).bind('resize orientationchange', function () {
   $(".nav li").removeClass('hover');
   $('.toggleMenu .img_show').css('display', 'inline-block');
   $('.toggleMenu .img_hide').css('display', 'none');
+  $('body').css('overflow', 'auto');
 });
 
 /*$(window).on("deviceorientation", function (event) {
