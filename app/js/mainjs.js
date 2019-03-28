@@ -23,6 +23,11 @@ $(document).ready(function () {
       });
     }
   });
+  
+  var screenH = window.screen.availHeight;
+  if(ww <= 767) {
+    $('.nav > ul').css('max-height', screenH - 120);
+  }
 });
 
 function adjustMenu(ww) {
@@ -95,16 +100,20 @@ $(window).bind('resize orientationchange', function () {
   //ww = document.body.clientWidth;
   ww = window.innerWidth;
   adjustMenu(ww);
+  $(".toggleMenu").removeClass("active");
+  $(".nav li").removeClass('hover');
+  $('.toggleMenu .img_show').css('display', 'inline-block');
+  $('.toggleMenu .img_hide').css('display', 'none');
 });
 
-$(window).on("deviceorientation", function (event) {
+/*$(window).on("deviceorientation", function (event) {
   if (window.matchMedia("(orientation: portrait)").matches) {
     $('.nav > ul').css('max-height', '500px');
   }
   if (window.matchMedia("(orientation: landscape)").matches) {
     $('.nav > ul').css('max-height', '300px');
   }
-});
+});*/
 
 var ua = navigator.userAgent;
 if (ua.search(/Android/) != -1 || ua.search(/iPad/) != -1 || ua.search(/iPhone/) != -1) {

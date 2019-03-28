@@ -55,6 +55,10 @@
     display: flex;
     margin-bottom: 55px;
 
+    &:first-child {
+      margin-bottom: 33px;
+    }
+
     li {
       font-size: 1.2rem;
       margin-right: 20px;
@@ -63,6 +67,10 @@
       ul {
         margin-top: 10px;
         margin-bottom: 0;
+
+        li {
+          margin-right: 0;
+        }
       }
 
       a {
@@ -181,6 +189,6 @@
 
 @media screen and (max-width: 450px) {
   .ft__copyright {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
