@@ -25,14 +25,6 @@ $(document).ready(function () {
   });
 });
 
-function change() {
-  var img1 = "images/btn_menu_sp.svg",
-    img2 = "images/btn_menu_close.svg";
-  var imgElement = document.getElementById('test');
-
-  imgElement.src = (imgElement.src === img1) ? img2 : img1;
-}
-
 function adjustMenu(ww) {
   if (ww <= 767) {
     $(".toggleMenu .img_show").css("display", "inline-block");
@@ -105,6 +97,14 @@ $(window).bind('resize orientationchange', function () {
   adjustMenu(ww);
 });
 
+$(window).on("deviceorientation", function (event) {
+  if (window.matchMedia("(orientation: portrait)").matches) {
+    $('.nav > ul').css('max-height', '500px');
+  }
+  if (window.matchMedia("(orientation: landscape)").matches) {
+    $('.nav > ul').css('max-height', '300px');
+  }
+});
 
 var ua = navigator.userAgent;
 if (ua.search(/Android/) != -1 || ua.search(/iPad/) != -1 || ua.search(/iPhone/) != -1) {
@@ -251,3 +251,6 @@ $(window).on('load', function () {
 $('a[href^="#"]').click(function (e) {
   e.preventDefault();
 });
+
+var feed_sec1 = "https://blog.vogue.co.jp/rss.xml";
+var feed_sec3 = "https://blog.vogue.co.jp/rss.xml";

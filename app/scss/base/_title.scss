@@ -91,7 +91,7 @@ $sub_fs: 2rem;
   justify-content: flex-end;
 
   li {
-    margin-right: 30px;
+    margin-right: 25px;
 
     &:last-child {
       margin-right: 0;
@@ -187,7 +187,7 @@ $sub_fs: 2rem;
 
   .social__list {
     li {
-      margin-right: 30px;
+      margin-right: 20px;
 
       img {
         height: 50px;
@@ -203,6 +203,14 @@ $sub_fs: 2rem;
       &:before,
       &:after {
         width: 100%;
+      }
+    }
+  }
+
+  .social__list {
+    li {
+      img {
+        height: 40px;
       }
     }
   }
