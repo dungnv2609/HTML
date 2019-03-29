@@ -17,7 +17,7 @@ html {
   font-family: "Hannari", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 300;
   font-size: 62.5%;
-  scroll-behavior: smooth;
+  /*scroll-behavior: smooth;*/;
 }
 
 body {
@@ -265,7 +265,6 @@ header {
 
   .nav ul {
     padding: 0 20px;
-    max-height: 100vh;
     overflow-y: scroll;
     z-index: 100;
   }

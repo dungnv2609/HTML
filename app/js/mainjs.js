@@ -23,33 +23,37 @@ $(document).ready(function () {
       });
     }
   });
-
-  var screenH = window.screen.availHeight;
-  if (ww <= 767) {
-    $('.nav > ul').css('max-height', screenH - 180);
-  } else if (ww <= 600) {
-    $('.nav > ul').css('max-height', screenH - 120);
-  }
 });
 
 function adjustMenu(ww) {
   if (ww <= 767) {
-    $(".toggleMenu .img_show").css("display", "inline-block");
+    //    $(".toggleMenu .img_show").css("display", "inline-block");
     if (!$(".toggleMenu").hasClass("active")) {
       $(".nav").hide();
     } else {
       $(".nav").show();
     }
     $('.toggleMenu').click(function () {
+      var barH = screen.height - window.innerHeight;
+      var setH = window.innerHeight - barH;
+
       $(".nav li").removeClass('hover');
       if ($(".toggleMenu").hasClass("active")) {
         $('.toggleMenu .img_show').css('display', 'none');
         $('.toggleMenu .img_hide').css('display', 'inline-block');
-        $('body').css('overflow', 'hidden');
+        $('body').css({
+          'overflow': 'hidden',
+          'position': 'fixed'
+        });
+        $('.nav').css('height', '100vh');
+        $('.nav > ul').css('height', setH - 50);
       } else {
         $('.toggleMenu .img_show').css('display', 'inline-block');
         $('.toggleMenu .img_hide').css('display', 'none');
-        $('body').css('overflow', 'auto');
+        $('body').css({
+          'overflow': 'auto',
+          'position': 'relative'
+        });
       }
     });
     $(".nav li").unbind('mouseenter mouseleave');
@@ -104,11 +108,15 @@ $(window).bind('resize orientationchange', function () {
   //ww = document.body.clientWidth;
   ww = window.innerWidth;
   adjustMenu(ww);
-  $(".toggleMenu").removeClass("active");
+  /*$(".toggleMenu").removeClass("active")*/
+  ;
   $(".nav li").removeClass('hover');
-  $('.toggleMenu .img_show').css('display', 'inline-block');
-  $('.toggleMenu .img_hide').css('display', 'none');
-  $('body').css('overflow', 'auto');
+  var barH = screen.height - window.innerHeight;
+  var setH = window.innerHeight - barH;
+  if ($(".toggleMenu").hasClass("active")) {
+    $('.nav').css('height', '100vh');
+    $('.nav > ul').css('height', setH - 50);
+  }
 });
 
 /*$(window).on("deviceorientation", function (event) {
@@ -224,7 +232,7 @@ $(document).ready(function () {
   $('.btn_toppage img').click(function () {
     $('html, body').animate({
       scrollTop: 0
-    }, 0);
+    }, 2000);
     return false;
   });
 
