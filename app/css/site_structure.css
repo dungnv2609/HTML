@@ -17,7 +17,6 @@ html {
   font-family: "Hannari", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 300;
   font-size: 62.5%;
-  /*scroll-behavior: smooth;*/;
 }
 
 body {
@@ -136,6 +135,12 @@ table {
   flex-basis: 70%;
 }
 
+@media screen and (max-width: 1260px) {
+  .container {
+    padding: 0 30px !important;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .container {
     padding: 0 20px !important;
@@ -202,6 +207,10 @@ header {
   color: #333;
 }
 
+.nav__logo {
+  margin-right: 15px;
+}
+
 .nav__logo a {
   display: block;
 }
@@ -222,6 +231,13 @@ header {
   display: none;
 }
 
+@media screen and (max-width: 1260px) {
+  .header__inner {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .header__inner {
     display: block;
@@ -232,6 +248,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 0;
   }
 
   .nav__logo h1 {
@@ -571,7 +588,7 @@ header {
   position: absolute;
   top: 4px;
   right: 0;
-  background: url(/images/ic_02.svg) center no-repeat;
+  background: url(../images/ic_02.svg) center no-repeat;
   width: 43px;
   height: 38px;
 }

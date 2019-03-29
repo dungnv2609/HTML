@@ -27,7 +27,7 @@
 
 /* ----- Section 1 ----- */
 #sec_1 {
-  background: url(/images/bg_top01.png) center top no-repeat;
+  background: url(../images/bg_top01.png) center top no-repeat;
   background-size: cover;
   padding: 80px 0;
 }
@@ -42,7 +42,7 @@
 }
 
 .intro__left {
-  background: url(/images/bg_trans01.png) center no-repeat;
+  background: url(../images/bg_trans01.png) center no-repeat;
   background-size: cover;
   margin-right: 66px;
 }
@@ -72,8 +72,20 @@
 }
 
 /* ----- Section 2 ----- */
+#sec_2 a {
+  display: block;
+  transition: .2s all ease;
+}
+
+#sec_2 a:hover {
+  -webkit-box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.5);
+  opacity: .9;
+}
+
 .feature_1 {
-  background: url(/images/bg_top02.png) center no-repeat;
+  background: url(../images/bg_top02.png) center no-repeat;
   background-size: cover;
   padding: 100px 0;
 }
@@ -84,7 +96,7 @@
 }
 
 .feature_2 {
-  background: url(/images/bg_top03.png) center no-repeat;
+  background: url(../images/bg_top03.png) center no-repeat;
   background-size: cover;
   padding: 100px 0;
 }
@@ -95,7 +107,7 @@
 }
 
 .feature_3 {
-  background: url(/images/bg_top04.png) center no-repeat;
+  background: url(../images/bg_top04.png) center no-repeat;
   background-size: cover;
   padding: 100px 0;
 }
@@ -106,7 +118,7 @@
 }
 
 .feature_4 {
-  background: url(/images/bg_top05.png) center no-repeat;
+  background: url(../images/bg_top05.png) center no-repeat;
   background-size: cover;
   padding: 100px 0;
 }
@@ -117,7 +129,7 @@
 }
 
 .feature_5 {
-  background: url(/images/bg_top06.png) center no-repeat;
+  background: url(../images/bg_top06.png) center no-repeat;
   background-size: cover;
   padding: 100px 0;
 }
@@ -128,7 +140,7 @@
 }
 
 .feature_6 {
-  background: url(/images/bg_top07.png) center no-repeat;
+  background: url(../images/bg_top07.png) center no-repeat;
   background-size: cover;
   padding: 100px 0;
 }
@@ -139,7 +151,7 @@
 }
 
 .feature__box {
-  background: url(/images/bg_trans02.png) center no-repeat;
+  background: url(../images/bg_trans02.png) center no-repeat;
   background-size: cover;
   max-width: 400px;
   padding: 9px;
@@ -176,7 +188,7 @@
   transform: translateX(-50%);
   width: 33px;
   height: 38px;
-  background: url(/images/ic_01.svg) center no-repeat;
+  background: url(../images/ic_01.svg) center no-repeat;
 }
 
 .feature__txt .txt__bot {
@@ -193,7 +205,7 @@
 
 /* ----- Section 3 ----- */
 #sec_3 {
-  background: url(/images/bg_top08.png) center top no-repeat;
+  background: url(../images/bg_top08.png) center top no-repeat;
   background-size: cover;
   padding: 80px 0 200px;
 }
@@ -249,7 +261,7 @@
   }
   /* ----- Section 2 ----- */
   .feature_1 {
-    background: url(/images/bg_top02_sp.jpg) center no-repeat;
+    background: url(../images/bg_top02_sp.jpg) center no-repeat;
     background-size: cover;
     padding: 0;
   }
@@ -259,7 +271,7 @@
   }
 
   .feature_2 {
-    background: url(/images/bg_top03_sp.jpg) center no-repeat;
+    background: url(../images/bg_top03_sp.jpg) center no-repeat;
     background-size: cover;
     padding: 0;
   }
@@ -269,7 +281,7 @@
   }
 
   .feature_3 {
-    background: url(/images/bg_top04_sp.jpg) center no-repeat;
+    background: url(../images/bg_top04_sp.jpg) center no-repeat;
     background-size: cover;
     padding: 0;
   }
@@ -279,7 +291,7 @@
   }
 
   .feature_4 {
-    background: url(/images/bg_top05_sp.jpg) center no-repeat;
+    background: url(../images/bg_top05_sp.jpg) center no-repeat;
     background-size: cover;
     padding: 0;
   }
@@ -289,7 +301,7 @@
   }
 
   .feature_5 {
-    background: url(/images/bg_top06_sp.jpg) center no-repeat;
+    background: url(../images/bg_top06_sp.jpg) center no-repeat;
     background-size: cover;
     padding: 0;
   }
@@ -299,7 +311,7 @@
   }
 
   .feature_6 {
-    background: url(/images/bg_top07_sp.jpg) center no-repeat;
+    background: url(../images/bg_top07_sp.jpg) center no-repeat;
     background-size: cover;
     padding: 0;
   }

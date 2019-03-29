@@ -78,9 +78,19 @@
 
 /* ----- Section 2 ----- */
 
-@include background;
+#sec_2 a {
+  display: block;
+  transition: .2s all ease;
 
-.feature__row {}
+  &:hover {
+    -webkit-box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 3px 3px 10px 5px rgba(0, 0, 0, 0.5);
+    opacity: .9;
+  }
+}
+
+@include background;
 
 .feature__box {
   background: url(/images/bg_trans02.png) center no-repeat;
@@ -196,6 +206,7 @@
   }
 
   /* ----- Section 2 ----- */
+
   @include background_sp;
 
   .feature_2 .feature__box,

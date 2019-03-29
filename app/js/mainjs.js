@@ -108,8 +108,7 @@ $(window).bind('resize orientationchange', function () {
   //ww = document.body.clientWidth;
   ww = window.innerWidth;
   adjustMenu(ww);
-  /*$(".toggleMenu").removeClass("active")*/
-  ;
+  /*$(".toggleMenu").removeClass("active");*/
   $(".nav li").removeClass('hover');
   var barH = screen.height - window.innerHeight;
   var setH = window.innerHeight - barH;

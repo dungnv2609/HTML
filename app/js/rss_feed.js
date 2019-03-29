@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	//feed to parse
-	rssRender(feed_sec1, '#sec1_rss',3);
+	rssRender(feed_sec1, '#sec1_rss',1);
 	rssRender(feed_sec3, '#sec3_rss',5)
 	
 });
