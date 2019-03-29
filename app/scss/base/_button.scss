@@ -11,6 +11,7 @@ $btn_ls: 0.1em; // button letter-spacing
   width: 100%;
   margin: 0 auto 20px;
   text-align: center;
+  @include transition(.1s, ease);
 }
 
 .btn_round {
@@ -19,15 +20,12 @@ $btn_ls: 0.1em; // button letter-spacing
   color: $white;
   font-size: 2.2rem;
   line-height: $btn_lh;
-  transition: $btn_trans;
   padding: 21px 10px 27px;
   letter-spacing: $btn_ls;
   position: relative;
   max-width: 600px;
   margin-bottom: 80px;
-  -webkit-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
+  @include box-shadow(3px, 3px, 10px, 0px, rgba(0, 0, 0, .5));
   @include border-radius(8px);
 
   &:before {
@@ -72,6 +70,11 @@ $btn_ls: 0.1em; // button letter-spacing
   font-size: 1.8rem;
   border: 2px solid $white;
   padding: 9px 10px 16px;
+
+  &:hover {
+    background: $white;
+    color: $green !important;
+  }
 }
 
 .mac-os {

@@ -93,56 +93,11 @@
 @include background;
 
 .feature__box {
-  background: url(/images/bg_trans02.png) center no-repeat;
-  background-size: cover;
   max-width: 400px;
-  padding: 9px;
-}
 
-.feature__wrap {
-  border: 2px solid $white;
-  padding: 45px 25px 10px 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.feature__txt {
-  color: $white;
-  text-align: center;
-  align-self: stretch;
-
-  .txt__top {
-    font-size: 2.2rem;
-    line-height: 2;
-    margin-bottom: 5px;
-    padding-top: 60px;
-    position: relative;
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 33px;
-      height: 38px;
-      background: url(/images/ic_01.svg) center no-repeat;
-    }
+  img {
+    width: 100%;
   }
-
-  .txt__bot {
-    font-size: 3.6rem;
-    margin-top: 4px;
-    margin-bottom: 105px;
-    letter-spacing: 0;
-  }
-}
-
-.txt__under {
-  font-size: 1.4rem;
-  color: $white;
 }
 
 /* ----- Section 3 ----- */
@@ -223,30 +178,6 @@
   .feature {
     &__box {
       max-width: 330px;
-      padding: 6px;
-    }
-
-    &__wrap {
-      padding: 45px 20px 10px;
-    }
-
-    &__txt {
-      .txt__top {
-        font-size: 1.8rem;
-        line-height: 1.4;
-        padding-top: 58px;
-
-        &:before {
-          width: 27px;
-          height: 32px;
-        }
-      }
-
-      .txt__bot {
-        font-size: 3.2rem;
-        margin-bottom: 85px;
-        letter-spacing: -.05em;
-      }
     }
   }
 
@@ -276,30 +207,6 @@
   .feature {
     &__box {
       max-width: 280px;
-      padding: 5px;
-    }
-
-    &__wrap {
-      padding: 35px 15px 10px;
-    }
-
-    &__txt {
-      .txt__top {
-        font-size: 1.5rem;
-        line-height: 1.4;
-        padding-top: 40px;
-
-        &:before {
-          width: 27px;
-          height: 32px;
-        }
-      }
-
-      .txt__bot {
-        font-size: 2.6rem;
-        margin-bottom: 60px;
-        letter-spacing: -.05em;
-      }
     }
   }
 
@@ -318,36 +225,6 @@
   .feature {
     &__box {
       max-width: 180px;
-      padding: 3px;
     }
-
-    &__wrap {
-      border: 1px solid $white;
-      padding: 35px 5px 10px;
-    }
-
-    &__txt {
-      .txt__top {
-        font-size: 1.2rem;
-        line-height: 1.4;
-        padding-top: 40px;
-        letter-spacing: -.05em;
-
-        &:before {
-          width: 22px;
-          height: 27px;
-        }
-      }
-
-      .txt__bot {
-        font-size: 1.8rem;
-        margin-bottom: 40px;
-        letter-spacing: -.05em;
-      }
-    }
-  }
-
-  .txt__under {
-    font-size: 1.2rem;
   }
 }

@@ -73,6 +73,10 @@
   height: $height;
 }
 
+@mixin box-shadow($h_length, $v_length, $blur_radius, $spread_radius, $color) {
+  -webkit-box-shadow: $h_length $v_length $blur_radius $spread_radius $color;
+}
+
 @mixin transition($time, $effect) {
   -webkit-transition: all $time $effect;
           transition: all $time $effect;

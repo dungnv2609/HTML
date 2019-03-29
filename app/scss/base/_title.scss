@@ -45,7 +45,7 @@ $sub_fs: 2rem;
     &:after {
       content: "";
       position: absolute;
-      height: 2px;
+      height: 1px;
       width: 200%;
       background: #333;
       top: 25px;
@@ -69,8 +69,9 @@ $sub_fs: 2rem;
   font-family: $font-family-alt;
 
   dl {
-    padding: 26px 180px;
+    padding: 22px 180px;
     width: 100%;
+    line-height: 1.5;
 
     dt {
       float: left;
