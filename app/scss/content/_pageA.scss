@@ -97,3 +97,31 @@
     }
   }
 }
+
+h2.heading__title {
+  padding: 25px 10px;
+  background: $green;
+  font-size: $font-size-h2;
+  color: $white;
+  text-align: center;
+  line-height: 1;
+  font-weight: normal;
+}
+
+.list__wrapper {
+  padding: 30px;
+  background: $white;
+  font-size: 1.5rem;
+  line-height: 1.7;
+  margin-bottom: 60px;
+}
+
+.food__menu {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.food__item {
+}
