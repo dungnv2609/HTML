@@ -414,9 +414,8 @@
   align-items: center;
 }
 
-.content__box .col_sub span,
-    .content__box .col_sub p {
-  float: left;
+.content__box .col_sub div p {
+  line-height: 2.2;
 }
 
 .content__box .box__item span {

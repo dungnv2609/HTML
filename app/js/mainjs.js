@@ -241,35 +241,33 @@ $(document).ready(function () {
 $(window).on('load', function () {
   $('#slider_pc').height($('#slider_pc img').height());
   $('#slider_pc img').css("position", "absolute");
+  // $('#slider_pc img:not(.show)').css("display", "none");
   $('#slider_sp').height($('#slider_sp img').height());
   $('#slider_sp img').css("position", "absolute");
+  // $('#slider_sp img:not(.show)').css("display", "none");
   $(window).on("resize", function () {
     $('#slider_pc').height($('#slider_pc img').height());
     $('#slider_sp').height($('#slider_sp img').height());
   });
-  setTimeout(slideShowPc, 2000);
-  setTimeout(slideShowSp, 2000);
+  setTimeout(slideShowPc, 6000);
+  setTimeout(slideShowSp, 6000);
 
   function slideShowPc() {
     var current = $('#slider_pc .show');
-    var next = current.next().length ?
-      current.next() : current.siblings().first();
+    var next = current.next().length ? current.next() : current.siblings().first();
+    current.fadeOut(8000).removeClass('show');
+    next.fadeIn(8000).addClass('show');
 
-    current.fadeOut(4000).removeClass('show');
-    next.fadeIn(4000).addClass('show');
-
-    setTimeout(slideShowPc, 6000);
+    setTimeout(slideShowPc, 12000);
   };
 
   function slideShowSp() {
     var current = $('#slider_sp .show');
-    var next = current.next().length ?
-      current.next() : current.siblings().first();
+    var next = current.next().length ? current.next() : current.siblings().first();
+    current.fadeOut(8000).removeClass('show');
+    next.fadeIn(8000).addClass('show');
 
-    current.fadeOut(4000).removeClass('show');
-    next.fadeIn(4000).addClass('show');
-
-    setTimeout(slideShowSp, 6000);
+    setTimeout(slideShowSp, 12000);
   };
 });
 

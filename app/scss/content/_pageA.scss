@@ -85,9 +85,10 @@
     display: flex;
     align-items: center;
 
-    span,
-    p {
-      float: left;
+    div {
+      p {
+        line-height: 2.2;
+      }
     }
   }
 

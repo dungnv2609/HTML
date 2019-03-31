@@ -250,6 +250,20 @@ header {
   color: #333;
 }
 
+.nav__pc a.active {
+  color: #e18a50;
+  position: relative;
+}
+
+.nav__pc a.active:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  border-bottom: 1px solid #e18a50;
+  width: 100%;
+}
+
 .nav__logo {
   margin-right: 15px;
 }
@@ -306,6 +320,7 @@ header {
 
   .nav__btn img {
     height: 80px;
+    width: auto;
   }
 
   .gnav {
@@ -406,10 +421,12 @@ header {
 @media screen and (max-width: 600px) {
   .nav__logo h1 img {
     height: 40px;
+    width: auto;
   }
 
   .nav__btn img {
     height: 60px;
+    width: auto;
   }
 
   .menu__title {
@@ -433,19 +450,24 @@ header {
   }
 }
 
-.banner__img {
-  position: relative;
-  background: url();
+#mainimage {
+  margin-top: 100px;
 }
 
-.banner__text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  text-align: center;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+.home #mainimage {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 767px) {
+  #mainimage {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #mainimage {
+    margin-top: 60px;
+  }
 }
 
 /* ----- Footer Top page ----- */
@@ -483,6 +505,7 @@ footer {
 }
 
 .ft__address p {
+  font-family: "Hannari", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 1.4rem;
   margin-bottom: 5px;
   letter-spacing: .15em;
@@ -726,7 +749,7 @@ footer {
   color: #fff;
   font-size: 2.4rem;
   position: relative;
-  padding: 0 5px 44px 5px;
+  padding: 6px 5px 38px 5px;
   -webkit-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
@@ -914,7 +937,8 @@ footer {
 }
 
 .title h2.ic_flower {
-  padding-right: 45px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .title h2.ic_flower:after {
@@ -1065,6 +1089,7 @@ footer {
   padding-right: 25px;
   margin-right: 10px;
   position: relative;
+  font-size: 1.3rem;
 }
 
 #breadcum ul li:after {
