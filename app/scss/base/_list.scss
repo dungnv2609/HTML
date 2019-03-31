@@ -74,6 +74,37 @@
   }
 }
 
+#breadcum {
+  font-family: $font-family-alt;
+  padding: 25px 0 80px;
+
+  ul {
+    display: flex;
+
+    li {
+      padding-right: 25px;
+      margin-right: 10px;
+      position: relative;
+
+      &:after {
+        content: '>';
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+        margin-right: 0;
+
+        &:after {
+          content: '';
+        }
+      }
+    }
+  }
+}
+
 .box_sd {
   display: block;
   margin-bottom: 80px;

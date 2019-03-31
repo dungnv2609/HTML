@@ -858,27 +858,6 @@ footer {
   margin-bottom: 45px;
 }
 
-.title h2 {
-  font-size: 3.6rem;
-  font-weight: normal;
-  color: #527c68;
-  letter-spacing: 0;
-  position: relative;
-  padding-right: 55px;
-  display: inline-block;
-  margin: 0 25px;
-}
-
-.title h2:after {
-  content: '';
-  position: absolute;
-  top: 4px;
-  right: 0;
-  background: url(/images/ic_02.svg) center no-repeat;
-  width: 43px;
-  height: 38px;
-}
-
 .title span {
   font-size: 2rem;
   color: #333;
@@ -905,6 +884,50 @@ footer {
 .title span:after {
   left: 100%;
   margin-left: 20px;
+}
+
+.title h2 {
+  font-size: 3.6rem;
+  font-weight: normal;
+  color: #527c68;
+  letter-spacing: 0;
+  position: relative;
+  display: inline-block;
+  margin: 0 25px;
+}
+
+.title h2:after {
+  content: '';
+  position: absolute;
+}
+
+.title h2.ic_info {
+  padding-right: 55px;
+}
+
+.title h2.ic_info:after {
+  top: 4px;
+  right: 0;
+  background: url(/images/ic_02.svg) center no-repeat;
+  width: 43px;
+  height: 38px;
+}
+
+.title h2.ic_flower {
+  padding-right: 45px;
+}
+
+.title h2.ic_flower:after {
+  top: 8px;
+  right: 0px;
+  background: url(/images/ic_03.svg) center no-repeat;
+  width: 33px;
+  height: 38px;
+}
+
+.title h2.ic_flower span:before,
+      .title h2.ic_flower span:after {
+  width: 100%;
 }
 
 @media screen and (max-width: 767px) {
@@ -1027,6 +1050,37 @@ footer {
 
 .img__list ul li:last-child {
   margin-right: 0;
+}
+
+#breadcum {
+  font-family: "KozukaGothicPrN-R", Arial, sans-serif;
+  padding: 25px 0 80px;
+}
+
+#breadcum ul {
+  display: flex;
+}
+
+#breadcum ul li {
+  padding-right: 25px;
+  margin-right: 10px;
+  position: relative;
+}
+
+#breadcum ul li:after {
+  content: '>';
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#breadcum ul li:last-child {
+  padding-right: 0;
+  margin-right: 0;
+}
+
+#breadcum ul li:last-child:after {
+  content: '';
 }
 
 .box_sd {

@@ -252,9 +252,9 @@ $(window).on('load', function () {
 
   function slideShowPc() {
     var current = $('#slider_pc .show');
-    var next = current.next().length ? 
-        current.next() : current.siblings().first();
-      
+    var next = current.next().length ?
+      current.next() : current.siblings().first();
+
     current.fadeOut(4000).removeClass('show');
     next.fadeIn(4000).addClass('show');
 
@@ -263,9 +263,9 @@ $(window).on('load', function () {
 
   function slideShowSp() {
     var current = $('#slider_sp .show');
-    var next = current.next().length ? 
-        current.next() : current.siblings().first();
-      
+    var next = current.next().length ?
+      current.next() : current.siblings().first();
+
     current.fadeOut(4000).removeClass('show');
     next.fadeIn(4000).addClass('show');
 
