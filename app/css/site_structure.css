@@ -770,7 +770,7 @@ header {
 }
 
 /* ----- Footer Top page ----- */
-.home footer {
+footer {
   background-color: #527c68;
   color: #fff;
 }
@@ -901,7 +901,7 @@ header {
 .btn_toppage img {
   position: absolute;
   right: 0;
-  bottom: -180px;
+  bottom: 20px;
 }
 
 @media screen and (max-width: 767px) {
