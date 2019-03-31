@@ -50,9 +50,6 @@ img {
   display: inline-block;
   vertical-align: middle;
   width: 100%;
-  -webkit-transition: .1s all ease-in-out;
-  -o-transition: .1s all ease-in-out;
-  transition: .1s all ease-in-out;
 }
 
 table {
@@ -112,6 +109,14 @@ p {
 
   .sp {
     display: block !important;
+  }
+
+  main {
+    padding: 80px 0 0;
+  }
+
+  .pd-bt {
+    padding-bottom: 80px;
   }
 }
 
@@ -193,6 +198,12 @@ p {
   .col-6,
   .col-8 {
     flex-basis: 100%;
+  }
+
+  .col-3,
+  .col-5,
+  .col-9 {
+    width: 100%;
   }
 }
 
@@ -562,6 +573,10 @@ footer {
   margin-top: 15px;
 }
 
+.ft__copyright p {
+  font-family: "Hannari", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
 /* ----- Footer Child page ----- */
 .ft__inner {
   max-width: 1280px;
@@ -750,6 +765,8 @@ footer {
   font-size: 2.4rem;
   position: relative;
   padding: 6px 5px 38px 5px;
+  text-shadow: 2px 2px 5px #000;
+  margin-bottom: 0;
   -webkit-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
@@ -849,6 +866,11 @@ footer {
     left: auto;
     position: absolute;
   }
+
+  .btn_style3 {
+    font-size: 1.8rem;
+    letter-spacing: 0;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -872,6 +894,10 @@ footer {
     bottom: auto;
     left: auto;
     position: absolute;
+  }
+
+  .btn_style3 {
+    font-size: 1.4rem;
   }
 }
 
@@ -983,6 +1009,17 @@ footer {
     height: 28px;
   }
 
+  .title h2.ic_flower:after {
+    top: 10px;
+    width: 28px;
+    height: 33px;
+  }
+
+  .title h2.ic_flower span:before,
+      .title h2.ic_flower span:after {
+    width: 50%;
+  }
+
   .title span:before, .title span:after {
     width: 140%;
   }
@@ -997,6 +1034,27 @@ footer {
     top: 5px;
     width: 28px;
     height: 23px;
+  }
+
+  .title h2.ic_flower {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: 30px;
+  }
+
+  .title h2.ic_flower p {
+    margin-right: -30px;
+  }
+
+  .title h2.ic_flower:after {
+    top: 2px;
+    width: 23px;
+    height: 28px;
+  }
+
+  .title h2.ic_flower span:before,
+      .title h2.ic_flower span:after {
+    width: 40%;
   }
 
   .title span:before, .title span:after {
@@ -1056,6 +1114,7 @@ footer {
   flex-basis: 22.5%;
   max-width: 270px;
   margin-right: 3.3%;
+  margin-bottom: 20px;
 }
 
 .btn__list li:last-child {
@@ -1074,6 +1133,80 @@ footer {
 
 .img__list ul li:last-child {
   margin-right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .news__list {
+    background: #fff;
+    margin: 0 0 80px;
+  }
+
+  .news__list dl {
+    padding: 15px;
+  }
+
+  .news__list dl dt {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .news__list dl dd {
+    float: none;
+    width: 100%;
+  }
+
+  .social__list {
+    justify-content: center;
+  }
+
+  .social__list li {
+    margin-right: 50px;
+  }
+
+  .social__list li img {
+    height: 60px;
+  }
+
+  .btn__list {
+    flex-wrap: wrap;
+  }
+
+  .btn__list li {
+    flex-basis: 47%;
+    margin-right: 6%;
+    margin-bottom: 5.6%;
+    max-width: none;
+  }
+
+  .btn__list li:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .news__list {
+    margin: 0 0 40px;
+  }
+
+  .news__list dl dt {
+    margin-bottom: 10px;
+  }
+
+  .social__list li {
+    margin-right: 20px;
+  }
+
+  .social__list li img {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .social__list li img {
+    height: 30px;
+  }
 }
 
 #breadcum {
@@ -1116,61 +1249,131 @@ footer {
   box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
+.badge_img, .badge_txt {
+  display: inline-block;
+  background: #527c68;
+  color: #fff;
+  font-size: 2.8rem;
+  text-align: center;
+  line-height: 1;
+}
+
+.badge_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 220px;
+  padding: 12px 5px 20px;
+}
+
+.badge_txt {
+  min-width: 100px;
+  padding: 7px 21px 15px;
+  margin-right: 10px;
+}
+
+.table__info {
+  margin-bottom: 80px;
+}
+
+.table__info th {
+  font-size: 3.2rem;
+  font-weight: normal;
+  color: #fff;
+  background: #527c68;
+  padding: 6px 5px 14px;
+}
+
+.table__info tr td {
+  padding: 1px 20px;
+  line-height: 3;
+}
+
+.table__info tr td:first-child {
+  font-size: 2.2rem;
+  width: 17.5%;
+  background: #dde5e1;
+  border-left: 1px solid #B1B1B1;
+  border-bottom: 1px solid #B1B1B1;
+}
+
+.table__info tr td:last-child {
+  font-size: 2rem;
+  background: #fff;
+  border-right: 1px solid #B1B1B1;
+  border-bottom: 1px solid #B1B1B1;
+}
+
 @media screen and (max-width: 767px) {
-  .news__list {
-    background: #fff;
-    margin: 0 0 80px;
+  #breadcum {
+    display: none;
   }
 
-  .news__list dl {
-    padding: 15px;
+  .badge_img, .badge_txt {
+    font-size: 3.2rem;
   }
 
-  .news__list dl dt {
-    float: none;
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 15px;
+  .table__info tr td {
+    padding: 1px 10px;
+    line-height: 2.5;
   }
 
-  .news__list dl dd {
-    float: none;
-    width: 100%;
-  }
-
-  .social__list {
-    justify-content: center;
-  }
-
-  .social__list li {
-    margin-right: 50px;
-  }
-
-  .social__list li img {
-    height: 60px;
+  .table__info tr td:first-child {
+    width: 25%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .news__list {
-    margin: 0 0 40px;
+  .badge_img, .badge_txt {
+    font-size: 2.6rem;
   }
 
-  .news__list dl dt {
-    margin-bottom: 10px;
+  .badge_img {
+    min-width: 150px;
+    padding: 7px 5px 15px;
   }
 
-  .social__list li {
-    margin-right: 20px;
+  .badge_txt {
+    min-width: 80px;
+    padding: 4px 5px 12px;
   }
 
-  .social__list li img {
-    height: 50px;
+  .table__info th {
+    font-size: 2.6rem;
+  }
+
+  .table__info tr td:first-child {
+    font-size: 2rem;
+  }
+
+  .table__info tr td:last-child {
+    font-size: 1.8rem;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .social__list li img {
-    height: 30px;
+  .box_sd {
+    margin-bottom: 50px;
+  }
+
+  .badge_img, .badge_txt {
+    font-size: 2rem;
+  }
+
+  .badge_img {
+    min-width: 120px;
+  }
+
+  .table__info th {
+    font-size: 2.2rem;
+  }
+
+  .table__info tr td:first-child {
+    font-size: 1.4rem;
+    width: 35%;
+  }
+
+  .table__info tr td:last-child {
+    font-size: 1.4rem;
   }
 }

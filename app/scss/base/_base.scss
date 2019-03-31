@@ -50,9 +50,6 @@ img {
   display: inline-block;
   vertical-align: middle;
   width: 100%;
-  -webkit-transition: .1s all ease-in-out;
-  -o-transition: .1s all ease-in-out;
-  transition: .1s all ease-in-out;
 }
 
 table {
@@ -112,6 +109,14 @@ p {
 
   .sp {
     display: block !important;
+  }
+
+  main {
+    padding: 80px 0 0;
+  }
+
+  .pd-bt {
+    padding-bottom: 80px;
   }
 }
 

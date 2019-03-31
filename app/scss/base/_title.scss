@@ -117,6 +117,20 @@ $sub_fs: 2rem;
         width: 33px;
         height: 28px;
       }
+
+      &.ic_flower {
+
+        &:after {
+          top: 10px;
+          width: 28px;
+          height: 33px;
+        }
+
+        span:before,
+        span:after {
+          width: 50%;
+        }
+      }
     }
 
     span {
@@ -138,6 +152,27 @@ $sub_fs: 2rem;
         top: 5px;
         width: 28px;
         height: 23px;
+      }
+
+      &.ic_flower {
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-right: 30px;
+
+        p {
+          margin-right: -30px;
+        }
+
+        &:after {
+          top: 2px;
+          width: 23px;
+          height: 28px;
+        }
+
+        span:before,
+        span:after {
+          width: 40%;
+        }
       }
     }
 

@@ -71,6 +71,12 @@
   .col-8 {
     flex-basis: 100%;
   }
+
+  .col-3,
+  .col-5,
+  .col-9 {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 360px) {

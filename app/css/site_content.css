@@ -331,61 +331,6 @@
   }
 }
 
-.badge_img, .badge_txt {
-  display: inline-block;
-  background: #527c68;
-  color: #fff;
-  font-size: 2.8rem;
-  text-align: center;
-  line-height: 1;
-}
-
-.badge_img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 220px;
-  padding: 12px 5px 20px;
-}
-
-.badge_txt {
-  min-width: 100px;
-  padding: 7px 21px 15px;
-  margin-right: 10px;
-}
-
-.table__info {
-  margin-bottom: 80px;
-}
-
-.table__info th {
-  font-size: 3.2rem;
-  font-weight: normal;
-  color: #fff;
-  background: #527c68;
-  padding: 6px 5px 14px;
-}
-
-.table__info tr td {
-  padding: 1px 20px;
-  line-height: 3;
-}
-
-.table__info tr td:first-child {
-  font-size: 2.2rem;
-  width: 17.5%;
-  background: #dde5e1;
-  border-left: 1px solid #B1B1B1;
-  border-bottom: 1px solid #B1B1B1;
-}
-
-.table__info tr td:last-child {
-  font-size: 2rem;
-  background: #fff;
-  border-right: 1px solid #B1B1B1;
-  border-bottom: 1px solid #B1B1B1;
-}
-
 .content__box {
   margin-bottom: 60px;
 }
@@ -420,4 +365,68 @@
 
 .content__box .box__item span {
   margin-bottom: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .content__box {
+    margin-bottom: 0;
+  }
+
+  .content__box p {
+    font-size: 2.8rem;
+  }
+
+  .content__box .row > div {
+    order: 2;
+  }
+
+  .content__box .row > .col_txt {
+    order: 1;
+  }
+
+  .content__box .row > .col_img.col-5 {
+    order: 1;
+  }
+
+  .content__box .col_txt {
+    margin-bottom: 20px;
+  }
+
+  .content__box .col_txt img {
+    max-width: none;
+  }
+
+  .content__box .col_txt.col-5 {
+    margin-bottom: 50px;
+  }
+
+  .content__box .col_sub {
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 35px;
+  }
+
+  .content__box .col_sub span {
+    margin-bottom: 15px;
+  }
+
+  .content__box .box__item {
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content__box p {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .content__box p {
+    font-size: 1.6rem;
+  }
+
+  .content__box .box__item {
+    margin-bottom: 25px;
+  }
 }
