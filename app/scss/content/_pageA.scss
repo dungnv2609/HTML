@@ -1,0 +1,99 @@
+%badge {
+  display: inline-block;
+  background: $green;
+  color: $white;
+  font-size: 2.8rem;
+  text-align: center;
+  line-height: 1;
+}
+
+.badge_img {
+  @extend %badge;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 220px;
+  padding: 12px 5px 20px;
+}
+
+.badge_txt {
+  @extend %badge;
+  min-width: 100px;
+  padding: 7px 21px 15px;
+  margin-right: 10px;
+}
+
+.table__info {
+  margin-bottom: 80px;
+
+  th {
+    font-size: 3.2rem;
+    font-weight: normal;
+    color: $white;
+    background: $green;
+    padding: 6px 5px 14px;
+  }
+
+  tr {
+    td {
+      padding: 1px 20px;
+      line-height: 3;
+
+      &:first-child {
+        font-size: 2.2rem;
+        width: 17.5%;
+        background: #dde5e1;
+        border-left: 1px solid #B1B1B1;
+        border-bottom: 1px solid #B1B1B1;
+      }
+
+      &:last-child {
+        font-size: 2rem;
+        background: $white;
+        border-right: 1px solid #B1B1B1;
+        border-bottom: 1px solid #B1B1B1;
+      }
+    }
+  }
+}
+
+.content__box {
+  margin-bottom: 60px;
+
+  p {
+    font-size: 1.5rem;
+    line-height: 1.7;
+  }
+
+  .col_img {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .col_txt {
+    img {
+      max-width: 281px;
+      max-height: 600px;
+    }
+
+    span {
+      margin-bottom: 15px;
+    }
+  }
+
+  .col_sub {
+    display: flex;
+    align-items: center;
+
+    span,
+    p {
+      float: left;
+    }
+  }
+
+  .box__item {
+    span {
+      margin-bottom: 15px;
+    }
+  }
+}

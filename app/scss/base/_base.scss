@@ -49,12 +49,34 @@ a {
 img {
   display: inline-block;
   vertical-align: middle;
+  width: 100%;
+  -webkit-transition: .1s all ease-in-out;
+  -o-transition: .1s all ease-in-out;
+  transition: .1s all ease-in-out;
 }
 
 table {
   border-spacing: 0;
   width: 100%;
   border-collapse: collapse;
+
+  td {
+    font-family: $font-family-alt;
+  }
+}
+
+main {
+  background-color: #e2ded4;
+
+  .container {
+    background: url(/images/bg_body.jpg) bottom center no-repeat;
+    background-size: cover;
+  }
+}
+
+p {
+  font-family: $font-family-alt;
+  letter-spacing: 0;
 }
 
 .clearfix:after {
@@ -69,6 +91,10 @@ table {
 
 .mg__bt0 {
   margin-bottom: 0 !important;
+}
+
+.pd-bt {
+  padding-bottom: 165px;
 }
 
 .pc {

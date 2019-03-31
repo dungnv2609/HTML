@@ -10,6 +10,11 @@
   display: flex;
 }
 
+.row__wrap {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .row__center {
   display: flex;
   justify-content: center;
@@ -26,8 +31,16 @@
   align-items: center;
 }
 
+.col-3 {
+  width: 23.5%;
+}
+
 .col-4 {
   flex-basis: 30%;
+}
+
+.col-5 {
+  width: 48.75%;
 }
 
 .col-6 {
@@ -36,6 +49,10 @@
 
 .col-8 {
   flex-basis: 70%;
+}
+
+.col-9 {
+  width: 74%
 }
 
 @media screen and (max-width: 1260px) {

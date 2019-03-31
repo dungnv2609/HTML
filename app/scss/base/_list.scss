@@ -1,0 +1,149 @@
+@import "mixins/custom-mixins";
+
+.news__list {
+  background: rgba(255, 255, 255, .7);
+  margin: 0 120px 100px;
+  font-family: $font-family-alt;
+
+  dl {
+    padding: 22px 180px;
+    width: 100%;
+    line-height: 1.5;
+
+    dt {
+      float: left;
+      width: 15%;
+      margin-right: 10%;
+    }
+
+    dd {
+      float: left;
+      width: 75%;
+      letter-spacing: 0;
+    }
+  }
+}
+
+.social__list {
+  display: flex;
+  justify-content: flex-end;
+
+  li {
+    margin-right: 25px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    img {
+      height: 36px;
+      width: auto;
+    }
+  }
+}
+
+.btn__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+
+  li {
+    flex-basis: 22.5%;
+    max-width: 270px;
+    margin-right: 3.3%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.img__list {
+  ul {
+    display: flex;
+    margin-bottom: 60px;
+
+    li {
+      flex-basis: 31.67%;
+      margin-right: 2.5%;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.box_sd {
+  display: block;
+  margin-bottom: 80px;
+  @include border-radius(10px);
+  @include box-shadow(3px, 3px, 10px, 0px, rgba(0, 0, 0, .5));
+}
+
+@media screen and (max-width: 767px) {
+  .news__list {
+    background: $white;
+    margin: 0 0 80px;
+
+    dl {
+      padding: 15px;
+
+      dt {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
+
+      dd {
+        float: none;
+        width: 100%;
+      }
+    }
+  }
+
+  .social__list {
+    justify-content: center;
+
+    li {
+      margin-right: 50px;
+
+      img {
+        height: 60px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .news__list {
+    margin: 0 0 40px;
+
+    dl {
+      dt {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .social__list {
+    li {
+      margin-right: 20px;
+
+      img {
+        height: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .social__list {
+    li {
+      img {
+        height: 30px;
+      }
+    }
+  }
+}
