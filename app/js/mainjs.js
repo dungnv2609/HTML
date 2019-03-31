@@ -271,8 +271,16 @@ $(window).on('load', function () {
   };
 });
 
-$('a[href^="#"]').click(function (e) {
+$('a[href="#"]').click(function (e) {
   e.preventDefault();
+});
+
+$(document).on('click', 'a[href^="#"]', function (event) {
+  event.preventDefault();
+
+  $('html, body').animate({
+    scrollTop: $($.attr(this, 'href')).offset().top - 150
+  }, 500);
 });
 
 var feed_sec1 = "https://blog.vogue.co.jp/rss.xml";
