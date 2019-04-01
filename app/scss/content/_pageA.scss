@@ -40,32 +40,66 @@
   }
 }
 
-h2.heading__title {
-  padding: 25px 10px;
-  background: $green;
-  font-size: $font-size-h2;
-  color: $white;
-  text-align: center;
-  line-height: 1;
-  font-weight: normal;
-}
+.box__title {
+  margin-bottom: 20px;
 
-.list__wrapper {
-  padding: 30px;
-  background: $white;
-  font-size: 1.5rem;
-  line-height: 1.7;
-  margin-bottom: 60px;
-}
+  h3 {
+    font-size: 2.4rem;
+    color: $white;
+    background: $green;
+    text-align: center;
+    padding: 22px 5px 30px;
+  }
 
-.food__menu {
-  font-size: 1.5rem;
-  line-height: 1.7;
-  width: 100%;
-  margin-bottom: 30px;
-}
+  .box__wrap {
+    background: $white;
+    padding: 30px 30px 30px 30px;
 
-.food__item {}
+    .box_left,
+    .box_right {
+      width: 49.16%;
+    }
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 2.4;
+  }
+
+  .item__step {
+    margin-bottom: 35px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    h4 {
+      font-size: 2.4rem;
+      border-bottom: 1px solid #808080;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+
+      span {
+        display: inline-block;
+        color: $white;
+        background: $orange;
+        padding: 0 15px 7px;
+        margin-right: 10px;
+        @include border-radius(15px);
+      }
+    }
+  }
+
+  .box_right {
+    div {
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
 
 @media screen and (max-width: 767px) {
   .content__box {
@@ -117,12 +151,67 @@ h2.heading__title {
       margin-bottom: 35px;
     }
   }
+
+  .box__title {
+    h3 {
+      font-size: 2.8rem;
+    }
+
+    .box__wrap {
+      padding: 15px;
+
+      .box_left,
+      .box_right {
+        width: 100%;
+      }
+    }
+
+    .item {
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 10px;
+      }
+    }
+
+    p {
+      font-size: 2.4rem;
+      line-height: 2;
+    }
+
+    .item__step {
+      h4 {
+        font-size: 2.8rem;
+      }
+
+      &:last-child {
+        margin-bottom: 35px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {
   .content__box {
     p {
       font-size: 2rem;
+    }
+  }
+
+  .box__title {
+    h3 {
+      font-size: 2.6rem;
+      padding: 16px 5px 24px;
+    }
+
+    p {
+      font-size: 2rem;
+    }
+
+    .item__step {
+      h4 {
+        font-size: 2.2rem;
+      }
     }
   }
 }
@@ -135,6 +224,22 @@ h2.heading__title {
 
     .box__item {
       margin-bottom: 25px;
+    }
+  }
+
+  .box__title {
+    h3 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+    }
+
+    .item__step {
+      h4 {
+        font-size: 1.8rem;
+      }
     }
   }
 }

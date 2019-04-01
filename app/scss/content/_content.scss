@@ -76,6 +76,11 @@
   max-width: 960px;
 }
 
+.banner1 a,
+.banner2 a {
+  display: inline-block;
+}
+
 /* ----- Section 2 ----- */
 
 #sec_2 a {
@@ -143,6 +148,10 @@
     .txt__sml {
       font-size: 2.8rem;
       line-height: 1.7;
+
+      p {
+        font-family: $font-family-base;
+      }
     }
   }
 

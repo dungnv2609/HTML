@@ -19,7 +19,12 @@ footer {
     width: auto;
     margin-right: 10px;
   }
-
+  
+  p {
+    font-family: $font-family-base;
+    letter-spacing: .15em;
+  }
+  
   p:first-child {
     margin-right: 10px;
   }

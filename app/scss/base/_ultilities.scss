@@ -55,6 +55,12 @@
   left: 0;
   min-width: 220px;
   padding: 12px 5px 20px;
+
+  &.right {
+    top: 0;
+    right: 0;
+    left: auto;
+  }
 }
 
 .badge_txt {
@@ -105,6 +111,14 @@
 
   %badge {
     font-size: 3.2rem;
+  }
+
+  .badge_img {
+    &.right {
+      top: 0;
+      left: 0;
+      right: auto;
+    }
   }
 
   .table__info {
