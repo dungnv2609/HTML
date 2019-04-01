@@ -60,6 +60,10 @@
   width: 74%
 }
 
+.col-12 {
+  width: 100%;
+}
+
 @media screen and (max-width: 1260px) {
   .container {
     padding: 0 30px !important;
@@ -75,6 +79,12 @@
   .col-6,
   .col-8 {
     flex-basis: 100%;
+  }
+
+  .col-3,
+  .col-5,
+  .col-9 {
+    width: 100%;
   }
 }
 

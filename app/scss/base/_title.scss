@@ -12,6 +12,10 @@ $sub_fs: 2rem;
   display: inline-block;
   margin-bottom: 45px;
 
+  p {
+    font-family: $font-family-base;
+  }
+
   span {
     font-size: $sub_fs;
     color: #333;
@@ -68,7 +72,7 @@ $sub_fs: 2rem;
     }
 
     &.ic_flower {
-      padding-right: 45px;
+      padding-right: 40px;
 
       &:after {
         top: 8px;
@@ -78,8 +82,8 @@ $sub_fs: 2rem;
         height: 38px;
       }
 
-      span:before,
-      span:after {
+      + p span:before,
+      + p span:after {
         width: 100%;
       }
     }
@@ -116,6 +120,20 @@ $sub_fs: 2rem;
         width: 33px;
         height: 28px;
       }
+
+      &.ic_flower {
+
+        &:after {
+          top: 10px;
+          width: 28px;
+          height: 33px;
+        }
+
+        + p span:before,
+        + p span:after {
+          width: 50%;
+        }
+      }
     }
 
     span {
@@ -137,6 +155,25 @@ $sub_fs: 2rem;
         top: 5px;
         width: 28px;
         height: 23px;
+      }
+
+      &.ic_flower {
+        padding-right: 30px;
+
+        p {
+          margin-right: -30px;
+        }
+
+        &:after {
+          top: 2px;
+          width: 23px;
+          height: 28px;
+        }
+
+        + p span:before,
+        + p span:after {
+          width: 40%;
+        }
       }
     }
 

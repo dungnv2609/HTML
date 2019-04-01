@@ -1,0 +1,307 @@
+@import "mixins/custom-mixins";
+
+#breadcum {
+  font-family: $font-family-alt;
+  padding: 25px 0 80px;
+
+  ul {
+    display: flex;
+
+    li {
+      padding-right: 25px;
+      margin-right: 10px;
+      position: relative;
+      font-size: 1.3rem;
+
+      &:after {
+        content: '>';
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+        margin-right: 0;
+
+        &:after {
+          content: '';
+        }
+      }
+    }
+  }
+}
+
+.box_sd {
+  display: block;
+  margin-bottom: 80px;
+  @include border-radius(10px);
+  @include box-shadow(3px, 3px, 10px, 0px, rgba(0, 0, 0, .5));
+}
+
+%badge {
+  display: inline-block;
+  background: $green;
+  color: $white;
+  font-size: 2.8rem;
+  text-align: center;
+  line-height: 1;
+}
+
+.badge_img {
+  @extend %badge;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 220px;
+  padding: 12px 5px 20px;
+
+  &.right {
+    top: 0;
+    right: 0;
+    left: auto;
+  }
+}
+
+.badge_txt {
+  @extend %badge;
+  min-width: 100px;
+  padding: 7px 21px 15px;
+  margin-right: 10px;
+}
+
+.mac-os {
+  .badge_img {
+    padding: 16px 5px;
+  }
+
+  .badge_txt {
+    padding: 11px 21px;
+  }
+}
+
+.table__info {
+  margin-bottom: 80px;
+
+  th {
+    font-size: 3.2rem;
+    font-weight: normal;
+    color: $white;
+    background: $green;
+    padding: 6px 5px 14px;
+  }
+
+  tr {
+    td {
+      padding: 1px 20px;
+      line-height: 3;
+
+      &:first-child {
+        font-size: 2.2rem;
+        width: 17.5%;
+        background: #dde5e1;
+        border-left: 1px solid #B1B1B1;
+        border-bottom: 1px solid #B1B1B1;
+      }
+
+      &:last-child {
+        font-size: 2rem;
+        background: $white;
+        border-right: 1px solid #B1B1B1;
+        border-bottom: 1px solid #B1B1B1;
+      }
+    }
+  }
+}
+
+.mac-os {
+  .table__info {
+    th {
+      padding: 10px 5px;
+    }
+  }
+}
+
+.box_txt {
+  background: url(/images/bg_trans_sp.png) center no-repeat;
+  background-size: cover;
+  padding: 30px;
+
+  span {
+    display: inline-block;
+    text-align: center;
+
+    &.txt_orange {
+      color: $orange;
+      font-size: 3.6rem;
+    }
+
+    &.txt_green {
+      color: $green;
+      font-size: 3.6rem;
+    }
+
+    &.txt_sub {
+      text-align: left;
+      font-size: 1.6rem;
+      line-height: 2;
+      margin-bottom: 0 !important;
+    }
+
+    &.txt_sub_lg {
+      font-size: 3.6rem;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #breadcum {
+    display: none;
+  }
+
+  %badge {
+    font-size: 3.2rem;
+  }
+
+  .badge_img {
+    &.right {
+      top: 0;
+      left: 0;
+      right: auto;
+    }
+  }
+
+  .table__info {
+    tr {
+      td {
+        padding: 1px 10px;
+        line-height: 2.5;
+
+        &:first-child {
+          width: 25%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  %badge {
+    font-size: 2.6rem;
+  }
+
+  .badge_img {
+    min-width: 150px;
+    padding: 7px 5px 15px;
+  }
+
+  .badge_txt {
+    min-width: 80px;
+    padding: 4px 5px 12px;
+  }
+
+  .ios {
+    .badge_img {
+      padding: 11px 5px;
+    }
+
+    .badge_txt {
+      padding: 8px 5px;
+    }
+  }
+
+  .table__info {
+    th {
+      font-size: 2.6rem;
+    }
+
+    tr {
+      td {
+        &:first-child {
+          font-size: 2rem;
+        }
+
+        &:last-child {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+
+  .box_txt {
+    padding: 20px;
+
+    span {
+
+      &.txt_orange {
+        font-size: 3.2rem;
+      }
+
+      &.txt_green {
+        font-size: 3.2rem;
+      }
+
+      &.txt_sub {
+        font-size: 1.6rem;
+      }
+
+      &.txt_sub_lg {
+        font-size: 3.2rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .box_sd {
+    margin-bottom: 50px;
+  }
+
+  %badge {
+    font-size: 2rem;
+  }
+
+  .badge_img {
+    min-width: 120px;
+  }
+
+  .table__info {
+    th {
+      font-size: 2.2rem;
+    }
+
+    tr {
+      td {
+        &:first-child {
+          font-size: 1.4rem;
+          width: 35%;
+        }
+
+        &:last-child {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+
+  .box_txt {
+    span {
+
+      &.txt_orange {
+        font-size: 2.6rem;
+      }
+
+      &.txt_green {
+        font-size: 2.6rem;
+      }
+
+      &.txt_sub {
+        font-size: 1.4rem;
+      }
+
+      &.txt_sub_lg {
+        font-size: 2.6rem;
+      }
+    }
+  }
+}

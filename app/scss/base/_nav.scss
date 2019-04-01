@@ -51,6 +51,20 @@ header {
     font-size: 1.5rem;
     color: #333;
   }
+
+  a.active {
+    color: $orange;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      border-bottom: 1px solid $orange;
+      width: 100%;
+    }
+  }
 }
 
 .nav__logo {
@@ -110,6 +124,7 @@ header {
 
     img {
       height: 80px;
+      width: auto;
     }
   }
 
@@ -215,6 +230,7 @@ header {
     h1 {
       img {
         height: 40px;
+        width: auto;
       }
     }
   }
@@ -222,6 +238,7 @@ header {
   .nav__btn {
     img {
       height: 60px;
+      width: auto;
     }
   }
 

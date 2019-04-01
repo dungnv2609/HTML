@@ -51,6 +51,7 @@
     flex-basis: 22.5%;
     max-width: 270px;
     margin-right: 3.3%;
+    margin-bottom: 20px;
 
     &:last-child {
       margin-right: 0;
@@ -72,44 +73,6 @@
       }
     }
   }
-}
-
-#breadcum {
-  font-family: $font-family-alt;
-  padding: 25px 0 80px;
-
-  ul {
-    display: flex;
-
-    li {
-      padding-right: 25px;
-      margin-right: 10px;
-      position: relative;
-
-      &:after {
-        content: '>';
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
-
-      &:last-child {
-        padding-right: 0;
-        margin-right: 0;
-
-        &:after {
-          content: '';
-        }
-      }
-    }
-  }
-}
-
-.box_sd {
-  display: block;
-  margin-bottom: 80px;
-  @include border-radius(10px);
-  @include box-shadow(3px, 3px, 10px, 0px, rgba(0, 0, 0, .5));
 }
 
 @media screen and (max-width: 767px) {
@@ -142,6 +105,21 @@
 
       img {
         height: 60px;
+      }
+    }
+  }
+
+  .btn__list {
+    flex-wrap: wrap;
+
+    li {
+      flex-basis: 47%;
+      margin-right: 6%;
+      margin-bottom: 5.6%;
+      max-width: none;
+
+      &:nth-child(2n) {
+        margin-right: 0;
       }
     }
   }

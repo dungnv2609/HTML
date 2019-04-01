@@ -27,6 +27,20 @@ body {
   z-index: 1;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $font-family-base;
+  font-weight: normal;
+}
+
+p {
+  font-family: $font-family-alt;
+  letter-spacing: 0;
+}
+
 ul,
 li {
   padding: 0;
@@ -50,9 +64,6 @@ img {
   display: inline-block;
   vertical-align: middle;
   width: 100%;
-  -webkit-transition: .1s all ease-in-out;
-  -o-transition: .1s all ease-in-out;
-  transition: .1s all ease-in-out;
 }
 
 table {
@@ -74,11 +85,6 @@ main {
   }
 }
 
-p {
-  font-family: $font-family-alt;
-  letter-spacing: 0;
-}
-
 .clearfix:after {
   content: '';
   display: block;
@@ -89,12 +95,16 @@ p {
   text-align: center;
 }
 
-.mg__bt0 {
+.mg-bt-img {
   margin-bottom: 0 !important;
 }
 
 .pd-bt {
   padding-bottom: 165px;
+}
+
+.pd-bt60 {
+  padding-bottom: 60px;
 }
 
 .pc {
@@ -112,6 +122,18 @@ p {
 
   .sp {
     display: block !important;
+  }
+
+  main {
+    padding: 80px 0 0;
+  }
+
+  .mg-bt-img {
+    margin-bottom: 30px !important;
+  }
+
+  .pd-bt {
+    padding-bottom: 80px;
   }
 }
 
