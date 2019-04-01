@@ -101,6 +101,22 @@
   }
 }
 
+.mac-os {
+  .box__title {
+    h3 {
+      padding: 26px 5px;
+    }
+
+    .item__step {
+      h4 {
+        span {
+          padding: 3px 15px 4px;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 767px) {
   .content__box {
     margin-bottom: 0;
@@ -211,6 +227,22 @@
     .item__step {
       h4 {
         font-size: 2.2rem;
+      }
+    }
+  }
+
+  .ios {
+    .box__title {
+      h3 {
+        padding: 20px 5px;
+      }
+
+      .item__step {
+        h4 {
+          span {
+            padding: 3px 15px 4px;
+          }
+        }
       }
     }
   }

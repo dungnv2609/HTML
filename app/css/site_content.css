@@ -435,6 +435,14 @@
   margin-bottom: 0;
 }
 
+.mac-os .box__title h3 {
+  padding: 26px 5px;
+}
+
+.mac-os .box__title .item__step h4 span {
+  padding: 3px 15px 4px;
+}
+
 @media screen and (max-width: 767px) {
   .content__box {
     margin-bottom: 0;
@@ -533,6 +541,14 @@
 
   .box__title .item__step h4 {
     font-size: 2.2rem;
+  }
+
+  .ios .box__title h3 {
+    padding: 20px 5px;
+  }
+
+  .ios .box__title .item__step h4 span {
+    padding: 3px 15px 4px;
   }
 }
 

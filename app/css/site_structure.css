@@ -1305,6 +1305,14 @@ footer {
   margin-right: 10px;
 }
 
+.mac-os .badge_img {
+  padding: 16px 5px;
+}
+
+.mac-os .badge_txt {
+  padding: 11px 21px;
+}
+
 .table__info {
   margin-bottom: 80px;
 }
@@ -1335,6 +1343,42 @@ footer {
   background: #fff;
   border-right: 1px solid #B1B1B1;
   border-bottom: 1px solid #B1B1B1;
+}
+
+.mac-os .table__info th {
+  padding: 10px 5px;
+}
+
+.box_txt {
+  background: url(/images/bg_trans_sp.png) center no-repeat;
+  background-size: cover;
+  padding: 30px;
+}
+
+.box_txt span {
+  display: inline-block;
+  text-align: center;
+}
+
+.box_txt span.txt_orange {
+  color: #e18a50;
+  font-size: 3.6rem;
+}
+
+.box_txt span.txt_green {
+  color: #527c68;
+  font-size: 3.6rem;
+}
+
+.box_txt span.txt_sub {
+  text-align: left;
+  font-size: 1.6rem;
+  line-height: 2;
+  margin-bottom: 0 !important;
+}
+
+.box_txt span.txt_sub_lg {
+  font-size: 3.6rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -1377,6 +1421,14 @@ footer {
     padding: 4px 5px 12px;
   }
 
+  .ios .badge_img {
+    padding: 11px 5px;
+  }
+
+  .ios .badge_txt {
+    padding: 8px 5px;
+  }
+
   .table__info th {
     font-size: 2.6rem;
   }
@@ -1387,6 +1439,26 @@ footer {
 
   .table__info tr td:last-child {
     font-size: 1.8rem;
+  }
+
+  .box_txt {
+    padding: 20px;
+  }
+
+  .box_txt span.txt_orange {
+    font-size: 3.2rem;
+  }
+
+  .box_txt span.txt_green {
+    font-size: 3.2rem;
+  }
+
+  .box_txt span.txt_sub {
+    font-size: 1.6rem;
+  }
+
+  .box_txt span.txt_sub_lg {
+    font-size: 3.2rem;
   }
 }
 
@@ -1414,5 +1486,21 @@ footer {
 
   .table__info tr td:last-child {
     font-size: 1.4rem;
+  }
+
+  .box_txt span.txt_orange {
+    font-size: 2.6rem;
+  }
+
+  .box_txt span.txt_green {
+    font-size: 2.6rem;
+  }
+
+  .box_txt span.txt_sub {
+    font-size: 1.4rem;
+  }
+
+  .box_txt span.txt_sub_lg {
+    font-size: 2.6rem;
   }
 }
