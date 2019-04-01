@@ -367,6 +367,31 @@
   margin-bottom: 15px;
 }
 
+h2.heading__title {
+  padding: 25px 10px;
+  background: #527c68;
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1;
+  font-weight: normal;
+}
+
+.list__wrapper {
+  padding: 30px;
+  background: #fff;
+  font-size: 1.5rem;
+  line-height: 1.7;
+  margin-bottom: 60px;
+}
+
+.food__menu {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
 @media screen and (max-width: 767px) {
   .content__box {
     margin-bottom: 0;
