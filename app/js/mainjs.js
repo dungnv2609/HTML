@@ -108,8 +108,16 @@ $(window).bind('resize orientationchange', function () {
   //ww = document.body.clientWidth;
   ww = window.innerWidth;
   adjustMenu(ww);
-  /*$(".toggleMenu").removeClass("active");*/
+  $(".toggleMenu").removeClass("active");
   $(".nav li").removeClass('hover');
+  $('.toggleMenu .img_show').css('display', 'inline-block');
+  if ($('.toggleMenu').hasClass('active')) {
+    $('.toggleMenu .img_show').css('display', 'none');
+    $('.nav').show();
+  } else {
+    $('.toggleMenu .img_hide').css('display', 'none');
+    $('.nav').hide();
+  }
   var barH = screen.height - window.innerHeight;
   var setH = window.innerHeight - barH;
   if ($(".toggleMenu").hasClass("active")) {
