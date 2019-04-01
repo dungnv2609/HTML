@@ -573,3 +573,283 @@
     font-size: 1.8rem;
   }
 }
+
+h2.heading_style_1 {
+  padding: 25px 10px;
+  background: #527c68;
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1;
+  font-weight: normal;
+}
+
+h2.heading_style_2 {
+  padding: 0 10px 10px;
+  font-size: 36px;
+  color: #333333;
+  text-align: center;
+  line-height: 1;
+  font-weight: normal;
+  border-bottom: 1px solid #333333;
+  margin-bottom: 40px;
+}
+
+.list__wrapper {
+  padding: 30px;
+  background: #fff;
+  font-size: 1.5rem;
+  line-height: 1.7;
+  margin-bottom: 60px;
+}
+
+.food__info {
+  font-size: 1.5rem;
+  line-height: 1.7;
+}
+
+.food__info__2 {
+  font-size: 2rem;
+  line-height: 1.7;
+}
+
+.food__introduce {
+  margin: 30px 0 60px;
+}
+
+.food__button {
+  margin-bottom: 60px;
+}
+
+.food__button .btn__list li {
+  width: 30%;
+  flex-basis: 30%;
+  max-width: unset;
+  margin: 0;
+}
+
+.food__button .btn__list li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.food__list {
+  padding-bottom: 0;
+}
+
+.food__menu {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.food__item {
+  margin-bottom: 30px;
+}
+
+.food__item img {
+  margin-bottom: 10px;
+}
+
+.food__item h3 {
+  font-size: 20px;
+  font-weight: normal;
+  color: #333333;
+  padding-left: 20px;
+  position: relative;
+}
+
+.food__item h3:before {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 20px;
+  top: 10px;
+  left: 0;
+  background: #527c68;
+}
+
+.food__item .price {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 16px;
+}
+
+.food__item .description {
+  font-size: 16px;
+}
+
+.food__box .col_img {
+  width: 65%;
+  margin-bottom: 0;
+}
+
+.food__box .col_txt {
+  width: 30%;
+}
+
+.food__box .col_txt .text__orange {
+  color: #e18a50;
+}
+
+.food__box .col_txt .text__green {
+  color: #527c68;
+}
+
+.food__box .col_txt h2 {
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.food__box .col_txt h2.text__green {
+  margin-bottom: 20px;
+}
+
+.food__box .col_txt .information {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #808080;
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.food__box .col_txt .label {
+  font-size: 16px;
+  background: #527c68;
+  padding: 4px 6px 8px;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.food__introduce__menu {
+  padding: 30px;
+  background: #fff;
+}
+
+.food__introduce__menu__image {
+  width: 49%;
+  margin-bottom: 30px;
+}
+
+.food__introduce__menu__text {
+  margin-top: 10px;
+}
+
+.food__introduce__menu__text .menu__text__item {
+  width: 45%;
+}
+
+.food__introduce__menu__text p {
+  width: 100%;
+}
+
+.food__introduce__menu__text .btn_style3 {
+  margin-bottom: 0;
+  padding: 15px 15px 20px;
+}
+
+.food__introduce__menu__text .btn_style3:before {
+  top: 38%;
+  right: 13px;
+  bottom: auto;
+  left: auto;
+}
+
+.food__introduce__menu__text .btn_style3:after {
+  top: 48%;
+  right: 20px;
+  bottom: auto;
+  left: auto;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 6px solid #e18a50;
+}
+
+.food__introduce__menu__text .food__info {
+  font-size: 1.4rem;
+}
+
+.food__introduce__menu__text .food__info__2 {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  h2.heading_style_2 {
+    margin-bottom: 20px;
+  }
+
+  .food__introduce .food__introduce__item {
+    width: 48%;
+    flex-basis: 48%;
+  }
+
+  .food__button .btn__list li {
+    width: 100%;
+    flex-basis: 100%;
+  }
+
+  .food__button .btn_style3 {
+    padding: 10px;
+  }
+
+  .food__button .btn_style3:before {
+    top: 41%;
+    right: 13px;
+    bottom: auto;
+    left: auto;
+  }
+
+  .food__button .btn_style3:after {
+    top: 50%;
+    right: 25px;
+    bottom: auto;
+    left: auto;
+  }
+
+  .food__item {
+    width: 100%;
+  }
+
+  .food__introduce__menu__image {
+    width: 100%;
+  }
+
+  .food__introduce__menu__text {
+    margin-top: 10px;
+  }
+
+  .food__introduce__menu__text .menu__text__item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .food__introduce__menu__text .menu__text__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .food__box .col_img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .food__box .col_txt {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .food__introduce .food__introduce__item {
+    width: 100%;
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  .food__introduce .food__introduce__item:last-child {
+    margin-bottom: 0;
+  }
+}

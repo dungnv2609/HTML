@@ -170,6 +170,11 @@ main .container {
   align-items: center;
 }
 
+.row__bottom {
+  display: flex;
+  align-items: flex-end;
+}
+
 .row__cen_mid {
   display: flex;
   justify-content: center;

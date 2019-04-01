@@ -191,15 +191,25 @@ $(function () {
 ************************************************************/
 $(document).ready(function () {
   if ($(".maxH")[0]) {
-    resizeH(".maxH");
+    resizeH(".maxH", true);
     $(window).bind("orientationchange resize", function () {
-      resizeH(".maxH");
+      resizeH(".maxH", true);
+    });
+  }
+
+  if ($(".maxH__xs")[0]) {
+    resizeH(".maxH__xs", false);
+    $(window).bind("orientationchange resize", function () {
+        resizeH(".maxH__xs", false);
     });
   }
 });
 
-function resizeH(eleH) {
-  if ($(window).width() > 767) {
+function resizeH(eleH, onlyPc) {
+  if ($(window).width() <= 767 && onlyPc) {
+      $(eleH).find(".hTit").css("height", "");
+      $(eleH).find(".hBody").css("height", "");
+  } else {
     $(eleH).find(".hTit").css("height", "");
     $(eleH).find(".hBody").css("height", "");
     $(eleH).each(function () {
@@ -207,22 +217,19 @@ function resizeH(eleH) {
       var maxH2 = 0;
       $(this).find(".hTit").each(function () {
         hTit = $(this).outerHeight();
-        if (maxH2 < hTit) {
-          maxH2 = hTit;
-        }
-      });
-      $(this).find(".hTit").outerHeight(maxH2);
-      $(this).find(".hBody").each(function () {
-        hBody = $(this).outerHeight();
-        if (maxH < hBody) {
-          maxH = hBody;
-        }
-      });
-      $(this).find(".hBody").outerHeight(maxH);
+          if (maxH2 < hTit) {
+            maxH2 = hTit;
+          }
+        });
+        $(this).find(".hTit").outerHeight(maxH2);
+        $(this).find(".hBody").each(function () {
+          hBody = $(this).outerHeight();
+          if (maxH < hBody) {
+            maxH = hBody;
+          }
+        });
+        $(this).find(".hBody").outerHeight(maxH);
     });
-  } else {
-    $(eleH).find(".hTit").css("height", "");
-    $(eleH).find(".hBody").css("height", "");
   }
 }
 
