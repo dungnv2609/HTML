@@ -145,6 +145,10 @@ main .container {
   color: #e18a50;
 }
 
+.mw_370 img {
+  max-width: 370px !important;
+}
+
 .container {
   max-width: 1200px;
   width: 100%;
@@ -186,7 +190,7 @@ main .container {
 }
 
 .col-4 {
-  flex-basis: 30%;
+  width: 30.83%;
 }
 
 .col-5 {
@@ -198,7 +202,7 @@ main .container {
 }
 
 .col-8 {
-  flex-basis: 70%;
+  width: 66.67%;
 }
 
 .col-9 {
