@@ -594,7 +594,7 @@
   }
 }
 
-h2.heading_style_1 {
+h2.heading_food_1 {
   padding: 25px 10px;
   background: #527c68;
   font-size: 2rem;
@@ -602,9 +602,10 @@ h2.heading_style_1 {
   text-align: center;
   line-height: 1;
   font-weight: normal;
+  font-family: "Hannari", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-h2.heading_style_2 {
+h2.heading_food_2 {
   padding: 0 10px 10px;
   font-size: 36px;
   color: #333333;
@@ -613,6 +614,7 @@ h2.heading_style_2 {
   font-weight: normal;
   border-bottom: 1px solid #333333;
   margin-bottom: 40px;
+  font-family: "Hannari", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 .list__wrapper {
@@ -623,13 +625,9 @@ h2.heading_style_2 {
   margin-bottom: 60px;
 }
 
-.food__info {
-  font-size: 1.5rem;
-  line-height: 1.7;
-}
-
-.food__info__2 {
-  font-size: 2rem;
+.food__wrap__1 p {
+  font-family: "Hannari", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
   line-height: 1.7;
 }
 
@@ -663,10 +661,12 @@ h2.heading_style_2 {
   line-height: 1.7;
   width: 100%;
   margin-bottom: 30px;
+  font-family: "HirakakuStd-W3", Arial, sans-serif;
 }
 
 .food__item {
   margin-bottom: 30px;
+  font-family: "HirakakuStd-W3", Arial, sans-serif;
 }
 
 .food__item img {
@@ -679,6 +679,7 @@ h2.heading_style_2 {
   color: #333333;
   padding-left: 20px;
   position: relative;
+  margin-bottom: 10px;
 }
 
 .food__item h3:before {
@@ -700,6 +701,7 @@ h2.heading_style_2 {
 
 .food__item .description {
   font-size: 16px;
+  margin-top: 10px;
 }
 
 .food__box .col_img {
@@ -708,7 +710,14 @@ h2.heading_style_2 {
 }
 
 .food__box .col_txt {
-  width: 30%;
+  width: 32%;
+  background-image: url(/images/a2_bg01.png);
+  background-size: cover;
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .food__box .col_txt .text__orange {
@@ -736,51 +745,71 @@ h2.heading_style_2 {
   line-height: 1.7;
 }
 
-.food__box .col_txt .label {
+.food__box .col_txt .label span {
   font-size: 16px;
   background: #527c68;
-  padding: 4px 6px 8px;
+  padding: 4px 4px 8px 5px;
   color: #fff;
   display: inline-block;
   margin-bottom: 10px;
   line-height: 1;
 }
 
-.food__introduce__menu {
+.food__box .col_txt p {
+  font-family: "HirakakuStd-W3", Arial, sans-serif;
+}
+
+.food__box .col_txt p.text__green {
+  white-space: nowrap;
+}
+
+.food__wrap__7 .badge_img {
+  left: auto;
+  right: 0;
+}
+
+.food__wrap__8 p {
+  width: 100%;
+  font-size: 14px;
+  font-family: "HirakakuStd-W3", Arial, sans-serif;
+  line-height: 1.7;
+}
+
+.food__wrap__8 p span {
+  font-size: 18px;
+}
+
+.food__wrap__8 .food__introduce__menu {
   padding: 30px;
   background: #fff;
 }
 
-.food__introduce__menu__image {
+.food__wrap__8 .food__introduce__menu__image {
   width: 49%;
   margin-bottom: 30px;
 }
 
-.food__introduce__menu__text {
+.food__wrap__8 .food__introduce__menu__text {
   margin-top: 10px;
 }
 
-.food__introduce__menu__text .menu__text__item {
+.food__wrap__8 .food__introduce__menu__text .menu__text__item {
   width: 45%;
 }
 
-.food__introduce__menu__text p {
-  width: 100%;
-}
-
-.food__introduce__menu__text .btn_style3 {
+.food__wrap__8 .food__introduce__menu__text .btn_style3 {
   margin-bottom: 0;
   padding: 15px 15px 20px;
 }
 
-.food__introduce__menu__text .btn_style3:before {
+.food__wrap__8 .food__introduce__menu__text .btn_style3:before {
   top: 38%;
   right: 13px;
   bottom: auto;
   left: auto;
 }
 
-.food__introduce__menu__text .btn_style3:after {
+.food__wrap__8 .food__introduce__menu__text .btn_style3:after {
   top: 48%;
   right: 20px;
   bottom: auto;
@@ -790,16 +819,34 @@ h2.heading_style_2 {
   border-left: 6px solid #e18a50;
 }
 
-.food__introduce__menu__text .food__info {
-  font-size: 1.4rem;
-}
-
-.food__introduce__menu__text .food__info__2 {
-  margin-right: 20px;
-}
-
 @media screen and (max-width: 767px) {
-  h2.heading_style_2 {
+  .food__wrap__2 .btn_style3 {
+    margin-bottom: 20px;
+  }
+
+  .food__wrap__7 .badge_img {
+    left: 0;
+    right: auto;
+  }
+
+  .food__wrap__8 .food__introduce__menu__image {
+    width: 100%;
+  }
+
+  .food__wrap__8 .food__introduce__menu__text {
+    margin-top: 10px;
+  }
+
+  .food__wrap__8 .food__introduce__menu__text .menu__text__item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .food__wrap__8 .food__introduce__menu__text .menu__text__item:last-child {
+    margin-bottom: 0;
+  }
+
+  h2.heading_food_2 {
     margin-bottom: 20px;
   }
 
@@ -818,7 +865,7 @@ h2.heading_style_2 {
   }
 
   .food__button .btn_style3:before {
-    top: 41%;
+    top: 35%;
     right: 13px;
     bottom: auto;
     left: auto;
@@ -835,21 +882,12 @@ h2.heading_style_2 {
     width: 100%;
   }
 
-  .food__introduce__menu__image {
-    width: 100%;
+  .food__box {
+    margin-bottom: 60px;
   }
 
-  .food__introduce__menu__text {
-    margin-top: 10px;
-  }
-
-  .food__introduce__menu__text .menu__text__item {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .food__introduce__menu__text .menu__text__item:last-child {
-    margin-bottom: 0;
+  .food__box p {
+    font-size: 1.5rem;
   }
 
   .food__box .col_img {
@@ -859,6 +897,87 @@ h2.heading_style_2 {
 
   .food__box .col_txt {
     width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1070px) {
+  .food__box .col_txt {
+    padding: 15px;
+  }
+
+  .food__box .col_txt h2 {
+    font-size: 20px;
+  }
+
+  .food__box .col_txt h2.text__green {
+    margin-bottom: 10px;
+  }
+
+  .food__box .col_txt .information {
+    padding-bottom: 10px;
+    font-size: 10px;
+    margin-bottom: 10px;
+    line-height: 1.7;
+  }
+
+  .food__box .col_txt .label span {
+    font-size: 10px;
+    padding: 4px 4px 8px 5px;
+    color: #fff;
+    margin-bottom: 5px;
+    line-height: 1;
+  }
+
+  .food__box .col_txt p {
+    font-size: 9px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .food__wrap__8 .food__introduce__menu__text .btn_style3 {
+    font-size: 2.1rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+  .food__button .btn__list li {
+    width: 100%;
+    flex-basis: 100%;
+  }
+
+  .food__button .btn_style3 {
+    padding: 10px;
+  }
+
+  .food__button .btn_style3:before {
+    top: 39%;
+    right: 13px;
+    bottom: auto;
+    left: auto;
+  }
+
+  .food__button .btn_style3:after {
+    top: 50%;
+    right: 25px;
+    bottom: auto;
+    left: auto;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .food__wrap__8 .food__introduce__menu__text .btn_style3:before {
+    top: 30%;
+    right: 13px;
+    bottom: auto;
+    left: auto;
+  }
+
+  .food__wrap__8 .food__introduce__menu__text .btn_style3:after {
+    top: 43%;
+    right: 20px;
+    bottom: auto;
+    left: auto;
   }
 }
 

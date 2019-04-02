@@ -513,6 +513,12 @@ header {
   }
 }
 
+@media screen and (max-width: 340px) {
+  .nav__logo h1 {
+    padding-left: 0;
+  }
+}
+
 #mainimage {
   margin-top: 100px;
 }
@@ -1053,7 +1059,7 @@ footer {
 }
 
 .title h2.ic_flower {
-  padding-right: 40px;
+  padding: 0 40px;
 }
 
 .title h2.ic_flower:after {
@@ -1135,11 +1141,7 @@ h4.style1 {
   }
 
   .title h2.ic_flower {
-    padding-right: 30px;
-  }
-
-  .title h2.ic_flower p {
-    margin-right: -30px;
+    padding: 0 30px;
   }
 
   .title h2.ic_flower:after {
@@ -1154,7 +1156,7 @@ h4.style1 {
   }
 
   .title span:before, .title span:after {
-    width: 90%;
+    width: 60%;
   }
 }
 
