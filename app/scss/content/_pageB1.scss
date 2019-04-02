@@ -1,0 +1,148 @@
+.room-feel-the-southern-europe {
+  font-size: 16px;
+  background-color: #D9D4CA;
+  .container {
+    background-image: none;
+  }
+  .title {
+    span {
+      font-size: 1.8rem;
+      &:before,
+      &:after {
+        top: 26px;
+      }
+    }
+  }
+  .pr-3 {
+    padding-right: 3rem;
+  }
+  .mb-3 {
+    margin-bottom: 3rem;
+  }
+  .mb-4 {
+    margin-bottom: 4rem;
+  }
+  .d-flex {
+    display: flex;
+  }
+  .justify-content-center {
+    justify-content: center;
+  }
+  .h-100 {
+    height: 100%;
+  }
+  .content {
+    &__box {
+      .header {
+        background-color: #527C68;
+        width: 100%;
+        padding: 10px 0 15px 0;
+        font-size: 28px;
+        color: white;
+      }
+      .description {
+        font-size: 18px;
+      }
+      .check-in-out {
+        font-size: 24px;
+        .check-in {
+          margin-right: 20px;
+        }
+      }
+      .contact {
+        border: 2px solid #CA8050;
+        margin-top: 20px;
+        &__title {
+          text-align: center;
+          font-size: 24px;
+          padding: 10px 0 5px 0;
+        }
+        &__content {
+          text-align: center;
+          img {
+            width: 55px;
+            position: relative;
+            top: -25px;
+          }
+          .phone-text {
+            font-size: 75px;
+            color: #527C68;
+            font-weight: 500;
+            letter-spacing: 1.2rem;
+          }
+        }
+        &__footer {
+          text-align: center;
+          font-size: 18px;
+          padding: 0 0 20px 0;
+        }
+      }
+      .introduce {
+        height: 80%;
+        &__title {
+          background-color: #A7A7A7;
+          color: #fff;
+          font-size: 20px;
+          text-align: center;
+          padding: 5px 0 10px 0;
+        }
+        &__content {
+          background-color: #fff;
+          padding: 10px 20px;
+          font-size: 16px;
+          height: 100%;
+        }
+      }
+      .cancle-fee {
+        &__title {
+          text-align: center;
+          padding: 5px 0 10px 0;
+          color: #fff;
+          font-size: 20px;
+          background-color: #A7A7A7;
+        }
+        &__content {
+          text-align: center;
+          word-break: break-word;
+          background-color: #fff;
+          div:not(:last-child) {
+            border-right: 1px solid #8E8E8E;
+          }
+          &:nth-child(2) {
+            border-bottom: 1px solid #8E8E8E;
+          }
+          &:last-child {
+            background-color: #CDCDCD;
+            width: 100%;
+          }
+        }
+        .col-1, .col-2 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .col-1 {
+          width: 15%;
+          padding: 20px;
+        }
+        .col-2 {
+          width: 20%;
+          padding: 20px;
+        }
+      }
+      span > span {
+        color: #527c68;
+      }
+      .content-image {
+        padding-top: 10px;
+        background-color: #fff;
+      }
+    }
+  }
+  .last-bg {
+    padding-bottom: 80px;
+    background-image: url('/images/room_feel_the_southern_europe/last-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
