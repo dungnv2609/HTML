@@ -607,7 +607,7 @@ h2.heading_food_1 {
 
 h2.heading_food_2 {
   padding: 0 10px 10px;
-  font-size: 36px;
+  font-size: 3.6rem;
   color: #333333;
   text-align: center;
   line-height: 1;
@@ -729,7 +729,7 @@ h2.heading_food_2 {
 }
 
 .food__box .col_txt h2 {
-  font-size: 36px;
+  font-size: 3.6rem;
   font-weight: normal;
 }
 
@@ -740,13 +740,17 @@ h2.heading_food_2 {
 .food__box .col_txt .information {
   padding-bottom: 20px;
   border-bottom: 1px solid #808080;
-  font-size: 16px;
+  font-size: 1.4rem;
   margin-bottom: 20px;
   line-height: 1.7;
 }
 
+.food__box .col_txt .label {
+  margin: 0 10px 0 0;
+}
+
 .food__box .col_txt .label span {
-  font-size: 16px;
+  font-size: 1.4rem;
   background: #527c68;
   padding: 4px 4px 8px 5px;
   color: #fff;
@@ -755,8 +759,17 @@ h2.heading_food_2 {
   line-height: 1;
 }
 
+.food__box .col_txt .timeline__wrapper {
+  flex-wrap: wrap;
+}
+
+.food__box .col_txt .timeline__wrapper .timeline {
+  width: 100%;
+}
+
 .food__box .col_txt p {
   font-family: "HirakakuStd-W3", Arial, sans-serif;
+  font-size: 1.4rem;
 }
 
 .food__box .col_txt p.text__green {
@@ -817,6 +830,47 @@ h2.heading_food_2 {
   border-top: 4px solid transparent;
   border-bottom: 4px solid transparent;
   border-left: 6px solid #e18a50;
+}
+
+@media screen and (max-width: 1150px) {
+  .food__box .col_txt {
+    padding: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1070px) {
+  .food__box .col_txt h2 {
+    font-size: 20px;
+  }
+
+  .food__box .col_txt h2.text__green {
+    margin-bottom: 10px;
+  }
+
+  .food__box .col_txt .information {
+    padding-bottom: 10px;
+    font-size: 10px;
+    margin-bottom: 10px;
+    line-height: 1.7;
+  }
+
+  .food__box .col_txt .label span {
+    font-size: 10px;
+    padding: 4px 4px 8px 5px;
+    color: #fff;
+    margin-bottom: 5px;
+    line-height: 1;
+  }
+
+  .food__box .col_txt p {
+    font-size: 9px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .food__wrap__8 .food__introduce__menu__text .btn_style3 {
+    font-size: 2.1rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -886,10 +940,6 @@ h2.heading_food_2 {
     margin-bottom: 60px;
   }
 
-  .food__box p {
-    font-size: 1.5rem;
-  }
-
   .food__box .col_img {
     width: 100%;
     margin-bottom: 20px;
@@ -899,44 +949,13 @@ h2.heading_food_2 {
     width: 100%;
     margin-bottom: 20px;
   }
-}
 
-@media screen and (min-width: 768px) and (max-width: 1070px) {
-  .food__box .col_txt {
-    padding: 15px;
-  }
-
-  .food__box .col_txt h2 {
-    font-size: 20px;
-  }
-
-  .food__box .col_txt h2.text__green {
-    margin-bottom: 10px;
-  }
-
-  .food__box .col_txt .information {
-    padding-bottom: 10px;
-    font-size: 10px;
-    margin-bottom: 10px;
-    line-height: 1.7;
-  }
-
-  .food__box .col_txt .label span {
-    font-size: 10px;
-    padding: 4px 4px 8px 5px;
-    color: #fff;
+  .food__box .col_txt .timeline__wrapper {
     margin-bottom: 5px;
-    line-height: 1;
   }
 
-  .food__box .col_txt p {
-    font-size: 9px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 900px) {
-  .food__wrap__8 .food__introduce__menu__text .btn_style3 {
-    font-size: 2.1rem;
+  .food__box .col_txt .timeline__wrapper .timeline {
+    width: auto;
   }
 }
 
@@ -965,7 +984,42 @@ h2.heading_food_2 {
   }
 }
 
+@media screen and (max-width: 600px) {
+  h2.heading_food_2 {
+    font-size: 3.1rem;
+  }
+
+  .food__box .col_txt h2 {
+    font-size: 3.1rem;
+  }
+}
+
 @media screen and (max-width: 450px) {
+  h2.heading_food_2 {
+    font-size: 2.3rem;
+  }
+
+  .food__box .col_txt {
+    padding: 15px;
+  }
+
+  .food__box .col_txt h2 {
+    font-size: 2.3rem;
+  }
+
+  .food__box .col_txt .information {
+    font-size: 1.3rem;
+    line-height: 1.7;
+  }
+
+  .food__box .col_txt .label span {
+    font-size: 1.3rem;
+  }
+
+  .food__box .col_txt p {
+    font-size: 1.0rem;
+  }
+
   .food__wrap__8 .food__introduce__menu__text .btn_style3:before {
     top: 30%;
     right: 13px;
@@ -990,6 +1044,23 @@ h2.heading_food_2 {
 
   .food__introduce .food__introduce__item:last-child {
     margin-bottom: 0;
+  }
+
+  .food__box .col_txt h2 {
+    font-size: 2.3rem;
+  }
+
+  .food__box .col_txt .information {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+
+  .food__box .col_txt .label span {
+    font-size: 1.1rem;
+  }
+
+  .food__box .col_txt p {
+    font-size: 1.1rem;
   }
 }
 
