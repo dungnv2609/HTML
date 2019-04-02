@@ -8,6 +8,16 @@
   src: url(../fonts/KozukaGothicPrN-R.otf);
 }
 
+@font-face {
+  font-family: 'HirakakuStd-W3';
+  src: url(../fonts/HirakakuStd-W3.otf);
+}
+
+@font-face {
+  font-family: 'HirakakuStd-W6';
+  src: url(../fonts/HirakakuStd-W6.otf);
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -95,6 +105,10 @@ main {
   text-align: center;
 }
 
+.left {
+  text-align: left;
+}
+
 .mg-bt-img {
   margin-bottom: 0 !important;
 }
@@ -105,6 +119,10 @@ main {
 
 .pd-bt60 {
   padding-bottom: 60px;
+}
+
+.pd-bt65 {
+  padding-bottom: 65px;
 }
 
 .pc {
@@ -143,6 +161,10 @@ main {
 
 .orange {
   color: $orange;
+}
+
+.bg_white {
+  background: $white;
 }
 
 .mw_370 img {

@@ -154,6 +154,27 @@
   }
 }
 
+.table_1 {
+  margin-bottom: 10px;
+
+  td {
+    border: 1px solid #B1B1B1;
+    text-align: center;
+    padding: 15px 9px;
+    font-family: $font-family-alt-3;
+
+    &.left {
+      text-align: left;
+    }
+  }
+
+  .td_bg {
+    background: #EDEDED;
+  }
+}
+
+;
+
 @media screen and (max-width: 767px) {
   #breadcum {
     display: none;

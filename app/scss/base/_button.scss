@@ -49,6 +49,23 @@ $btn_ls: 0.1em; // button letter-spacing
     color: $white !important;
     opacity: .9;
   }
+
+  &.small {
+    font-family: $font-family-base;
+    font-size: 2.2rem;
+    letter-spacing: .2em;
+    padding: 4px 10px 10px;
+    box-shadow: none;
+    @include border-radius(15px);
+
+    &:before {
+      @include abs-pos(50%, 12.5%);
+    }
+
+    &:after {
+      @include abs-pos(50%, 14.6%);
+    }
+  }
 }
 
 .btn_style1 {
@@ -115,6 +132,10 @@ $btn_ls: 0.1em; // button letter-spacing
 .mac-os {
   .btn_round {
     padding: 23px 10px 27px;
+
+    &.small {
+      padding: 7px 10px;
+    }
   }
 
   .btn_style1 {

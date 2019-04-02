@@ -99,6 +99,26 @@
       }
     }
   }
+
+  .box_img {
+    text-align: center;
+
+    h4 {
+      font-family: $font-family-alt-2;
+      font-size: 2rem;
+      letter-spacing: 0;
+      margin-bottom: 20px;
+    }
+
+    img {
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.4rem;
+      line-height: 1.5;
+    }
+  }
 }
 
 .mac-os {

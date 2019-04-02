@@ -90,7 +90,16 @@ $sub_fs: 2rem;
   }
 }
 
-
+h4 {
+  &.style1 {
+    font-family: $font-family-alt-2;
+    font-size: 1.8rem;
+    color: $green;
+    border-bottom: 1px solid #B1B1B1;
+    padding-bottom: 17px;
+    margin-bottom: 20px;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .title {

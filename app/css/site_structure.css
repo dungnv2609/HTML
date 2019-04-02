@@ -8,6 +8,16 @@
   src: url(../fonts/KozukaGothicPrN-R.otf);
 }
 
+@font-face {
+  font-family: 'HirakakuStd-W3';
+  src: url(../fonts/HirakakuStd-W3.otf);
+}
+
+@font-face {
+  font-family: 'HirakakuStd-W6';
+  src: url(../fonts/HirakakuStd-W6.otf);
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -95,6 +105,10 @@ main .container {
   text-align: center;
 }
 
+.left {
+  text-align: left;
+}
+
 .mg-bt-img {
   margin-bottom: 0 !important;
 }
@@ -105,6 +119,10 @@ main .container {
 
 .pd-bt60 {
   padding-bottom: 60px;
+}
+
+.pd-bt65 {
+  padding-bottom: 65px;
 }
 
 .pc {
@@ -143,6 +161,10 @@ main .container {
 
 .orange {
   color: #e18a50;
+}
+
+.bg_white {
+  background: #fff;
 }
 
 .mw_370 img {
@@ -770,6 +792,31 @@ footer {
   opacity: .9;
 }
 
+.btn_round.small {
+  font-family: "Hannari", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 2.2rem;
+  letter-spacing: .2em;
+  padding: 4px 10px 10px;
+  box-shadow: none;
+  border-radius: 15px;
+}
+
+.btn_round.small:before {
+  top: 50%;
+  right: 12.5%;
+  bottom: auto;
+  left: auto;
+  position: absolute;
+}
+
+.btn_round.small:after {
+  top: 50%;
+  right: 14.6%;
+  bottom: auto;
+  left: auto;
+  position: absolute;
+}
+
 .btn_style1 {
   background: #e18a50;
   color: #fff;
@@ -851,6 +898,10 @@ footer {
 
 .mac-os .btn_round {
   padding: 23px 10px 27px;
+}
+
+.mac-os .btn_round.small {
+  padding: 7px 10px;
 }
 
 .mac-os .btn_style1 {
@@ -1016,6 +1067,15 @@ footer {
 .title h2.ic_flower + p span:before,
       .title h2.ic_flower + p span:after {
   width: 100%;
+}
+
+h4.style1 {
+  font-family: "HirakakuStd-W6", Arial, sans-serif;
+  font-size: 1.8rem;
+  color: #527c68;
+  border-bottom: 1px solid #B1B1B1;
+  padding-bottom: 17px;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1388,6 +1448,25 @@ footer {
 
 .box_txt span.txt_sub_lg {
   font-size: 3.6rem;
+}
+
+.table_1 {
+  margin-bottom: 10px;
+}
+
+.table_1 td {
+  border: 1px solid #B1B1B1;
+  text-align: center;
+  padding: 15px 9px;
+  font-family: "HirakakuStd-W3", Arial, sans-serif;
+}
+
+.table_1 td.left {
+  text-align: left;
+}
+
+.table_1 .td_bg {
+  background: #EDEDED;
 }
 
 @media screen and (max-width: 767px) {
