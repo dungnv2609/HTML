@@ -267,3 +267,11 @@ header {
     padding-left: 30px;
   }
 }
+
+@media screen and (max-width: 340px) {
+  .nav__logo {
+    h1 {
+      padding-left: 0;
+    }
+  }
+}
