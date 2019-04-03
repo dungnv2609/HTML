@@ -194,7 +194,7 @@ h2.heading_food_2 {
 .food__wrap__8 {
   p {
     width: 100%;
-    font-size: 14px;
+    font-size: 1.3rem;
     font-family: $font-family-alt-3;
     line-height: 1.7;
 
@@ -217,42 +217,31 @@ h2.heading_food_2 {
 
       .menu__text__item {
         width: 45%;
+        &:first-child {
+          padding-left: 10px;
+          border-left: 10px solid $green;
+        }
+        p {
+          line-height: 1.3;
+          margin-bottom: 10px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
       }
 
-      .btn_style3 {
+      .btn_round {
         margin-bottom: 0;
-        padding: 15px 15px 20px;
+        padding: 12px 15px 17px;
 
         &:before {
-          top: 38%;
-          right: 13px;
-          bottom: auto;
-          left: auto;
+          right: 25px;
         }
 
         &:after {
-          top: 48%;
-          right: 20px;
-          bottom: auto;
-          left: auto;
-          border-top: 4px solid transparent;
-          border-bottom: 4px solid transparent;
-          border-left: 6px solid #e18a50;
+          right: 31px;
         }
-      }
-    }
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .food__wrap__8 {
-    .btn_round {
-      &:before {
-        right: 24%;
-      }
-
-      &:after {
-        right: 25.5%;
       }
     }
   }
@@ -305,8 +294,8 @@ h2.heading_food_2 {
   .food__wrap__8 {
     .food__introduce__menu {
       &__text {
-        .btn_style3 {
-          font-size: 2.1rem;
+        .btn_round {
+          font-size: 1.9rem;
         }
       }
     }
@@ -474,7 +463,7 @@ h2.heading_food_2 {
       }
 
       p {
-        font-size: 1.0rem;
+        font-size: 1.2rem;
       }
     }
   }
@@ -482,19 +471,10 @@ h2.heading_food_2 {
   .food__wrap__8 {
     .food__introduce__menu {
       &__text {
-        .btn_style3 {
-          &:before {
-            top: 30%;
-            right: 13px;
-            bottom: auto;
-            left: auto;
-          }
-
+        .btn_round {
+          font-size: 1.7rem;
           &:after {
-            top: 43%;
-            right: 20px;
-            bottom: auto;
-            left: auto;
+            right: 30px;
           }
         }
       }
