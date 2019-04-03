@@ -73,32 +73,38 @@ h2.heading_food_2 {
 .food__item {
   margin-bottom: 30px;
   font-family: $font-family-alt-3;
+
   img {
     margin-bottom: 10px;
   }
+
   h3 {
+    font-family: $font-family-alt-3;
     font-size: 20px;
     font-weight: normal;
     color: #333333;
     padding-left: 20px;
     position: relative;
     margin-bottom: 10px;
+
     &:before {
       display: block;
       position: absolute;
       content: '';
       width: 10px;
       height: 20px;
-      top: 10px;
+      top: 6px;
       left: 0;
       background: $green;
     }
   }
+
   .price {
     display: flex;
     justify-content: flex-end;
     font-size: 16px;
   }
+
   .description {
     font-size: 16px;
     margin-top: 10px;
@@ -132,10 +138,12 @@ h2.heading_food_2 {
     h2 {
       font-size: 3.6rem;
       font-weight: normal;
+
       &.text__green {
         margin-bottom: 20px;
       }
     }
+
     .information {
       padding-bottom: 20px;
       border-bottom: 1px solid #808080;
@@ -146,6 +154,7 @@ h2.heading_food_2 {
 
     .label {
       margin: 0 10px 0 0;
+
       span {
         font-size: 1.4rem;
         background: $green;
@@ -159,6 +168,7 @@ h2.heading_food_2 {
 
     .timeline__wrapper {
       flex-wrap: wrap;
+
       .timeline {
         width: 100%;
       }
@@ -167,17 +177,11 @@ h2.heading_food_2 {
     p {
       font-family: $font-family-alt-3;
       font-size: 1.4rem;
+
       &.text__green {
         white-space: nowrap;
       }
     }
-  }
-}
-
-.food__wrap__7 {
-  .badge_img {
-    left: auto;
-    right: 0;
   }
 }
 
@@ -187,6 +191,7 @@ h2.heading_food_2 {
     font-size: 14px;
     font-family: $font-family-alt-3;
     line-height: 1.7;
+
     span {
       font-size: 18px;
     }
@@ -211,6 +216,7 @@ h2.heading_food_2 {
       .btn_style3 {
         margin-bottom: 0;
         padding: 15px 15px 20px;
+
         &:before {
           top: 38%;
           right: 13px;
@@ -232,6 +238,20 @@ h2.heading_food_2 {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .food__wrap__8 {
+    .btn_round {
+      &:before {
+        right: 24%;
+      }
+
+      &:after {
+        right: 25.5%;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1150px) {
   .food__box {
     .col_txt {
@@ -245,10 +265,12 @@ h2.heading_food_2 {
     .col_txt {
       h2 {
         font-size: 20px;
+
         &.text__green {
           margin-bottom: 10px;
         }
       }
+
       .information {
         padding-bottom: 10px;
         font-size: 10px;
@@ -292,13 +314,6 @@ h2.heading_food_2 {
     }
   }
 
-  .food__wrap__7 {
-    .badge_img {
-      left: 0;
-      right: auto;
-    }
-  }
-
   .food__wrap__8 {
     .food__introduce__menu {
       &__image {
@@ -311,6 +326,7 @@ h2.heading_food_2 {
         .menu__text__item {
           width: 100%;
           margin-bottom: 20px;
+
           &:last-child {
             margin-bottom: 0;
           }
@@ -338,6 +354,7 @@ h2.heading_food_2 {
 
     .btn_style3 {
       padding: 10px;
+
       &:before {
         top: 35%;
         right: 13px;
@@ -372,6 +389,7 @@ h2.heading_food_2 {
 
       .timeline__wrapper {
         margin-bottom: 5px;
+
         .timeline {
           width: auto;
         }
@@ -389,6 +407,7 @@ h2.heading_food_2 {
 
     .btn_style3 {
       padding: 10px;
+
       &:before {
         top: 39%;
         right: 13px;
@@ -424,6 +443,7 @@ h2.heading_food_2 {
   h2.heading_food_2 {
     font-size: 2.3rem;
   }
+
   .food__box {
     .col_txt {
       padding: 15px;
@@ -431,6 +451,7 @@ h2.heading_food_2 {
       h2 {
         font-size: 2.3rem;
       }
+
       .information {
         font-size: 1.3rem;
         line-height: 1.7;
@@ -447,6 +468,7 @@ h2.heading_food_2 {
       }
     }
   }
+
   .food__wrap__8 {
     .food__introduce__menu {
       &__text {
@@ -488,6 +510,7 @@ h2.heading_food_2 {
       h2 {
         font-size: 2.3rem;
       }
+
       .information {
         font-size: 1.1rem;
         line-height: 1.7;

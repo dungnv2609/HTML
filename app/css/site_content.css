@@ -674,6 +674,7 @@ h2.heading_food_2 {
 }
 
 .food__item h3 {
+  font-family: "HirakakuStd-W3", Arial, sans-serif;
   font-size: 20px;
   font-weight: normal;
   color: #333333;
@@ -688,7 +689,7 @@ h2.heading_food_2 {
   content: '';
   width: 10px;
   height: 20px;
-  top: 10px;
+  top: 6px;
   left: 0;
   background: #527c68;
 }
@@ -776,11 +777,6 @@ h2.heading_food_2 {
   white-space: nowrap;
 }
 
-.food__wrap__7 .badge_img {
-  left: auto;
-  right: 0;
-}
-
 .food__wrap__8 p {
   width: 100%;
   font-size: 14px;
@@ -832,6 +828,16 @@ h2.heading_food_2 {
   border-left: 6px solid #e18a50;
 }
 
+@media screen and (min-width: 768px) {
+  .food__wrap__8 .btn_round:before {
+    right: 24%;
+  }
+
+  .food__wrap__8 .btn_round:after {
+    right: 25.5%;
+  }
+}
+
 @media screen and (max-width: 1150px) {
   .food__box .col_txt {
     padding: 15px;
@@ -876,11 +882,6 @@ h2.heading_food_2 {
 @media screen and (max-width: 767px) {
   .food__wrap__2 .btn_style3 {
     margin-bottom: 20px;
-  }
-
-  .food__wrap__7 .badge_img {
-    left: 0;
-    right: auto;
   }
 
   .food__wrap__8 .food__introduce__menu__image {

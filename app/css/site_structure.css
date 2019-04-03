@@ -1377,11 +1377,11 @@ h4.style1 {
 }
 
 .mac-os .badge_img {
-  padding: 16px 5px;
+  padding: 15px 5px 17px;
 }
 
 .mac-os .badge_txt {
-  padding: 11px 21px;
+  padding: 10px 21px 12px;
 }
 
 .table__info {
