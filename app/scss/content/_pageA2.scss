@@ -236,11 +236,47 @@ h2.heading_food_2 {
         padding: 12px 15px 17px;
 
         &:before {
-          right: 25px;
+          right: 120px;
         }
 
         &:after {
-          right: 31px;
+          right: 126px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1367px) {
+  .food__wrap__8 {
+    .food__introduce__menu {
+      &__text {
+        .btn_round {
+          &:before {
+            right: 100px;
+          }
+
+          &:after {
+            right: 106px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .food__wrap__8 {
+    .food__introduce__menu {
+      &__text {
+        .btn_round {
+          &:before {
+            right: 50px;
+          }
+
+          &:after {
+            right: 56px;
+          }
         }
       }
     }
@@ -285,6 +321,24 @@ h2.heading_food_2 {
 
       p {
         font-size: 9px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .food__wrap__8 {
+    .food__introduce__menu {
+      &__text {
+        .btn_round {
+          &:before {
+            right: 25px;
+          }
+
+          &:after {
+            right: 31px;
+          }
+        }
       }
     }
   }
