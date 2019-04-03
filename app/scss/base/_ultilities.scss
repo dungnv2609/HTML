@@ -243,6 +243,16 @@
       }
     }
   }
+
+  .box_txt {
+    .box_time {
+      .time_table {
+        p.txt_sml {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -376,7 +386,7 @@
       .label {
         span {
           font-size: 1.3rem;
-          min-width: 80px;
+          min-width: 75px;
         }
       }
 
