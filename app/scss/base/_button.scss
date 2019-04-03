@@ -156,6 +156,16 @@ $btn_ls: 0.1em; // button letter-spacing
     &:after {
       @include abs-pos(50%, 27.5%);
     }
+
+    &.small {
+      &:before {
+        @include abs-pos(50%, 26.5%);
+      }
+
+      &:after {
+        @include abs-pos(50%, 27.6%);
+      }
+    }
   }
 }
 
@@ -171,6 +181,16 @@ $btn_ls: 0.1em; // button letter-spacing
 
     &:after {
       @include abs-pos(50%, 22%);
+    }
+
+    &.small {
+      &:before {
+        @include abs-pos(50%, 20.5%);
+      }
+
+      &:after {
+        @include abs-pos(50%, 22%);
+      }
     }
   }
 
@@ -191,6 +211,16 @@ $btn_ls: 0.1em; // button letter-spacing
 
     &:after {
       @include abs-pos(50%, 18%);
+    }
+
+    &.small {
+      &:before {
+        @include abs-pos(50%, 16.5%);
+      }
+
+      &:after {
+        @include abs-pos(50%, 18%);
+      }
     }
   }
 
