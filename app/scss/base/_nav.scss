@@ -243,8 +243,12 @@ header {
   }
 
   .menu__title {
-    font-size: 3.5rem;
+    font-size: 3rem;
     padding: 8px 0 17px;
+  }
+
+  .ios .menu__title {
+    padding: 12px 0 13px;
   }
 
   .nav {
