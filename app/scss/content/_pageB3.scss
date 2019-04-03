@@ -9,10 +9,6 @@
 .box__table {
   margin-bottom: 30px;
 
-  div {
-    overflow-y: scroll;
-  }
-
   p {
     font-family: $font-family-alt-3;
     font-size: 1.6rem;
@@ -50,6 +46,12 @@
 
   .box__list {
     padding: 15px 30px;
+  }
+
+  .box__table {
+    div {
+      overflow-y: scroll;
+    }
   }
 }
 

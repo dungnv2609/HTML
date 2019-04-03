@@ -492,8 +492,12 @@ header {
   }
 
   .menu__title {
-    font-size: 3.5rem;
+    font-size: 3rem;
     padding: 8px 0 17px;
+  }
+
+  .ios .menu__title {
+    padding: 12px 0 13px;
   }
 
   .nav li a,
@@ -1218,9 +1222,9 @@ h4.style1 {
 }
 
 .news__list dl {
-  padding: 22px 180px;
+  padding: 18px 180px;
   width: 100%;
-  line-height: 1.5;
+  line-height: 2;
 }
 
 .news__list dl dt {
@@ -1586,6 +1590,10 @@ h4.style1 {
     top: 0;
     left: 0;
     right: auto;
+  }
+
+  .table__info {
+    margin-bottom: 40px;
   }
 
   .table__info tr td {

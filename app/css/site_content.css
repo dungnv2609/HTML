@@ -1090,10 +1090,6 @@ h2.heading_food_2 {
   margin-bottom: 30px;
 }
 
-.box__table div {
-  overflow-y: scroll;
-}
-
 .box__table p {
   font-family: "HirakakuStd-W3", Arial, sans-serif;
   font-size: 1.6rem;
@@ -1130,6 +1126,10 @@ h2.heading_food_2 {
 
   .box__list {
     padding: 15px 30px;
+  }
+
+  .box__table div {
+    overflow-y: scroll;
   }
 }
 
