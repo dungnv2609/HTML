@@ -835,11 +835,31 @@ h2.heading_food_2 {
 }
 
 .food__wrap__8 .food__introduce__menu__text .btn_round:before {
-  right: 25px;
+  right: 120px;
 }
 
 .food__wrap__8 .food__introduce__menu__text .btn_round:after {
-  right: 31px;
+  right: 126px;
+}
+
+@media screen and (max-width: 1367px) {
+  .food__wrap__8 .food__introduce__menu__text .btn_round:before {
+    right: 100px;
+  }
+
+  .food__wrap__8 .food__introduce__menu__text .btn_round:after {
+    right: 106px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .food__wrap__8 .food__introduce__menu__text .btn_round:before {
+    right: 50px;
+  }
+
+  .food__wrap__8 .food__introduce__menu__text .btn_round:after {
+    right: 56px;
+  }
 }
 
 @media screen and (max-width: 1150px) {
@@ -874,6 +894,16 @@ h2.heading_food_2 {
 
   .food__box .col_txt p {
     font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .food__wrap__8 .food__introduce__menu__text .btn_round:before {
+    right: 25px;
+  }
+
+  .food__wrap__8 .food__introduce__menu__text .btn_round:after {
+    right: 31px;
   }
 }
 
