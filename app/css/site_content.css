@@ -777,6 +777,10 @@ h2.heading_food_2 {
   white-space: nowrap;
 }
 
+.mac-os .food__box .col_txt .label span {
+  padding: 6px 4px 6px 5px;
+}
+
 .food__wrap__8 p {
   width: 100%;
   font-size: 14px;
@@ -957,6 +961,10 @@ h2.heading_food_2 {
 
   .food__box .col_txt .timeline__wrapper .timeline {
     width: auto;
+  }
+
+  .ios .food__box .col_txt .label span {
+    padding: 6px 4px 6px 5px;
   }
 }
 

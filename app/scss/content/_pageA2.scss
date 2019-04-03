@@ -185,6 +185,12 @@ h2.heading_food_2 {
   }
 }
 
+.mac-os {
+  .food__box .col_txt .label span {
+    padding: 6px 4px 6px 5px;
+  }
+}
+
 .food__wrap__8 {
   p {
     width: 100%;
@@ -395,6 +401,10 @@ h2.heading_food_2 {
         }
       }
     }
+  }
+
+  .ios .food__box .col_txt .label span {
+    padding: 6px 4px 6px 5px;
   }
 }
 
