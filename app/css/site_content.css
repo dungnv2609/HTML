@@ -1414,3 +1414,282 @@ h2.heading_food_2 {
     margin-bottom: 50px;
   }
 }
+
+h2.heading_travel_1 {
+  padding: 20px 10px 28px;
+  background: #527c68;
+  font-size: 2.8rem;
+  color: #fff;
+  text-align: center;
+  line-height: 1;
+  font-weight: normal;
+  font-family: "Hannari", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin-bottom: 60px;
+}
+
+.travel_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.travel_box .travel_img {
+  width: 58%;
+  padding-top: 8px;
+}
+
+.travel_box .travel_txt {
+  width: 39%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 3px;
+}
+
+.travel_box .travel_txt .title_container {
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #333333;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.travel_box .travel_txt .title_container h2 {
+  font-size: 2.4rem;
+  color: #527c68;
+}
+
+.travel_box .travel_txt .title_container h2 span {
+  color: #e28b50;
+  margin-right: 5px;
+}
+
+.travel_box .travel_txt .title_container h3 {
+  font-size: 1.8rem;
+  color: #527c68;
+}
+
+.travel_box .travel_txt .information_container {
+  margin-bottom: 60px;
+  font-size: 2rem;
+  font-family: "HirakakuStd-W3", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.travel_box .travel_txt .button_container .btn_round {
+  margin-bottom: 0;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  padding: 12px 10px 18px;
+}
+
+.travel_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.travel_list img {
+  margin-bottom: 30px;
+}
+
+.travel_list .travel_item {
+  width: 31%;
+  margin-bottom: 60px;
+}
+
+.travel_list .travel_item .title_container {
+  margin-bottom: 30px;
+}
+
+.travel_list .travel_item .title_container h2 {
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+}
+
+.travel_list .travel_item .title_container h2 span {
+  color: #e28b50;
+  margin-right: 5px;
+}
+
+.travel_list .travel_item .title_container h3 {
+  font-size: 1.6rem;
+  padding-left: 10px;
+}
+
+.travel_list .travel_item .information_container {
+  margin-bottom: 60px;
+  font-size: 1.6rem;
+  font-family: "HirakakuStd-W3", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.travel_list .travel_item .button_container .btn_round {
+  margin-bottom: 0;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  padding: 12px 10px 18px;
+}
+
+.travel_list .travel_item:nth-child(3n+1) {
+  margin-right: 3.5%;
+}
+
+.travel_list .travel_item:nth-child(3n+2) {
+  margin-right: 3.5%;
+}
+
+.travel_wrap_1 .title {
+  margin-bottom: 60px;
+}
+
+.travel_wrap_1 img {
+  margin-bottom: 60px;
+}
+
+.travel_wrap_1 .btn__list {
+  margin-bottom: 0;
+}
+
+.travel_wrap_1 .btn__list li {
+  margin-bottom: 0;
+}
+
+.travel_wrap_1 .btn__list li a {
+  margin-bottom: 60px;
+}
+
+.travel_wrap_1 .btn_round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.travel_wrap_1 .btn_round:before {
+  display: none;
+}
+
+.travel_wrap_1 .btn_round:after {
+  display: none;
+}
+
+@media screen and (min-width: 1151px) {
+  .travel_box .travel_txt .button_container .btn_round {
+    font-size: 1.8rem;
+    max-width: 400px;
+  }
+
+  .travel_box .travel_txt .button_container .btn_round:before {
+    right: 16.4%;
+  }
+
+  .travel_box .travel_txt .button_container .btn_round:after {
+    right: 18%;
+  }
+
+  .travel_list .travel_item .button_container .btn_round {
+    font-size: 1.8rem;
+  }
+
+  .travel_list .travel_item .button_container .btn_round:before {
+    right: 16.4%;
+  }
+
+  .travel_list .travel_item .button_container .btn_round:after {
+    right: 18%;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1150px) {
+  .travel_list .travel_item .button_container .btn_round {
+    font-size: 1.8rem;
+  }
+
+  .travel_list .travel_item .button_container .btn_round:before {
+    right: 5%;
+  }
+
+  .travel_list .travel_item .button_container .btn_round:after {
+    right: 7%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+  .travel_box .travel_txt .information_container {
+    margin-bottom: 30px;
+    font-size: 1.7rem;
+  }
+
+  .travel_box .travel_txt .button_container .btn_round {
+    font-size: 1.8rem;
+    max-width: 400px;
+  }
+
+  .travel_box .travel_txt .button_container .btn_round:before {
+    right: 16.4%;
+  }
+
+  .travel_box .travel_txt .button_container .btn_round:after {
+    right: 18%;
+  }
+
+  .travel_list .travel_item .button_container .btn_round {
+    font-size: 1.8rem;
+  }
+
+  .travel_list .travel_item .button_container .btn_round:before {
+    right: 5%;
+  }
+
+  .travel_list .travel_item .button_container .btn_round:after {
+    right: 7%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .travel_box img {
+    margin-bottom: 30px;
+  }
+
+  .travel_box .travel_img {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .travel_box .travel_txt {
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  .travel_box .travel_txt .information_container {
+    font-size: 1.6rem;
+  }
+
+  .travel_list .travel_item {
+    width: 100%;
+  }
+
+  .travel_list .travel_item .information_container {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .travel_box .travel_txt .button_container .btn_round:before {
+    right: 9%;
+  }
+
+  .travel_box .travel_txt .button_container .btn_round:after {
+    right: 10.8%;
+  }
+
+  .travel_list .travel_item .button_container .btn_round:before {
+    right: 9%;
+  }
+
+  .travel_list .travel_item .button_container .btn_round:after {
+    right: 10.8%;
+  }
+}

@@ -1216,6 +1216,23 @@ footer {
   width: 50%;
 }
 
+.title h2.ic_suitcase {
+  padding-right: 50px;
+}
+
+.title h2.ic_suitcase:after {
+  top: 8px;
+  right: 0;
+  background: url(/images/ic_05.svg) center no-repeat;
+  width: 33px;
+  height: 38px;
+}
+
+.title h2.ic_suitcase + p span:before,
+      .title h2.ic_suitcase + p span:after {
+  width: 100%;
+}
+
 .mac-os .title span {
   word-spacing: -10px;
 }
@@ -1282,6 +1299,21 @@ h4.style1 {
     width: 20%;
   }
 
+  .title h2.ic_suitcase {
+    padding-right: 40px;
+  }
+
+  .title h2.ic_suitcase:after {
+    top: 6px;
+    width: 28px;
+    height: 33px;
+  }
+
+  .title h2.ic_suitcase + p span:before,
+        .title h2.ic_suitcase + p span:after {
+    width: 50%;
+  }
+
   .title span:before, .title span:after {
     width: 140%;
   }
@@ -1316,6 +1348,21 @@ h4.style1 {
   .title h2.ic_flower + p.line_short span:before,
       .title h2.ic_flower + p.line_short span:after {
     width: 10%;
+  }
+
+  .title h2.ic_suitcase {
+    padding-right: 30px;
+  }
+
+  .title h2.ic_suitcase:after {
+    top: 2px;
+    width: 23px;
+    height: 28px;
+  }
+
+  .title h2.ic_suitcase + p span:before,
+      .title h2.ic_suitcase + p span:after {
+    width: 40%;
   }
 
   .title span:before, .title span:after {
