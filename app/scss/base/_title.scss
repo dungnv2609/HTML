@@ -121,6 +121,14 @@ h4 {
       }
     }
   }
+
+  .ios {
+    .title {
+      span {
+        word-spacing: -10px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {

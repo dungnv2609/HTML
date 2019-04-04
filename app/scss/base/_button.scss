@@ -129,6 +129,44 @@ $btn_ls: 0.1em; // button letter-spacing
   }
 }
 
+.btn_style4 {
+  @extend %btn;
+  background: $green;
+  color: $white;
+  font-family: $font-family-base;
+  font-size: 1.6rem;
+  padding: 7px 5px 14px;
+  margin-bottom: 0;
+  max-width: 150px;
+  @include border-radius(5px);
+
+  span {
+    position: relative;
+    display: inline-block;
+    padding-right: 20px;
+
+    &:before {
+      @include pseudo;
+      @include abs-pos(4px, 0);
+      @include size(17px, 17px);
+      @include border-radius(50%);
+      background-color: $white;
+    }
+
+    &:after {
+      @include pseudo;
+      @include abs-pos(8px, 5px);
+      @include size(0, 0);
+      @include triangle-right(4px, 6px, $green);
+    }
+  }
+
+  &:hover {
+    color: $white !important;
+    opacity: .9;
+  }
+}
+
 .mac-os {
   .btn_round {
     padding: 23px 10px 27px;
