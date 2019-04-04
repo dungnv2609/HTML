@@ -1,60 +1,46 @@
-.room-feel-the-southern-europe {
+#room-feel-the-southern-europe p {
+  font-family: $font-family-alt-3;
+}
+
+#room-feel-the-southern-europe {
   font-size: 16px;
-  background-color: #D9D4CA;
-  .container {
-    background-image: none;
-  }
-  .title {
-    span {
-      font-size: 1.8rem;
-      &:before,
-      &:after {
-        top: 26px;
-      }
-    }
-  }
+
   .pr-3 {
     padding-right: 3rem;
   }
+
   .mb-3 {
     margin-bottom: 3rem;
   }
+
   .mb-4 {
     margin-bottom: 4rem;
   }
+
   .d-flex {
     display: flex;
   }
+
   .justify-content-center {
     justify-content: center;
   }
-  .h-100 {
-    height: 100%;
-  }
-  .mt-1 {
-    margin-top: .5rem;
-  }
-  .contact_box {
-    .title {
-      margin-bottom: 20px;
-    }
-  }
+
   #b1 {
     .col-4 {
       width: 31.7%;
     }
   }
+
   .b2 .title {
     margin-bottom: 20px;
   }
-  .hiraku {
-    font-family: $font-family-alt-3;
-  }
+
   .content {
     &__box {
       .box_txt {
         justify-content: center;
       }
+
       .header {
         background-color: #527C68;
         width: 100%;
@@ -62,31 +48,37 @@
         font-size: 28px;
         color: white;
       }
+
       .description {
         font-size: 18px;
       }
+
       .check-in-out {
         margin-top: 20px;
         font-size: 24px;
+
         .check-in {
           margin-right: 20px;
         }
+
+        p {
+          display: inline-block;
+          font-size: 2.4rem;
+        }
       }
+
       .contact {
-        border: 2px solid #CA8050;
         margin-top: 20px;
+
         &__title {
           text-align: center;
           font-size: 24px;
           padding-top: 12px;
         }
+
         &__content {
           text-align: center;
-          img {
-            width: 55px;
-            position: relative;
-            top: -25px;
-          }
+
           .phone-text {
             font-size: 75px;
             color: #527C68;
@@ -95,80 +87,186 @@
             line-height: 70px;
           }
         }
+
         &__footer {
           text-align: center;
           font-size: 18px;
           padding: 0 0 20px 0;
         }
-      }
-      .introduce {
-        height: 85%;
-        &__title {
-          background-color: #A7A7A7;
-          color: #fff;
-          font-size: 20px;
-          text-align: center;
-          padding: 10px 0;
-        }
-        &__content {
-          background-color: #fff;
-          padding: 10px 20px;
-          font-size: 16px;
-          height: 100%;
-          line-height: 25px;
+
+        img {
+          max-width: none !important;
+          max-height: none !important;
         }
       }
+
       .cancle-fee {
+        font-family: $font-family-alt-3;
+        margin-bottom: 80px;
+
         &__title {
           text-align: center;
-          padding: 10px 0;
+          padding: 12px 0;
           color: #fff;
-          font-size: 20px;
+          font-size: 2rem;
           background-color: #A7A7A7;
         }
+
         &__content {
           min-height: 110px;
           text-align: center;
           word-break: break-word;
           background-color: #fff;
+
           div:not(:last-child) {
             border-right: 1px solid #8E8E8E;
           }
+
           &:nth-child(2) {
             border-bottom: 1px solid #8E8E8E;
           }
+
           &:last-child {
             background-color: #CDCDCD;
             width: 100%;
           }
         }
-        .col-1, .col-2 {
+
+        .col-1,
+        .col-2 {
           display: flex;
           justify-content: center;
           align-items: center;
         }
+
         .col-1 {
           width: 15%;
           padding: 20px;
         }
+
         .col-2 {
           width: 20%;
           padding: 20px;
+          font-family: $font-family-alt-2;
+          font-weight: 600;
         }
       }
+
       span > span {
         color: #527c68;
       }
+
       .content-image {
         padding-top: 10px;
         background-color: #fff;
       }
     }
   }
-  .last-bg {
-    padding-bottom: 80px;
-    background-image: url('/images/room_feel_the_southern_europe/last-bg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
+}
+
+.box__img__5 {
+  margin-bottom: 50px;
+
+  .box__img__item {
+    margin-bottom: 30px;
+  }
+}
+
+.contact_box {
+  margin-bottom: 45px;
+
+  .header {
+    margin-bottom: 30px;
+  }
+
+  .contact_box_info {
+    width: 60.17%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .contact_box_form {
+    width: 36.5%;
+  }
+}
+
+.box__column__2 {
+  .col-6 {
+    width: 48.5416667%;
+  }
+
+  .introduce {
+    margin-bottom: 40px;
+
+    &__title {
+      background-color: #A7A7A7;
+      color: #fff;
+      font-size: 2rem;
+      text-align: center;
+      padding: 12px 0;
+      font-family: $font-family-alt-3;
+    }
+
+    &__content {
+      background-color: #fff;
+      padding: 20px 35px;
+      font-size: 1.6rem;
+      line-height: 2;
+    }
+  }
+}
+
+.room__box {
+  .col_left {
+    width: 50%;
+  }
+
+  .col_right {
+    width: 47.5%;
+  }
+
+  .room__img {
+    margin-bottom: 20px;
+  }
+
+  .room__info {
+    font-family: $font-family-alt-3;
+    background: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact_box {
+
+    .contact_box_info,
+    .contact_box_form {
+      width: 100%;
+    }
+
+    .contact_box_info {
+      margin-bottom: 30px;
+    }
+  }
+
+  .room__box {
+
+    .col_left,
+    .col_right {
+      width: 100%;
+    }
+
+    .room__info {
+      margin-bottom: 20px;
+    }
+
+    .btn_round {
+      margin-bottom: 50px;
+    }
   }
 }

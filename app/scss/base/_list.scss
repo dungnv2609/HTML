@@ -93,6 +93,29 @@
   }
 }
 
+.circle_list {
+  li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 14px;
+      height: 14px;
+      background: $green;
+      border-radius: 50%;
+    }
+  }
+}
+
 @media screen and (max-width: 767px) {
   .news__list {
     background: $white;

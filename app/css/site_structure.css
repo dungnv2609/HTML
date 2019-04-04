@@ -211,7 +211,7 @@ main .container {
 }
 
 .col-4 {
-  width: 30.83%;
+  width: 31.6666667%;
 }
 
 .col-5 {
@@ -219,11 +219,11 @@ main .container {
 }
 
 .col-6 {
-  flex-basis: 48%;
+  width: 48.75%;
 }
 
 .col-8 {
-  width: 66.67%;
+  width: 65.83%;
 }
 
 .col-9 {
@@ -1136,7 +1136,7 @@ footer {
 }
 
 .title p {
-  font-family: "Hannari", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Hannari", Roboto, "Helvetica Neue", Arial, sans-serif !important;
 }
 
 .title span {
@@ -1211,6 +1211,11 @@ footer {
   width: 100%;
 }
 
+.title h2.ic_flower + p.line_short span:before,
+      .title h2.ic_flower + p.line_short span:after {
+  width: 50%;
+}
+
 .mac-os .title span {
   word-spacing: -10px;
 }
@@ -1272,6 +1277,11 @@ h4.style1 {
     width: 50%;
   }
 
+  .title h2.ic_flower + p.line_short span:before,
+        .title h2.ic_flower + p.line_short span:after {
+    width: 20%;
+  }
+
   .title span:before, .title span:after {
     width: 140%;
   }
@@ -1301,6 +1311,11 @@ h4.style1 {
   .title h2.ic_flower + p span:before,
       .title h2.ic_flower + p span:after {
     width: 40%;
+  }
+
+  .title h2.ic_flower + p.line_short span:before,
+      .title h2.ic_flower + p.line_short span:after {
+    width: 10%;
   }
 
   .title span:before, .title span:after {
@@ -1395,6 +1410,27 @@ h4.style1 {
   width: 13px;
   height: 13px;
   background: #333;
+}
+
+.circle_list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.circle_list li:last-child {
+  margin-bottom: 0;
+}
+
+.circle_list li:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  background: #527c68;
+  border-radius: 50%;
 }
 
 @media screen and (max-width: 767px) {

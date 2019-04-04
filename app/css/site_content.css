@@ -1158,72 +1158,47 @@ h2.heading_food_2 {
   }
 }
 
-.room-feel-the-southern-europe {
-  font-size: 16px;
-  background-color: #D9D4CA;
-}
-
-.room-feel-the-southern-europe .container {
-  background-image: none;
-}
-
-.room-feel-the-southern-europe .title span {
-  font-size: 1.8rem;
-}
-
-.room-feel-the-southern-europe .title span:before, .room-feel-the-southern-europe .title span:after {
-  top: 26px;
-}
-
-.room-feel-the-southern-europe .pr-3 {
-  padding-right: 3rem;
-}
-
-.room-feel-the-southern-europe .mb-3 {
-  margin-bottom: 3rem;
-}
-
-.room-feel-the-southern-europe .mb-4 {
-  margin-bottom: 4rem;
-}
-
-.room-feel-the-southern-europe .d-flex {
-  display: flex;
-}
-
-.room-feel-the-southern-europe .justify-content-center {
-  justify-content: center;
-}
-
-.room-feel-the-southern-europe .h-100 {
-  height: 100%;
-}
-
-.room-feel-the-southern-europe .mt-1 {
-  margin-top: .5rem;
-}
-
-.room-feel-the-southern-europe .contact_box .title {
-  margin-bottom: 20px;
-}
-
-.room-feel-the-southern-europe #b1 .col-4 {
-  width: 31.7%;
-}
-
-.room-feel-the-southern-europe .b2 .title {
-  margin-bottom: 20px;
-}
-
-.room-feel-the-southern-europe .hiraku {
+#room-feel-the-southern-europe p {
   font-family: "HirakakuStd-W3", Arial, sans-serif;
 }
 
-.room-feel-the-southern-europe .content__box .box_txt {
+#room-feel-the-southern-europe {
+  font-size: 16px;
+}
+
+#room-feel-the-southern-europe .pr-3 {
+  padding-right: 3rem;
+}
+
+#room-feel-the-southern-europe .mb-3 {
+  margin-bottom: 3rem;
+}
+
+#room-feel-the-southern-europe .mb-4 {
+  margin-bottom: 4rem;
+}
+
+#room-feel-the-southern-europe .d-flex {
+  display: flex;
+}
+
+#room-feel-the-southern-europe .justify-content-center {
   justify-content: center;
 }
 
-.room-feel-the-southern-europe .content__box .header {
+#room-feel-the-southern-europe #b1 .col-4 {
+  width: 31.7%;
+}
+
+#room-feel-the-southern-europe .b2 .title {
+  margin-bottom: 20px;
+}
+
+#room-feel-the-southern-europe .content__box .box_txt {
+  justify-content: center;
+}
+
+#room-feel-the-southern-europe .content__box .header {
   background-color: #527C68;
   width: 100%;
   padding: 10px 0 15px 0;
@@ -1231,41 +1206,39 @@ h2.heading_food_2 {
   color: white;
 }
 
-.room-feel-the-southern-europe .content__box .description {
+#room-feel-the-southern-europe .content__box .description {
   font-size: 18px;
 }
 
-.room-feel-the-southern-europe .content__box .check-in-out {
+#room-feel-the-southern-europe .content__box .check-in-out {
   margin-top: 20px;
   font-size: 24px;
 }
 
-.room-feel-the-southern-europe .content__box .check-in-out .check-in {
+#room-feel-the-southern-europe .content__box .check-in-out .check-in {
   margin-right: 20px;
 }
 
-.room-feel-the-southern-europe .content__box .contact {
-  border: 2px solid #CA8050;
+#room-feel-the-southern-europe .content__box .check-in-out p {
+  display: inline-block;
+  font-size: 2.4rem;
+}
+
+#room-feel-the-southern-europe .content__box .contact {
   margin-top: 20px;
 }
 
-.room-feel-the-southern-europe .content__box .contact__title {
+#room-feel-the-southern-europe .content__box .contact__title {
   text-align: center;
   font-size: 24px;
   padding-top: 12px;
 }
 
-.room-feel-the-southern-europe .content__box .contact__content {
+#room-feel-the-southern-europe .content__box .contact__content {
   text-align: center;
 }
 
-.room-feel-the-southern-europe .content__box .contact__content img {
-  width: 55px;
-  position: relative;
-  top: -25px;
-}
-
-.room-feel-the-southern-europe .content__box .contact__content .phone-text {
+#room-feel-the-southern-europe .content__box .contact__content .phone-text {
   font-size: 75px;
   color: #527C68;
   font-weight: 500;
@@ -1273,88 +1246,171 @@ h2.heading_food_2 {
   line-height: 70px;
 }
 
-.room-feel-the-southern-europe .content__box .contact__footer {
+#room-feel-the-southern-europe .content__box .contact__footer {
   text-align: center;
   font-size: 18px;
   padding: 0 0 20px 0;
 }
 
-.room-feel-the-southern-europe .content__box .introduce {
-  height: 85%;
+#room-feel-the-southern-europe .content__box .contact img {
+  max-width: none !important;
+  max-height: none !important;
 }
 
-.room-feel-the-southern-europe .content__box .introduce__title {
-  background-color: #A7A7A7;
-  color: #fff;
-  font-size: 20px;
+#room-feel-the-southern-europe .content__box .cancle-fee {
+  font-family: "HirakakuStd-W3", Arial, sans-serif;
+  margin-bottom: 80px;
+}
+
+#room-feel-the-southern-europe .content__box .cancle-fee__title {
   text-align: center;
-  padding: 10px 0;
-}
-
-.room-feel-the-southern-europe .content__box .introduce__content {
-  background-color: #fff;
-  padding: 10px 20px;
-  font-size: 16px;
-  height: 100%;
-  line-height: 25px;
-}
-
-.room-feel-the-southern-europe .content__box .cancle-fee__title {
-  text-align: center;
-  padding: 10px 0;
+  padding: 12px 0;
   color: #fff;
-  font-size: 20px;
+  font-size: 2rem;
   background-color: #A7A7A7;
 }
 
-.room-feel-the-southern-europe .content__box .cancle-fee__content {
+#room-feel-the-southern-europe .content__box .cancle-fee__content {
   min-height: 110px;
   text-align: center;
   word-break: break-word;
   background-color: #fff;
 }
 
-.room-feel-the-southern-europe .content__box .cancle-fee__content div:not(:last-child) {
+#room-feel-the-southern-europe .content__box .cancle-fee__content div:not(:last-child) {
   border-right: 1px solid #8E8E8E;
 }
 
-.room-feel-the-southern-europe .content__box .cancle-fee__content:nth-child(2) {
+#room-feel-the-southern-europe .content__box .cancle-fee__content:nth-child(2) {
   border-bottom: 1px solid #8E8E8E;
 }
 
-.room-feel-the-southern-europe .content__box .cancle-fee__content:last-child {
+#room-feel-the-southern-europe .content__box .cancle-fee__content:last-child {
   background-color: #CDCDCD;
   width: 100%;
 }
 
-.room-feel-the-southern-europe .content__box .cancle-fee .col-1, .room-feel-the-southern-europe .content__box .cancle-fee .col-2 {
+#room-feel-the-southern-europe .content__box .cancle-fee .col-1,
+    #room-feel-the-southern-europe .content__box .cancle-fee .col-2 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.room-feel-the-southern-europe .content__box .cancle-fee .col-1 {
+#room-feel-the-southern-europe .content__box .cancle-fee .col-1 {
   width: 15%;
   padding: 20px;
 }
 
-.room-feel-the-southern-europe .content__box .cancle-fee .col-2 {
+#room-feel-the-southern-europe .content__box .cancle-fee .col-2 {
   width: 20%;
   padding: 20px;
+  font-family: "HirakakuStd-W6", Arial, sans-serif;
+  font-weight: 600;
 }
 
-.room-feel-the-southern-europe .content__box span > span {
+#room-feel-the-southern-europe .content__box span > span {
   color: #527c68;
 }
 
-.room-feel-the-southern-europe .content__box .content-image {
+#room-feel-the-southern-europe .content__box .content-image {
   padding-top: 10px;
   background-color: #fff;
 }
 
-.room-feel-the-southern-europe .last-bg {
-  padding-bottom: 80px;
-  background-image: url("/images/room_feel_the_southern_europe/last-bg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+.box__img__5 {
+  margin-bottom: 50px;
+}
+
+.box__img__5 .box__img__item {
+  margin-bottom: 30px;
+}
+
+.contact_box {
+  margin-bottom: 45px;
+}
+
+.contact_box .header {
+  margin-bottom: 30px;
+}
+
+.contact_box .contact_box_info {
+  width: 60.17%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact_box .contact_box_form {
+  width: 36.5%;
+}
+
+.box__column__2 .col-6 {
+  width: 48.5416667%;
+}
+
+.box__column__2 .introduce {
+  margin-bottom: 40px;
+}
+
+.box__column__2 .introduce__title {
+  background-color: #A7A7A7;
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  padding: 12px 0;
+  font-family: "HirakakuStd-W3", Arial, sans-serif;
+}
+
+.box__column__2 .introduce__content {
+  background-color: #fff;
+  padding: 20px 35px;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+.room__box .col_left {
+  width: 50%;
+}
+
+.room__box .col_right {
+  width: 47.5%;
+}
+
+.room__box .room__img {
+  margin-bottom: 20px;
+}
+
+.room__box .room__info {
+  font-family: "HirakakuStd-W3", Arial, sans-serif;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact_box .contact_box_info,
+  .contact_box .contact_box_form {
+    width: 100%;
+  }
+
+  .contact_box .contact_box_info {
+    margin-bottom: 30px;
+  }
+
+  .room__box .col_left,
+  .room__box .col_right {
+    width: 100%;
+  }
+
+  .room__box .room__info {
+    margin-bottom: 20px;
+  }
+
+  .room__box .btn_round {
+    margin-bottom: 50px;
+  }
 }

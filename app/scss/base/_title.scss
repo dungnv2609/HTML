@@ -13,7 +13,7 @@ $sub_fs: 2rem;
   margin-bottom: 45px;
 
   p {
-    font-family: $font-family-base;
+    font-family: $font-family-base !important;
   }
 
   span {
@@ -85,6 +85,11 @@ $sub_fs: 2rem;
       + p span:before,
       + p span:after {
         width: 100%;
+      }
+
+      + p.line_short span:before,
+      + p.line_short span:after {
+        width: 50%;
       }
     }
   }
@@ -159,6 +164,11 @@ h4 {
         + p span:after {
           width: 50%;
         }
+
+        + p.line_short span:before,
+        + p.line_short span:after {
+          width: 20%;
+        }
       }
     }
 
@@ -195,6 +205,11 @@ h4 {
         + p span:before,
         + p span:after {
           width: 40%;
+        }
+
+        + p.line_short span:before,
+        + p.line_short span:after {
+          width: 10%;
         }
       }
     }
