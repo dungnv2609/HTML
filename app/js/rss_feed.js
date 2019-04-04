@@ -19,8 +19,8 @@ function rssRender(feed, idElement, max) {
 				if(number <= max){
 				// console.log("------------------------");
 					var pubDate = new Date(el.find("pubDate").text());
-					var textPubDate = pubDate.getFullYear()+'.'+pubDate.getMonth()+'.'+pubDate.getDay();
-                    /*var textPubDate = pubDate.getFullYear()+'.'+('0' + (pubDate.getMonth() + 1)).slice(-2)+'.'+('0' + (pubDate.getDate() + 1)).slice(-2);*/
+					/*var textPubDate = pubDate.getFullYear()+'.'+pubDate.getMonth()+'.'+pubDate.getDay();*/
+                    var textPubDate = pubDate.getFullYear()+'.'+('0' + (pubDate.getMonth() + 1)).slice(-2)+'.'+('0' + (pubDate.getDate() + 1)).slice(-2);
 				// console.log("date      : " + textPubDate);
 				// console.log("title      : " + el.find("title").text());
 				// console.log("link       : " + el.find("link").text());

@@ -141,6 +141,11 @@ header {
     padding: 15px 0 25px;
   }
 
+  .mac-os .menu__title,
+  .ios .menu__title {
+    padding: 20px 0;
+  }
+
   .nav {
     background: $white;
 
@@ -247,6 +252,7 @@ header {
     padding: 8px 0 17px;
   }
 
+  .mac-os .menu__title,
   .ios .menu__title {
     padding: 12px 0 13px;
   }

@@ -90,6 +90,14 @@ $sub_fs: 2rem;
   }
 }
 
+.mac-os {
+  .title {
+    span {
+      word-spacing: -10px;
+    }
+  }
+}
+
 h4 {
   &.style1 {
     font-family: $font-family-alt-2;

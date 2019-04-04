@@ -398,6 +398,11 @@ header {
     padding: 15px 0 25px;
   }
 
+  .mac-os .menu__title,
+  .ios .menu__title {
+    padding: 20px 0;
+  }
+
   .nav {
     background: #fff;
   }
@@ -496,6 +501,7 @@ header {
     padding: 8px 0 17px;
   }
 
+  .mac-os .menu__title,
   .ios .menu__title {
     padding: 12px 0 13px;
   }
@@ -1126,6 +1132,10 @@ footer {
   width: 100%;
 }
 
+.mac-os .title span {
+  word-spacing: -10px;
+}
+
 h4.style1 {
   font-family: "HirakakuStd-W6", Arial, sans-serif;
   font-size: 1.8rem;
@@ -1494,7 +1504,10 @@ h4.style1 {
 .box_txt {
   background: url(/images/bg_trans_sp.png) center no-repeat;
   background-size: cover;
-  padding: 30px;
+  padding: 25px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .box_txt span {
@@ -1541,21 +1554,30 @@ h4.style1 {
 }
 
 .box_txt .box_time .label {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .box_txt .box_time .label span {
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   color: #fff;
   background: #527c68;
   display: inline-block;
-  min-width: 145px;
-  padding: 10px 5px 11px;
+  min-width: 80px;
+  padding: 3px 5px 8px;
   margin-bottom: 0;
 }
 
 .box_txt .box_time .time_table p {
   font-size: 1.6rem;
+}
+
+.box_txt .box_time .time_table p.txt_sml {
+  font-size: 1.3rem;
+  letter-spacing: -.02em;
+}
+
+.mac-os .box_txt .box_time .label span {
+  padding: 5px 5px 6px;
 }
 
 .table_1 {
@@ -1605,8 +1627,35 @@ h4.style1 {
     width: 25%;
   }
 
+  .box_txt .box_txt_top {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+  .box_txt .box_time {
+    margin-bottom: 30px;
+  }
+
+  .box_txt .box_time .label {
+    margin-right: 15px;
+  }
+
+  .box_txt .box_time .label span {
+    font-size: 1.9rem;
+    min-width: 145px;
+    padding: 8px 5px 13px;
+  }
+
+  .box_txt .box_time .time_table p {
+    font-size: 1.6rem;
+  }
+
   .box_txt .box_time .time_table p.txt_sml {
     font-size: 1.1rem;
+  }
+
+  .ios .box_txt .box_time .label span {
+    padding: 10px 5px 11px;
   }
 }
 
@@ -1719,5 +1768,9 @@ h4.style1 {
 
   .box_txt .box_time .time_table p {
     font-size: 1.4rem;
+  }
+
+  .ios .box_txt .box_time .label span {
+    padding: 5px 5px 6px;
   }
 }
