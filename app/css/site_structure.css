@@ -466,6 +466,22 @@ header {
     transform: rotate(270deg);
     transition: .2s all ease-in-out;
   }
+
+  .nav li.has_sub span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+  }
+
+  .nav li.has_sub a {
+    width: calc(100% - 80px);
+  }
+
+  .nav li.has_sub li a {
+    width: 100%;
+  }
   /* ----- sub lists ----- */
   .sub {
     position: absolute;
@@ -519,6 +535,15 @@ header {
 
   .sub li a {
     padding-left: 30px;
+  }
+
+  .nav li.has_sub span {
+    width: 60px;
+    height: 60px;
+  }
+
+  .nav li.has_sub a {
+    width: calc(100% - 60px);
   }
 }
 
@@ -1469,6 +1494,10 @@ h4.style1 {
   margin-bottom: 80px;
 }
 
+.table__info table {
+  margin-bottom: 80px;
+}
+
 .table__info th {
   font-size: 3.2rem;
   font-weight: normal;
@@ -1615,7 +1644,11 @@ h4.style1 {
   }
 
   .table__info {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+  }
+
+  .table__info table {
+    margin-bottom: 20px;
   }
 
   .table__info tr td {

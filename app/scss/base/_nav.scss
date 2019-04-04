@@ -210,6 +210,22 @@ header {
     }
   }
 
+  .nav li.has_sub span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 80px;
+  }
+
+  .nav li.has_sub a {
+    width: calc(100% - 80px);
+  }
+
+  .nav li.has_sub li a {
+    width: 100%;
+  }
+
   /* ----- sub lists ----- */
 
   .sub {
@@ -275,6 +291,15 @@ header {
 
   .sub li a {
     padding-left: 30px;
+  }
+
+  .nav li.has_sub span {
+    width: 60px;
+    height: 60px;
+  }
+
+  .nav li.has_sub a {
+    width: calc(100% - 60px);
   }
 }
 
