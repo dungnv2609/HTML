@@ -92,6 +92,23 @@ $sub_fs: 2rem;
         width: 50%;
       }
     }
+
+    &.ic_suitcase {
+      padding-right: 50px;
+
+      &:after {
+        top: 8px;
+        right: 0;
+        background: url(/images/ic_05.svg) center no-repeat;
+        width: 33px;
+        height: 38px;
+      }
+
+      + p span:before,
+      + p span:after {
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -170,6 +187,21 @@ h4 {
           width: 20%;
         }
       }
+
+      &.ic_suitcase {
+        padding-right: 40px;
+
+        &:after {
+          top: 6px;
+          width: 28px;
+          height: 33px;
+        }
+
+        + p span:before,
+        + p span:after {
+          width: 50%;
+        }
+      }
     }
 
     span {
@@ -210,6 +242,21 @@ h4 {
         + p.line_short span:before,
         + p.line_short span:after {
           width: 10%;
+        }
+      }
+
+      &.ic_suitcase {
+        padding-right: 30px;
+
+        &:after {
+          top: 2px;
+          width: 23px;
+          height: 28px;
+        }
+
+        + p span:before,
+        + p span:after {
+          width: 40%;
         }
       }
     }
