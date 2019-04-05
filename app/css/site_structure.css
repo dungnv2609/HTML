@@ -1781,6 +1781,50 @@ h4.style1 {
   background: #EDEDED;
 }
 
+.table_2 {
+  margin-bottom: 80px;
+  font-family: "HirakakuStd-W3", Arial, sans-serif;
+  text-align: center;
+}
+
+.table_2 th {
+  font-size: 2rem;
+  color: #fff;
+  background: #A7A7A7;
+  padding: 13px 10px;
+  font-weight: normal;
+}
+
+.table_2 td {
+  background: #fff;
+  border-right: 1px solid #8E8E8E;
+  border-bottom: 1px solid #8E8E8E;
+  width: 15.1666667%;
+  height: 130px;
+  font-size: 1.8rem;
+  line-height: 1.7;
+  padding: 10px;
+  min-width: 180px;
+}
+
+.table_2 td:first-child {
+  font-family: "HirakakuStd-W6", Arial, sans-serif;
+  width: 24.1666667%;
+  min-width: 290px;
+}
+
+.table_2 td:last-child {
+  border-right: none;
+}
+
+.table_2 tr:last-child td {
+  border-bottom: none;
+}
+
+.table_2 .td_bg {
+  background: #CDCDCD;
+}
+
 @media screen and (max-width: 767px) {
   #breadcum {
     display: none;
@@ -1843,6 +1887,19 @@ h4.style1 {
   .ios .box_txt .box_time .label span {
     padding: 10px 5px 11px;
   }
+
+  .table_2 {
+    overflow-x: scroll;
+  }
+
+  .table_2 td {
+    min-width: 160px;
+    font-size: 1.6rem;
+  }
+
+  .table_2 td:first-child {
+    min-width: 240px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -1902,6 +1959,16 @@ h4.style1 {
 
   .box_txt .box_time .label span {
     min-width: 100px;
+  }
+
+  .table_2 td {
+    min-width: 160px;
+    font-size: 1.6rem;
+    height: 100px;
+  }
+
+  .table_2 td:first-child {
+    min-width: 200px;
   }
 }
 
