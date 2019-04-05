@@ -193,13 +193,13 @@
       font-size: 2.6rem;
       color: $white;
       background: #333;
-      text-align: center;
-      padding: 1px 0 7px;
+      text-align: left;
+      padding: 1px 20px 7px 75px;
       letter-spacing: -2px;
     }
 
     #search_con div {
-      padding: 10px 80px 20px;
+      padding: 10px 75px 20px;
       background: #E5E5E5;
     }
 
@@ -285,6 +285,21 @@
     .contact_box_info {
       margin-bottom: 30px;
     }
+
+    .contact_box_form {
+      h3 {
+        padding: 1px 70px 7px;
+      }
+
+      #search_con div {
+        padding: 10px 70px 20px;
+      }
+    }
+  }
+
+  .mac-os .contact_box .contact_box_form h3,
+  .ios .contact_box .contact_box_form h3 {
+    padding: 4px 70px;
   }
 
   .room__box {
@@ -301,5 +316,43 @@
     .btn_round {
       margin-bottom: 50px;
     }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact_box {
+    .contact_box_form {
+      h3 {
+        padding: 1px 50px 7px;
+      }
+
+      #search_con div {
+        padding: 10px 50px 20px;
+      }
+    }
+  }
+
+  .mac-os .contact_box .contact_box_form h3,
+  .ios .contact_box .contact_box_form h3 {
+    padding: 4px 50px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contact_box {
+    .contact_box_form {
+      h3 {
+        padding: 1px 20px 7px;
+      }
+
+      #search_con div {
+        padding: 10px 20px 20px;
+      }
+    }
+  }
+
+  .mac-os .contact_box .contact_box_form h3,
+  .ios .contact_box .contact_box_form h3 {
+    padding: 4px 20px;
   }
 }

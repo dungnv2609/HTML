@@ -1349,13 +1349,13 @@ h2.heading_food_2 {
   font-size: 2.6rem;
   color: #fff;
   background: #333;
-  text-align: center;
-  padding: 1px 0 7px;
+  text-align: left;
+  padding: 1px 20px 7px 75px;
   letter-spacing: -2px;
 }
 
 .contact_box .contact_box_form #search_con div {
-  padding: 10px 80px 20px;
+  padding: 10px 75px 20px;
   background: #E5E5E5;
 }
 
@@ -1434,6 +1434,19 @@ h2.heading_food_2 {
     margin-bottom: 30px;
   }
 
+  .contact_box .contact_box_form h3 {
+    padding: 1px 70px 7px;
+  }
+
+  .contact_box .contact_box_form #search_con div {
+    padding: 10px 70px 20px;
+  }
+
+  .mac-os .contact_box .contact_box_form h3,
+  .ios .contact_box .contact_box_form h3 {
+    padding: 4px 70px;
+  }
+
   .room__box .col_left,
   .room__box .col_right {
     width: 100%;
@@ -1445,6 +1458,36 @@ h2.heading_food_2 {
 
   .room__box .btn_round {
     margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact_box .contact_box_form h3 {
+    padding: 1px 50px 7px;
+  }
+
+  .contact_box .contact_box_form #search_con div {
+    padding: 10px 50px 20px;
+  }
+
+  .mac-os .contact_box .contact_box_form h3,
+  .ios .contact_box .contact_box_form h3 {
+    padding: 4px 50px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .contact_box .contact_box_form h3 {
+    padding: 1px 20px 7px;
+  }
+
+  .contact_box .contact_box_form #search_con div {
+    padding: 10px 20px 20px;
+  }
+
+  .mac-os .contact_box .contact_box_form h3,
+  .ios .contact_box .contact_box_form h3 {
+    padding: 4px 20px;
   }
 }
 
