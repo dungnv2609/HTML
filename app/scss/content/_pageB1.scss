@@ -188,6 +188,39 @@
 
   .contact_box_form {
     width: 36.5%;
+
+    h3 {
+      font-size: 2.6rem;
+      color: $white;
+      background: #333;
+      text-align: center;
+      padding: 1px 0 7px;
+      letter-spacing: -2px;
+    }
+
+    #search_con div {
+      padding: 10px 80px 20px;
+      background: #E5E5E5;
+    }
+
+    .bt_search {
+      text-align: center;
+    }
+
+    select {
+      font-size: 1.4rem;
+      border-radius: 5px;
+      padding: 1px;
+    }
+
+    p {
+      font-size: 1.8rem;
+      line-height: 1.2;
+      margin-bottom: 12px;
+      font-family: $font-family-base !important;
+      letter-spacing: -1px;
+      font-weight: 600;
+    }
   }
 }
 

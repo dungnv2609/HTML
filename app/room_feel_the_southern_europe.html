@@ -145,8 +145,8 @@
             <div class="contact_box_info">
               <div class="box_1">
                 <p class="description hiraku">
-                  ご宿泊されるお客様は、「養老汗蒸幕」「療法浴場さらさ」「紫雲の湯」「みのり乃湯」がご利用いただけます。<br />
-                  ※小学生以下の方は「養老汗蒸幕」「療法浴場さらさ」のご利用はできません。「紫雲の湯」のご利用みとなります。
+                  ご宿泊されるお客様は､「養老汗蒸幕」「療法浴場さらさ」「紫雲の湯」「みのり乃湯」がご利用いただけます。<br />
+                  ※小学生以下の方は「養老汗蒸幕」「療法浴場さらさ」のご利用はできません。<br>「紫雲の湯」のご利用みとなります。
                 </p>
                 <div class="check-in-out hiraku">
                   <p class="check-in">■チェックイン　15：00</p>
@@ -158,7 +158,201 @@
               </div>
             </div>
             <div class="contact_box_form">
-              <img src="images/b1_form_img.png" alt="">
+              <div id="search_con">
+                <form action="http://www.489pro.com/asp/489/menu.asp?id=21000048&amp;ty=ser&amp;list=YES&amp;lan=JPN" method="post" name="form_search">
+                  <h3>条件から空室を検索</h3>
+                  <div>
+                    <p>ホテルなでしこのご宿泊プランは、<br>こちらより検索いただけます。</p>
+                    <p>&nbsp;▼宿泊日</p>
+                    <p>
+                      &nbsp;
+                      <select name="obj_year" id="nen">
+                        <script language="JavaScript" type="text/javascript">
+                          document.write(optY + "\n");
+
+                        </script>undefined<option value="2019" selected="selected">2019</option>
+                        <option value="2020">2020</option>
+
+
+                      </select>
+                      <span>/</span>
+                      <select name="obj_month" id="tuki">
+                        <script language="JavaScript" type="text/javascript">
+                          document.write(optC + "\n");
+
+                        </script>undefined<option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4" selected="selected">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+
+
+                      </select>
+                      <span>/</span>
+                      <select name="obj_day" id="hi">
+                        <script language="JavaScript" type="text/javascript">
+                          document.write(optN + "\n");
+
+                        </script>undefined<option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5" selected="selected">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+
+
+                      </select>
+                      <span></span>
+                    </p>
+                    <p>
+                      <span>&nbsp;▼ご利用人数</span>
+                    </p>
+                    <p>
+                      &nbsp;
+                      <select name="obj_per_num">
+                        <script language="JavaScript" type="text/javascript">
+                          for (var i = 1; i < 11; i++) {
+                            var html = '<option value="' + i + '"';
+                            if (i == 2) {
+                              html += ' selected';
+                            }
+                            html += '>' + i + '</option>';
+                            document.write(html);
+                          }
+
+                        </script>
+                        <option value="1">1</option>
+                        <option value="2" selected="">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                      </select>
+                      <span>人</span>
+                      <select name="obj_stay_num">
+                        <script language="JavaScript" type="text/javascript">
+                          for (var i = 1; i < 31; i++) {
+                            var html = '<option value="' + i + '"';
+                            if (i == 1) {
+                              html += ' selected';
+                            }
+                            html += '>' + i + '</option>';
+                            document.write(html);
+                          }
+
+                        </script>
+                        <option value="1" selected="">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                      </select>
+                      <span>泊</span>
+                    </p>
+                    <p>&nbsp;▼料金</p>
+                    <p>
+                      &nbsp;
+                      <select name="obj_budget_min">
+                        <option value="0" selected="selected">下限なし</option>
+                        <option value="1">5,000円</option>
+                        <option value="2">6,000円</option>
+                        <option value="3">7,000円</option>
+                        <option value="4">8,000円</option>
+                        <option value="5">9,000円</option>
+                        <option value="6">10,000円</option>
+                        <option value="7">12,000円</option>
+                        <option value="8">14,000円</option>
+                        <option value="9">16,000円</option>
+                        <option value="10">18,000円</option>
+                        <option value="11">20,000円</option>
+                        <option value="12">30,000円</option>
+                        <option value="13">40,000円</option>
+                        <option value="14">50,000円</option>
+                      </select>
+                      <span>～</span>
+                      <select name="obj_budget_max">
+                        <option value="0" selected="selected">上限なし</option>
+                        <option value="1">5,000円</option>
+                        <option value="2">6,000円</option>
+                        <option value="3">7,000円</option>
+                        <option value="4">8,000円</option>
+                        <option value="5">9,000円</option>
+                        <option value="6">10,000円</option>
+                        <option value="7">12,000円</option>
+                        <option value="8">14,000円</option>
+                        <option value="9">16,000円</option>
+                        <option value="10">18,000円</option>
+                        <option value="11">20,000円</option>
+                        <option value="12">30,000円</option>
+                        <option value="13">40,000円</option>
+                        <option value="14">50,000円</option>
+                      </select>
+                    </p>
+                    <p class="bt_search"><input type="submit" value="この条件で検索する" style="font-size: 1.2em;"></p>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
