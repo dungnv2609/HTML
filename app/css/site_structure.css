@@ -991,7 +991,7 @@ footer {
 }
 
 .mac-os .btn_round {
-  padding: 23px 10px 27px;
+  padding: 24px 10px 26px;
 }
 
 .mac-os .btn_round.small {
@@ -1038,6 +1038,14 @@ footer {
     left: auto;
     position: absolute;
   }
+
+  .ios .btn_round {
+    padding: 24px 10px 26px;
+  }
+
+  .ios .btn_round.small {
+    padding: 6px 10px 8px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -1082,6 +1090,10 @@ footer {
   .btn_style3 {
     font-size: 1.8rem;
     letter-spacing: 0;
+  }
+
+  .ios .btn_round {
+    padding: 15px 10px;
   }
 }
 

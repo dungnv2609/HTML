@@ -40,6 +40,9 @@ h2.heading_travel_1 {
       h2 {
         font-size: 2.4rem;
         color: $green;
+        padding-left: 30px;
+        text-indent: -30px;
+
         span {
           color: #e28b50;
           margin-right: 5px;
@@ -49,6 +52,7 @@ h2.heading_travel_1 {
       h3 {
         font-size: 1.8rem;
         color: $green;
+        padding-left: 30px;
       }
     }
 
@@ -70,6 +74,11 @@ h2.heading_travel_1 {
   }
 }
 
+.mac-os .travel_box .travel_txt .button_container .btn_round,
+.mac-os .travel_list .travel_item .button_container .btn_round {
+  padding: 15px 10px;
+}
+
 .travel_list {
   display: flex;
   flex-wrap: wrap;
@@ -88,6 +97,9 @@ h2.heading_travel_1 {
       h2 {
         font-size: 2.2rem;
         margin-bottom: 5px;
+        padding-left: 30px;
+        text-indent: -30px;
+
         span {
           color: #e28b50;
           margin-right: 5px;
@@ -96,7 +108,7 @@ h2.heading_travel_1 {
 
       h3 {
         font-size: 1.6rem;
-        padding-left: 10px;
+        padding-left: 30px;
       }
     }
 
@@ -137,8 +149,10 @@ h2.heading_travel_1 {
 
   .btn__list {
     margin-bottom: 0;
+
     li {
       margin-bottom: 0;
+
       a {
         margin-bottom: 60px;
       }
@@ -146,9 +160,10 @@ h2.heading_travel_1 {
   }
 
   .btn_round {
-    display: flex;
+    /*display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;*/
+    font-size: 2.8rem;
 
     &:before {
       display: none;
@@ -292,6 +307,50 @@ h2.heading_travel_1 {
         font-size: 1.6rem;
       }
     }
+  }
+
+  .travel_wrap_1 .btn__list {
+    margin-bottom: 30px;
+  }
+
+  .travel_wrap_1 .btn__list li a {
+    margin-bottom: 30px;
+  }
+
+  .travel_wrap_1 .btn_round {
+    font-size: 2.6rem;
+  }
+
+  .ios .travel_box .travel_txt .button_container .btn_round,
+  .ios .travel_list .travel_item .button_container .btn_round {
+    padding: 15px 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .travel_wrap_1 .btn_round {
+    font-size: 2.2rem;
+  }
+
+  .ios .travel_box .travel_txt .button_container .btn_round,
+  .ios .travel_list .travel_item .button_container .btn_round {
+    padding: 15px 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .travel_wrap_1 .btn_round {
+    font-size: 1.8rem;
+    padding: 12px 0 18px;
+  }
+
+  .ios .travel_wrap_1 .btn_round {
+    padding: 15px 0;
+  }
+
+  .ios .travel_box .travel_txt .button_container .btn_round,
+  .ios .travel_list .travel_item .button_container .btn_round {
+    padding: 15px 0;
   }
 }
 

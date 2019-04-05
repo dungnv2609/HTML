@@ -169,7 +169,7 @@ $btn_ls: 0.1em; // button letter-spacing
 
 .mac-os {
   .btn_round {
-    padding: 23px 10px 27px;
+    padding: 24px 10px 26px;
 
     &.small {
       padding: 6px 10px 8px;
@@ -205,6 +205,14 @@ $btn_ls: 0.1em; // button letter-spacing
       }
     }
   }
+
+  .ios .btn_round {
+    padding: 24px 10px 26px;
+
+    &.small {
+      padding: 6px 10px 8px;
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -235,6 +243,10 @@ $btn_ls: 0.1em; // button letter-spacing
   .btn_style3 {
     font-size: 1.8rem;
     letter-spacing: 0;
+  }
+
+  .ios .btn_round {
+    padding: 15px 10px;
   }
 }
 
