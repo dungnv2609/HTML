@@ -1365,6 +1365,10 @@ h2.heading_food_2 {
   text-align: center;
 }
 
+.contact_box .contact_box_form .bt_search button {
+  font-size: 2rem;
+}
+
 .contact_box .contact_box_form select {
   font-size: 1.4rem;
   border-radius: 5px;
@@ -1416,6 +1420,11 @@ h2.heading_food_2 {
   margin-bottom: 20px;
 }
 
+.room__box .room__des p {
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
 .room__box .room__info {
   font-family: "HirakakuStd-W3", Arial, sans-serif;
   background: #fff;
@@ -1449,9 +1458,30 @@ h2.heading_food_2 {
     padding: 4px 70px;
   }
 
+  .ios .contact_box .contact_box_form select {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
   .room__box .col_left,
   .room__box .col_right {
     width: 100%;
+  }
+
+  .room__box .room__img {
+    margin-bottom: 10px;
+  }
+
+  .room__box .col_left .room__img {
+    margin-bottom: 5px;
+  }
+
+  .room__box .room__des {
+    margin-bottom: 20px;
+  }
+
+  .room__box .room__des p {
+    font-size: 1.6rem;
   }
 
   .room__box .room__info {

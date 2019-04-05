@@ -205,6 +205,10 @@
 
     .bt_search {
       text-align: center;
+
+      button {
+        font-size: 2rem;
+      }
     }
 
     select {
@@ -263,6 +267,11 @@
     margin-bottom: 20px;
   }
 
+  .room__des p {
+    font-size: 2rem;
+    line-height: 1.6;
+  }
+
   .room__info {
     font-family: $font-family-alt-3;
     background: $white;
@@ -302,11 +311,32 @@
     padding: 4px 70px;
   }
 
+  .ios .contact_box .contact_box_form select {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
   .room__box {
 
     .col_left,
     .col_right {
       width: 100%;
+    }
+
+    .room__img {
+      margin-bottom: 10px;
+    }
+
+    .col_left .room__img {
+      margin-bottom: 5px;
+    }
+
+    .room__des {
+      margin-bottom: 20px;
+    }
+
+    .room__des p {
+      font-size: 1.6rem;
     }
 
     .room__info {
