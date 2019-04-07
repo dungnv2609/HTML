@@ -95,8 +95,9 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 1260px) {
-  .header__inner {
+@media screen and (min-width: 768px) {
+  header {
+    min-width: 1366px;
     padding-left: 30px;
     padding-right: 30px;
   }

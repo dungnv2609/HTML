@@ -172,7 +172,7 @@ main .container {
 
 .container {
   max-width: 1200px;
-  width: 100%;
+  /*width: 100%;*/
   margin: 0 auto;
 }
 
@@ -234,8 +234,14 @@ main .container {
   width: 100%;
 }
 
-@media screen and (max-width: 1260px) {
+@media screen and (min-width: 768px) {
+  body {
+    min-width: 1366px;
+  }
+
   .container {
+    width: 1260px;
+    max-width: 1260px;
     padding: 0 30px !important;
   }
 }
@@ -352,8 +358,9 @@ header {
   display: none;
 }
 
-@media screen and (max-width: 1260px) {
-  .header__inner {
+@media screen and (min-width: 768px) {
+  header {
+    min-width: 1366px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -562,6 +569,22 @@ header {
   margin-top: 0;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+  #mainimage {
+    min-width: 1366px;
+    min-height: 600px;
+  }
+
+  #mainimage img {
+    width: auto;
+    max-width: none;
+  }
+
+  .home #mainimage {
+    min-height: 768px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #mainimage {
     margin-top: 80px;
@@ -607,6 +630,7 @@ footer {
 
 .ft__bot .row {
   flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 .ft__address {
@@ -1627,6 +1651,7 @@ h4.style1 {
   top: 0;
   right: 0;
   left: auto;
+  text-align: center;
 }
 
 .badge_txt {
