@@ -51,6 +51,19 @@ h2 {
 	}
 }
 
+#access{
+	section{
+		.tbl-traffic{
+			font-size: 2.1rem;
+			th,td{
+				font-weight: normal;
+			}
+			.trafic__arrow,.trafic__des{
+				font-size: 1.6rem;
+			}
+		}
+	}
+}
 #recruit, #access {
 	.container {
 		padding-bottom: 200px !important;
@@ -60,9 +73,6 @@ h2 {
 	&__des-top {
 		text-align: center;
 		margin-bottom: 30px;
-		p {
-			font-size: 2.8rem;
-		}
 	}
 	&__des-bottom {
 		text-align: center;
@@ -106,7 +116,7 @@ h2 {
 .tbl-recruit {
 	max-width: 1020px;
 	margin: 0 auto;
-	background: rgba(255,255,255, .6);
+	background: rgba(255,255,255, .8);
 	table {
 		font-family: $font-family-alt-3;
 		th, td {
@@ -148,12 +158,12 @@ h2 {
 			margin-left: 40px;
 		}
 		&_right {
-			background: rgba(255,255,255, .6);
-			padding: 40px;
+			background: rgba(255,255,255, .8);
+			padding: 35px 40px 30px 40px;
 			.box__txt {
 				p {
 					&:not(last-child) {
-						margin-bottom: 20px;
+						margin-bottom: 14px;
 					}
 				}
 			}
@@ -161,7 +171,7 @@ h2 {
 	}
 }
 .trafic__box {
-	background: rgba(255,255,255, .6);
+	background: rgba(255,255,255, .8);
 	padding: 30px 35px;
 	font-family: $font-family-alt-3;
 	&.trafic__bus {
@@ -170,7 +180,7 @@ h2 {
 	&--title {
 		background: #527c68;
 		color: #fff;
-		padding: 20px 15px;
+		padding: 16px 15px;
 		margin-bottom: 5px;
 		font-family: $font-family-alt-3;
 		span {
@@ -194,7 +204,7 @@ h2 {
 				}
 			}
 		}
-		&.title02 {
+		&.title_02 {
 			span {
 				padding-right: 60px;
 				&:after {
@@ -225,7 +235,6 @@ h2 {
 			color: #527c68;
 			padding: 5px 10px;
 			margin-bottom: 15px;
-			font-size: 2rem;
 			font-family: $font-family-alt-3;
 		}
 		p {
@@ -270,6 +279,7 @@ h2 {
 			align-self: center;
 			padding-right: 65px;
 			width: 42%;
+			text-align: right;
 			&:after {
 				position: absolute;
 				content: '';
@@ -306,7 +316,7 @@ h2 {
 		}
 	}
 }
-.trafic__tbl {
+.tbl-traffic {
 	text-align: center;
 	span {
 		display: block;
@@ -344,6 +354,37 @@ h2 {
 	}
 }
 
+@media screen and (min-width: 768px) {
+	#recruit{
+		.recruit__box{
+			.recruit {
+				&__des-top {
+					p{
+						font-size: 3.6rem;
+						line-height: 1.35;
+					}
+				}
+			}
+		}
+		.recruit__box{
+			font-size: 2.2rem;
+			p{
+				font-size: 2.2rem;
+			}
+			.tbl-recruit{
+				font-size: 1.8rem;
+			}
+		}
+	}
+	#access{
+		section{
+			font-size: 2.2rem;
+			p{
+				font-size: 2.2rem;
+			}
+		}
+	}
+}
 
 @media screen and (max-width: 767px) {
 	#recruit {
@@ -354,7 +395,7 @@ h2 {
 	.recruit {
 		&__des-top {
 			p {
-				font-size: 2rem;
+				font-size: 2.8rem;
 			}
 		}
 		&__des-bottom {
@@ -442,7 +483,7 @@ h2 {
 				height: 6px;
 			}
 		}
-		.trafic__tbl {
+		.tbl-traffic {
 			width: 1120px;
 		}
 	}
