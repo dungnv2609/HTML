@@ -79,6 +79,17 @@ h2 {
 	}
 }
 
+.font_hanna{
+	font-family: 'Hannari';
+}
+.font_hw3{
+	font-family: 'HirakakuStd-W3';
+}
+.font_hw6{
+	font-family: 'HirakakuStd-W6';
+}
+
+
 #privacy {
 	padding: 100px 0px 0px;
 	.container {
@@ -269,13 +280,14 @@ h2 {
 				-moz-appearance: none;
 				   appearance: none;
 				outline: 0;
-				background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent)) no-repeat, linear-gradient(-135deg, rgba(255, 255, 255, 0) 50%, #eeeeee 50%) no-repeat, linear-gradient(-225deg, rgba(255, 255, 255, 0) 50%, #eeeeee 50%) no-repeat, -webkit-gradient(linear, left top, left bottom, from(#000), to(#000)) no-repeat;
-				background: -webkit-linear-gradient(transparent, transparent) no-repeat, -webkit-linear-gradient(225deg, rgba(255, 255, 255, 0) 50%, #eeeeee 50%) no-repeat, -webkit-linear-gradient(315deg, rgba(255, 255, 255, 0) 50%, #eeeeee 50%) no-repeat, -webkit-linear-gradient(#000, #000) no-repeat;
-				background: -o-linear-gradient(transparent, transparent) no-repeat, -o-linear-gradient(225deg, rgba(255, 255, 255, 0) 50%, #eeeeee 50%) no-repeat, -o-linear-gradient(315deg, rgba(255, 255, 255, 0) 50%, #eeeeee 50%) no-repeat, -o-linear-gradient(#000, #000) no-repeat;
-				background: linear-gradient(transparent, transparent) no-repeat, linear-gradient(-135deg, rgba(255, 255, 255, 0) 50%, #eeeeee 50%) no-repeat, linear-gradient(-225deg, rgba(255, 255, 255, 0) 50%, #eeeeee 50%) no-repeat, linear-gradient(#000, #000) no-repeat;
-				-webkit-background-size: 1px 100%, 29px 40px, 20px 41px, 29px 60%;
-				          background-size: 1px 100%, 29px 40px, 20px 41px, 29px 60%;
-				  background-position: right 30px center, 99% bottom, 99% bottom, 99% bottom;
+				 -webkit-appearance: none;
+				  -moz-appearance: none;
+				  background: transparent;
+				  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='40' viewBox='0 0 20 24' width='40' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+				  background-repeat: no-repeat;
+				  background-position-x: 100%;
+				  background-position-y: -2px;
+				  border: 1px solid #dfdfdf;
 				&::-ms-expand {
 				  display: none;
 				}
@@ -482,6 +494,17 @@ h2 {
 				box-shadow: 3px 3px 5px 0px rgba(149,146,141,1);
 			}
 		}
+	}
+}
+#plan-list {
+	.container {
+		padding-bottom: 120px !important;
+	}
+}
+
+#plan-detail {
+	.container {
+		padding-bottom: 120px !important;
 	}
 }
 
@@ -761,6 +784,17 @@ h2 {
 					box-shadow: 3px 3px 5px 0px rgba(149,146,141,1);
 				}
 			}
+		}
+	}
+	#plan-list {
+		.container {
+			padding-bottom: 50px !important;
+		}
+	}
+
+	#plan-detail {
+		.container {
+			padding-bottom: 50px !important;
 		}
 	}
 }
