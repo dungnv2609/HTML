@@ -93,11 +93,14 @@
                 </div>
                 <table class="tbl-contact">
                   <tr>
-                    <th>お名前<span class="required">（必須）</span></th>
+                    <th>
+                      <p>お名前<span class="required">（必須）</p></span>
+                      <p class="required">※姓が入力されていません。</p>
+                    </th>
                     <td>
                       <div class="row row__wrap row__wrap-a">
-                        <div class="contact__row"><span>姓</span><input type="text" name="" placeholder="" class="ipt-m"></div>
-                        <div class="contact__row"><span>名</span><input type="text" name="" placeholder="" class="ipt-m"></div>
+                        <div class="contact__row"><span>姓</span><input type="text" name="" placeholder="例）山田" class="ipt-m"></div>
+                        <div class="contact__row"><span>名</span><input type="text" name="" placeholder="例）太郎" class="ipt-m"></div>
                       </div>
                     </td>
                   </tr>
@@ -105,16 +108,22 @@
                     <th>電話番号</th>
                     <td>
                       <div class="row row__wrap row__wrap-b">
-                        <div class="contact__row">
-                          <input type="text" name="" class="ipt-s"> <span>- </span>
-                          <input type="text" name="" class="ipt-s"> <span>- </span>
-                          <input type="text" name="" class="ipt-s"><span class="note">※半角数字</span>
+                        <div class="contact__row contact__row__normal">
+                          <div class="row_inner">
+                            <input type="text" name="" class="ipt-s"> <span>- </span>
+                            <input type="text" name="" class="ipt-s"> <span>- </span>
+                            <input type="text" name="" class="ipt-s">
+                          </div>
+                          <span class="note">※半角数字</span>
                         </div>
                       </div>
                     </td>
                   </tr>
                   <tr>
-                    <th>メールアドレス<span class="required">（必須）</span></th>
+                    <th>
+                      <p>メールアドレス<span class="required">（必須）</span></p>
+                      <p class="required">※半角英数字で入力してください。</p>
+                    </th>
                     <td><input type="email" name="email" placeholder="例）yusen@nosato.com" class="ipt-lg"></td>
                   </tr>
                   <tr>
@@ -124,7 +133,7 @@
                         <span>郵便番号</span>
                         <input type="text" name="" class="ipt-s ml0"> - 
                         <input type="text" name="" class="ipt-s">
-                        <a href="#">住所挿入</a>
+                        <button>住所挿入</button>
                       </div>
                       <div class="row row__wrap row__wrap-m">
                         <span>都道府県</span>
