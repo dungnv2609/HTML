@@ -54,7 +54,7 @@
   a {
     font-family: $font-family-alt-3;
     font-size: 1.8rem;
-    padding: 7px 5px;
+    padding: 7px 0;
     width: 100%;
     border: 2px solid #b1b1b1;
     transition: .1s all ease-in-out;
@@ -87,6 +87,59 @@
         background: $orange;
         border-color: $orange;
         color: $white !important;
+      }
+    }
+  }
+
+  .btn__prev {
+    margin-left: 0;
+  }
+
+  .btn__next {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .info__wrap {
+    padding: 15px 20px;
+
+    .info__row {
+      flex-direction: column;
+    }
+
+    .info__date {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    &.info__list .info__row {
+      align-items: flex-start;
+
+      .info__content {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .info__link {
+        width: 100%;
+
+        a {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  .paging__wrap {
+    a {
+      font-size: 1.4rem;
+    }
+
+    ul {
+      li {
+        margin: 0 5px;
+        width: 30px;
       }
     }
   }
