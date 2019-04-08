@@ -172,7 +172,7 @@ main .container {
 
 .container {
   max-width: 1200px;
-  /*width: 100%;*/
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -236,7 +236,7 @@ main .container {
 
 @media screen and (min-width: 768px) {
   body {
-    min-width: 1366px;
+    min-width: 1280px;
   }
 
   .container {
@@ -360,7 +360,7 @@ header {
 
 @media screen and (min-width: 768px) {
   header {
-    min-width: 1366px;
+    min-width: 1260px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -569,9 +569,9 @@ header {
   margin-top: 0;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1366px) {
+@media screen and (min-width: 768px) and (max-width: 1280px) {
   #mainimage {
-    min-width: 1366px;
+    min-width: 1280px;
     min-height: 600px;
   }
 
@@ -581,7 +581,7 @@ header {
   }
 
   .home #mainimage {
-    min-height: 768px;
+    min-height: 720px;
   }
 }
 
