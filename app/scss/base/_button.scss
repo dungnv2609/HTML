@@ -22,27 +22,29 @@ $btn_ls: 0.1em; // button letter-spacing
   line-height: $btn_lh;
   padding: 21px 10px 27px;
   letter-spacing: $btn_ls;
-  position: relative;
   max-width: 600px;
   margin-bottom: 80px;
   @include box-shadow(3px, 3px, 10px, 0px, rgba(0, 0, 0, .5));
   @include border-radius(10px);
 
-  &:before {
-    @include pseudo;
-    @include abs-pos(50%, 28.5%);
-    @include size(20px, 20px);
-    @include border-radius(50%);
-    @include translate(0, -50%);
-    background-color: $white;
-  }
+  span {
+    position: relative;
+    padding-right: 30px;
 
-  &:after {
-    @include pseudo;
-    @include abs-pos(50%, 29.5%);
-    @include size(0, 0);
-    @include triangle-right(4px, 6px, $orange);
-    @include translate(0, -50%);
+    &:before {
+      @include pseudo;
+      @include abs-pos(9px, 0);
+      @include size(20px, 20px);
+      @include border-radius(50%);
+      background-color: $white;
+    }
+
+    &:after {
+      @include pseudo;
+      @include abs-pos(15px, 6px);
+      @include size(0, 0);
+      @include triangle-right(4px, 6px, $orange);
+    }
   }
 
   &:hover {
@@ -57,14 +59,6 @@ $btn_ls: 0.1em; // button letter-spacing
     padding: 4px 10px 10px;
     box-shadow: none;
     @include border-radius(15px);
-
-    &:before {
-      @include abs-pos(50%, 12.5%);
-    }
-
-    &:after {
-      @include abs-pos(50%, 14.6%);
-    }
   }
 }
 
@@ -169,7 +163,17 @@ $btn_ls: 0.1em; // button letter-spacing
 
 .mac-os {
   .btn_round {
-    padding: 24px 10px 26px;
+    padding: 24px 10px;
+
+    span {
+      &:before {
+        top: 6px;
+      }
+
+      &:after {
+        top: 12px;
+      }
+    }
 
     &.small {
       padding: 6px 10px 8px;
@@ -186,31 +190,21 @@ $btn_ls: 0.1em; // button letter-spacing
 }
 
 @media screen and (max-width: 767px) {
-  .btn_round {
-    &:before {
-      @include abs-pos(50%, 26.5%);
-    }
-
-    &:after {
-      @include abs-pos(50%, 27.5%);
-    }
-
-    &.small {
-      &:before {
-        @include abs-pos(50%, 26.5%);
-      }
-
-      &:after {
-        @include abs-pos(50%, 27.6%);
-      }
-    }
-  }
-
   .ios .btn_round {
-    padding: 24px 10px 26px;
+    padding: 24px 10px;
 
     &.small {
       padding: 6px 10px 8px;
+
+      span {
+        &:before {
+          top: 6px;
+        }
+
+        &:after {
+          top: 12px;
+        }
+      }
     }
   }
 }
@@ -221,21 +215,13 @@ $btn_ls: 0.1em; // button letter-spacing
     margin-bottom: 40px;
     padding: 12px 10px 18px;
 
-    &:before {
-      @include abs-pos(50%, 20.5%);
-    }
-
-    &:after {
-      @include abs-pos(50%, 22%);
-    }
-
-    &.small {
+    span {
       &:before {
-        @include abs-pos(50%, 20.5%);
+        @include abs-pos(6px, 0);
       }
 
       &:after {
-        @include abs-pos(50%, 22%);
+        @include abs-pos(12px, 6px);
       }
     }
   }
@@ -247,6 +233,16 @@ $btn_ls: 0.1em; // button letter-spacing
 
   .ios .btn_round {
     padding: 15px 10px;
+
+    span {
+      &:before {
+        top: 2px;
+      }
+
+      &:after {
+        top: 8px;
+      }
+    }
   }
 }
 
@@ -254,22 +250,13 @@ $btn_ls: 0.1em; // button letter-spacing
   .btn_round {
     font-size: 1.8rem;
 
-    &:before {
-      @include abs-pos(50%, 16.5%);
-      @include size(18px, 18px);
-    }
-
-    &:after {
-      @include abs-pos(50%, 18%);
-    }
-
-    &.small {
+    span {
       &:before {
-        @include abs-pos(50%, 16.5%);
+        @include abs-pos(4px, 0);
       }
 
       &:after {
-        @include abs-pos(50%, 18%);
+        @include abs-pos(10px, 6px);
       }
     }
   }

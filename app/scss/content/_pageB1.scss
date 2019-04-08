@@ -279,7 +279,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px;
+    padding: 22px;
+  }
+
+  .row__wrap {
     margin-bottom: 60px;
   }
 }
@@ -343,6 +346,10 @@
 
     .room__info {
       margin-bottom: 20px;
+    }
+
+    .row__wrap {
+      margin-bottom: 0;
     }
 
     .btn_round {

@@ -1,8 +1,9 @@
 @import "mixins/custom-mixins";
 
 .news__list {
-  background: rgba(255, 255, 255, .7);
+  background: rgba(255, 255, 255, .8);
   margin: 0 120px 100px;
+  padding: 15px 0;
   font-family: $font-family-alt;
 
   dl {
@@ -81,6 +82,10 @@
     padding-left: 20px;
     margin-bottom: 10px;
 
+    &:last-child {
+      margin-bottom: 0;
+    }
+
     &:before {
       content: '';
       position: absolute;
@@ -118,8 +123,8 @@
 
 @media screen and (max-width: 767px) {
   .news__list {
-    background: $white;
     margin: 0 0 80px;
+    padding: 0;
 
     dl {
       padding: 15px;

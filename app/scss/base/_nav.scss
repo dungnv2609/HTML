@@ -154,6 +154,7 @@ header {
       padding: 0 20px;
       overflow-y: scroll;
       z-index: 100;
+      -webkit-overflow-scrolling: touch;
 
       &.sub {
         padding: 0;

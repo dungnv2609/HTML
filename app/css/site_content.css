@@ -169,6 +169,10 @@
 /* ----- Media Queries ----- */
 @media screen and (max-width: 767px) {
   /* ----- Section 1 ----- */
+  #sec_1 .news__list {
+    margin-bottom: 40px;
+  }
+
   .intro {
     margin-bottom: 70px;
   }
@@ -306,6 +310,7 @@
   }
 
   .intro {
+    margin-top: 0;
     margin-bottom: 40px;
   }
 
@@ -376,6 +381,10 @@
   margin-bottom: 20px;
 }
 
+.box__title .col-6.item {
+  width: 49.1666667%;
+}
+
 .box__title h3 {
   font-size: 2.4rem;
   color: #fff;
@@ -395,8 +404,8 @@
 }
 
 .box__title p {
-  font-size: 1.5rem;
-  line-height: 2.4;
+  font-size: 1.6rem;
+  line-height: 2;
 }
 
 .box__title .item__step {
@@ -458,6 +467,16 @@
 
 .mac-os .box__title .item__step h4 span {
   padding: 3px 15px 4px;
+}
+
+@media screen and (min-width: 768px) {
+  #natural .content__box p {
+    line-height: 2.2;
+  }
+
+  #yoro_hanjungmak .content__box p {
+    line-height: 2.2;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -540,6 +559,10 @@
   .box__title .item__step:last-child {
     margin-bottom: 35px;
   }
+
+  .box__title.pd-bt60 {
+    padding-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -560,6 +583,11 @@
     font-size: 2.2rem;
   }
 
+  .box__title .item__step h4 span {
+    font-size: 1.6rem;
+    padding: 0 10px 7px;
+  }
+
   .box__title .box_img p {
     margin-bottom: 40px;
   }
@@ -569,7 +597,7 @@
   }
 
   .ios .box__title .item__step h4 span {
-    padding: 3px 15px 4px;
+    padding: 3px 10px 4px;
   }
 }
 
@@ -591,7 +619,11 @@
   }
 
   .box__title .item__step h4 {
-    font-size: 1.8rem;
+    font-size: 2rem;
+  }
+
+  .box__title .item__step p {
+    font-size: 1.4rem;
   }
 }
 
@@ -784,9 +816,9 @@ h2.heading_food_2 {
 
 .food__wrap__8 p {
   width: 100%;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-family: "HirakakuStd-W3", Arial, sans-serif;
-  line-height: 1.7;
+  line-height: 2;
 }
 
 .food__wrap__8 p span {
@@ -800,11 +832,11 @@ h2.heading_food_2 {
 
 .food__wrap__8 .food__introduce__menu__image {
   width: 49%;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .food__wrap__8 .food__introduce__menu__text {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .food__wrap__8 .food__introduce__menu__text .menu__text__item {
@@ -814,6 +846,7 @@ h2.heading_food_2 {
 .food__wrap__8 .food__introduce__menu__text .menu__text__item:first-child {
   padding-left: 10px;
   border-left: 10px solid #527c68;
+  width: 50%;
 }
 
 .food__wrap__8 .food__introduce__menu__text .menu__text__item p {
@@ -823,6 +856,7 @@ h2.heading_food_2 {
 
 .food__wrap__8 .food__introduce__menu__text .menu__text__item p:last-child {
   margin-bottom: 0;
+  margin-left: -8px;
 }
 
 .food__wrap__8 .food__introduce__menu__text .btn_round {
@@ -947,6 +981,10 @@ h2.heading_food_2 {
   }
 }*/
 @media screen and (max-width: 767px) {
+  .food__wrap__1 p {
+    font-family: "HirakakuStd-W3", Arial, sans-serif;
+  }
+
   .food__wrap__2 .btn_style3 {
     margin-bottom: 20px;
   }
@@ -1077,6 +1115,10 @@ h2.heading_food_2 {
 
   .food__box .col_txt h2 {
     font-size: 2.3rem;
+  }
+
+  .food__box .col_txt h2.text__green {
+    margin-bottom: 5px;
   }
 
   .food__box .col_txt .information {
@@ -1463,7 +1505,10 @@ h2.heading_food_2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 22px;
+}
+
+.room__box .row__wrap {
   margin-bottom: 60px;
 }
 
@@ -1519,6 +1564,10 @@ h2.heading_food_2 {
 
   .room__box .room__info {
     margin-bottom: 20px;
+  }
+
+  .room__box .row__wrap {
+    margin-bottom: 0;
   }
 
   .room__box .btn_round {
@@ -1616,6 +1665,10 @@ h2.heading_travel_1 {
   padding-left: 30px;
 }
 
+.travel_box .travel_txt .title_container h3.pd-left {
+  padding-left: 0;
+}
+
 .travel_box .travel_txt .information_container {
   margin-bottom: 60px;
   font-size: 2rem;
@@ -1674,7 +1727,7 @@ h2.heading_travel_1 {
   margin-bottom: 60px;
   font-size: 1.6rem;
   font-family: "HirakakuStd-W3", Arial, sans-serif;
-  line-height: 1.5;
+  line-height: 2;
 }
 
 .travel_list .travel_item .button_container .btn_round {
@@ -1682,6 +1735,14 @@ h2.heading_travel_1 {
   font-size: 1.8rem;
   border-radius: 5px;
   padding: 12px 10px 18px;
+}
+
+.travel_list .travel_item .button_container .btn_round span:before {
+  top: 5px;
+}
+
+.travel_list .travel_item .button_container .btn_round span:after {
+  top: 11px;
 }
 
 .travel_list .travel_item:nth-child(3n+1) {
@@ -2034,7 +2095,7 @@ h2.heading_travel_1 {
 }
 
 #facility h4.style1 {
-  margin-bottom: 11px;
+  margin-bottom: 12px;
 }
 
 #facility .badge_img {
@@ -2044,9 +2105,10 @@ h2.heading_travel_1 {
 }
 
 #facility .box__wrap h5 {
-  margin-bottom: 12px;
+  margin-bottom: 5px;
   font-size: 2rem;
   font-family: "HirakakuStd-W3", Arial, sans-serif;
+  margin-top: 3px;
 }
 
 #facility .tbl__item {
@@ -2067,7 +2129,7 @@ h2.heading_travel_1 {
 }
 
 #facility .txt__item p {
-  line-height: 2.15;
+  line-height: 2;
   margin-bottom: 0px;
   font-family: "HirakakuStd-W3", Arial, sans-serif;
 }
@@ -2094,7 +2156,7 @@ h2.heading_travel_1 {
 }
 
 #facility .facility__wrap__2 .txt__item {
-  margin-bottom: 8px;
+  margin-bottom: 14px;
 }
 
 #facility .facility__wrap__2 .txt__item:last-child {
@@ -2118,7 +2180,7 @@ h2.heading_travel_1 {
 }
 
 #facility .facility__wrap__9 .round_list li:before {
-  top: 0;
+  top: 9px;
 }
 
 #facility .facility__wrap__10 .col_img {
@@ -2163,7 +2225,7 @@ h2.heading_travel_1 {
 }
 
 .facility__wrap__2 .center {
-  padding-top: 7px;
+  padding-top: 12px;
 }
 
 .facility__wrap__3 .txt__item p {
@@ -2203,7 +2265,6 @@ h2.heading_travel_1 {
 }
 
 .facility__wrap__9 .txt__item .round_list li {
-  margin-bottom: 15px;
   font-size: 1.6rem;
 }
 
@@ -2218,7 +2279,6 @@ h2.heading_travel_1 {
 }
 
 .facility__wrap__9 .round_list {
-  padding-top: 6px;
   margin-bottom: 9px;
 }
 
@@ -2243,7 +2303,8 @@ h2.heading_travel_1 {
 }
 
 .facility__wrap__12 .txt_item p {
-  line-height: 1.7 !important;
+  font-size: 1.4rem;
+  line-height: 1.57;
 }
 
 .facility__wrap__12 .tbl_item {
@@ -2408,6 +2469,10 @@ h2.heading_travel_1 {
     text-align: center;
   }
 
+  .facility__wrap__8 {
+    margin-bottom: 50px;
+  }
+
   .mac-os #facility .box__title h3 {
     padding: 11px 5px;
   }
@@ -2444,6 +2509,10 @@ h2.heading_travel_1 {
 
   #facility .btn_round:after {
     right: 12.5%;
+  }
+
+  .facility__wrap__12 .txt_item p {
+    line-height: 1.8;
   }
 }
 
