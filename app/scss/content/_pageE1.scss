@@ -78,9 +78,39 @@ h2.heading_travel_1 {
   }
 }
 
+#yoro_travel {
+  .btn_round {
+    span {
+      &:before {
+        top: 5px;
+      }
+
+      &:after {
+        top: 11px;
+      }
+    }
+  }
+}
+
 .mac-os .travel_box .travel_txt .button_container .btn_round,
 .mac-os .travel_list .travel_item .button_container .btn_round {
   padding: 15px 10px;
+}
+
+.mac-os {
+  #yoro_travel {
+    .btn_round {
+      span {
+        &:before {
+          top: 0;
+        }
+
+        &:after {
+          top: 6px;
+        }
+      }
+    }
+  }
 }
 
 .travel_list {
@@ -365,39 +395,5 @@ h2.heading_travel_1 {
   .ios .travel_box .travel_txt .button_container .btn_round,
   .ios .travel_list .travel_item .button_container .btn_round {
     padding: 15px 0;
-  }
-}
-
-@media screen and (max-width: 340px) {
-  .travel_box {
-    .travel_txt {
-      .button_container {
-        .btn_round {
-          &:before {
-            right: 9%;
-          }
-
-          &:after {
-            right: 10.8%;
-          }
-        }
-      }
-    }
-  }
-
-  .travel_list {
-    .travel_item {
-      .button_container {
-        .btn_round {
-          &:before {
-            right: 9%;
-          }
-
-          &:after {
-            right: 10.8%;
-          }
-        }
-      }
-    }
   }
 }

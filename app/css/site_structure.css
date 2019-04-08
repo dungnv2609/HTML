@@ -1006,11 +1006,11 @@ footer {
 }
 
 .mac-os .btn_round span:before {
-  top: 6px;
+  top: 2px;
 }
 
 .mac-os .btn_round span:after {
-  top: 12px;
+  top: 8px;
 }
 
 .mac-os .btn_round.small {

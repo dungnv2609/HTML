@@ -1683,9 +1683,25 @@ h2.heading_travel_1 {
   padding: 12px 10px 18px;
 }
 
+#yoro_travel .btn_round span:before {
+  top: 5px;
+}
+
+#yoro_travel .btn_round span:after {
+  top: 11px;
+}
+
 .mac-os .travel_box .travel_txt .button_container .btn_round,
 .mac-os .travel_list .travel_item .button_container .btn_round {
   padding: 15px 10px;
+}
+
+.mac-os #yoro_travel .btn_round span:before {
+  top: 0;
+}
+
+.mac-os #yoro_travel .btn_round span:after {
+  top: 6px;
 }
 
 .travel_list {
@@ -1962,24 +1978,6 @@ h2.heading_travel_1 {
   }
 }
 
-@media screen and (max-width: 340px) {
-  .travel_box .travel_txt .button_container .btn_round:before {
-    right: 9%;
-  }
-
-  .travel_box .travel_txt .button_container .btn_round:after {
-    right: 10.8%;
-  }
-
-  .travel_list .travel_item .button_container .btn_round:before {
-    right: 9%;
-  }
-
-  .travel_list .travel_item .button_container .btn_round:after {
-    right: 10.8%;
-  }
-}
-
 .right {
   text-align: right;
 }
@@ -2105,8 +2103,8 @@ h2.heading_travel_1 {
 }
 
 #facility .box__wrap h5 {
-  margin-bottom: 5px;
-  font-size: 2rem;
+  margin-bottom: 8px;
+  font-size: 1.6rem;
   font-family: "HirakakuStd-W3", Arial, sans-serif;
   margin-top: 3px;
 }
