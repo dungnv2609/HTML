@@ -286,7 +286,7 @@ h2 {
 				  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='40' viewBox='0 0 20 24' width='40' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
 				  background-repeat: no-repeat;
 				  background-position-x: 100%;
-				  background-position-y: -2px;
+				  background-position-y: 2px;
 				  border: 1px solid #dfdfdf;
 				&::-ms-expand {
 				  display: none;
@@ -358,7 +358,7 @@ h2 {
 				text-align: left;
 				font-weight: normal;
 				width: 35%;
-				vertical-align: middle;
+				vertical-align: top;
 			}
 			td {
 				width: 65%;
@@ -415,13 +415,13 @@ h2 {
 		}
 		&_right {
 			background: rgba(255,255,255, .8);
-			padding: 40px;
+			padding: 31px 40px 20px;
 		}
 	}
 	.box__top {
 		border-bottom: 1px solid #000;
 		padding-bottom: 10px;
-		margin-bottom: 10px;
+		margin-bottom: 13px;
 		.date {
 			font-size: 2.4rem;
 			position: relative;
@@ -481,6 +481,7 @@ h2 {
 			padding-bottom: 20px;
 			margin-bottom: 20px;
 			border-bottom: 2px solid #928f8a;
+			font-size: 2.2rem;
 		}
 		&_link {
 			position: absolute;
@@ -577,7 +578,6 @@ h2 {
 				}
 				select{
 					font-size: 2.2rem;
-					padding-top: 5px;
 				}
 			}
 		}
@@ -599,6 +599,14 @@ h2 {
 		:-moz-placeholder {
 		  	font-size: 2.2rem;
 		  	color: #bfbfbf;
+		}
+	}
+	.entry__box{
+		.col_right{
+			p{
+				font-size: 2.2rem;
+				line-height: 1.6;
+			}
 		}
 	}
 	#privacy {
