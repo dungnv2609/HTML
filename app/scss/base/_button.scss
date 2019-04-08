@@ -236,11 +236,11 @@ $btn_ls: 0.1em; // button letter-spacing
 
     span {
       &:before {
-        top: 2px;
+        top: 0;
       }
 
       &:after {
-        top: 8px;
+        top: 6px;
       }
     }
   }
