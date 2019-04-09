@@ -1,8 +1,34 @@
 $(document).ready(function () {
   $(".toggleMenu").click(function (e) {
-    e.preventDefault();
-    $(this).toggleClass("active");
-    $(".nav").toggle();
+    if ($(".toggleMenu").hasClass("active")) {
+
+      $(".toggleMenu").removeClass("active");
+      $('.toggleMenu .img_show').css('display', 'inline-block');
+      $('.toggleMenu .img_hide').css('display', 'none');
+      $('body').css({
+        'overflow': 'auto',
+        'position': 'relative'
+      });
+
+      $(".nav").hide();
+      
+    } else {
+
+      $(".toggleMenu").addClass("active");
+      $('.toggleMenu .img_show').css('display', 'none');
+      $('.toggleMenu .img_hide').css('display', 'inline-block');
+      $('body').css({
+        'overflow': 'hidden',
+        'position': 'fixed'
+      });
+
+      $(".nav").show();
+      $('.nav').css('height', '100vh');
+      $(".nav li").removeClass('hover');
+      var ulHeight = window.innerHeight - $('.nav__logo').outerHeight() - $('.nav > .menu__title').outerHeight();
+      $('.nav > ul').css('height', ulHeight);
+
+    }
   });
 
   $(".nav li span").each(function () {
@@ -17,33 +43,13 @@ $(document).ready(function () {
 
 function adjustMenu(ww) {
   if (ww <= 767) {
+
     if (!$(".toggleMenu").hasClass("active")) {
       $(".nav").hide();
     } else {
       $(".nav").show();
     }
-    $('.toggleMenu').click(function () {
-      $(".nav li").removeClass('hover');
-      if ($(".toggleMenu").hasClass("active")) {
-        $('.toggleMenu .img_show').css('display', 'none');
-        $('.toggleMenu .img_hide').css('display', 'inline-block');
-        $('body').css({
-          'overflow': 'hidden',
-          'position': 'fixed'
-        });
-        $('.nav').css('height', '100vh');
-        /*$('.nav > ul').css('height', setH - 50);*/
-        var ulHeight = window.innerHeight - $('.nav__logo').outerHeight() - $('.nav > .menu__title').outerHeight();
-        $('.nav > ul').css('height', ulHeight);
-      } else {
-        $('.toggleMenu .img_show').css('display', 'inline-block');
-        $('.toggleMenu .img_hide').css('display', 'none');
-        $('body').css({
-          'overflow': 'auto',
-          'position': 'relative'
-        });
-      }
-    });
+
     $(".nav li").unbind('mouseenter mouseleave');
     $(".nav li span.parent").unbind("click");
     $(".nav li span.parent").click(function (e) {
@@ -57,6 +63,7 @@ function adjustMenu(ww) {
     });
 
   } else {
+
     $(".toggleMenu img").css("display", "none");
     $(".nav").show();
     $(".nav li").unbind("hover");
@@ -65,6 +72,7 @@ function adjustMenu(ww) {
     }, function () {
       $(this).removeClass('hover');
     });
+
   }
 }
 
