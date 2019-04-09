@@ -260,11 +260,13 @@ h2 {
 
       p {
         line-height: 2;
+        font-family: $font-family-alt-3;
       }
 
       .txt_small {
         padding: 4px 0px;
-        font-size: 1.7rem;
+        font-size: 1.6rem;
+        font-family: $font-family-alt;
       }
     }
 
@@ -273,6 +275,11 @@ h2 {
 
       a {
         text-decoration: underline;
+      }
+
+      p {
+        font-family: $font-family-alt-3;
+        font-size: 2rem;
       }
     }
 
@@ -349,7 +356,7 @@ h2 {
           opacity: 0;
 
           &:checked ~ .control__indicator {
-            background: #c01d20;
+            background: $orange;
 
             &:after {
               display: block;
@@ -488,6 +495,12 @@ h2 {
         padding: 16px 15px;
         border: 1px solid #ccc;
         vertical-align: top;
+        font-family: $font-family-alt-3 !important;
+
+        p,
+        span {
+          font-family: $font-family-alt-3 !important;
+        }
       }
 
       th {
@@ -500,6 +513,10 @@ h2 {
         &.val_middle {
           vertical-align: middle;
         }
+      }
+
+      th.pd1 {
+        padding-top: 27px;
       }
 
       td {
@@ -673,6 +690,40 @@ h2 {
   }
 }
 
+.form_contact textarea,
+.form_contact input {
+  font-family: $font-family-alt-3;
+}
+
+.form_contact .frm-contact .tbl-contact td.vta_m {
+  vertical-align: middle;
+}
+
+.contact__confirm .form_contact .frm-contact .tbl-contact .control__checkbox input:checked ~ .control__indicator {
+  background: #A6A6A6;
+}
+
+.contact__confirm .form_contact .frm-contact .tbl-contact .control__indicator:after {
+  border: solid #333;
+  border-width: 0 2px 2px 0;
+}
+
+.form_contact .frm-contact.finish p {
+  font-family: $font-family-alt-3;
+  font-size: 2.2rem;
+}
+
+.form_contact .frm-contact .tbl-contact td.txta {
+  height: 250px;
+  vertical-align: baseline;
+  line-height: 1.7;
+}
+
+.form_contact .frm-contact .tbl-contact td p.field_bd {
+  border: 1px solid #a6a6a6;
+  padding: 5px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 960px) {
   .form_contact {
     .frm-contact {
@@ -753,7 +804,6 @@ h2 {
         }
 
         select {
-          font-family: 'KozukaGothicPrN-R';
           font-size: 2.2rem;
           padding: 0px 10px;
           color: #333;
@@ -764,7 +814,6 @@ h2 {
     textarea,
     input {
       font-size: 2.2rem;
-      font-family: 'KozukaGothicPrN-R';
     }
 
     ::-webkit-input-placeholder {
@@ -875,7 +924,7 @@ h2 {
   }
 
   #contact {
-    padding: 100px 0px 0px;
+    padding: 30px 0 0;
 
     .container {
       padding-bottom: 50px !important;
@@ -934,6 +983,8 @@ h2 {
         input[type="email"],
         input[type="tel"],
         textarea {
+          -webkit-appearance: none;
+
           &.ipt-s {
             max-width: 58px;
           }
@@ -1066,11 +1117,116 @@ h2 {
       padding-bottom: 50px !important;
     }
   }
+
+  .form_contact .frm-contact .tbl-contact tr td.bd_t0 {
+    border-top: none;
+  }
+
+  .form_contact .frm-contact .tbl-contact .contact__row .note {
+    text-align: right;
+  }
+
+  .form_contact .frm-contact .tbl-contact .checkbox--list {
+    margin-left: 0;
+  }
+
+  .form_contact .frm-contact .tbl-contact .checkbox--list li {
+    width: 49%;
+    margin-right: 2%;
+    margin-left: 0;
+    margin-bottom: 12px;
+  }
+
+  .form_contact .frm-contact .tbl-contact .checkbox--list li:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .form_contact .contact__note p {
+    font-size: 1.5rem;
+  }
+
+  .form_contact .frm-contact .tbl-contact input[type="text"].ipt-xxlg {
+    height: 125px;
+  }
+
+  .form_contact .frm-contact .tbl-contact .row__wrap-a.row_s {
+    display: flex;
+    margin-bottom: 5px;
+  }
+
+  .form_contact .frm-contact .tbl-contact .row__wrap-a.row_s div {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+
+  .form_contact .frm-contact .tbl-contact .row__wrap-a.row_s .mgr0 {
+    margin-right: 0 !important;
+  }
+
+  .form_contact .frm-contact .tbl-contact .row__wrap-a.row_s div input {
+    max-width: 110px;
+    margin-left: 5px;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .brochure__box .tbl_02 tr td:first-child {
     width: 90px;
+  }
+
+  .form_contact .contact__head .txt_small {
+    font-size: 1.3rem;
+    padding: 10px 0;
+  }
+
+  .form_contact .frm-contact .tbl-contact .contact__row.contact__row__normal .row_inner.input1 input {
+    max-width: none;
+
+    &.mgr {
+      margin-right: 0;
+    }
+  }
+
+  .form_contact .frm-contact .tbl-contact .control__checkbox {
+    padding-left: 30px;
+  }
+
+  .form_contact .frm-contact .tbl-contact .control__checkbox {
+    font-size: 1.1rem;
+    padding-left: 22px;
+    letter-spacing: 0;
+  }
+
+  .form_contact .frm-contact .tbl-contact .control__indicator {
+    width: 18px;
+    height: 18px;
+  }
+
+  .form_contact .frm-contact .tbl-contact .control__indicator:after {
+    left: 5px;
+    top: 1px;
+    width: 4px;
+    height: 8px;
+  }
+
+  .form_contact .frm-contact .tbl-contact input[type="text"].ipt-m {
+    max-width: 100px;
+  }
+
+  .form_contact .frm-contact .tbl-contact .row__wrap-m span {
+    margin-right: 10px;
+  }
+
+  .form_contact .frm-contact .tbl-contact tr .ipt-s {
+    margin: 0 7px;
+  }
+
+  .form_contact .frm-contact .tbl-contact select {
+    max-width: 100px;
+  }
+
+  .form_contact .frm-contact .tbl-contact .row__wrap-m .ipt-xlg {
+    width: calc(100% - 73px);
   }
 }
 

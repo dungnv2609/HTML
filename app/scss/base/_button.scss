@@ -12,6 +12,7 @@ $btn_ls: 0.1em; // button letter-spacing
   margin: 0 auto 20px;
   text-align: center;
   @include transition(.1s, ease-in-out);
+  font-family: $font-family-base;
 }
 
 .btn_round {
@@ -59,6 +60,20 @@ $btn_ls: 0.1em; // button letter-spacing
     padding: 4px 10px 10px;
     box-shadow: none;
     @include border-radius(15px);
+  }
+
+  &.col_green {
+    background: $green;
+
+    span {
+      &:before {
+        background-color: $white;
+      }
+
+      &:after {
+        @include triangle-right(4px, 6px, $green);
+      }
+    }
   }
 }
 

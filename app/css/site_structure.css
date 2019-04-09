@@ -435,7 +435,7 @@ header {
   }
 
   .nav ul {
-    padding: 0 20px;
+    padding: 15px 20px 0;
     overflow-y: scroll;
     z-index: 100;
     -webkit-overflow-scrolling: touch;
@@ -821,6 +821,7 @@ footer {
   text-align: center;
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
+  font-family: "Hannari", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 .btn_round {
@@ -885,6 +886,20 @@ footer {
   padding: 4px 10px 10px;
   box-shadow: none;
   border-radius: 15px;
+}
+
+.btn_round.col_green {
+  background: #527c68;
+}
+
+.btn_round.col_green span:before {
+  background-color: #fff;
+}
+
+.btn_round.col_green span:after {
+  border-top: 4px solid transparent;
+  border-left: 6px solid #527c68;
+  border-bottom: 4px solid transparent;
 }
 
 .btn_style1 {

@@ -12,7 +12,7 @@ h2 {
   }
 
   &.ic_recruit {
-    padding-right: 65px;
+    padding-right: 45px;
 
     &:after {
       top: 2px;
@@ -46,7 +46,7 @@ h2 {
 
     &.ic_recruit {
       &:after {
-        top: 0;
+        top: -3px;
       }
     }
 
@@ -157,7 +157,7 @@ h2 {
 
       &.ic_recruit {
         &:after {
-          top: 2px;
+          top: -3px;
         }
       }
 
@@ -199,6 +199,10 @@ h2 {
   &__des-top {
     text-align: center;
     margin-bottom: 30px;
+
+    p {
+      font-family: $font-family-base !important;
+    }
   }
 
   &__des-bottom {
@@ -259,8 +263,9 @@ h2 {
 
     th,
     td {
-      padding: 15px 30px;
+      padding: 15px 25px;
       border: 1px solid #000;
+      font-family: $font-family-alt-3;
     }
 
     th {
@@ -279,6 +284,10 @@ h2 {
         &:last-child {
           border-right: none;
         }
+      }
+
+      td:first-child {
+        width: 206px;
       }
 
       &:last-child {
@@ -496,6 +505,10 @@ h2 {
     background: url(/images/tracfic_arrow.png) left top no-repeat;
     background-size: cover;
   }
+}
+
+#recruit .recruit__box p {
+  font-family: $font-family-alt-3;
 }
 
 @media screen and (min-width: 1280px) {
@@ -874,5 +887,9 @@ h2 {
         color: #fff;
       }
     }
+  }
+
+  #recruit .recruit__box p {
+    font-size: 1.4rem;
   }
 }
