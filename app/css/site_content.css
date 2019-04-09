@@ -2623,8 +2623,16 @@ h2.ic_plan:after {
   font-family: 'HirakakuStd-W3';
 }
 
+.font_hanna {
+  font-family: 'Hannari';
+}
+
+.font_hw3 {
+  font-family: 'HirakakuStd-W3';
+}
+
 .font_hw6 {
-  font-family: 'HirakakuStd-W6';
+  font-family: 'HirakakuStd-W6' !important;
 }
 
 #privacy {
@@ -2860,7 +2868,7 @@ h2.ic_plan:after {
   background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='40' viewBox='0 0 20 24' width='40' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
   background-repeat: no-repeat;
   background-position-x: 100%;
-  background-position-y: -2px;
+  background-position-y: 2px;
   border: 1px solid #dfdfdf;
 }
 
@@ -2930,7 +2938,7 @@ h2.ic_plan:after {
   text-align: left;
   font-weight: normal;
   width: 35%;
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 .form_contact .frm-contact .tbl-contact td {
@@ -2989,13 +2997,13 @@ h2.ic_plan:after {
 
 .entry__box .col_right {
   background: rgba(255, 255, 255, 0.8);
-  padding: 40px;
+  padding: 31px 40px 20px;
 }
 
 .entry__box .box__top {
   border-bottom: 1px solid #000;
   padding-bottom: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
 }
 
 .entry__box .box__top .date {
@@ -3064,6 +3072,7 @@ h2.ic_plan:after {
   padding-bottom: 20px;
   margin-bottom: 20px;
   border-bottom: 2px solid #928f8a;
+  font-size: 2.2rem;
 }
 
 .entry__list--item_link {
@@ -3078,6 +3087,14 @@ h2.ic_plan:after {
   -webkit-box-shadow: 3px 3px 5px 0px #95928d;
   -moz-box-shadow: 3px 3px 5px 0px #95928d;
   box-shadow: 3px 3px 5px 0px #95928d;
+}
+
+#plan-list .container {
+  padding-bottom: 120px !important;
+}
+
+#plan-detail .container {
+  padding-bottom: 120px !important;
 }
 
 #plan-list .container {
@@ -3156,7 +3173,6 @@ h2.ic_plan:after {
 
   .form_contact .frm-contact .tbl-contact select {
     font-size: 2.2rem;
-    padding-top: 5px;
   }
 
   .form_contact textarea,
@@ -3184,6 +3200,11 @@ h2.ic_plan:after {
     color: #bfbfbf;
   }
 
+  .entry__box .col_right p {
+    font-size: 2.2rem;
+    line-height: 1.6;
+  }
+
   #privacy .brochure__box,
   #privacy .privacy__box {
     font-family: 'HirakakuStd-W3';
@@ -3206,7 +3227,7 @@ h2.ic_plan:after {
   }
 
   .privacy__box {
-    padding: 14px;
+    padding: 20px;
   }
 
   .brochure__box {
@@ -3487,6 +3508,7 @@ h2.ic_trafic:after {
 #access section .tbl-traffic .trafic__arrow,
   #access section .tbl-traffic .trafic__des {
   font-size: 1.6rem;
+  font-family: "HirakakuStd-W3", Arial, sans-serif;
 }
 
 #access section p {
@@ -3817,7 +3839,6 @@ h2.ic_trafic:after {
 
 .tbl-traffic td div {
   padding: 0 10px;
-  font-family: "HirakakuStd-W3", Arial, sans-serif;
 }
 
 .tbl-traffic td div.trafic__arrow {

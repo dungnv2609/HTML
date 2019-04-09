@@ -46,7 +46,7 @@ function adjustMenu(ww) {
           'position': 'fixed'
         });
         $('.nav').css('height', '100vh');
-        var ulHeight = $('.nav').height() - $('.nav > .menu__title').outerHeight();
+        var ulHeight = screen.height - $('.nav__logo').outerHeight() - $('.nav > .menu__title').outerHeight();
         $('.nav > ul').css('height', ulHeight);
       } else {
         $('.toggleMenu .img_show').css('display', 'inline-block');
@@ -123,7 +123,7 @@ $(window).bind('resize orientationchange', function () {
   var setH = window.innerHeight - barH;*/
   if ($(".toggleMenu").hasClass("active")) {
     $('.nav').css('height', '100vh');
-    var ulHeight = $('.nav').height() - $('.nav > .menu__title').outerHeight();
+    var ulHeight = screen.height - $('.nav__logo').outerHeight() - $('.nav > .menu__title').outerHeight();
     $('.nav > ul').css('height', ulHeight);
   }
 });
