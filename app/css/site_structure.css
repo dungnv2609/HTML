@@ -1127,7 +1127,7 @@ footer {
   color: #333;
   letter-spacing: 0;
   display: inline-block;
-  padding-top: 10px;
+  padding-top: 2px;
   position: relative;
 }
 
@@ -1137,7 +1137,7 @@ footer {
   height: 1px;
   width: 200%;
   background: #333;
-  top: 25px;
+  top: 17px;
 }
 
 .title span:before {

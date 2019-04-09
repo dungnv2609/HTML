@@ -21,7 +21,7 @@ $sub_fs: 2rem;
     color: #333;
     letter-spacing: 0;
     display: inline-block;
-    padding-top: 10px;
+    padding-top: 2px;
     position: relative;
 
     &:before,
@@ -31,7 +31,7 @@ $sub_fs: 2rem;
       height: 1px;
       width: 200%;
       background: #333;
-      top: 25px;
+      top: 17px;
     }
 
     &:before {
