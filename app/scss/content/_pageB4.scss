@@ -94,6 +94,7 @@
 }
 
 #facility {
+
   section {
     padding-bottom: 202px;
   }
@@ -121,7 +122,7 @@
 
   h4 {
     &.style1 {
-      margin-bottom: 11px;
+      margin-bottom: 12px;
     }
   }
 
@@ -133,9 +134,10 @@
 
   .box__wrap {
     h5 {
-      margin-bottom: 12px;
-      font-size: 2rem;
+      margin-bottom: 8px;
+      font-size: 1.6rem;
       font-family: $font-family-alt-3;
+      margin-top: 3px;
     }
   }
 
@@ -156,7 +158,7 @@
     margin-bottom: 15px;
 
     p {
-      line-height: 2.15;
+      line-height: 2;
       margin-bottom: 0px;
       font-family: $font-family-alt-3;
     }
@@ -193,7 +195,7 @@
 
   .facility__wrap__2 {
     .txt__item {
-      margin-bottom: 8px;
+      margin-bottom: 14px;
 
       &:last-child {
         margin-bottom: 0px;
@@ -225,7 +227,7 @@
     }
 
     .round_list li:before {
-      top: 0;
+      top: 9px;
     }
   }
 
@@ -287,7 +289,7 @@
   }
 
   .center {
-    padding-top: 7px;
+    padding-top: 12px;
   }
 }
 
@@ -339,7 +341,6 @@
       margin-bottom: 25px;
 
       li {
-        margin-bottom: 15px;
         font-size: 1.6rem;
 
         span {
@@ -356,7 +357,6 @@
   }
 
   .round_list {
-    padding-top: 6px;
     margin-bottom: 9px;
   }
 
@@ -390,7 +390,9 @@
 .facility__wrap__12 {
   .txt_item {
     p {
-      line-height: 1.7 !important;
+      font-size: 1.4rem;
+      line-height: 1.57;
+      ;
     }
   }
 
@@ -482,6 +484,8 @@
   }
 
   #facility {
+    padding-top: 30px;
+
     section {
       padding-bottom: 80px;
     }
@@ -603,6 +607,10 @@
     }
   }
 
+  .facility__wrap__8 {
+    margin-bottom: 50px;
+  }
+
   .mac-os {
     #facility {
       .box__title {
@@ -655,5 +663,9 @@
     .btn_round:after {
       right: 12.5%;
     }
+  }
+
+  .facility__wrap__12 .txt_item p {
+    line-height: 1.8;
   }
 }

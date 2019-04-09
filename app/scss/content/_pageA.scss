@@ -43,6 +43,10 @@
 .box__title {
   margin-bottom: 20px;
 
+  .col-6.item {
+    width: 49.1666667%;
+  }
+
   h3 {
     font-size: 2.4rem;
     color: $white;
@@ -62,8 +66,8 @@
   }
 
   p {
-    font-size: 1.5rem;
-    line-height: 2.4;
+    font-size: 1.6rem;
+    line-height: 2;
   }
 
   .item__step {
@@ -79,7 +83,7 @@
       padding-bottom: 10px;
       margin-bottom: 10px;
 
-      span {
+      span.step_badge {
         display: inline-block;
         color: $white;
         background: $orange;
@@ -134,6 +138,22 @@
           padding: 3px 15px 4px;
         }
       }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #natural {
+    .content__box {
+      p {
+        line-height: 2.2;
+      }
+    }
+  }
+
+  #yoro_hanjungmak {
+    .content__box p {
+      line-height: 2.2;
     }
   }
 }
@@ -225,6 +245,10 @@
         margin-bottom: 35px;
       }
     }
+
+    &.pd-bt60 {
+      padding-bottom: 0;
+    }
   }
 }
 
@@ -248,6 +272,12 @@
     .item__step {
       h4 {
         font-size: 2.2rem;
+
+        span.step_badge {
+          font-size: 1.6rem;
+          padding: 0 10px 7px;
+          margin-bottom: 5px;
+        }
       }
     }
 
@@ -266,8 +296,8 @@
 
       .item__step {
         h4 {
-          span {
-            padding: 3px 15px 4px;
+          span.step_badge {
+            padding: 3px 10px 4px;
           }
         }
       }
@@ -297,7 +327,11 @@
 
     .item__step {
       h4 {
-        font-size: 1.8rem;
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.4rem;
       }
     }
   }

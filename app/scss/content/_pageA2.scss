@@ -194,9 +194,9 @@ h2.heading_food_2 {
 .food__wrap__8 {
   p {
     width: 100%;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-family: $font-family-alt-3;
-    line-height: 1.7;
+    line-height: 2;
 
     span {
       font-size: 18px;
@@ -209,11 +209,11 @@ h2.heading_food_2 {
 
     &__image {
       width: 49%;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
 
     &__text {
-      margin-top: 10px;
+      margin-top: 20px;
 
       .menu__text__item {
         width: 45%;
@@ -221,6 +221,7 @@ h2.heading_food_2 {
         &:first-child {
           padding-left: 10px;
           border-left: 10px solid $green;
+          width: 50%;
         }
 
         p {
@@ -229,6 +230,7 @@ h2.heading_food_2 {
 
           &:last-child {
             margin-bottom: 0;
+            margin-left: -8px;
           }
         }
       }
@@ -359,6 +361,12 @@ h2.heading_food_2 {
 }*/
 
 @media screen and (max-width: 767px) {
+  .food__wrap__1 {
+    p {
+      font-family: $font-family-alt-3;
+    }
+  }
+
   .food__wrap__2 {
     .btn_style3 {
       margin-bottom: 20px;
@@ -505,6 +513,10 @@ h2.heading_food_2 {
 
       h2 {
         font-size: 2.3rem;
+
+        &.text__green {
+          margin-bottom: 5px;
+        }
       }
 
       .information {

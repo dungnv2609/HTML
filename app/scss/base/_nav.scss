@@ -97,7 +97,7 @@ header {
 
 @media screen and (min-width: 768px) {
   header {
-    min-width: 1366px;
+    min-width: 1260px;
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -154,6 +154,7 @@ header {
       padding: 0 20px;
       overflow-y: scroll;
       z-index: 100;
+      -webkit-overflow-scrolling: touch;
 
       &.sub {
         padding: 0;

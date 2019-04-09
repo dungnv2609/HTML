@@ -126,7 +126,7 @@ h4 {
     font-size: 1.8rem;
     color: $green;
     border-bottom: 1px solid #B1B1B1;
-    padding-bottom: 17px;
+    padding-bottom: 16px;
     margin-bottom: 20px;
   }
 }
@@ -262,10 +262,12 @@ h4 {
     }
 
     span {
+      padding-top: 5px;
 
       &:before,
       &:after {
         width: 60%;
+        top: 20px;
       }
     }
   }

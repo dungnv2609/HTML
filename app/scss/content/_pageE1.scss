@@ -53,6 +53,10 @@ h2.heading_travel_1 {
         font-size: 1.8rem;
         color: $green;
         padding-left: 30px;
+
+        &.pd-left {
+          padding-left: 0;
+        }
       }
     }
 
@@ -74,9 +78,39 @@ h2.heading_travel_1 {
   }
 }
 
+#yoro_travel {
+  .btn_round {
+    span {
+      &:before {
+        top: 5px;
+      }
+
+      &:after {
+        top: 11px;
+      }
+    }
+  }
+}
+
 .mac-os .travel_box .travel_txt .button_container .btn_round,
 .mac-os .travel_list .travel_item .button_container .btn_round {
   padding: 15px 10px;
+}
+
+.mac-os {
+  #yoro_travel {
+    .btn_round {
+      span {
+        &:before {
+          top: 0;
+        }
+
+        &:after {
+          top: 6px;
+        }
+      }
+    }
+  }
 }
 
 .travel_list {
@@ -116,7 +150,7 @@ h2.heading_travel_1 {
       margin-bottom: 60px;
       font-size: 1.6rem;
       font-family: $font-family-alt-3;
-      line-height: 1.5;
+      line-height: 2;
     }
 
     .button_container {
@@ -125,6 +159,16 @@ h2.heading_travel_1 {
         font-size: 1.8rem;
         border-radius: 5px;
         padding: 12px 10px 18px;
+
+        span {
+          &:before {
+            top: 5px;
+          }
+
+          &:after {
+            top: 11px;
+          }
+        }
       }
     }
 
@@ -309,6 +353,10 @@ h2.heading_travel_1 {
     }
   }
 
+  .travel_wrap_1 .title {
+    margin-bottom: 30px;
+  }
+
   .travel_wrap_1 .btn__list {
     margin-bottom: 30px;
   }
@@ -351,39 +399,5 @@ h2.heading_travel_1 {
   .ios .travel_box .travel_txt .button_container .btn_round,
   .ios .travel_list .travel_item .button_container .btn_round {
     padding: 15px 0;
-  }
-}
-
-@media screen and (max-width: 340px) {
-  .travel_box {
-    .travel_txt {
-      .button_container {
-        .btn_round {
-          &:before {
-            right: 9%;
-          }
-
-          &:after {
-            right: 10.8%;
-          }
-        }
-      }
-    }
-  }
-
-  .travel_list {
-    .travel_item {
-      .button_container {
-        .btn_round {
-          &:before {
-            right: 9%;
-          }
-
-          &:after {
-            right: 10.8%;
-          }
-        }
-      }
-    }
   }
 }

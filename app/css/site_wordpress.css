@@ -55,7 +55,7 @@
 .paging__wrap a {
   font-family: "HirakakuStd-W3", Arial, sans-serif;
   font-size: 1.8rem;
-  padding: 7px 5px;
+  padding: 7px 0;
   width: 100%;
   border: 2px solid #b1b1b1;
   transition: .1s all ease-in-out;
@@ -90,4 +90,53 @@
   background: #e18a50;
   border-color: #e18a50;
   color: #fff !important;
+}
+
+.paging__wrap .btn__prev {
+  margin-left: 0;
+}
+
+.paging__wrap .btn__next {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .info__wrap {
+    padding: 15px 20px;
+  }
+
+  .info__wrap .info__row {
+    flex-direction: column;
+  }
+
+  .info__wrap .info__date {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .info__wrap.info__list .info__row {
+    align-items: flex-start;
+  }
+
+  .info__wrap.info__list .info__row .info__content {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .info__wrap.info__list .info__row .info__link {
+    width: 100%;
+  }
+
+  .info__wrap.info__list .info__row .info__link a {
+    margin-left: 0;
+  }
+
+  .paging__wrap a {
+    font-size: 1.4rem;
+  }
+
+  .paging__wrap ul li {
+    margin: 0 5px;
+    width: 30px;
+  }
 }
