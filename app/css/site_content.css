@@ -2548,15 +2548,15 @@ h2.ic_privacy:after {
 }
 
 h2.ic_contact {
-  padding-right: 65px;
+  padding-right: 50px;
 }
 
 h2.ic_contact:after {
-  top: 2px;
+  top: 12px;
   right: 0px;
   background: url(/images/ic_13.svg) center no-repeat;
   width: 43px;
-  height: 45px;
+  height: 30px;
 }
 
 h2.ic_event {
@@ -2592,7 +2592,7 @@ h2.ic_plan:after {
 }
 
 .mac-os h2.ic_contact:after {
-  top: 2px;
+  top: 6px;
 }
 
 .mac-os h2.ic_event:after {
@@ -2620,8 +2620,8 @@ h2.ic_plan:after {
 
   h2.ic_contact:after {
     top: 2px;
-    width: 28px;
-    height: 33px;
+    width: 32px;
+    height: 22px;
   }
 
   h2.ic_privacy {
@@ -2919,8 +2919,8 @@ h2.ic_plan:after {
   align-self: center;
 }
 
-.form_contact .frm-contact .tbl-contact .row__wrap-a .contact__row:last-child {
-  margin-left: 10px;
+.form_contact .frm-contact .tbl-contact .row__wrap-a .contact__row {
+  margin-right: 10px;
 }
 
 .form_contact .frm-contact .tbl-contact .row__wrap-m span {

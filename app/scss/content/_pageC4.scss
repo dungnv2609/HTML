@@ -24,14 +24,14 @@ h2 {
   }
 
   &.ic_contact {
-    padding-right: 65px;
+    padding-right: 50px;
 
     &:after {
-      top: 2px;
+      top: 12px;
       right: 0px;
       background: url(/images/ic_13.svg) center no-repeat;
       width: 43px;
-      height: 45px;
+      height: 30px;
     }
   }
 
@@ -76,7 +76,7 @@ h2 {
 
     &.ic_contact {
       &:after {
-        top: 2px;
+        top: 6px;
       }
     }
 
@@ -111,8 +111,8 @@ h2 {
 
       &:after {
         top: 2px;
-        width: 28px;
-        height: 33px;
+        width: 32px;
+        height: 22px;
       }
     }
 
@@ -428,9 +428,7 @@ h2 {
 
       .row__wrap-a {
         .contact__row {
-          &:last-child {
-            margin-left: 10px;
-          }
+          margin-right: 10px;
         }
       }
 
