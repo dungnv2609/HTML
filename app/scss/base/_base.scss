@@ -173,3 +173,19 @@ main {
 .mw_370 img {
   max-width: 370px !important;
 }
+
+.temp {
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  .temp {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .temp {
+    margin-top: 60px;
+  }
+}
