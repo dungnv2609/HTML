@@ -36,15 +36,37 @@ h2 {
   }
 }
 
+.mac-os {
+  h2 {
+    &.ic_access {
+      &:after {
+        top: 0;
+      }
+    }
+
+    &.ic_recruit {
+      &:after {
+        top: 0;
+      }
+    }
+
+    &.ic_trafic {
+      &:after {
+        top: 0;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 600px) {
   h2 {
     &.ic_access {
       padding-right: 40px;
 
       &:after {
-        top: 2px;
-        width: 28px;
-        height: 33px;
+        top: -3px;
+        width: 38px;
+        height: 40px;
       }
     }
 
@@ -55,6 +77,94 @@ h2 {
         top: 2px;
         width: 28px;
         height: 33px;
+      }
+    }
+
+    &.ic_trafic {
+      padding-right: 55px;
+
+      &:after {
+        top: 4px;
+        width: 38px;
+        height: 40px;
+      }
+    }
+  }
+
+  .ios {
+    h2 {
+      &.ic_access {
+        &:after {
+          top: -3px;
+        }
+      }
+
+      &.ic_recruit {
+        &:after {
+          top: 2px;
+        }
+      }
+
+      &.ic_trafic {
+        &:after {
+          top: 4px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h2 {
+    &.ic_access {
+      padding-right: 35px;
+
+      &:after {
+        top: -3px;
+        width: 33px;
+        height: 35px;
+      }
+    }
+
+    &.ic_recruit {
+      padding-right: 40px;
+
+      &:after {
+        top: 2px;
+        width: 28px;
+        height: 33px;
+      }
+    }
+
+    &.ic_trafic {
+      padding-right: 45px;
+
+      &:after {
+        top: -3px;
+        width: 33px;
+        height: 40px;
+      }
+    }
+  }
+
+  .ios {
+    h2 {
+      &.ic_access {
+        &:after {
+          top: -3px;
+        }
+      }
+
+      &.ic_recruit {
+        &:after {
+          top: 2px;
+        }
+      }
+
+      &.ic_trafic {
+        &:after {
+          top: -3px;
+        }
       }
     }
   }
@@ -362,6 +472,12 @@ h2 {
   }
 }
 
+.mac-os {
+  .trafic__box .box__title h2:after {
+    top: 12px;
+  }
+}
+
 .trafic__list {
   margin-bottom: 15px;
 }
@@ -612,6 +728,42 @@ h2 {
 
     .tbl-traffic {
       width: 1120px;
+    }
+  }
+
+  .trafic__box--title {
+    &.title01 {
+      span:after {
+        top: -2px;
+      }
+    }
+
+    &.title_02 {
+      span:after {
+        top: -8px;
+      }
+    }
+  }
+
+  .ios {
+    .trafic__box--title {
+      &.title01 {
+        span:after {
+          top: -2px;
+        }
+      }
+
+      &.title_02 {
+        span:after {
+          top: -8px;
+        }
+      }
+    }
+  }
+
+  .ios {
+    .trafic__box .box__title h2:after {
+      top: 1px;
     }
   }
 }
