@@ -34,8 +34,8 @@ function adjustMenu(ww) {
       $(".nav").show();
     }
     $('.toggleMenu').click(function () {
-      var barH = screen.height - window.innerHeight;
-      var setH = window.innerHeight - barH;
+      /*var barH = screen.height - window.innerHeight;
+      var setH = window.innerHeight - barH;*/
 
       $(".nav li").removeClass('hover');
       if ($(".toggleMenu").hasClass("active")) {
@@ -46,7 +46,8 @@ function adjustMenu(ww) {
           'position': 'fixed'
         });
         $('.nav').css('height', '100vh');
-        $('.nav > ul').css('height', setH - 50);
+        var ulHeight = $('.nav').height() - $('.nav > .menu__title').outerHeight();
+        $('.nav > ul').css('height', ulHeight);
       } else {
         $('.toggleMenu .img_show').css('display', 'inline-block');
         $('.toggleMenu .img_hide').css('display', 'none');
@@ -118,11 +119,12 @@ $(window).bind('resize orientationchange', function () {
     $('.toggleMenu .img_hide').css('display', 'none');
     $('.nav').hide();
   }
-  var barH = screen.height - window.innerHeight;
-  var setH = window.innerHeight - barH;
+  /*var barH = screen.height - window.innerHeight;
+  var setH = window.innerHeight - barH;*/
   if ($(".toggleMenu").hasClass("active")) {
     $('.nav').css('height', '100vh');
-    $('.nav > ul').css('height', setH - 50);
+    var ulHeight = $('.nav').height() - $('.nav > .menu__title').outerHeight();
+    $('.nav > ul').css('height', ulHeight);
   }
 });
 
@@ -200,15 +202,15 @@ $(document).ready(function () {
   if ($(".maxH__xs")[0]) {
     resizeH(".maxH__xs", false);
     $(window).bind("orientationchange resize", function () {
-        resizeH(".maxH__xs", false);
+      resizeH(".maxH__xs", false);
     });
   }
 });
 
 function resizeH(eleH, onlyPc) {
   if ($(window).width() <= 767 && onlyPc) {
-      $(eleH).find(".hTit").css("height", "");
-      $(eleH).find(".hBody").css("height", "");
+    $(eleH).find(".hTit").css("height", "");
+    $(eleH).find(".hBody").css("height", "");
   } else {
     $(eleH).find(".hTit").css("height", "");
     $(eleH).find(".hBody").css("height", "");
@@ -217,18 +219,18 @@ function resizeH(eleH, onlyPc) {
       var maxH2 = 0;
       $(this).find(".hTit").each(function () {
         hTit = $(this).outerHeight();
-          if (maxH2 < hTit) {
-            maxH2 = hTit;
-          }
-        });
-        $(this).find(".hTit").outerHeight(maxH2);
-        $(this).find(".hBody").each(function () {
-          hBody = $(this).outerHeight();
-          if (maxH < hBody) {
-            maxH = hBody;
-          }
-        });
-        $(this).find(".hBody").outerHeight(maxH);
+        if (maxH2 < hTit) {
+          maxH2 = hTit;
+        }
+      });
+      $(this).find(".hTit").outerHeight(maxH2);
+      $(this).find(".hBody").each(function () {
+        hBody = $(this).outerHeight();
+        if (maxH < hBody) {
+          maxH = hBody;
+        }
+      });
+      $(this).find(".hBody").outerHeight(maxH);
     });
   }
 }

@@ -2654,10 +2654,12 @@ h2.ic_plan:after {
   border-bottom: 1px solid #000;
   line-height: 1.8;
   vertical-align: top;
+  font-family: "HirakakuStd-W3", Arial, sans-serif;
+  letter-spacing: 0;
 }
 
 .brochure__box .tbl_02 tr td:first-child {
-  width: 100px;
+  width: 132px;
   text-align-last: justify;
 }
 
@@ -2681,6 +2683,7 @@ h2.ic_plan:after {
 
 .privacy__box p {
   line-height: 2;
+  font-family: "HirakakuStd-W3", Arial, sans-serif;
 }
 
 /** contact page **/
@@ -2916,7 +2919,8 @@ h2.ic_plan:after {
   vertical-align: top;
 }
 
-.form_contact .frm-contact .tbl-contact th, .form_contact .frm-contact .tbl-contact td {
+.form_contact .frm-contact .tbl-contact th,
+    .form_contact .frm-contact .tbl-contact td {
   padding: 16px 15px;
   border: 1px solid #ccc;
   vertical-align: top;
@@ -3155,7 +3159,8 @@ h2.ic_plan:after {
     padding-top: 5px;
   }
 
-  .form_contact textarea, .form_contact input {
+  .form_contact textarea,
+  .form_contact input {
     font-size: 2.2rem;
   }
 
@@ -3179,12 +3184,14 @@ h2.ic_plan:after {
     color: #bfbfbf;
   }
 
-  #privacy .brochure__box, #privacy .privacy__box {
+  #privacy .brochure__box,
+  #privacy .privacy__box {
     font-family: 'HirakakuStd-W3';
     font-size: 2.2rem;
   }
 
-  #privacy .brochure__box p, #privacy .privacy__box p {
+  #privacy .brochure__box p,
+    #privacy .privacy__box p {
     font-size: 2.2rem;
   }
 }
@@ -3199,7 +3206,7 @@ h2.ic_plan:after {
   }
 
   .privacy__box {
-    padding: 20px;
+    padding: 14px;
   }
 
   .brochure__box {
@@ -3217,6 +3224,10 @@ h2.ic_plan:after {
 
   .brochure__box .col_right {
     padding: 20px;
+  }
+
+  .brochure__box .tbl_02 tr td:first-child {
+    width: 90px;
   }
 
   #contact {
@@ -3298,7 +3309,8 @@ h2.ic_plan:after {
     max-width: 150px;
   }
 
-  .form_contact .frm-contact .tbl-contact th, .form_contact .frm-contact .tbl-contact td {
+  .form_contact .frm-contact .tbl-contact th,
+    .form_contact .frm-contact .tbl-contact td {
     display: block;
     width: 100%;
     padding: 10px;
@@ -3467,15 +3479,22 @@ h2.ic_trafic:after {
   font-size: 2.1rem;
 }
 
-#access section .tbl-traffic th, #access section .tbl-traffic td {
+#access section .tbl-traffic th,
+  #access section .tbl-traffic td {
   font-weight: normal;
 }
 
-#access section .tbl-traffic .trafic__arrow, #access section .tbl-traffic .trafic__des {
+#access section .tbl-traffic .trafic__arrow,
+  #access section .tbl-traffic .trafic__des {
   font-size: 1.6rem;
 }
 
-#recruit .container, #access .container {
+#access section p {
+  font-family: "HirakakuStd-W3", Arial, sans-serif;
+}
+
+#recruit .container,
+#access .container {
   padding-bottom: 200px !important;
 }
 
@@ -3541,7 +3560,8 @@ h2.ic_trafic:after {
   font-family: "HirakakuStd-W3", Arial, sans-serif;
 }
 
-.tbl-recruit table th, .tbl-recruit table td {
+.tbl-recruit table th,
+    .tbl-recruit table td {
   padding: 15px 30px;
   border: 1px solid #000;
 }
@@ -3551,15 +3571,18 @@ h2.ic_trafic:after {
   border-top: none;
 }
 
-.tbl-recruit table tr th:first-child, .tbl-recruit table tr td:first-child {
+.tbl-recruit table tr th:first-child,
+    .tbl-recruit table tr td:first-child {
   border-left: none;
 }
 
-.tbl-recruit table tr th:last-child, .tbl-recruit table tr td:last-child {
+.tbl-recruit table tr th:last-child,
+    .tbl-recruit table tr td:last-child {
   border-right: none;
 }
 
-.tbl-recruit table tr:last-child th, .tbl-recruit table tr:last-child td {
+.tbl-recruit table tr:last-child th,
+    .tbl-recruit table tr:last-child td {
   border-bottom: none;
 }
 
@@ -3582,8 +3605,8 @@ h2.ic_trafic:after {
   padding: 35px 40px 30px 40px;
 }
 
-.access__box .col_right .box__txt p:not(last-child) {
-  margin-bottom: 14px;
+.access__box .col_right .box__txt p {
+  line-height: 2.36;
 }
 
 .trafic__box {
@@ -3660,15 +3683,17 @@ h2.ic_trafic:after {
   color: #527c68;
   padding: 5px 10px;
   margin-bottom: 15px;
-  font-family: "HirakakuStd-W3", Arial, sans-serif;
+  font-family: "HirakakuStd-W6", Arial, sans-serif;
 }
 
 .trafic__box--left p, .trafic__box--right p {
   margin-bottom: 20px;
+  font-size: 1.6rem !important;
 }
 
 .trafic__box--left ul li, .trafic__box--right ul li {
   padding: 10px 0px;
+  font-family: "HirakakuStd-W6", Arial, sans-serif;
 }
 
 .trafic__box--left ul li:not(:last-child), .trafic__box--right ul li:not(:last-child) {
@@ -3763,7 +3788,8 @@ h2.ic_trafic:after {
   display: inline-block;
 }
 
-.tbl-traffic th, .tbl-traffic td {
+.tbl-traffic th,
+  .tbl-traffic td {
   vertical-align: middle;
   padding: 15px 0px;
 }
@@ -3791,10 +3817,25 @@ h2.ic_trafic:after {
 
 .tbl-traffic td div {
   padding: 0 10px;
+  font-family: "HirakakuStd-W3", Arial, sans-serif;
 }
 
 .tbl-traffic td div.trafic__arrow {
   padding: 0 10px 6px;
+}
+
+.access__map .map {
+  position: relative;
+  padding-top: 286px;
+}
+
+.access__map .map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -3929,7 +3970,8 @@ h2.ic_trafic:after {
 }
 
 @media screen and (max-width: 600px) {
-  #recruit .container, #access .container {
+  #recruit .container,
+  #access .container {
     padding-bottom: 50px !important;
   }
 
