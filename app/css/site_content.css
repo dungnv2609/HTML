@@ -2623,14 +2623,6 @@ h2.ic_plan:after {
   font-family: 'HirakakuStd-W3';
 }
 
-.font_hanna {
-  font-family: 'Hannari';
-}
-
-.font_hw3 {
-  font-family: 'HirakakuStd-W3';
-}
-
 .font_hw6 {
   font-family: 'HirakakuStd-W6' !important;
 }
@@ -2662,12 +2654,10 @@ h2.ic_plan:after {
   border-bottom: 1px solid #000;
   line-height: 1.8;
   vertical-align: top;
-  font-family: "HirakakuStd-W3", Arial, sans-serif;
-  letter-spacing: 0;
 }
 
 .brochure__box .tbl_02 tr td:first-child {
-  width: 132px;
+  width: 100px;
   text-align-last: justify;
 }
 
@@ -2691,7 +2681,6 @@ h2.ic_plan:after {
 
 .privacy__box p {
   line-height: 2;
-  font-family: "HirakakuStd-W3", Arial, sans-serif;
 }
 
 /** contact page **/
@@ -2806,6 +2795,10 @@ h2.ic_plan:after {
   display: block;
 }
 
+.form_contact .frm-contact .tbl-contact input[type="email"] {
+  font-family: 'HirakakuStd-W3';
+}
+
 .form_contact .frm-contact .tbl-contact input[type="text"],
     .form_contact .frm-contact .tbl-contact input[type="email"],
     .form_contact .frm-contact .tbl-contact input[type="tel"],
@@ -2854,6 +2847,7 @@ h2.ic_plan:after {
 
 .form_contact .frm-contact .tbl-contact textarea {
   height: 250px;
+  padding: 5px 10px 10px;
 }
 
 .form_contact .frm-contact .tbl-contact select {
@@ -2927,8 +2921,7 @@ h2.ic_plan:after {
   vertical-align: top;
 }
 
-.form_contact .frm-contact .tbl-contact th,
-    .form_contact .frm-contact .tbl-contact td {
+.form_contact .frm-contact .tbl-contact th, .form_contact .frm-contact .tbl-contact td {
   padding: 16px 15px;
   border: 1px solid #ccc;
   vertical-align: top;
@@ -2949,28 +2942,24 @@ h2.ic_plan:after {
   font-size: 2.2rem;
   font-family: 'HirakakuStd-W3';
   position: relative;
-  top: 3px;
 }
 
 .form_contact input[type=email]::-moz-placeholder {
   font-size: 2.2rem;
   font-family: 'HirakakuStd-W3';
   position: relative;
-  top: 3px;
 }
 
 .form_contact input[type=email]:-ms-input-placeholder {
   font-size: 2.2rem;
   font-family: 'HirakakuStd-W3';
   position: relative;
-  top: 3px;
 }
 
 .form_contact input[type=email]:-moz-placeholder {
   font-size: 2.2rem;
   font-family: 'HirakakuStd-W3';
   position: relative;
-  top: 3px;
 }
 
 /** event detail page **/
@@ -3097,14 +3086,6 @@ h2.ic_plan:after {
   padding-bottom: 120px !important;
 }
 
-#plan-list .container {
-  padding-bottom: 120px !important;
-}
-
-#plan-detail .container {
-  padding-bottom: 120px !important;
-}
-
 @media screen and (min-width: 768px) and (max-width: 960px) {
   .form_contact .frm-contact .tbl-contact .contact__row {
     margin-bottom: 15px;
@@ -3172,12 +3153,15 @@ h2.ic_plan:after {
   }
 
   .form_contact .frm-contact .tbl-contact select {
+    font-family: 'KozukaGothicPrN-R';
     font-size: 2.2rem;
+    padding: 0px 10px;
+    color: #333;
   }
 
-  .form_contact textarea,
-  .form_contact input {
+  .form_contact textarea, .form_contact input {
     font-size: 2.2rem;
+    font-family: 'KozukaGothicPrN-R';
   }
 
   .form_contact ::-webkit-input-placeholder {
@@ -3205,14 +3189,12 @@ h2.ic_plan:after {
     line-height: 1.6;
   }
 
-  #privacy .brochure__box,
-  #privacy .privacy__box {
+  #privacy .brochure__box, #privacy .privacy__box {
     font-family: 'HirakakuStd-W3';
     font-size: 2.2rem;
   }
 
-  #privacy .brochure__box p,
-    #privacy .privacy__box p {
+  #privacy .brochure__box p, #privacy .privacy__box p {
     font-size: 2.2rem;
   }
 }
@@ -3474,15 +3456,27 @@ h2.ic_trafic:after {
   height: 45px;
 }
 
+.mac-os h2.ic_access:after {
+  top: 0;
+}
+
+.mac-os h2.ic_recruit:after {
+  top: 0;
+}
+
+.mac-os h2.ic_trafic:after {
+  top: 0;
+}
+
 @media screen and (max-width: 600px) {
   h2.ic_access {
     padding-right: 40px;
   }
 
   h2.ic_access:after {
-    top: 2px;
-    width: 28px;
-    height: 33px;
+    top: -3px;
+    width: 38px;
+    height: 40px;
   }
 
   h2.ic_recruit {
@@ -3493,6 +3487,72 @@ h2.ic_trafic:after {
     top: 2px;
     width: 28px;
     height: 33px;
+  }
+
+  h2.ic_trafic {
+    padding-right: 55px;
+  }
+
+  h2.ic_trafic:after {
+    top: 4px;
+    width: 38px;
+    height: 40px;
+  }
+
+  .ios h2.ic_access:after {
+    top: -3px;
+  }
+
+  .ios h2.ic_recruit:after {
+    top: 2px;
+  }
+
+  .ios h2.ic_trafic:after {
+    top: 4px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h2.ic_access {
+    padding-right: 35px;
+  }
+
+  h2.ic_access:after {
+    top: -3px;
+    width: 33px;
+    height: 35px;
+  }
+
+  h2.ic_recruit {
+    padding-right: 40px;
+  }
+
+  h2.ic_recruit:after {
+    top: 2px;
+    width: 28px;
+    height: 33px;
+  }
+
+  h2.ic_trafic {
+    padding-right: 45px;
+  }
+
+  h2.ic_trafic:after {
+    top: -3px;
+    width: 33px;
+    height: 40px;
+  }
+
+  .ios h2.ic_access:after {
+    top: -3px;
+  }
+
+  .ios h2.ic_recruit:after {
+    top: 2px;
+  }
+
+  .ios h2.ic_trafic:after {
+    top: -3px;
   }
 }
 
@@ -3768,6 +3828,10 @@ h2.ic_trafic:after {
   height: 25px;
 }
 
+.mac-os .trafic__box .box__title h2:after {
+  top: 12px;
+}
+
 .trafic__list {
   margin-bottom: 15px;
 }
@@ -3987,6 +4051,26 @@ h2.ic_trafic:after {
 
   .trafic__list .tbl-traffic {
     width: 1120px;
+  }
+
+  .trafic__box--title.title01 span:after {
+    top: -2px;
+  }
+
+  .trafic__box--title.title_02 span:after {
+    top: -8px;
+  }
+
+  .ios .trafic__box--title.title01 span:after {
+    top: -2px;
+  }
+
+  .ios .trafic__box--title.title_02 span:after {
+    top: -8px;
+  }
+
+  .ios .trafic__box .box__title h2:after {
+    top: 1px;
   }
 }
 

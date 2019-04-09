@@ -30,25 +30,139 @@ h2 {
 		}
 	}
 }
+
+.mac-os {
+  h2 {
+    &.ic_access {
+      &:after {
+        top: 0;
+      }
+    }
+
+    &.ic_recruit {
+      &:after {
+        top: 0;
+      }
+    }
+
+    &.ic_trafic {
+      &:after {
+        top: 0;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 600px) {
-	h2{
-		&.ic_access {
-	        padding-right: 40px;
-	        &:after {
-	          top: 2px;
-	          width: 28px;
-	          height: 33px;
-	        }
-	    }
-	    &.ic_recruit {
-	        padding-right: 40px;
-	        &:after {
-	          top: 2px;
-	          width: 28px;
-	          height: 33px;
-	        }
-	    }
-	}
+  h2 {
+    &.ic_access {
+      padding-right: 40px;
+
+      &:after {
+        top: -3px;
+        width: 38px;
+        height: 40px;
+      }
+    }
+
+    &.ic_recruit {
+      padding-right: 40px;
+
+      &:after {
+        top: 2px;
+        width: 28px;
+        height: 33px;
+      }
+    }
+
+    &.ic_trafic {
+      padding-right: 55px;
+
+      &:after {
+        top: 4px;
+        width: 38px;
+        height: 40px;
+      }
+    }
+  }
+
+  .ios {
+    h2 {
+      &.ic_access {
+        &:after {
+          top: -3px;
+        }
+      }
+
+      &.ic_recruit {
+        &:after {
+          top: 2px;
+        }
+      }
+
+      &.ic_trafic {
+        &:after {
+          top: 4px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h2 {
+    &.ic_access {
+      padding-right: 35px;
+
+      &:after {
+        top: -3px;
+        width: 33px;
+        height: 35px;
+      }
+    }
+
+    &.ic_recruit {
+      padding-right: 40px;
+
+      &:after {
+        top: 2px;
+        width: 28px;
+        height: 33px;
+      }
+    }
+
+    &.ic_trafic {
+      padding-right: 45px;
+
+      &:after {
+        top: -3px;
+        width: 33px;
+        height: 40px;
+      }
+    }
+  }
+
+  .ios {
+    h2 {
+      &.ic_access {
+        &:after {
+          top: -3px;
+        }
+      }
+
+      &.ic_recruit {
+        &:after {
+          top: 2px;
+        }
+      }
+
+      &.ic_trafic {
+        &:after {
+          top: -3px;
+        }
+      }
+    }
+  }
 }
 
 #access{
@@ -292,6 +406,13 @@ h2 {
 		}
 	}
 }
+
+.mac-os {
+  .trafic__box .box__title h2:after {
+    top: 12px;
+  }
+}
+
 .trafic__list {
 	margin-bottom: 15px;
 }
@@ -391,106 +512,161 @@ h2 {
 }
 
 @media screen and (max-width: 767px) {
-	#recruit {
-		.container {
-			padding-bottom: 50px !important;
-		}
-	}
-	.recruit {
-		&__des-top {
-			p {
-				font-size: 2.8rem;
-			}
-		}
-		&__des-bottom {
-			p {
-				font-size: 2rem;
-			}
-		}
-	}
-	.access__box {
-		margin-bottom: 35px;
-		.row {
-			margin-left: 0px;
-		}
-		.col {
-			&_left,
-			&_right {
-				width: 100%;
-				margin-left: 0px;
-			}
-			&_left {
-				
-			}
-			&_right {
-				background: #fff;
-				padding: 20px;
-			}
-		}
-	}
-	.access__map {
-		margin-bottom: 35px;
-	}
-	.trafic__box {
-		&.trafic__bus {
-			padding: 20px 20px 5px;
-		}
-		.box__title {
-			margin: 0 auto 30px;
-			display: flex;
-			justify-content: center;
-			figure {
-				max-width: 540px;
-				width: 100%;
-				margin-bottom: 20px;
-				img {
-					width: 100%;
-					height: auto;
-				}
-			}
-			h2 {
-				font-size: 2.3rem;
-			    font-weight: normal;
-			    color: #527c68;
-			    letter-spacing: 0;
-			    position: relative;
-			    display: inline-block;
-				align-self: center;
-				padding-right: 65px;
-				width: auto;
-				&:after {
-					position: absolute;
-					content: '';
-					top: 5px;
-		       		right: 0px;
-					background: url(/images/ic_bus.svg) center no-repeat;
-					width: 55px;
-		       		 height: 25px;
-				}
-			}
-		}
-	}
-	.trafic__list {
-		overflow-x: scroll;
-		&::-webkit-scrollbar {
-			height: 10px;
-		}
-		&::-webkit-scrollbar-track {
-			background: #ececec;
-		}
-		&::-webkit-scrollbar-thumb {
-			background: #527c68;
-		}
-		.trafic__arrow {
-			&:after {
-				width: 190px;
-				height: 6px;
-			}
-		}
-		.tbl-traffic {
-			width: 1120px;
-		}
-	}
+  #recruit {
+    .container {
+      padding-bottom: 50px !important;
+    }
+  }
+
+  .recruit {
+    &__des-top {
+      p {
+        font-size: 2.8rem;
+      }
+    }
+
+    &__des-bottom {
+      p {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .access__box {
+    margin-bottom: 35px;
+
+    .row {
+      margin-left: 0px;
+    }
+
+    .col {
+
+      &_left,
+      &_right {
+        width: 100%;
+        margin-left: 0px;
+      }
+
+      &_left {}
+
+      &_right {
+        background: #fff;
+        padding: 20px;
+      }
+    }
+  }
+
+  .access__map {
+    margin-bottom: 35px;
+  }
+
+  .trafic__box {
+    &.trafic__bus {
+      padding: 20px 20px 5px;
+    }
+
+    .box__title {
+      margin: 0 auto 30px;
+      display: flex;
+      justify-content: center;
+
+      figure {
+        max-width: 540px;
+        width: 100%;
+        margin-bottom: 20px;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      h2 {
+        font-size: 2.3rem;
+        font-weight: normal;
+        color: $green;
+        letter-spacing: 0;
+        position: relative;
+        display: inline-block;
+        align-self: center;
+        padding-right: 65px;
+        width: auto;
+
+        &:after {
+          position: absolute;
+          content: '';
+          top: 5px;
+          right: 0px;
+          background: url(/images/ic_bus.svg) center no-repeat;
+          width: 55px;
+          height: 25px;
+        }
+      }
+    }
+  }
+
+  .trafic__list {
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      height: 10px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #ececec;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $green;
+    }
+
+    .trafic__arrow {
+      &:after {
+        width: 190px;
+        height: 6px;
+      }
+    }
+
+    .tbl-traffic {
+      width: 1120px;
+    }
+  }
+
+  .trafic__box--title {
+    &.title01 {
+      span:after {
+        top: -2px;
+      }
+    }
+
+    &.title_02 {
+      span:after {
+        top: -8px;
+      }
+    }
+  }
+
+  .ios {
+    .trafic__box--title {
+      &.title01 {
+        span:after {
+          top: -2px;
+        }
+      }
+
+      &.title_02 {
+        span:after {
+          top: -8px;
+        }
+      }
+    }
+  }
+
+  .ios {
+    .trafic__box .box__title h2:after {
+      top: 1px;
+    }
+  }
 }
 @media screen and (max-width: 600px) {
 	#recruit, #access {
