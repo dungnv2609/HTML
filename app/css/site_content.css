@@ -2524,11 +2524,11 @@ h2.heading_travel_1 {
 }
 
 h2.ic_brochure {
-  padding-right: 65px;
+  padding-right: 55px;
 }
 
 h2.ic_brochure:after {
-  top: 2px;
+  top: 0;
   right: 0px;
   background: url(/images/ic_12.svg) center no-repeat;
   width: 43px;
@@ -2536,14 +2536,14 @@ h2.ic_brochure:after {
 }
 
 h2.ic_privacy {
-  padding-right: 65px;
+  padding-right: 60px;
 }
 
 h2.ic_privacy:after {
   top: 6px;
   right: 0px;
   background: url(/images/ic_16.svg) center no-repeat !important;
-  width: 49px;
+  width: 47px;
   height: 37px;
 }
 
@@ -2583,14 +2583,34 @@ h2.ic_plan:after {
   height: 45px;
 }
 
+.mac-os h2.ic_brochure:after {
+  top: -6px;
+}
+
+.mac-os h2.ic_privacy:after {
+  top: 1px;
+}
+
+.mac-os h2.ic_contact:after {
+  top: 2px;
+}
+
+.mac-os h2.ic_event:after {
+  top: 4px;
+}
+
+.mac-os h2.ic_plan:after {
+  top: 2px;
+}
+
 @media screen and (max-width: 600px) {
   h2.ic_brochure {
     padding-right: 40px;
   }
 
   h2.ic_brochure:after {
-    top: 2px;
-    width: 28px;
+    top: -6px;
+    width: 32px;
     height: 33px;
   }
 
@@ -2605,13 +2625,25 @@ h2.ic_plan:after {
   }
 
   h2.ic_privacy {
-    padding-right: 55px;
+    padding-right: 45px;
   }
 
   h2.ic_privacy:after {
-    top: 2px;
+    top: -1px;
     width: 35px;
-    height: 26px;
+    height: 28px;
+  }
+
+  .ios h2.ic_brochure:after {
+    top: -8px;
+  }
+
+  .ios h2.ic_contact:after {
+    top: 2px;
+  }
+
+  .ios h2.ic_privacy:after {
+    top: -3px;
   }
 }
 
@@ -2624,7 +2656,7 @@ h2.ic_plan:after {
 }
 
 .font_hw6 {
-  font-family: 'HirakakuStd-W6' !important;
+  font-family: 'HirakakuStd-W6';
 }
 
 #privacy {
@@ -2654,10 +2686,12 @@ h2.ic_plan:after {
   border-bottom: 1px solid #000;
   line-height: 1.8;
   vertical-align: top;
+  letter-spacing: 0;
+  font-family: "HirakakuStd-W3", Arial, sans-serif;
 }
 
 .brochure__box .tbl_02 tr td:first-child {
-  width: 100px;
+  width: 132px;
   text-align-last: justify;
 }
 
@@ -2681,6 +2715,7 @@ h2.ic_plan:after {
 
 .privacy__box p {
   line-height: 2;
+  font-family: "HirakakuStd-W3", Arial, sans-serif !important;
 }
 
 /** contact page **/
@@ -2702,6 +2737,11 @@ h2.ic_plan:after {
 
 .form_contact .contact__head p {
   line-height: 2;
+}
+
+.form_contact .contact__head .txt_small {
+  padding: 4px 0px;
+  font-size: 1.7rem;
 }
 
 .form_contact .contact__note {
@@ -2921,7 +2961,8 @@ h2.ic_plan:after {
   vertical-align: top;
 }
 
-.form_contact .frm-contact .tbl-contact th, .form_contact .frm-contact .tbl-contact td {
+.form_contact .frm-contact .tbl-contact th,
+    .form_contact .frm-contact .tbl-contact td {
   padding: 16px 15px;
   border: 1px solid #ccc;
   vertical-align: top;
@@ -2932,6 +2973,11 @@ h2.ic_plan:after {
   font-weight: normal;
   width: 35%;
   vertical-align: top;
+  padding: 21px 15px;
+}
+
+.form_contact .frm-contact .tbl-contact th.val_middle {
+  vertical-align: middle;
 }
 
 .form_contact .frm-contact .tbl-contact td {
@@ -3159,7 +3205,8 @@ h2.ic_plan:after {
     color: #333;
   }
 
-  .form_contact textarea, .form_contact input {
+  .form_contact textarea,
+  .form_contact input {
     font-size: 2.2rem;
     font-family: 'KozukaGothicPrN-R';
   }
@@ -3189,12 +3236,14 @@ h2.ic_plan:after {
     line-height: 1.6;
   }
 
-  #privacy .brochure__box, #privacy .privacy__box {
+  #privacy .brochure__box,
+  #privacy .privacy__box {
     font-family: 'HirakakuStd-W3';
     font-size: 2.2rem;
   }
 
-  #privacy .brochure__box p, #privacy .privacy__box p {
+  #privacy .brochure__box p,
+    #privacy .privacy__box p {
     font-size: 2.2rem;
   }
 }
@@ -3209,7 +3258,32 @@ h2.ic_plan:after {
   }
 
   .privacy__box {
-    padding: 20px;
+    padding: 25px 20px;
+  }
+
+  .privacy__box .privacy__box__wrap {
+    padding: 10px;
+    border: 1px solid #333;
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+
+  .privacy__box .privacy__box__wrap::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .privacy__box .privacy__box__wrap::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: #C9CACA;
+  }
+
+  .privacy__box .privacy__box__wrap::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #898989;
+  }
+
+  .privacy__box .txt__item {
+    text-align: justify;
   }
 
   .brochure__box {
@@ -3225,12 +3299,12 @@ h2.ic_plan:after {
     margin-left: 0px;
   }
 
-  .brochure__box .col_right {
-    padding: 20px;
+  .brochure__box .col_left {
+    margin-bottom: 30px;
   }
 
-  .brochure__box .tbl_02 tr td:first-child {
-    width: 90px;
+  .brochure__box .col_right {
+    padding: 20px;
   }
 
   #contact {
@@ -3405,6 +3479,12 @@ h2.ic_plan:after {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .brochure__box .tbl_02 tr td:first-child {
+    width: 90px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .form_contact .frm-contact .tbl-contact .contact__row.contact__row__normal {
     display: block;
@@ -3568,11 +3648,6 @@ h2.ic_trafic:after {
 #access section .tbl-traffic .trafic__arrow,
   #access section .tbl-traffic .trafic__des {
   font-size: 1.6rem;
-  font-family: "HirakakuStd-W3", Arial, sans-serif;
-}
-
-#access section p {
-  font-family: "HirakakuStd-W3", Arial, sans-serif;
 }
 
 #recruit .container,
@@ -3687,8 +3762,8 @@ h2.ic_trafic:after {
   padding: 35px 40px 30px 40px;
 }
 
-.access__box .col_right .box__txt p {
-  line-height: 2.36;
+.access__box .col_right .box__txt p:not(last-child) {
+  margin-bottom: 14px;
 }
 
 .trafic__box {
@@ -3829,7 +3904,7 @@ h2.ic_trafic:after {
 }
 
 .mac-os .trafic__box--title.title01 span:after {
-  top: 0;
+  top: 3px;
 }
 
 .mac-os .trafic__box .box__title h2:after {
@@ -3978,6 +4053,10 @@ h2.ic_trafic:after {
   .access__box .col_left, .access__box .col_right {
     width: 100%;
     margin-left: 0px;
+  }
+
+  .access__box .col_left {
+    margin-bottom: 30px;
   }
 
   .access__box .col_right {
