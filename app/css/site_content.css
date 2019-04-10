@@ -3183,6 +3183,7 @@ h2.ic_plan:after {
 .form_contact .frm-contact .tbl-contact td p.field_bd {
   border: 1px solid #a6a6a6;
   padding: 5px;
+  min-height: 45px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 960px) {
@@ -3894,6 +3895,7 @@ h2.ic_trafic:after {
 .tbl-recruit table th {
   background: #e9e9e9;
   border-top: none;
+  font-weight: normal;
 }
 
 .tbl-recruit table tr th:first-child,
@@ -3908,6 +3910,7 @@ h2.ic_trafic:after {
 
 .tbl-recruit table tr td:first-child {
   width: 206px;
+  font-family: "HirakakuStd-W6", Arial, sans-serif;
 }
 
 .tbl-recruit table tr:last-child th,
