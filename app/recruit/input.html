@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>日帰りで楽しむ | ゆせんの里</title>
+  <title>リクルート | ゆせんの里</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="../css/site_structure.css">
@@ -13,7 +13,7 @@
   <header>
     <div class="header__inner">
       <div class="nav__logo">
-        <h1><a href="../index.html"><img src="../images/logo.png" alt="logo"></a></h1>
+        <h1><a href="../index.html"><img src="../images/logo.png" alt="養老温泉 ゆせんの里 ホテルなでしこ"></a></h1>
         <div class="sp">
           <div class="nav__btn">
             <div>
@@ -29,12 +29,12 @@
       <div class="gnav">
         <nav class="nav__pc pc">
           <ul>
-            <li><a href="/beauty_facility.html">美を堪能できる施設</a></li>
-            <li><a href="/natural_hot_spring.html">４種の天然温泉</a></li>
-            <li><a href="/room_feel_the_southern_europe.html">南欧を感じるお部屋</a></li>
-            <li><a href="/healthy_food.html">体に優しいお食事</a></li>
-            <li><a href="/enjoy_day_trip.html">日帰りで楽しむ</a></li>
-            <li><a href="/yoro_travel.html">養老を旅する</a></li>
+            <li><a href="../beauty_facility.html">美を堪能できる施設</a></li>
+            <li><a href="../natural_hot_spring.html">４種の天然温泉</a></li>
+            <li><a href="../room_feel_the_southern_europe.html">南欧を感じるお部屋</a></li>
+            <li><a href="../healthy_food.html">体に優しいお食事</a></li>
+            <li><a href="../enjoy_day_trip.html">日帰りで楽しむ</a></li>
+            <li><a href="../yoro_travel.html">養老を旅する</a></li>
           </ul>
         </nav>
         <div class="nav__btn pc">
@@ -45,28 +45,27 @@
           <nav class="nav">
             <div class="menu__title">MENU</div>
             <ul>
-              <li><a href="/beauty_facility.html">美を堪能できる施設</a></li>
-              <li><span class="parent">４種の天然温泉</span>
+              <li><a href="../beauty_facility.html">美を堪能できる施設</a></li>
+              <li class="has_sub"><a href="../natural_hot_spring.html">４種の天然温泉</a><span class="parent"></span>
                 <ul class="sub">
-                  <li><a href="/yoro_hanjungmak.html">養老汗蒸幕</a></li>
+                  <li><a href="../yoro_hanjungmak.html">養老汗蒸幕</a></li>
                 </ul>
               </li>
-              <li><a href="/room_feel_the_southern_europe.html">南欧を感じるお部屋</a></li>
-              <li><a href="/healthy_food.html">体に優しいお食事</a></li>
-              <li><a href="/enjoy_day_trip.html">日帰りで楽しむ</a></li>
-              <li><a href="/yoro_travel.html">養老を旅する</a></li>
-              <li><a href="#">イベント一覧</a></li>
-              <li><a href="#">お知らせ一覧</a></li>
-              <li><a href="/access.html">交通・アクセス</a></li>
-              <li><a href="/recruit/index.php">リクルート</a></li>
-              <li><a href="/company_privacy.html">会社案内・個人情報</a></li>
-              <li><a href="/contact/index.php">お問い合わせ</a></li>
+              <li><a href="../room_feel_the_southern_europe.html">南欧を感じるお部屋</a></li>
+              <li><a href="../healthy_food.html">体に優しいお食事</a></li>
+              <li><a href="../enjoy_day_trip.html">日帰りで楽しむ</a></li>
+              <li><a href="../yoro_travel.html">養老を旅する</a></li>
+              <li><a href="../news/event/">イベント一覧</a></li>
+              <li><a href="../news/information/">お知らせ一覧</a></li>
+              <li><a href="../access.html">交通・アクセス</a></li>
+              <li><a href="../recruit/">リクルート</a></li>
+              <li><a href="../company_privacy.html">会社案内・個人情報</a></li>
+              <li><a href="../contact/">お問い合わせ</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </div>
-
   </header>
 
   <div class="temp"></div>
@@ -76,7 +75,7 @@
       <div id="breadcum">
         <ul>
           <li><a href="../index.html">ホーム</a></li>
-          <li><a href="#">お知らせ一覧</a></li>
+          <li><a href="/news/information/">お知らせ一覧</a></li>
           <li>リクルート</li>
         </ul>
       </div>
@@ -291,7 +290,7 @@
                             <p class="required">※{$required.電話番号_1}</p>
                             {/if:$required.電話番号_1}
                             {if:$hankaku_eisu.電話番号_1}
-                            <p class="required">※{hankaku_eisu.電話番号_1}'</p>
+                            <p class="required">※{$hankaku_eisu.電話番号_1}</p>
                             {/if:$hankaku_eisu.電話番号_1}
 
 
@@ -299,7 +298,7 @@
                             <p class="required">※{$required.電話番号_2}</p>
                             {/if:$required.電話番号_2}
                             {if:$hankaku_eisu.電話番号_2}
-                            <p class="required">※{$hankaku_eisu.電話番号_2}'</p>
+                            <p class="required">※{$hankaku_eisu.電話番号_2}</p>
                             {/if:$hankaku_eisu.電話番号_2}
 
 
@@ -307,7 +306,7 @@
                             <p class="required">※{$required.電話番号_3}</p>
                             {/if:$required.電話番号_3}
                             {if:$hankaku_eisu.電話番号_3}
-                            <p class="required">※{$hankaku_eisu.電話番号_3}'</p>
+                            <p class="required">※{$hankaku_eisu.電話番号_3}</p>
                             {/if:$hankaku_eisu.電話番号_3}
 
                           </p>
@@ -389,7 +388,7 @@
       <div class="container">
         <div class="ft__logo row__cen_mid">
           <p>養老の自然と美容で癒やされる</p>
-          <a href="../index.html"><img src="../images/logo.png" alt="logo"></a>
+          <a href="index.html"><img src="../images/logo.png" alt="養老温泉 ゆせんの里 ホテルなでしこ"></a>
           <p>心も身体も潤う養老温泉</p>
         </div>
       </div>
@@ -406,33 +405,33 @@
             </div>
             <div class="ft__menu">
               <ul>
-                <li><a href="/beauty_facility.html">美を堪能できる施設</a></li>
-                <li><a href="/natural_hot_spring.html">４種の天然温泉</a>
+                <li><a href="../beauty_facility.html">美を堪能できる施設</a></li>
+                <li><a href="../natural_hot_spring.html">４種の天然温泉</a>
                   <ul>
-                    <li><a href="/yoro_hanjungmak.html">ー養老汗蒸幕</a></li>
+                    <li><a href="../yoro_hanjungmak.html">ー養老汗蒸幕</a></li>
                   </ul>
                 </li>
-                <li><a href="/room_feel_the_southern_europe.html">南欧を感じるお部屋</a></li>
-                <li><a href="/healthy_food.html">体に優しいお食事</a></li>
-                <li><a href="/enjoy_day_trip.html">日帰りで楽しむ</a></li>
-                <li><a href="/yoro_travel.html">養老を旅する</a></li>
+                <li><a href="../room_feel_the_southern_europe.html">南欧を感じるお部屋</a></li>
+                <li><a href="../healthy_food.html">体に優しいお食事</a></li>
+                <li><a href="../enjoy_day_trip.html">日帰りで楽しむ</a></li>
+                <li><a href="../yoro_travel.html">養老を旅する</a></li>
               </ul>
               <ul>
-                <li><a href="/ground_golf.html">グラウンドゴルフ</a></li>
-                <li><a href="#">イベント一覧</a></li>
-                <li><a href="#">お知らせ一覧</a></li>
-                <li><a href="#">宴会プラン一覧</a></li>
-                <li><a href="/access.html">交通・アクセス</a></li>
+                <li><a href="../ground_golf.html">グラウンドゴルフ</a></li>
+                <li><a href="../news/event/">イベント一覧</a></li>
+                <li><a href="../news/information/">お知らせ一覧</a></li>
+                <li><a href="../news/plan/">宴会プラン一覧</a></li>
+                <li><a href="../access.html">交通・アクセス</a></li>
               </ul>
               <ul>
-                <li><a href="/recruit/index.php">リクルート</a></li>
-                <li><a href="/company_privacy.html">会社案内・個人情報</a></li>
+                <li><a href="../recruit/">リクルート</a></li>
+                <li><a href="../company_privacy.html">会社案内・個人情報</a></li>
               </ul>
             </div>
           </div>
           <div class="ft__btn col-4">
             <div class="pc"><a class="btn btn_style1" href="http://www.489pro.com/asp/489/menu.asp?id=21000048&lan=JPN" target="_blank">ご予約はこちら→</a></div>
-            <div class="pc"><a class="btn btn_style2" href="/contact/index.php">お問い合わせはこちら→</a></div>
+            <div class="pc"><a class="btn btn_style2" href="/contact/">お問い合わせはこちら→</a></div>
             <ul class="social__list">
               <li><a href="http://twitter.com/Yusennosato" target="_blank"><img src="../images/ic_twitter.svg" alt="Twitter"></a></li>
               <li><a href="http://www.instagram.com/yusen_no_sato/" target="_blank"><img src="../images/ic_instagram.svg" alt="Instagram"></a></li>
@@ -446,7 +445,6 @@
         </div>
       </div>
     </div>
-
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
