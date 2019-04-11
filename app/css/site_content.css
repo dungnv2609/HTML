@@ -999,8 +999,12 @@ h2.heading_food_2 {
   }
 
   .food__wrap__8 .food__introduce__menu__text .menu__text__item {
-    width: 100%;
+    width: 100% !important;
     margin-bottom: 20px;
+  }
+
+  .food__wrap__8 .food__introduce__menu__text .menu__text__item:first-child p:last-child {
+    line-height: 2;
   }
 
   .food__wrap__8 .food__introduce__menu__text .menu__text__item:last-child {
@@ -1225,6 +1229,7 @@ h2.heading_food_2 {
 
   .box__table div {
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
   }
 }
 
@@ -4292,6 +4297,7 @@ h2.ic_trafic:after {
 
   .trafic__list {
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
   }
 
   .trafic__list::-webkit-scrollbar {

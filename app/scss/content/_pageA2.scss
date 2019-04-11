@@ -383,8 +383,14 @@ h2.heading_food_2 {
         margin-top: 10px;
 
         .menu__text__item {
-          width: 100%;
+          width: 100% !important;
           margin-bottom: 20px;
+
+          &:first-child {
+            p:last-child {
+              line-height: 2;
+            }
+          }
 
           &:last-child {
             margin-bottom: 0;

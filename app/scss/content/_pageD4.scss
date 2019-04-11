@@ -724,6 +724,7 @@ h2 {
 
   .trafic__list {
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
 
     &::-webkit-scrollbar {
       height: 10px;

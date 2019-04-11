@@ -361,6 +361,7 @@
 
   .table_2 {
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
 
     td {
       min-width: 160px;

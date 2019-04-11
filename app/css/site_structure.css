@@ -35,6 +35,7 @@ body {
   letter-spacing: .05em;
   color: #333;
   z-index: 1;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -885,6 +886,7 @@ footer {
   letter-spacing: .2em;
   padding: 4px 10px 10px;
   box-shadow: none;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   border-radius: 15px;
 }
 
@@ -932,7 +934,7 @@ footer {
   font-size: 2.4rem;
   position: relative;
   padding: 6px 5px 38px 5px;
-  text-shadow: 2px 2px 5px #000;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   margin-bottom: 0;
   -webkit-box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.5);
@@ -1903,6 +1905,7 @@ h4.style1 {
 
   .table_2 {
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
   }
 
   .table_2 td {

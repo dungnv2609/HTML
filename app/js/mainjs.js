@@ -11,7 +11,7 @@ $(document).ready(function () {
       });
 
       $(".nav").hide();
-      
+
     } else {
 
       $(".toggleMenu").addClass("active");
@@ -100,7 +100,7 @@ $(window).on('scroll', function () {
 $(window).bind('resize orientationchange', function () {
   ww = window.innerWidth;
   adjustMenu(ww);
-  
+
   // $(".toggleMenu").removeClass("active");
   // $(".nav li").removeClass('hover');
   // $('.toggleMenu .img_show').css('display', 'inline-block');
@@ -270,12 +270,62 @@ $('a[href="#"]').click(function (e) {
   e.preventDefault();
 });
 
-$(document).on('click', 'a[href^="#"]', function (event) {
+/*$(document).on('click', 'a[href^="#"]', function (event) {
   event.preventDefault();
 
   $('html, body').animate({
     scrollTop: $($.attr(this, 'href')).offset().top - 150
   }, 500);
+});*/
+
+/*$(document).ready(function (e) {
+  window.scrollTo(0, 0);
+  var str = location.hash;
+  $('html, body').animate({
+    scrollTop: $(str).offset().top - 150
+  }, 2000);
+});*/
+
+/*$(function () {
+  window.scrollTo(0, 0);
+  $('a[href*="#"]:not([href="#"])').click(function () {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top - 150
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});*/
+
+$(document).ready(function () {
+  // Add smooth scrolling to all links
+  $('a[href*="#"]').on('click', function (event) {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+        
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top - 150
+        }, 800, function () {
+          console.log(1);
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = '';
+        });
+      } // End if 
+    }
+  });
 });
 
 var feed_sec1 = "https://blog.vogue.co.jp/rss.xml";
