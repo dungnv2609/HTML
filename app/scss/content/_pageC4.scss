@@ -36,26 +36,26 @@ h2 {
   }
 
   &.ic_event {
-    padding-right: 65px;
+    padding-right: 55px;
 
     &:after {
       top: 4px;
       right: 0px;
       background: url(/images/ic_18.svg) center no-repeat;
-      width: 43px;
-      height: 45px;
+      width: 45px;
+      height: 38px;
     }
   }
 
   &.ic_plan {
-    padding-right: 65px;
+    padding-right: 40px;
 
     &:after {
-      top: 2px;
+      top: 0;
       right: 0px;
       background: url(/images/ic_04.svg) center no-repeat;
-      width: 43px;
-      height: 45px;
+      width: 27px;
+      height: 46px;
     }
   }
 }
@@ -88,7 +88,7 @@ h2 {
 
     &.ic_plan {
       &:after {
-        top: 2px;
+        top: -4px;
       }
     }
   }
@@ -125,6 +125,16 @@ h2 {
         height: 28px;
       }
     }
+
+    &.ic_event {
+      padding-right: 45px;
+
+      &:after {
+        top: 2px;
+        width: 35px;
+        height: 30px;
+      }
+    }
   }
 
   .ios {
@@ -142,6 +152,12 @@ h2 {
       }
 
       &.ic_privacy {
+        &:after {
+          top: -3px;
+        }
+      }
+
+      &.ic_event {
         &:after {
           top: -3px;
         }
@@ -581,6 +597,10 @@ h2 {
     &_right {
       background: rgba(255, 255, 255, .8);
       padding: 31px 40px 20px;
+
+      p {
+        font-family: $font-family-alt-3;
+      }
     }
   }
 
@@ -590,7 +610,7 @@ h2 {
     margin-bottom: 13px;
 
     .date {
-      font-size: 2.4rem;
+      font-size: 2.2rem;
       position: relative;
       padding-left: 40px;
 
@@ -601,7 +621,7 @@ h2 {
         left: 0;
         width: 29px;
         height: 25px;
-        background: url(/images/ic_18.svg) left top no-repeat;
+        background: url(/images/ic_19.svg) left top no-repeat;
         background-size: cover;
       }
     }
@@ -1053,6 +1073,12 @@ h2 {
         margin-left: 0px;
       }
 
+      &_left {
+        .box__img {
+          margin-bottom: 20px;
+        }
+      }
+
       &_right {
         padding: 20px;
       }
@@ -1080,6 +1106,11 @@ h2 {
       padding-bottom: 70px;
       position: relative;
 
+      p {
+        font-family: $font-family-alt-3;
+        font-size: 1.6rem;
+      }
+
       &_thumb {
         margin-bottom: 20px;
       }
@@ -1102,9 +1133,14 @@ h2 {
           -webkit-box-shadow: 3px 3px 5px 0px rgba(149, 146, 141, 1);
           -moz-box-shadow: 3px 3px 5px 0px rgba(149, 146, 141, 1);
           box-shadow: 3px 3px 5px 0px rgba(149, 146, 141, 1);
+          padding: 10px 5px 16px;
         }
       }
     }
+  }
+
+  .ios .entry__list--item_link .btn_style4 {
+    padding: 13px 5px 13px;
   }
 
   #plan-list {

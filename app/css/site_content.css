@@ -2565,27 +2565,27 @@ h2.ic_contact:after {
 }
 
 h2.ic_event {
-  padding-right: 65px;
+  padding-right: 55px;
 }
 
 h2.ic_event:after {
   top: 4px;
   right: 0px;
   background: url(/images/ic_18.svg) center no-repeat;
-  width: 43px;
-  height: 45px;
+  width: 45px;
+  height: 38px;
 }
 
 h2.ic_plan {
-  padding-right: 65px;
+  padding-right: 40px;
 }
 
 h2.ic_plan:after {
-  top: 2px;
+  top: 0;
   right: 0px;
   background: url(/images/ic_04.svg) center no-repeat;
-  width: 43px;
-  height: 45px;
+  width: 27px;
+  height: 46px;
 }
 
 .mac-os h2.ic_brochure:after {
@@ -2605,7 +2605,7 @@ h2.ic_plan:after {
 }
 
 .mac-os h2.ic_plan:after {
-  top: 2px;
+  top: -4px;
 }
 
 @media screen and (max-width: 600px) {
@@ -2639,6 +2639,16 @@ h2.ic_plan:after {
     height: 28px;
   }
 
+  h2.ic_event {
+    padding-right: 45px;
+  }
+
+  h2.ic_event:after {
+    top: 2px;
+    width: 35px;
+    height: 30px;
+  }
+
   .ios h2.ic_brochure:after {
     top: -8px;
   }
@@ -2648,6 +2658,10 @@ h2.ic_plan:after {
   }
 
   .ios h2.ic_privacy:after {
+    top: -3px;
+  }
+
+  .ios h2.ic_event:after {
     top: -3px;
   }
 }
@@ -3059,6 +3073,10 @@ h2.ic_plan:after {
   padding: 31px 40px 20px;
 }
 
+.entry__box .col_right p {
+  font-family: "HirakakuStd-W3", Arial, sans-serif;
+}
+
 .entry__box .box__top {
   border-bottom: 1px solid #000;
   padding-bottom: 10px;
@@ -3066,7 +3084,7 @@ h2.ic_plan:after {
 }
 
 .entry__box .box__top .date {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   position: relative;
   padding-left: 40px;
 }
@@ -3078,7 +3096,7 @@ h2.ic_plan:after {
   left: 0;
   width: 29px;
   height: 25px;
-  background: url(/images/ic_18.svg) left top no-repeat;
+  background: url(/images/ic_19.svg) left top no-repeat;
   background-size: cover;
 }
 
@@ -3486,6 +3504,10 @@ h2.ic_plan:after {
     margin-left: 0px;
   }
 
+  .entry__box .col_left .box__img {
+    margin-bottom: 20px;
+  }
+
   .entry__box .col_right {
     padding: 20px;
   }
@@ -3507,6 +3529,11 @@ h2.ic_plan:after {
     margin: 0 0 40px 0px;
     padding-bottom: 70px;
     position: relative;
+  }
+
+  .entry__list--item p {
+    font-family: "HirakakuStd-W3", Arial, sans-serif;
+    font-size: 1.6rem;
   }
 
   .entry__list--item_thumb {
@@ -3532,6 +3559,11 @@ h2.ic_plan:after {
     -webkit-box-shadow: 3px 3px 5px 0px #95928d;
     -moz-box-shadow: 3px 3px 5px 0px #95928d;
     box-shadow: 3px 3px 5px 0px #95928d;
+    padding: 10px 5px 16px;
+  }
+
+  .ios .entry__list--item_link .btn_style4 {
+    padding: 13px 5px 13px;
   }
 
   #plan-list .container {

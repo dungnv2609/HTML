@@ -225,6 +225,21 @@ h4 {
         height: 23px;
       }
 
+      &.ic_info {
+        padding-right: 40px;
+
+        &:after {
+          top: 4px;
+          width: 32px;
+          height: 28px;
+        }
+
+        + p.line_short span:before,
+        + p.line_short span:after {
+          width: 25%;
+        }
+      }
+
       &.ic_flower {
         padding-right: 30px;
 

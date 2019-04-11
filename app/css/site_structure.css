@@ -1143,6 +1143,10 @@ footer {
   .btn_style3 {
     font-size: 1.4rem;
   }
+
+  .btn_style4 {
+    max-width: 200px;
+  }
 }
 
 .title {
@@ -1344,6 +1348,21 @@ h4.style1 {
     top: 5px;
     width: 28px;
     height: 23px;
+  }
+
+  .title h2.ic_info {
+    padding-right: 40px;
+  }
+
+  .title h2.ic_info:after {
+    top: 4px;
+    width: 32px;
+    height: 28px;
+  }
+
+  .title h2.ic_info + p.line_short span:before,
+      .title h2.ic_info + p.line_short span:after {
+    width: 25%;
   }
 
   .title h2.ic_flower {
