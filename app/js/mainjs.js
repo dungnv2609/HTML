@@ -278,54 +278,32 @@ $('a[href="#"]').click(function (e) {
   }, 500);
 });*/
 
-/*$(document).ready(function (e) {
-  window.scrollTo(0, 0);
-  var str = location.hash;
-  $('html, body').animate({
-    scrollTop: $(str).offset().top - 150
-  }, 2000);
-});*/
 
-/*$(function () {
-  window.scrollTo(0, 0);
-  $('a[href*="#"]:not([href="#"])').click(function () {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top - 150
-        }, 1000);
-        return false;
-      }
-    }
+// to top right away
+if (window.location.hash) scroll(0, 0);
+// void some browsers issue
+setTimeout(function () {
+  scroll(0, 0);
+}, 1);
+
+$(function () {
+
+  // your current click function
+  $('a[href^="#"]').on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({
+      scrollTop: $($(this).attr('href')).offset().top - 150
+    }, 1000);
   });
-});*/
 
-$(document).ready(function () {
-  // Add smooth scrolling to all links
-  $('a[href*="#"]').on('click', function (event) {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-        
-        // Store hash
-        var hash = this.hash;
-
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top - 150
-        }, 800, function () {
-          console.log(1);
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = '';
-        });
-      } // End if 
-    }
-  });
+  // *only* if we have anchor on the url
+  if (window.location.hash) {
+    var hash = window.location.hash;
+    // smooth scroll to the anchor id
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top - 150
+    }, 1000);
+  }
 });
 
 var feed_sec1 = "https://blog.vogue.co.jp/rss.xml";
