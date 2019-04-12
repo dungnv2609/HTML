@@ -400,4 +400,12 @@ h2.heading_travel_1 {
   .ios .travel_list .travel_item .button_container .btn_round {
     padding: 15px 0;
   }
+
+  .ios #yoro_travel .btn_round span:before {
+    top: -1px;
+  }
+
+  .ios #yoro_travel .btn_round span:after {
+    top: 5px;
+  }
 }

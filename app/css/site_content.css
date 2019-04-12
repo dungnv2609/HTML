@@ -1986,6 +1986,14 @@ h2.heading_travel_1 {
   .ios .travel_list .travel_item .button_container .btn_round {
     padding: 15px 0;
   }
+
+  .ios #yoro_travel .btn_round span:before {
+    top: -1px;
+  }
+
+  .ios #yoro_travel .btn_round span:after {
+    top: 5px;
+  }
 }
 
 .right {
@@ -3100,6 +3108,10 @@ h2.ic_plan:after {
   background-size: cover;
 }
 
+.entry__box .box__top p.box_title {
+  font-family: "Hannari", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
 .entry__box .box__top--title {
   font-size: 2.4rem;
 }
@@ -3148,7 +3160,7 @@ h2.ic_plan:after {
 .entry__list--item_title {
   padding-bottom: 20px;
   margin-bottom: 20px;
-  border-bottom: 2px solid #928f8a;
+  border-bottom: 1px solid #333;
   font-size: 2.2rem;
 }
 
@@ -3164,6 +3176,16 @@ h2.ic_plan:after {
   -webkit-box-shadow: 3px 3px 5px 0px #95928d;
   -moz-box-shadow: 3px 3px 5px 0px #95928d;
   box-shadow: 3px 3px 5px 0px #95928d;
+  padding: 10px 5px 16px;
+}
+
+.entry__list--item p {
+  font-family: "HirakakuStd-W3", Arial, sans-serif;
+  font-size: 1.6rem;
+}
+
+.mac-os .entry__list--item_link .btn_style4 {
+  padding: 13px 5px;
 }
 
 #plan-list .container {
@@ -4136,21 +4158,14 @@ h2.ic_trafic:after {
   content: '';
   left: 0;
   bottom: 0;
-  width: 14.9vw;
-  height: 0.45vw;
+  width: 190px;
+  height: 6px;
   background: url(/images/tracfic_arrow.png) left top no-repeat;
   background-size: cover;
 }
 
 #recruit .recruit__box p {
   font-family: "HirakakuStd-W3", Arial, sans-serif;
-}
-
-@media screen and (min-width: 1280px) {
-  .trafic__arrow:after {
-    width: 190px;
-    height: 6px;
-  }
 }
 
 .tbl-traffic {
@@ -4280,8 +4295,17 @@ h2.ic_trafic:after {
     padding: 20px;
   }
 
+  .access__box .col_right p.address {
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+  }
+
   .access__map {
     margin-bottom: 35px;
+  }
+
+  .trafic__box--title {
+    margin-bottom: 20px;
   }
 
   .trafic__box.trafic__bus {
@@ -4328,29 +4352,92 @@ h2.ic_trafic:after {
   }
 
   .trafic__list {
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
   }
 
-  .trafic__list::-webkit-scrollbar {
-    height: 10px;
+  .trafic__list .trafic_col_left,
+    .trafic__list .trafic_col_right {
+    width: 48%;
   }
 
-  .trafic__list::-webkit-scrollbar-track {
-    background: #ececec;
+  .trafic__list .trafic_col_first,
+    .trafic__list .trafic_col_last {
+    width: 100%;
   }
 
-  .trafic__list::-webkit-scrollbar-thumb {
-    background: #527c68;
+  .trafic__list .trafic_col_first {
+    margin-bottom: 20px;
+  }
+
+  .trafic__list .trafic_1 {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+    background: #E9E9E9;
+    padding: 15px 2px;
+    margin-bottom: 35px;
+    position: relative;
+  }
+
+  .trafic__list .trafic_1:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 35px;
+    background: #000;
+    bottom: -35px;
+    left: 50%;
+  }
+
+  .trafic__list .trafic_2 {
+    font-size: 1.1rem;
+    letter-spacing: 0;
+    background: #fff;
+    min-height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+    position: relative;
+    padding: 0 5px;
+  }
+
+  .trafic__list .trafic_2:before, .trafic__list .trafic_2:after {
+    content: '';
+    position: absolute;
+  }
+
+  .trafic__list .trafic_2:before {
+    left: 50%;
+    bottom: -35px;
+    border-style: solid;
+    border-width: 2px 0 2px 7px;
+    border-color: transparent transparent transparent black;
+    transform: rotate(90deg);
+    margin-left: -3px;
+  }
+
+  .trafic__list .trafic_2:after {
+    width: 1px;
+    height: 35px;
+    background: #000;
+    bottom: -35px;
+    left: 50%;
+  }
+
+  .trafic__list .trafic_col_first,
+    .trafic__list .trafic_col_last {
+    font-size: 1.2rem;
+    letter-spacing: 0;
+    background: #E9E9E9;
+    padding: 15px 2px;
   }
 
   .trafic__list .trafic__arrow:after {
     width: 190px;
     height: 6px;
-  }
-
-  .trafic__list .tbl-traffic {
-    width: 1120px;
   }
 
   .trafic__box--title.title01 span:after {

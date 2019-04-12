@@ -502,8 +502,8 @@ h2 {
     content: '';
     left: 0;
     bottom: 0;
-    width: 14.9vw;
-    height: 0.45vw;
+    width: 190px;
+    height: 6px;
     background: url(/images/tracfic_arrow.png) left top no-repeat;
     background-size: cover;
   }
@@ -511,15 +511,6 @@ h2 {
 
 #recruit .recruit__box p {
   font-family: $font-family-alt-3;
-}
-
-@media screen and (min-width: 1280px) {
-  .trafic__arrow {
-    &:after {
-      width: 190px;
-      height: 6px;
-    }
-  }
 }
 
 .tbl-traffic {
@@ -669,6 +660,11 @@ h2 {
       &_right {
         background: #fff;
         padding: 20px;
+
+        p.address {
+          border-bottom: 1px solid #333;
+          padding-bottom: 10px;
+        }
       }
     }
   }
@@ -678,6 +674,10 @@ h2 {
   }
 
   .trafic__box {
+    &--title {
+      margin-bottom: 20px;
+    }
+
     &.trafic__bus {
       padding: 20px 20px 5px;
     }
@@ -723,19 +723,87 @@ h2 {
   }
 
   .trafic__list {
-    overflow-x: scroll;
-    -webkit-overflow-scrolling: touch;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
 
-    &::-webkit-scrollbar {
-      height: 10px;
+    .trafic_col_left,
+    .trafic_col_right {
+      width: 48%;
     }
 
-    &::-webkit-scrollbar-track {
-      background: #ececec;
+    .trafic_col_first,
+    .trafic_col_last {
+      width: 100%;
     }
 
-    &::-webkit-scrollbar-thumb {
-      background: $green;
+    .trafic_col_first {
+      margin-bottom: 20px;
+    }
+
+    .trafic_1 {
+      font-size: 1.2rem;
+      letter-spacing: 0;
+      background: #E9E9E9;
+      padding: 15px 2px;
+      margin-bottom: 35px;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 35px;
+        background: #000;
+        bottom: -35px;
+        left: 50%;
+      }
+    }
+
+    .trafic_2 {
+      font-size: 1.1rem;
+      letter-spacing: 0;
+      background: $white;
+      min-height: 40px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 35px;
+      position: relative;
+      padding: 0 5px;
+
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+      }
+
+      &:before {
+        left: 50%;
+        bottom: -35px;
+        border-style: solid;
+        border-width: 2px 0 2px 7px;
+        border-color: transparent transparent transparent black;
+        transform: rotate(90deg);
+        margin-left: -3px;
+      }
+
+      &:after {
+        width: 1px;
+        height: 35px;
+        background: #000;
+        bottom: -35px;
+        left: 50%;
+      }
+    }
+
+    .trafic_col_first,
+    .trafic_col_last {
+      font-size: 1.2rem;
+      letter-spacing: 0;
+      background: #E9E9E9;
+      padding: 15px 2px;
     }
 
     .trafic__arrow {
@@ -743,10 +811,6 @@ h2 {
         width: 190px;
         height: 6px;
       }
-    }
-
-    .tbl-traffic {
-      width: 1120px;
     }
   }
 

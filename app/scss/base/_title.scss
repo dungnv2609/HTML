@@ -286,4 +286,28 @@ h4 {
       }
     }
   }
+
+  .ios {
+    .title {
+      h2 {
+        &.ic_info {
+          &:after {
+            top: 1px;
+          }
+        }
+
+        &.ic_flower {
+          &:after {
+            top: 1px;
+          }
+        }
+
+        &.ic_suitcase {
+          &:after {
+            top: 1px;
+          }
+        }
+      }
+    }
+  }
 }

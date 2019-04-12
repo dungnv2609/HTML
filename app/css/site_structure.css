@@ -87,6 +87,11 @@ table td {
   font-family: "KozukaGothicPrN-R", Arial, sans-serif;
 }
 
+a[href^="tel:"] {
+  pointer-events: none;
+  cursor: text;
+}
+
 main {
   background-color: #e2ded4;
 }
@@ -138,6 +143,11 @@ main .container {
 }
 
 @media screen and (max-width: 767px) {
+  a[href^="tel:"] {
+    pointer-events: auto;
+    cursor: pointer;
+  }
+
   .pc {
     display: none !important;
   }
@@ -1070,11 +1080,11 @@ footer {
   }
 
   .ios .btn_round.small span:before {
-    top: 6px;
+    top: 3px;
   }
 
   .ios .btn_round.small span:after {
-    top: 12px;
+    top: 9px;
   }
 }
 
@@ -1407,6 +1417,18 @@ h4.style1 {
   .title span:before, .title span:after {
     width: 60%;
     top: 20px;
+  }
+
+  .ios .title h2.ic_info:after {
+    top: 1px;
+  }
+
+  .ios .title h2.ic_flower:after {
+    top: 1px;
+  }
+
+  .ios .title h2.ic_suitcase:after {
+    top: 1px;
   }
 }
 

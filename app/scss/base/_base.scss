@@ -87,6 +87,11 @@ table {
   }
 }
 
+a[href^="tel:"] {
+  pointer-events: none;
+  cursor: text;
+}
+
 main {
   background-color: #e2ded4;
 
@@ -138,6 +143,11 @@ main {
 }
 
 @media screen and (max-width: 767px) {
+  a[href^="tel:"] {
+    pointer-events: auto;
+    cursor: pointer;
+  }
+
   .pc {
     display: none !important;
   }

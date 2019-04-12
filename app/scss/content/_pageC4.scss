@@ -626,6 +626,10 @@ h2 {
       }
     }
 
+    p.box_title {
+      font-family: $font-family-base;
+    }
+
     &--title {
       font-size: 2.4rem;
     }
@@ -678,7 +682,7 @@ h2 {
     &_title {
       padding-bottom: 20px;
       margin-bottom: 20px;
-      border-bottom: 2px solid #928f8a;
+      border-bottom: 1px solid #333;
       font-size: 2.2rem;
     }
 
@@ -693,9 +697,19 @@ h2 {
         -webkit-box-shadow: 3px 3px 5px 0px rgba(149, 146, 141, 1);
         -moz-box-shadow: 3px 3px 5px 0px rgba(149, 146, 141, 1);
         box-shadow: 3px 3px 5px 0px rgba(149, 146, 141, 1);
+        padding: 10px 5px 16px;
       }
     }
+
+    p {
+      font-family: $font-family-alt-3;
+      font-size: 1.6rem;
+    }
   }
+}
+
+.mac-os .entry__list--item_link .btn_style4 {
+  padding: 13px 5px;
 }
 
 #plan-list {
