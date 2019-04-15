@@ -203,6 +203,20 @@ $btn_ls: 0.1em; // button letter-spacing
   .btn_style2 {
     padding: 12px 10px 13px;
   }
+
+  .btn_style4 {
+    padding: 10px 5px 11px;
+
+    span {
+      &:before {
+        top: 1px;
+      }
+
+      &:after {
+        top: 5px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -283,5 +297,19 @@ $btn_ls: 0.1em; // button letter-spacing
 
   .btn_style4 {
     max-width: 200px;
+  }
+
+  .ios .btn_style4 {
+    padding: 10px 5px 11px;
+
+    span {
+      &:before {
+        top: 1px;
+      }
+
+      &:after {
+        top: 5px;
+      }
+    }
   }
 }

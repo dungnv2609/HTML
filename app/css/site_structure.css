@@ -1070,6 +1070,18 @@ footer {
   padding: 12px 10px 13px;
 }
 
+.mac-os .btn_style4 {
+  padding: 10px 5px 11px;
+}
+
+.mac-os .btn_style4 span:before {
+  top: 1px;
+}
+
+.mac-os .btn_style4 span:after {
+  top: 5px;
+}
+
 @media screen and (max-width: 767px) {
   .ios .btn_round {
     padding: 24px 10px;
@@ -1156,6 +1168,18 @@ footer {
 
   .btn_style4 {
     max-width: 200px;
+  }
+
+  .ios .btn_style4 {
+    padding: 10px 5px 11px;
+  }
+
+  .ios .btn_style4 span:before {
+    top: 1px;
+  }
+
+  .ios .btn_style4 span:after {
+    top: 5px;
   }
 }
 

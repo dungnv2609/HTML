@@ -2675,7 +2675,7 @@ h2.ic_plan:after {
 }
 
 .font_hanna {
-  font-family: 'Hannari';
+  font-family: 'Hannari' !important;
 }
 
 .font_hw3 {
@@ -3188,6 +3188,14 @@ h2.ic_plan:after {
   padding: 13px 5px;
 }
 
+.mac-os .entry__list--item_link .btn_style4:before {
+  top: 1px;
+}
+
+.mac-os .entry__list--item_link .btn_style4:after {
+  top: 5px;
+}
+
 #plan-list .container {
   padding-bottom: 120px !important;
 }
@@ -3586,6 +3594,14 @@ h2.ic_plan:after {
 
   .ios .entry__list--item_link .btn_style4 {
     padding: 13px 5px 13px;
+  }
+
+  .ios .entry__list--item_link .btn_style4 span:before {
+    top: 1px;
+  }
+
+  .ios .entry__list--item_link .btn_style4 span:after {
+    top: 5px;
   }
 
   #plan-list .container {
