@@ -4273,6 +4273,22 @@ h2.ic_trafic:after {
     font-size: 2rem;
   }
 
+  .recruit_list .recruit_item:first-child {
+    order: 3;
+    width: 48%;
+  }
+
+  .recruit_list .recruit_item:nth-child(2) {
+    order: 1;
+    width: 100%;
+    margin-bottom: 4%;
+  }
+
+  .recruit_list .recruit_item:last-child {
+    order: 2;
+    width: 48%;
+  }
+
   .access__box {
     margin-bottom: 35px;
   }
