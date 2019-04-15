@@ -4330,28 +4330,66 @@ h2.ic_trafic:after {
   }
 
   .trafic__box .box__title h2 {
-    font-size: 2.3rem;
+    font-size: 1.8rem;
     font-weight: normal;
-    color: #527c68;
+    color: #fff;
+    background: #527c68;
     letter-spacing: 0;
     position: relative;
     display: inline-block;
     align-self: center;
-    padding-right: 65px;
-    width: auto;
+    width: 100%;
+    text-align: left;
+    padding: 16px 15px;
+    font-family: "HirakakuStd-W3", Arial, sans-serif;
   }
 
-  .trafic__box .box__title h2:after {
+  .trafic__box .box__title h2 span {
+    position: relative;
+    padding-right: 65px;
+    display: inline-block;
+  }
+
+  .trafic__box .box__title h2 span:after {
     position: absolute;
     content: '';
-    top: 5px;
+    top: -2px;
     right: 0px;
-    background: url(/images/ic_bus.svg) center no-repeat;
+    background: url(/images/ic_bus_sp.svg) center no-repeat;
     width: 55px;
     height: 25px;
   }
 
+  .trafic__box .trafic__box--left {
+    order: 2;
+    margin-bottom: 0;
+  }
+
+  .trafic__box .trafic__box--left h4 {
+    background: #fff;
+    color: #527c68;
+  }
+
+  .trafic__box .trafic__box--right {
+    order: 1;
+    margin-bottom: 30px;
+  }
+
+  .trafic__box .trafic__box--right h4 {
+    background: #527c68;
+    color: #fff;
+  }
+
   .trafic__list {
+    position: relative;
+    margin-bottom: 30px;
+  }
+
+  .trafic__list.last {
+    margin-bottom: 15px;
+  }
+
+  .trafic__list .trafic_wrap {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -4361,11 +4399,14 @@ h2.ic_trafic:after {
   .trafic__list .trafic_col_left,
     .trafic__list .trafic_col_right {
     width: 48%;
+    z-index: 10;
+    position: relative;
   }
 
   .trafic__list .trafic_col_first,
     .trafic__list .trafic_col_last {
     width: 100%;
+    z-index: 10;
   }
 
   .trafic__list .trafic_col_first {
@@ -4377,54 +4418,70 @@ h2.ic_trafic:after {
     letter-spacing: 0;
     background: #E9E9E9;
     padding: 15px 2px;
-    margin-bottom: 35px;
     position: relative;
   }
 
-  .trafic__list .trafic_1:after {
+  .trafic__list .trafic_1.first {
+    margin-bottom: 75px;
+  }
+
+  .trafic__list .trafic_1.arrow:before {
     content: '';
     position: absolute;
-    width: 1px;
-    height: 35px;
-    background: #000;
-    bottom: -35px;
+    top: -4px;
     left: 50%;
-  }
-
-  .trafic__list .trafic_2 {
-    font-size: 1.1rem;
-    letter-spacing: 0;
-    background: #fff;
-    min-height: 40px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 35px;
-    position: relative;
-    padding: 0 5px;
-  }
-
-  .trafic__list .trafic_2:before, .trafic__list .trafic_2:after {
-    content: '';
-    position: absolute;
-  }
-
-  .trafic__list .trafic_2:before {
-    left: 50%;
-    bottom: -35px;
     border-style: solid;
     border-width: 2px 0 2px 7px;
-    border-color: transparent transparent transparent black;
+    border-color: transparent transparent transparent #000;
     transform: rotate(90deg);
     margin-left: -3px;
   }
 
-  .trafic__list .trafic_2:after {
-    width: 1px;
-    height: 35px;
-    background: #000;
-    bottom: -35px;
+  .trafic__list .trafic_2 {
+    position: absolute;
     left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .trafic__list .trafic_2 span {
+    font-size: 1.1rem;
+    letter-spacing: 0;
+    background: #fff;
+    display: block;
+    padding: 2px 5px;
+    min-width: 100px;
+  }
+
+  .trafic__list .trafic_wrap.bl1 .trafic_2.st1 {
+    top: 65px;
+  }
+
+  .trafic__list .trafic_wrap.bl1 .trafic_2.st2, .trafic__list .trafic_wrap.bl1 .trafic_2.st4 {
+    bottom: 30px;
+  }
+
+  .trafic__list .trafic_wrap.bl1 .trafic_2.st3 {
+    top: 70px;
+  }
+
+  .trafic__list .trafic_wrap.bl2 .trafic_col_first {
+    margin-bottom: 50px;
+  }
+
+  .trafic__list .trafic_wrap.bl2 .trafic_1 {
+    margin-bottom: 70px;
+  }
+
+  .trafic__list .trafic_wrap.bl2 .trafic_2.st1, .trafic__list .trafic_wrap.bl2 .trafic_2.st2 {
+    top: 70px;
+  }
+
+  .trafic__list .trafic_wrap.bl3 .trafic_1 {
+    margin-bottom: 70px;
+  }
+
+  .trafic__list .trafic_wrap.bl3 .trafic_2.st1, .trafic__list .trafic_wrap.bl3 .trafic_2.st2 {
+    bottom: 30px;
   }
 
   .trafic__list .trafic_col_first,
@@ -4435,9 +4492,57 @@ h2.ic_trafic:after {
     padding: 15px 2px;
   }
 
+  .trafic__list .trafic_col_last {
+    position: relative;
+  }
+
+  .trafic__list .trafic_col_last.arrow2:before, .trafic__list .trafic_col_last.arrow2:after {
+    content: '';
+    position: absolute;
+    top: -4px;
+    border-style: solid;
+    border-width: 2px 0 2px 7px;
+    border-color: transparent transparent transparent #000;
+    transform: rotate(90deg);
+    margin-left: -3px;
+  }
+
+  .trafic__list .trafic_col_last.arrow2:before {
+    left: 24%;
+  }
+
+  .trafic__list .trafic_col_last.arrow2:after {
+    left: 76%;
+  }
+
   .trafic__list .trafic__arrow:after {
     width: 190px;
     height: 6px;
+  }
+
+  .trafic__list .trafic_temp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .trafic__list .trafic_temp:before, .trafic__list .trafic_temp:after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: #000;
+  }
+
+  .trafic__list .trafic_temp:before {
+    left: 24%;
+  }
+
+  .trafic__list .trafic_temp:after {
+    left: 76%;
   }
 
   .trafic__box--title.title01 span:after {
