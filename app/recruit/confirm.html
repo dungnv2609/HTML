@@ -174,7 +174,7 @@
             </div>
           </div>
           <div class="recruit__box">
-            <div class="header title">募集要項</div>
+            <div class="header title scroll-page">募集要項</div>
             <div class="form_contact">
               <div class="form_contact">
                 <div class="frm-contact">
@@ -248,8 +248,9 @@
                 </div>
                 <form method="post" action="index.php">
                   {$hiddens}
+                  <input type="hidden" id="scroll_page" name="scroll_page" value="scroll">
                   <input type="hidden" name="page" value="input">
-                  <button type="submit" class="contact__btn btn_round col_green mgb_0 contact__submit--back"><span>入力画面に戻る</span></button>
+                  <button id="btn_back" type="submit" class="contact__btn btn_round col_green mgb_0 contact__submit--back"><span>入力画面に戻る</span></button>
                 </form>
                 <br>
                 <form method="post" action="index.php">
@@ -276,7 +277,7 @@
       <div class="container">
         <div class="ft__logo row__cen_mid">
           <p>養老の自然と美容で癒やされる</p>
-          <a href="index.html"><img src="../images/logo.png" alt="養老温泉 ゆせんの里 ホテルなでしこ"></a>
+          <a href="../index.html"><img src="../images/logo.png" alt="養老温泉 ゆせんの里 ホテルなでしこ"></a>
           <p>心も身体も潤う養老温泉</p>
         </div>
       </div>
@@ -319,7 +320,7 @@
           </div>
           <div class="ft__btn col-4">
             <div class="pc"><a class="btn btn_style1" href="http://www.489pro.com/asp/489/menu.asp?id=21000048&lan=JPN" target="_blank">ご予約はこちら→</a></div>
-            <div class="pc"><a class="btn btn_style2" href="/contact/">お問い合わせはこちら→</a></div>
+            <div class="pc"><a class="btn btn_style2" href="../contact/">お問い合わせはこちら→</a></div>
             <ul class="social__list">
               <li><a href="http://twitter.com/Yusennosato" target="_blank"><img src="../images/ic_twitter.svg" alt="Twitter"></a></li>
               <li><a href="http://www.instagram.com/yusen_no_sato/" target="_blank"><img src="../images/ic_instagram.svg" alt="Instagram"></a></li>
@@ -337,6 +338,18 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="../js/mainjs.js"></script>
+  <script src="../js/scroll.js"></script>
 </body>
 
 </html>
+
+<script>
+    $(window).on('load', function (e) {
+        e.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $('#r2').offset().top - 150
+        }, 1000);
+
+    });
+</script>

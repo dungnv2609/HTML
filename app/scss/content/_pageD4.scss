@@ -969,8 +969,14 @@ h2 {
     }
 
     &.title_02 {
+      span {
+        padding-right: 50px;
+      }
+
       span:after {
-        top: -8px;
+        top: -6px;
+        width: 40px;
+        height: 30px;
       }
     }
   }
@@ -985,7 +991,7 @@ h2 {
 
       &.title_02 {
         span:after {
-          top: -8px;
+          top: -6px;
         }
       }
     }
@@ -1032,6 +1038,7 @@ h2 {
 
   .tbl-recruit {
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
 
     &::-webkit-scrollbar {
       height: 10px;

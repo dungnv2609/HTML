@@ -583,7 +583,7 @@ h2 {
   }
 
   .row {
-    margin-left: -40px;
+    margin-left: 0;
   }
 
   .col {
@@ -667,13 +667,18 @@ h2 {
 }
 
 .entry__list {
-  margin: 0 0 0 -45px;
+  justify-content: initial;
 
   &--item {
-    width: calc(33.3333% - 45px);
-    margin: 0 0 80px 45px;
+    width: 30.83333%;
+    margin-right: 3.75%;
+    margin-bottom: 80px;
     padding-bottom: 70px;
     position: relative;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
 
     &_thumb {
       margin-bottom: 20px;

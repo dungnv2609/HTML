@@ -174,7 +174,7 @@
             </div>
           </div>
           <div class="recruit__box">
-            <div class="header title">応 募</div>
+            <div class="header title scroll-page">応 募</div>
             <div class="form_contact">
               <div class="form_contact">
                 <form method="post" action="index.php">
@@ -452,6 +452,9 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="../js/mainjs.js"></script>
+  {if:$scroll_page}
+  <script src="../js/scroll.js"></script>
+  {/if:$scroll_page}
   <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
 </body>
 

@@ -3068,7 +3068,7 @@ h2.ic_plan:after {
 }
 
 .entry__box .row {
-  margin-left: -40px;
+  margin-left: 0;
 }
 
 .entry__box .col_left, .entry__box .col_right {
@@ -3143,14 +3143,19 @@ h2.ic_plan:after {
 }
 
 .entry__list {
-  margin: 0 0 0 -45px;
+  justify-content: initial;
 }
 
 .entry__list--item {
-  width: calc(33.3333% - 45px);
-  margin: 0 0 80px 45px;
+  width: 30.83333%;
+  margin-right: 3.75%;
+  margin-bottom: 80px;
   padding-bottom: 70px;
   position: relative;
+}
+
+.entry__list--item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .entry__list--item_thumb {
@@ -4581,8 +4586,14 @@ h2.ic_trafic:after {
     top: -2px;
   }
 
+  .trafic__box--title.title_02 span {
+    padding-right: 50px;
+  }
+
   .trafic__box--title.title_02 span:after {
-    top: -8px;
+    top: -6px;
+    width: 40px;
+    height: 30px;
   }
 
   .ios .trafic__box--title.title01 span:after {
@@ -4590,7 +4601,7 @@ h2.ic_trafic:after {
   }
 
   .ios .trafic__box--title.title_02 span:after {
-    top: -8px;
+    top: -6px;
   }
 
   .ios .trafic__box .box__title h2:after {
@@ -4623,6 +4634,7 @@ h2.ic_trafic:after {
 
   .tbl-recruit {
     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
   }
 
   .tbl-recruit::-webkit-scrollbar {
