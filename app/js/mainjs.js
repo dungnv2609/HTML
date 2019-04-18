@@ -88,9 +88,9 @@ function changeHeightMenu() {
 
 function activeLink() {
   var currentUrl = document.URL;
-  var currentUrlEnd = CurrentUrl.split('/').filter(Boolean).pop();
+  var currentUrlEnd = currentUrl.split('/').filter(Boolean).pop();
 
-  $(".top-menu li a").each(function () {
+  $(".nav__pc li a").each(function () {
     var thisUrl = $(this).attr('href');
     var thisUrlEnd = thisUrl.split('/').filter(Boolean).pop();
     if (thisUrlEnd == currentUrlEnd)

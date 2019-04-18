@@ -4397,6 +4397,10 @@ h2.ic_trafic:after {
     height: 25px;
   }
 
+  .trafic__box .ios .trafic__box .box__title h2 span:after {
+    top: -1px;
+  }
+
   .trafic__box .trafic__box--left {
     order: 2;
     margin-bottom: 0;

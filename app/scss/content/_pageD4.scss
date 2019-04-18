@@ -748,6 +748,10 @@ h2 {
       }
     }
 
+    .ios .trafic__box .box__title h2 span:after {
+      top: -1px;
+    }
+
     .trafic__box--left {
       order: 2;
       margin-bottom: 0;
