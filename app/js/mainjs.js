@@ -44,6 +44,7 @@ $(document).ready(function () {
 
   var ww = document.body.clientWidth;
   adjustMenu(ww);
+  activeLink();
 });
 
 function adjustMenu(ww) {
@@ -83,6 +84,18 @@ function adjustMenu(ww) {
 function changeHeightMenu() {
   var ulHeight = window.innerHeight - $('.nav__logo').outerHeight() - $('.nav > .menu__title').outerHeight();
   $('.nav > ul').css('height', ulHeight);
+}
+
+function activeLink() {
+  var currentUrl = document.URL;
+  var currentUrlEnd = CurrentUrl.split('/').filter(Boolean).pop();
+
+  $(".top-menu li a").each(function () {
+    var thisUrl = $(this).attr('href');
+    var thisUrlEnd = thisUrl.split('/').filter(Boolean).pop();
+    if (thisUrlEnd == currentUrlEnd)
+      $(this).addClass('active')
+  });
 }
 
 $(window).on('scroll', function () {
