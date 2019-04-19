@@ -4358,7 +4358,7 @@ h2.ic_trafic:after {
   .trafic__box .box__title figure {
     max-width: 540px;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 0;
   }
 
   .trafic__box .box__title figure img {
@@ -4379,6 +4379,7 @@ h2.ic_trafic:after {
     text-align: left;
     padding: 16px 15px;
     font-family: "HirakakuStd-W3", Arial, sans-serif;
+    margin-bottom: 25px;
   }
 
   .trafic__box .box__title h2 span {
@@ -4395,10 +4396,6 @@ h2.ic_trafic:after {
     background: url(/images/ic_bus_sp.svg) center no-repeat;
     width: 55px;
     height: 25px;
-  }
-
-  .trafic__box .ios .trafic__box .box__title h2 span:after {
-    top: -1px;
   }
 
   .trafic__box .trafic__box--left {
@@ -4419,6 +4416,10 @@ h2.ic_trafic:after {
   .trafic__box .trafic__box--right h4 {
     background: #527c68;
     color: #fff;
+  }
+
+  .ios .trafic__box .box__title h2 span:after {
+    top: -1px;
   }
 
   .trafic__list {
