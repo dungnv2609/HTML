@@ -249,10 +249,10 @@ $(document).ready(function () {
 $(window).on('load', function () {
   $('#slider_pc').height($('#slider_pc img').height());
   $('#slider_pc img').css("position", "absolute");
-  // $('#slider_pc img:not(.show)').css("display", "none");
+  $('#slider_pc img:not(.show)').css("display", "none");
   $('#slider_sp').height($('#slider_sp img').height());
   $('#slider_sp img').css("position", "absolute");
-  // $('#slider_sp img:not(.show)').css("display", "none");
+  $('#slider_sp img:not(.show)').css("display", "none");
   $(window).on("resize", function () {
     $('#slider_pc').height($('#slider_pc img').height());
     $('#slider_sp').height($('#slider_sp img').height());

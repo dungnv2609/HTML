@@ -1,18 +1,55 @@
+@font-face {
+  font-family: 'Hannari';
+  src: url(../fonts/Hannari.otf);
+}
+
+@font-face {
+  font-family: 'KozukaGothicPrN-R';
+  src: url(../fonts/KozukaGothicPrN-R.otf);
+}
+
+@font-face {
+  font-family: 'HirakakuStd-W3';
+  src: url(../fonts/HirakakuStd-W3.otf);
+}
+
+@font-face {
+  font-family: 'HirakakuStd-W6';
+  src: url(../fonts/HirakakuStd-W6.otf);
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
 }
 
 html {
-  font-family: 'Meiryo', Arial, sans-serif;
+  font-family: $font-family-sans-serif;
   font-weight: 300;
   font-size: 62.5%;
-  scroll-behavior: smooth;
 }
 
 body {
   font-size: 1.5rem;
   line-height: 1.2;
+  letter-spacing: .05em;
+  color: #333;
+  z-index: 1;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $font-family-base;
+  font-weight: normal;
+}
+
+p {
+  font-family: $font-family-alt;
+  letter-spacing: 0;
 }
 
 ul,
@@ -25,20 +62,42 @@ a {
   text-decoration: none;
   color: #333;
 
-  &:hover,
+  &:hover {
+    color: $orange !important;
+  }
+
   &:hover img {
     opacity: .8;
   }
 }
 
 img {
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
 }
 
 table {
   border-spacing: 0;
   width: 100%;
   border-collapse: collapse;
+
+  td {
+    font-family: $font-family-alt;
+  }
+}
+
+a[href^="tel:"] {
+  pointer-events: none;
+  cursor: text;
+}
+
+main {
+  background-color: #e2ded4;
+
+  .container {
+    background: url(/images/bg_body.jpg) bottom no-repeat;
+  }
 }
 
 .clearfix:after {
@@ -47,28 +106,97 @@ table {
   clear: both;
 }
 
-.container {
-  max-width: 1280px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.row {
-  display: flex;
-}
-
-.row__center {
-  justify-content: center;
-}
-
-.row__mid {
-  align-items: center;
-}
-
 .center {
   text-align: center;
 }
 
-.mg__bt0 {
+.left {
+  text-align: left;
+}
+
+.mg-bt-img {
   margin-bottom: 0 !important;
+}
+
+.pd-left {
+  padding-left: 0;
+}
+
+.pd-bt {
+  padding-bottom: 165px;
+}
+
+.pd-bt60 {
+  padding-bottom: 60px;
+}
+
+.pd-bt65 {
+  padding-bottom: 65px;
+}
+
+.pc {
+  display: block !important;
+}
+
+.sp {
+  display: none !important;
+}
+
+@media screen and (max-width: 767px) {
+  a[href^="tel:"] {
+    pointer-events: auto;
+    cursor: pointer;
+  }
+
+  .pc {
+    display: none !important;
+  }
+
+  .sp {
+    display: block !important;
+  }
+
+  main {
+    padding: 30px 0 0;
+  }
+
+  .mg-bt-img {
+    margin-bottom: 30px !important;
+  }
+
+  .pd-bt {
+    padding-bottom: 80px;
+  }
+}
+
+.green {
+  color: $green;
+}
+
+.orange {
+  color: $orange;
+}
+
+.bg_white {
+  background: $white;
+}
+
+.mw_370 img {
+  max-width: 370px !important;
+}
+
+.temp {
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  .temp {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .temp {
+    margin-top: 60px;
+  }
 }
