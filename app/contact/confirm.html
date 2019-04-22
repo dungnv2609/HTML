@@ -1,0 +1,385 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <title>お問い合わせ | ゆせんの里</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="../css/site_structure.css">
+  <link rel="stylesheet" href="../css/site_content.css">
+</head>
+
+<body>
+  <header>
+    <div class="header__inner">
+      <div class="nav__logo">
+        <h1><a href="../index.html"><img src="../images/logo.png" alt="養老温泉 ゆせんの里 ホテルなでしこ"></a></h1>
+        <div class="sp">
+          <div class="nav__btn">
+            <div>
+              <a href="http://www.489pro.com/asp/489/menu.asp?id=21000048&lan=JPN" target="_blank"><img src="../images/btn_search_sp.svg" alt="空室検索"></a>
+            </div>
+            <div class="toggleMenu">
+              <img class="img_show" src="../images/btn_menu_sp.svg" alt="menu">
+              <img class="img_hide" src="../images/btn_menu_close.svg" alt="menu">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gnav">
+        <nav class="nav__pc pc">
+          <ul>
+            <li><a href="../beauty_facility.html">美を堪能できる施設</a></li>
+            <li><a href="../natural_hot_spring.html">４種の天然温泉</a></li>
+            <li><a href="../room_feel_the_southern_europe.html">南欧を感じるお部屋</a></li>
+            <li><a href="../healthy_food.html">体に優しいお食事</a></li>
+            <li><a href="../enjoy_day_trip.html">日帰りで楽しむ</a></li>
+            <li><a href="../yoro_travel.html">養老を旅する</a></li>
+          </ul>
+        </nav>
+        <div class="nav__btn pc">
+          <a href="http://www.489pro.com/asp/489/menu.asp?id=21000048&lan=JPN" target="_blank"><img src="../images/btn_search.svg" alt="空室検索"></a>
+        </div>
+
+        <div class="sp">
+          <nav class="nav">
+            <div class="menu__title">MENU</div>
+            <ul>
+              <li><a href="../beauty_facility.html">美を堪能できる施設</a></li>
+              <li class="has_sub"><a href="../natural_hot_spring.html">４種の天然温泉</a><span class="parent"></span>
+                <ul class="sub">
+                  <li><a href="../yoro_hanjungmak.html">養老汗蒸幕</a></li>
+                </ul>
+              </li>
+              <li><a href="../room_feel_the_southern_europe.html">南欧を感じるお部屋</a></li>
+              <li><a href="../healthy_food.html">体に優しいお食事</a></li>
+              <li><a href="../enjoy_day_trip.html">日帰りで楽しむ</a></li>
+              <li><a href="../yoro_travel.html">養老を旅する</a></li>
+              <li><a href="../news/event/">イベント一覧</a></li>
+              <li><a href="../news/information/">お知らせ一覧</a></li>
+              <li><a href="../access.html">交通・アクセス</a></li>
+              <li><a href="../recruit/">リクルート</a></li>
+              <li><a href="../company_privacy.html">会社案内・個人情報</a></li>
+              <li><a href="../contact/">お問い合わせ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="temp"></div>
+
+  <main id="contact" class="contact__confirm">
+    <div class="container">
+
+      <section>
+        <div class="center">
+          <div class="title">
+            <h2 class="ic_contact">お問い合わせ</h2>
+            <p><span>Contact</span></p>
+          </div>
+        </div>
+        <div class="contact__box content__box">
+          <div class="form_contact">
+            <div class="frm-contact">
+              <div class="contact__head">
+                <p>内容をご確認いただき、送信ボタンを押してください。</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>お電話でのお問い合わせは下記の番号にお願いいたします。</p>
+                <p><a href="tel:0584341313">TEL：0584-34-1313</a></p>
+              </div>
+              <table class="tbl-contact">
+                <tr>
+                  <th>
+                    <p>お名前</p>
+                  </th>
+                  <td class="vta_m">
+                    <div class="row row__wrap row__wrap-a">
+                      {$姓.value} {$名.value}
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>電話番号</th>
+                  <td class="vta_m">
+                    <div class="row row__wrap row__wrap-b">
+                      <div class="contact__row contact__row__normal">
+                        <div class="row_inner">
+                          {$電話番号_1.value} - {$電話番号_2.value} - {$電話番号_3.value}
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <p>メールアドレス</p>
+                  </th>
+                  <td class="vta_m">
+                    {$メールアドレス.value}
+                </tr>
+                <tr>
+                  <th>住所</th>
+                  <td>
+                    <div class="row row__wrap row__wrap-m">
+                      <span>郵便番号</span>
+                      {$郵便番号1.value} - {$郵便番号2.value}
+                    </div>
+                    <div class="row row__wrap row__wrap-m">
+                      <span>都道府県</span>
+                      {$都道府県.value}
+                    </div>
+                    <div class="row row__wrap row__wrap-m">
+                      <span>市区町村</span>
+                      {$市区町村.value}
+                    </div>
+                    <div class="row row__wrap row__wrap-m">
+                      <span>番地建物</span>
+                      {$番地建物.value}
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th>当施設を何で知りましたか？</th>
+                  <td>
+                    <ul class="checkbox--list">
+                      <li>
+                        <label class="control__checkbox">
+                          <input type="checkbox" name="ck1" disabled value="家族" {$checked.ck1.家族}>
+                          <span>家族</span>
+                          <div class="control__indicator"></div>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="control__checkbox">
+                          <input type="checkbox" name="ck2" disabled value="Twitter" {$checked.ck2.Twitter}>
+                          <span>Twitter</span>
+                          <div class="control__indicator"></div>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="control__checkbox">
+                          <input type="checkbox" name="ck3" disabled value="ご友人、知人、同僚" {$checked.ck3.ご友人、知人、同僚}>
+                          <span>ご友人、知人、同僚</span>
+                          <div class="control__indicator"></div>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="control__checkbox">
+                          <input type="checkbox" name="ck4" disabled value="Facebook" {$checked.ck4.Facebook}>
+                          <span>Facebook</span>
+                          <div class="control__indicator"></div>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="control__checkbox">
+                          <input type="checkbox" name="ck5" disabled value="テレビ番組" {$checked.ck5.テレビ番組}>
+                          <span>テレビ番組</span>
+                          <div class="control__indicator"></div>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="control__checkbox">
+                          <input type="checkbox" name="ck6" disabled value="ブログ" {$checked.ck6.ブログ}>
+                          <span>ブログ</span>
+                          <div class="control__indicator"></div>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="control__checkbox">
+                          <input type="checkbox" name="ck7" disabled value="テレビCM" {$checked.ck7.テレビCM}>
+                          <span>テレビCM</span>
+                          <div class="control__indicator"></div>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="control__checkbox">
+                          <input type="checkbox" name="ck8" disabled value="チラシ" {$checked.ck8.チラシ}>
+                          <span>チラシ</span>
+                          <div class="control__indicator"></div>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="control__checkbox">
+                          <input type="checkbox" name="ck9" disabled value="ラジオCM" {$checked.ck9.ラジオCM}>
+                          <span>ラジオCM</span>
+                          <div class="control__indicator"></div>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="control__checkbox">
+                          <input type="checkbox" name="ck10" disabled value="フリーペーパー" {$checked.ck10.フリーペーパー}>
+                          <span>フリーペーパー</span>
+                          <div class="control__indicator"></div>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="control__checkbox">
+                          <input type="checkbox" name="ck11" disabled value="Yahoo!検索" {$checked.ck11.Yahoo!検索}>
+                          <span>Yahoo!検索</span>
+                          <div class="control__indicator"></div>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="control__checkbox">
+                          <input type="checkbox" name="ck12" disabled value="その他雑誌" {$checked.ck12.その他雑誌}>
+                          <span>その他雑誌</span>
+                          <div class="control__indicator"></div>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="control__checkbox">
+                          <input type="checkbox" name="ck13" disabled value="Google検索" {$checked.ck13.Google検索}>
+                          <span>Google検索</span>
+                          <div class="control__indicator"></div>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="control__checkbox">
+                          <input type="checkbox" name="ck14" disabled value="その他インターネット" {$checked.ck14.その他インターネット}>
+                          <span>その他インターネット</span>
+                          <div class="control__indicator"></div>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="control__checkbox">
+                          <input type="checkbox" name="ck15" disabled value="その他インターネット" {$checked.ck15.その他インターネット}>
+                          <span>その他インターネット</span>
+                          <div class="control__indicator"></div>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="control__checkbox">
+                          <input type="checkbox" name="ck16" disabled value="その他の検索エンジン" {$checked.ck16.その他の検索エンジン}>
+                          <span>その他の検索エンジン</span>
+                          <div class="control__indicator"></div>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="control__checkbox">
+                          <input type="checkbox" name="ck17" disabled value="その他方法" {$checked.ck17.その他方法}>
+                          <span>その他方法</span>
+                          <div class="control__indicator"></div>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="control__checkbox">
+                          <input type="checkbox" name="ck18" disabled value="リンク集/旅行サイト" {$checked.ck18.リンク集/旅行サイト}> <span>リンク集/旅行サイト</span>
+                          <div class="control__indicator"></div>
+                        </label>
+                      </li>
+
+                    </ul>
+                    <p>その他雑誌、その他インターネット、その他方法の方は</p>
+                    <p>具体例をお書きください。</p>
+                    <p class="field_bd">{$その他.value}</p>
+                  </td>
+                </tr>
+                <tr>
+                  <th>
+                    <p>お問い合せ内容</p>
+                  </th>
+                  <td class="vta_m txta">
+                    {$お問い合せ内容.value}
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="contact__note">
+              <p>個人情報保護方針については <a href="../company_privacy.html" target="_blank">こちら</a>をご確認ください。</p>
+            </div>
+            <form method="post" action="index.php">
+              {$hiddens}
+              <input type="hidden" name="page" value="input">
+              <button type="submit" class="contact__btn btn_round col_green mgb_0 contact__submit--back"><span>入力画面に戻る</span></button>
+            </form>
+            <br>
+            <form method="post" action="index.php">
+              {$hiddens}
+              <input type="hidden" name="page" value="finish">
+              <button type="submit" class="contact__submit contact__btn btn_round mgb_0"><span>送信</span></button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="btn_toppage">
+        <a href="javascript:void(0)"><img src="../images/btn_top.png" alt="toppage"></a>
+      </div>
+    </div>
+    <div class="ft__top">
+      <div class="container">
+        <div class="ft__logo row__cen_mid">
+          <p>養老の自然と美容で癒やされる</p>
+          <a href="../index.html"><img src="../images/logo.png" alt="養老温泉 ゆせんの里 ホテルなでしこ"></a>
+          <p>心も身体も潤う養老温泉</p>
+        </div>
+      </div>
+    </div>
+    <div class="ft__bot">
+      <div class="container">
+        <div class="row">
+          <div class="ft__info col-8 pc">
+            <div class="ft__address">
+              <p>養老温泉</p>
+              <p>ゆせんの里 ホテルなでしこ</p>
+              <p>〒503-1316 岐阜県養老郡養老町押越1522-1</p>
+              <p>Tel 0584-34-1313</p>
+            </div>
+            <div class="ft__menu">
+              <ul>
+                <li><a href="../beauty_facility.html">美を堪能できる施設</a></li>
+                <li><a href="../natural_hot_spring.html">４種の天然温泉</a>
+                  <ul>
+                    <li><a href="../yoro_hanjungmak.html">ー養老汗蒸幕</a></li>
+                  </ul>
+                </li>
+                <li><a href="../room_feel_the_southern_europe.html">南欧を感じるお部屋</a></li>
+                <li><a href="../healthy_food.html">体に優しいお食事</a></li>
+                <li><a href="../enjoy_day_trip.html">日帰りで楽しむ</a></li>
+                <li><a href="../yoro_travel.html">養老を旅する</a></li>
+              </ul>
+              <ul>
+                <li><a href="../ground_golf.html">グラウンドゴルフ</a></li>
+                <li><a href="../news/event/">イベント一覧</a></li>
+                <li><a href="../news/information/">お知らせ一覧</a></li>
+                <li><a href="../news/plan/">宴会プラン一覧</a></li>
+                <li><a href="../access.html">交通・アクセス</a></li>
+              </ul>
+              <ul>
+                <li><a href="../recruit/">リクルート</a></li>
+                <li><a href="../company_privacy.html">会社案内・個人情報</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="ft__btn col-4">
+            <div class="pc"><a class="btn btn_style1" href="http://www.489pro.com/asp/489/menu.asp?id=21000048&lan=JPN" target="_blank">ご予約はこちら→</a></div>
+            <div class="pc"><a class="btn btn_style2" href="../contact/">お問い合わせはこちら→</a></div>
+            <ul class="social__list">
+              <li><a href="http://twitter.com/Yusennosato" target="_blank"><img src="../images/ic_twitter.svg" alt="Twitter"></a></li>
+              <li><a href="http://www.instagram.com/yusen_no_sato/" target="_blank"><img src="../images/ic_instagram.svg" alt="Instagram"></a></li>
+              <li><a href="https://www.facebook.com/Yusen.nadeshiko/" target="_blank"><img src="../images/ic_facebook.svg" alt="Facebook"></a></li>
+              <li><a href="https://line.me/R/ti/p/%40yusennnosato1126" target="_blank"><img alt="友だち追加" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="ft__copyright">
+          <p>COPYRIGHT©2019 ゆせんの里 All RIGHTS RESERVED</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="../js/mainjs.js"></script>
+  <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+</body>
+
+</html>

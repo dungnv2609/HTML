@@ -1,0 +1,500 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <title>お問い合わせ | ゆせんの里</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="../css/site_structure.css">
+  <link rel="stylesheet" href="../css/site_content.css">
+</head>
+
+<body>
+  <header>
+    <div class="header__inner">
+      <div class="nav__logo">
+        <h1><a href="../index.html"><img src="../images/logo.png" alt="養老温泉 ゆせんの里 ホテルなでしこ"></a></h1>
+        <div class="sp">
+          <div class="nav__btn">
+            <div>
+              <a href="http://www.489pro.com/asp/489/menu.asp?id=21000048&lan=JPN" target="_blank"><img src="../images/btn_search_sp.svg" alt="空室検索"></a>
+            </div>
+            <div class="toggleMenu">
+              <img class="img_show" src="../images/btn_menu_sp.svg" alt="menu">
+              <img class="img_hide" src="../images/btn_menu_close.svg" alt="menu">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gnav">
+        <nav class="nav__pc pc">
+          <ul>
+            <li><a href="../beauty_facility.html">美を堪能できる施設</a></li>
+            <li><a href="../natural_hot_spring.html">４種の天然温泉</a></li>
+            <li><a href="../room_feel_the_southern_europe.html">南欧を感じるお部屋</a></li>
+            <li><a href="../healthy_food.html">体に優しいお食事</a></li>
+            <li><a href="../enjoy_day_trip.html">日帰りで楽しむ</a></li>
+            <li><a href="../yoro_travel.html">養老を旅する</a></li>
+          </ul>
+        </nav>
+        <div class="nav__btn pc">
+          <a href="http://www.489pro.com/asp/489/menu.asp?id=21000048&lan=JPN" target="_blank"><img src="../images/btn_search.svg" alt="空室検索"></a>
+        </div>
+
+        <div class="sp">
+          <nav class="nav">
+            <div class="menu__title">MENU</div>
+            <ul>
+              <li><a href="../beauty_facility.html">美を堪能できる施設</a></li>
+              <li class="has_sub"><a href="../natural_hot_spring.html">４種の天然温泉</a><span class="parent"></span>
+                <ul class="sub">
+                  <li><a href="../yoro_hanjungmak.html">養老汗蒸幕</a></li>
+                </ul>
+              </li>
+              <li><a href="../room_feel_the_southern_europe.html">南欧を感じるお部屋</a></li>
+              <li><a href="../healthy_food.html">体に優しいお食事</a></li>
+              <li><a href="../enjoy_day_trip.html">日帰りで楽しむ</a></li>
+              <li><a href="../yoro_travel.html">養老を旅する</a></li>
+              <li><a href="../news/event/">イベント一覧</a></li>
+              <li><a href="../news/information/">お知らせ一覧</a></li>
+              <li><a href="../access.html">交通・アクセス</a></li>
+              <li><a href="../recruit/">リクルート</a></li>
+              <li><a href="../company_privacy.html">会社案内・個人情報</a></li>
+              <li><a href="../contact/">お問い合わせ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="temp"></div>
+
+  <main id="contact">
+    <div class="container">
+
+      <section>
+        <div class="center">
+          <div class="title">
+            <h2 class="ic_contact">お問い合わせ</h2>
+            <p><span>Contact</span></p>
+          </div>
+        </div>
+        <div class="contact__box content__box">
+          <div class="form_contact">
+            <form method="post" action="index.php">
+              <div class="frm-contact">
+                <div class="contact__head">
+                  <p>当館ではお客様により良いサービスを提供できるように、様々なご意見・ご要望をお待ちしております。お気軽にお問い合わせください。</p>
+                  <p class="txt_small">担当者より連絡させていただきます。<br class="sp">お問い合わせ内容によってはお時間をいただく場合がございますのでご了承ください。</p>
+                  <p>お電話でのお問い合わせは下記の番号にお願いいたします。</p>
+                  <p class="font_hw3"><a href="tel:0584341313">TEL：0584-34-1313</a></p>
+                </div>
+                <table class="tbl-contact">
+                  <tr>
+                    <th>
+                      <p>お名前<span class="required">（必須）</span></p>
+                      {if:$required.姓}
+                      <p class="required">※{$required.姓}</p>
+                      {/if:$required.姓}
+                      {if:$required.名}
+                      <p class="required">※{$required.名}</p>
+                      {/if:$required.名}
+                    </th>
+                    <td class="bd_t0">
+                      <div class="row row__wrap row__wrap-a row_s">
+                        <div class="contact__row"><span>姓</span>
+                          <input type="text" name="姓" value="{$姓}" placeholder="例）山田" class="ipt-m">
+                          <input type="hidden" name="required[]" value="姓">
+                        </div>
+                        <div class="contact__row mgr0"><span>名</span>
+                          <input type="text" name="名" value="{$名}" placeholder="例）太郎" class="ipt-m"></div>
+                        <input type="hidden" name="required[]" value="名">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>電話番号
+                      {if:$hankaku_eisu.電話番号_1}
+                      <p class="required">※電話番号は半角文字で入力してください。</p>
+                      {/if:$hankaku_eisu.電話番号_1}
+
+                      {if:$hankaku_eisu.電話番号_2}
+                      <p class="required">※電話番号は半角文字で入力してください。</p>
+                      {/if:$hankaku_eisu.電話番号_2}
+
+                      {if:$hankaku_eisu.電話番号_3}
+                      <p class="required">※電話番号は半角文字で入力してください。</p>
+                      {/if:$hankaku_eisu.電話番号_3}
+                    </th>
+                    <td class="bd_t0">
+                      <div class="row row__wrap row__wrap-b">
+                        <div class="contact__row contact__row__normal">
+                          <div class="row_inner input1">
+                            <input type="text" name="電話番号_1" value="{$電話番号_1}" class="ipt-s"> <span>- </span>
+                            <input type="hidden" name="hankaku_eisu[]" value="電話番号_1">
+
+                            <input type="text" name="電話番号_2" value="{$電話番号_2}" class="ipt-s"> <span>- </span>
+                            <input type="hidden" name="hankaku_eisu[]" value="$電話番号_2">
+
+                            <input type="text" name="電話番号_3" value="{$電話番号_3}" class="ipt-s mgr">
+                            <input type="hidden" name="hankaku_eisu[]" value="$電話番号_3">
+                          </div>
+                          <span class="note">※半角数字</span>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <p>メールアドレス<span class="required">（必須）</span></p>
+                      {if:$required.メールアドレス}
+                      <p class="required">※{$required.メールアドレス}</p>
+                      {/if:$required.メールアドレス}
+                      {if:$email.メールアドレス}
+                      <p class="required">※{$email.メールアドレス}</p>
+                      {/if:$email.メールアドレス}
+                      {if:$hankaku.メールアドレス}
+                      <p class="required">※{$hankaku.メールアドレス}</p>
+                      {/if:$hankaku.メールアドレス}
+                    </th>
+                    <td class="bd_t0">
+                      <input type="text" name="メールアドレス" value="{$メールアドレス}" placeholder="例）yusen@nosato.com" class="ipt-lg"></td>
+                    <input type="hidden" name="required[]" value="メールアドレス">
+                    <input type="hidden" name="email[]" value="メールアドレス">
+                    <input type="hidden" name="hankaku[]" value="メールアドレス">
+                  </tr>
+                  <tr>
+                    <th class="pd1">住所</th>
+                    <td class="bd_t0">
+                      <div class="row row__wrap row__wrap-m">
+                        <span>郵便番号</span>
+                        <input type="text" name="郵便番号1" value="{$郵便番号1}" class="ipt-s ml0"> -
+                        <input type="hidden" name="" value="郵便番号1">
+                        <input type="text" name="郵便番号2" value="{$郵便番号2}" class="ipt-s">
+                        <input type="hidden" name="" value="郵便番号2">
+                        <button type="button" onclick="AjaxZip3.zip2addr('郵便番号1','郵便番号2','都道府県','市区町村','番地建物');">住所挿入</button>
+                      </div>
+                      <div class="row row__wrap row__wrap-m">
+                        <span>都道府県</span>
+                        <select name="都道府県">
+                          <option name="都道府県" value="-" {$selected.都道府県.-} {$selected.default}></option>
+                          <option name="都道府県" value="北海道" {$selected.都道府県.北海道}>北海道</option>
+                          <option name="都道府県" value="青森県" {$selected.都道府県.青森県}>青森県</option>
+                          <option name="都道府県" value="岩手県" {$selected.都道府県.岩手県}>岩手県</option>
+                          <option name="都道府県" value="宮城県" {$selected.都道府県.宮城県}>宮城県</option>
+                          <option name="都道府県" value="秋田県" {$selected.都道府県.秋田県}>秋田県</option>
+                          <option name="都道府県" value="山形県" {$selected.都道府県.山形県}>山形県</option>
+                          <option name="都道府県" value="福島県" {$selected.都道府県.福島県}>福島県</option>
+                          <option name="都道府県" value="茨城県" {$selected.都道府県.茨城県}>茨城県</option>
+                          <option name="都道府県" value="栃木県" {$selected.都道府県.栃木県}>栃木県</option>
+                          <option name="都道府県" value="群馬県" {$selected.都道府県.群馬県}>群馬県</option>
+                          <option name="都道府県" value="埼玉県" {$selected.都道府県.埼玉県}>埼玉県</option>
+                          <option name="都道府県" value="千葉県" {$selected.都道府県.千葉県}>千葉県</option>
+                          <option name="都道府県" value="東京都" {$selected.都道府県.東京都}>東京都</option>
+                          <option name="都道府県" value="神奈川県" {$selected.都道府県.神奈川県}>神奈川県</option>
+                          <option name="都道府県" value="新潟県" {$selected.都道府県.新潟県}>新潟県</option>
+                          <option name="都道府県" value="富山県" {$selected.都道府県.富山県}>富山県</option>
+                          <option name="都道府県" value="石川県" {$selected.都道府県.石川県}>石川県</option>
+                          <option name="都道府県" value="福井県" {$selected.都道府県.福井県}>福井県</option>
+                          <option name="都道府県" value="山梨県" {$selected.都道府県.山梨県}>山梨県</option>
+                          <option name="都道府県" value="長野県" {$selected.都道府県.長野県}>長野県</option>
+                          <option name="都道府県" value="岐阜県" {$selected.都道府県.岐阜県}>岐阜県</option>
+                          <option name="都道府県" value="静岡県" {$selected.都道府県.静岡県}>静岡県</option>
+                          <option name="都道府県" value="愛知県" {$selected.都道府県.愛知県}>愛知県</option>
+                          <option name="都道府県" value="三重県" {$selected.都道府県.三重県}>三重県</option>
+                          <option name="都道府県" value="滋賀県" {$selected.都道府県.滋賀県}>滋賀県</option>
+                          <option name="都道府県" value="京都府" {$selected.都道府県.京都府}>京都府</option>
+                          <option name="都道府県" value="大阪府" {$selected.都道府県.大阪府}>大阪府</option>
+                          <option name="都道府県" value="兵庫県" {$selected.都道府県.兵庫県}>兵庫県</option>
+                          <option name="都道府県" value="奈良県" {$selected.都道府県.奈良県}>奈良県</option>
+                          <option name="都道府県" value="和歌山県" {$selected.都道府県.和歌山県}>和歌山県</option>
+                          <option name="都道府県" value="鳥取県" {$selected.都道府県.鳥取県}>鳥取県</option>
+                          <option name="都道府県" value="島根県" {$selected.都道府県.島根県}>島根県</option>
+                          <option name="都道府県" value="岡山県" {$selected.都道府県.岡山県}>岡山県</option>
+                          <option name="都道府県" value="広島県" {$selected.都道府県.広島県}>広島県</option>
+                          <option name="都道府県" value="山口県" {$selected.都道府県.山口県}>山口県</option>
+                          <option name="都道府県" value="徳島県" {$selected.都道府県.徳島県}>徳島県</option>
+                          <option name="都道府県" value="香川県" {$selected.都道府県.香川県}>香川県</option>
+                          <option name="都道府県" value="愛媛県" {$selected.都道府県.愛媛県}>愛媛県</option>
+                          <option name="都道府県" value="高知県" {$selected.都道府県.高知県}>高知県</option>
+                          <option name="都道府県" value="福岡県" {$selected.都道府県.福岡県}>福岡県</option>
+                          <option name="都道府県" value="佐賀県" {$selected.都道府県.佐賀県}>佐賀県</option>
+                          <option name="都道府県" value="長崎県" {$selected.都道府県.長崎県}>長崎県</option>
+                          <option name="都道府県" value="熊本県" {$selected.都道府県.熊本県}>熊本県</option>
+                          <option name="都道府県" value="大分県" {$selected.都道府県.大分県}>大分県</option>
+                          <option name="都道府県" value="宮崎県" {$selected.都道府県.宮崎県}>宮崎県</option>
+                          <option name="都道府県" value="鹿児島県" {$selected.都道府県.鹿児島県}>鹿児島県</option>
+                          <option name="都道府県" value="沖縄県" {$selected.都道府県.沖縄県}>沖縄県</option>
+                        </select>
+                        <input type="hidden" name="" value="都道府県">
+                      </div>
+                      <div class="row row__wrap row__wrap-m">
+                        <span>市区町村</span>
+                        <input type="text" name="市区町村" value="{$市区町村}" class="ipt-xlg">
+                        <input type="hidden" name="" value="市区町村">
+                      </div>
+                      <div class="row row__wrap row__wrap-m">
+                        <span>番地建物</span>
+                        <input type="text" name="番地建物" value="{$番地建物}" class="ipt-xlg">
+                        <input type="hidden" name="" value="番地建物">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>当施設を何で知りましたか？</th>
+                    <td class="bd_t0">
+                      <ul class="checkbox--list">
+                        <li>
+                          <label class="control__checkbox">
+                            <input type="checkbox" name="ck1" value="家族" {$checked.ck1.家族}>
+                            <input type="hidden" name="" value="ck1">
+                            <span>家族</span>
+                            <div class="control__indicator"></div>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="control__checkbox">
+                            <input type="checkbox" name="ck2" value="Twitter" {$checked.ck2.Twitter}>
+                            <input type="hidden" name="" value="ck2">
+                            <span>Twitter</span>
+                            <div class="control__indicator"></div>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="control__checkbox">
+                            <input type="checkbox" name="ck3" value="ご友人、知人、同僚" {$checked.ck3.ご友人、知人、同僚}>
+                            <input type="hidden" name="" value="ck3">
+                            <span>ご友人、知人、同僚</span>
+                            <div class="control__indicator"></div>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="control__checkbox">
+                            <input type="checkbox" name="ck4" value="Facebook" {$checked.ck4.Facebook}>
+                            <input type="hidden" name="" value="ck4">
+                            <span>Facebook</span>
+                            <div class="control__indicator"></div>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="control__checkbox">
+                            <input type="checkbox" name="ck5" value="テレビ番組" {$checked.ck5.テレビ番組}>
+                            <input type="hidden" name="" value="ck5">
+                            <span>テレビ番組</span>
+                            <div class="control__indicator"></div>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="control__checkbox">
+                            <input type="checkbox" name="ck6" value="ブログ" {$checked.ck6.ブログ}>
+                            <input type="hidden" name="" value="ck6">
+                            <span>ブログ</span>
+                            <div class="control__indicator"></div>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="control__checkbox">
+                            <input type="checkbox" name="ck7" value="テレビCM" {$checked.ck7.テレビCM}>
+                            <input type="hidden" name="" value="ck7">
+                            <span>テレビCM</span>
+                            <div class="control__indicator"></div>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="control__checkbox">
+                            <input type="checkbox" name="ck8" value="チラシ" {$checked.ck8.チラシ}>
+                            <input type="hidden" name="" value="ck8">
+                            <span>チラシ</span>
+                            <div class="control__indicator"></div>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="control__checkbox">
+                            <input type="checkbox" name="ck9" value="ラジオCM" {$checked.ck9.ラジオCM}>
+                            <input type="hidden" name="" value="ck9">
+                            <span>ラジオCM</span>
+                            <div class="control__indicator"></div>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="control__checkbox">
+                            <input type="checkbox" name="ck10" value="フリーペーパー" {$checked.ck10.フリーペーパー}>
+                            <input type="hidden" name="" value="ck10">
+                            <span>フリーペーパー</span>
+                            <div class="control__indicator"></div>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="control__checkbox">
+                            <input type="checkbox" name="ck11" value="Yahoo!検索" {$checked.ck11.Yahoo!検索}>
+                            <input type="hidden" name="" value="ck11">
+                            <span>Yahoo!検索</span>
+                            <div class="control__indicator"></div>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="control__checkbox">
+                            <input type="checkbox" name="ck12" value="その他雑誌" {$checked.ck12.その他雑誌}>
+                            <input type="hidden" name="" value="ck12">
+                            <span>その他雑誌</span>
+                            <div class="control__indicator"></div>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="control__checkbox">
+                            <input type="checkbox" name="ck13" value="Google検索" {$checked.ck13.Google検索}>
+                            <input type="hidden" name="" value="ck13">
+                            <span>Google検索</span>
+                            <div class="control__indicator"></div>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="control__checkbox">
+                            <input type="checkbox" name="ck14" value="その他インターネット" {$checked.ck14.その他インターネット}>
+                            <input type="hidden" name="" value="ck14">
+                            <span>その他インターネット</span>
+                            <div class="control__indicator"></div>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="control__checkbox">
+                            <input type="checkbox" name="ck15" value="その他インターネット" {$checked.ck15.その他インターネット}>
+                            <input type="hidden" name="" value="ck15">
+                            <span>その他インターネット</span>
+                            <div class="control__indicator"></div>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="control__checkbox">
+                            <input type="checkbox" name="ck16" value="その他の検索エンジン" {$checked.ck16.その他の検索エンジン}>
+                            <input type="hidden" name="" value="ck16">
+                            <span>その他の検索エンジン</span>
+                            <div class="control__indicator"></div>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="control__checkbox">
+                            <input type="checkbox" name="ck17" value="その他方法" {$checked.ck17.その他方法}>
+                            <input type="hidden" name="" value="ck17">
+                            <span>その他方法</span>
+                            <div class="control__indicator"></div>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="control__checkbox">
+                            <input type="checkbox" name="ck18" value="リンク集/旅行サイト" {$checked.ck18.リンク集/旅行サイト}> <input type="hidden" name="" value="ck18">
+                            <span>リンク集/旅行サイト</span>
+                            <div class="control__indicator"></div>
+                          </label>
+                        </li>
+
+                      </ul>
+                      <p>その他雑誌、その他インターネット、その他方法の方は</p>
+                      <p>具体例をお書きください。</p>
+                      <input type="text" name="その他" value="{$その他}" class="ipt-xxlg">
+                      <input type="hidden" name="" value="その他">
+
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <p>お問い合せ内容<span class="required">（必須）</span></p>
+                      {if:$required.お問い合せ内容}
+                      <p class="required">※{$required.お問い合せ内容}</p>
+                      {/if:$required.お問い合せ内容}
+                    </th>
+                    <td class="bd_t0">
+                      <textarea name="お問い合せ内容" class="area-txt" placeholder="お問い合せ内容・ご質問等を入力してください。">{$お問い合せ内容}</textarea>
+                      <input type="hidden" name="required[]" value="お問い合せ内容">
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="contact__note">
+                <p>個人情報保護方針については <a href="../company_privacy.html" target="_blank">こちら</a>をご確認ください。</p>
+              </div>
+              <button type="submit" class="contact__btn btn_round mgb_0"><span>内容を確認</span></button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="btn_toppage">
+        <a href="javascript:void(0)"><img src="../images/btn_top.png" alt="toppage"></a>
+      </div>
+    </div>
+    <div class="ft__top">
+      <div class="container">
+        <div class="ft__logo row__cen_mid">
+          <p>養老の自然と美容で癒やされる</p>
+          <a href="../index.html"><img src="../images/logo.png" alt="養老温泉 ゆせんの里 ホテルなでしこ"></a>
+          <p>心も身体も潤う養老温泉</p>
+        </div>
+      </div>
+    </div>
+    <div class="ft__bot">
+      <div class="container">
+        <div class="row">
+          <div class="ft__info col-8 pc">
+            <div class="ft__address">
+              <p>養老温泉</p>
+              <p>ゆせんの里 ホテルなでしこ</p>
+              <p>〒503-1316 岐阜県養老郡養老町押越1522-1</p>
+              <p>Tel 0584-34-1313</p>
+            </div>
+            <div class="ft__menu">
+              <ul>
+                <li><a href="../beauty_facility.html">美を堪能できる施設</a></li>
+                <li><a href="../natural_hot_spring.html">４種の天然温泉</a>
+                  <ul>
+                    <li><a href="../yoro_hanjungmak.html">ー養老汗蒸幕</a></li>
+                  </ul>
+                </li>
+                <li><a href="../room_feel_the_southern_europe.html">南欧を感じるお部屋</a></li>
+                <li><a href="../healthy_food.html">体に優しいお食事</a></li>
+                <li><a href="../enjoy_day_trip.html">日帰りで楽しむ</a></li>
+                <li><a href="../yoro_travel.html">養老を旅する</a></li>
+              </ul>
+              <ul>
+                <li><a href="../ground_golf.html">グラウンドゴルフ</a></li>
+                <li><a href="../news/event/">イベント一覧</a></li>
+                <li><a href="../news/information/">お知らせ一覧</a></li>
+                <li><a href="../news/plan/">宴会プラン一覧</a></li>
+                <li><a href="../access.html">交通・アクセス</a></li>
+              </ul>
+              <ul>
+                <li><a href="../recruit/">リクルート</a></li>
+                <li><a href="../company_privacy.html">会社案内・個人情報</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="ft__btn col-4">
+            <div class="pc"><a class="btn btn_style1" href="http://www.489pro.com/asp/489/menu.asp?id=21000048&lan=JPN" target="_blank">ご予約はこちら→</a></div>
+            <div class="pc"><a class="btn btn_style2" href="../contact/">お問い合わせはこちら→</a></div>
+            <ul class="social__list">
+              <li><a href="http://twitter.com/Yusennosato" target="_blank"><img src="../images/ic_twitter.svg" alt="Twitter"></a></li>
+              <li><a href="http://www.instagram.com/yusen_no_sato/" target="_blank"><img src="../images/ic_instagram.svg" alt="Instagram"></a></li>
+              <li><a href="https://www.facebook.com/Yusen.nadeshiko/" target="_blank"><img src="../images/ic_facebook.svg" alt="Facebook"></a></li>
+              <li><a href="https://line.me/R/ti/p/%40yusennnosato1126" target="_blank"><img alt="友だち追加" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="ft__copyright">
+          <p>COPYRIGHT©2019 ゆせんの里 All RIGHTS RESERVED</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="../js/mainjs.js"></script>
+  <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
+</body>
+
+</html>

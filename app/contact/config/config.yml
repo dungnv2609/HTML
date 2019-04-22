@@ -1,0 +1,5 @@
+config:
+    to_email: dummy@example.com
+    to_subject: ［養老温泉 ゆせんの里 ホテルなでしこ］お問い合わせ
+    auto_reply_subject: ［養老温泉 ゆせんの里 ホテルなでしこ］お問い合わせありがとうございます
+    auto_reply_name: 養老温泉 ゆせんの里 ホテルなでしこ

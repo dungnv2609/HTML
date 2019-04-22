@@ -1,29 +1,61 @@
 $(document).ready(function () {
-  var ww = document.body.clientWidth;
   $(".toggleMenu").click(function (e) {
-    e.preventDefault();
-    $(this).toggleClass("active");
-    $(".nav").toggle();
+    if ($(".toggleMenu").hasClass("active")) {
+
+      $(".toggleMenu").removeClass("active");
+      $('.toggleMenu .img_show').css('display', 'inline-block');
+      $('.toggleMenu .img_hide').css('display', 'none');
+      $('body').css({
+        'overflow': 'auto',
+        'position': 'relative'
+      });
+
+      $(".nav").hide();
+
+    } else {
+
+      $(".toggleMenu").addClass("active");
+      $('.toggleMenu .img_show').css('display', 'none');
+      $('.toggleMenu .img_hide').css('display', 'inline-block');
+      $('body').css({
+        'overflow': 'hidden',
+        'position': 'fixed'
+      });
+
+      $(".nav").show();
+      $(".nav li").removeClass('hover');
+
+      changeHeightMenu();
+
+    }
   });
+
+  $("#gnav ul.nav li a").click(function () {
+    if ($(window).width() < 768) {
+      $(".nav").fadeOut("fast");
+    }
+  });
+
   $(".nav li span").each(function () {
-    if ($(this).next(".nav__sub").length > 0) {
+    if ($(this).next(".sub").length > 0) {
       $(this).addClass("parent");
-    };
-  })
+    }
+  });
+
+  var ww = document.body.clientWidth;
   adjustMenu(ww);
+  activeLink();
 });
 
 function adjustMenu(ww) {
   if (ww <= 767) {
-    $(".toggleMenu img").css("display", "inline-block");
+
     if (!$(".toggleMenu").hasClass("active")) {
       $(".nav").hide();
     } else {
       $(".nav").show();
     }
-    $('.toggleMenu').click(function () {
-      $(".nav li").removeClass('hover');
-    });
+
     $(".nav li").unbind('mouseenter mouseleave');
     $(".nav li span.parent").unbind("click");
     $(".nav li span.parent").click(function (e) {
@@ -37,7 +69,7 @@ function adjustMenu(ww) {
     });
 
   } else {
-    $(".toggleMenu img").css("display", "none");
+
     $(".nav").show();
     $(".nav li").unbind("hover");
     $(".nav li").hover(function () {
@@ -45,27 +77,56 @@ function adjustMenu(ww) {
     }, function () {
       $(this).removeClass('hover');
     });
+
   }
 }
 
-$(window).on('hashchange', function () {
-  $(".toggleMenu").removeClass("active");
-  $(".nav li").removeClass('hover');
-});
+function changeHeightMenu() {
+  var ulHeight = window.innerHeight - $('.nav__logo').outerHeight() - $('.nav > .menu__title').outerHeight();
+  $('.nav > ul').css('height', ulHeight);
+}
 
+function activeLink() {
+  var currentUrl = document.URL;
+  var currentUrlEnd = currentUrl.split('/').filter(Boolean).pop();
 
-$("#gnav ul.nav li a").click(function () {
-  if ($(window).width() < 768) {
-    $(".nav").fadeOut("fast");
+  $(".nav__pc li a").each(function () {
+    var thisUrl = $(this).attr('href');
+    var thisUrlEnd = thisUrl.split('/').filter(Boolean).pop();
+    if (thisUrlEnd == currentUrlEnd)
+      $(this).addClass('active')
+  });
+}
+
+$(window).on('scroll', function () {
+  if ($(window).scrollTop() >= 100) {
+    $('header').css({
+      'background': 'rgba(255, 255, 255, 1)'
+    });
+  } else {
+    $('header').css({
+      'background': 'rgba(255, 255, 255, .9)'
+    });
   }
 });
 
 $(window).bind('resize orientationchange', function () {
-  //ww = document.body.clientWidth;
   ww = window.innerWidth;
   adjustMenu(ww);
-});
 
+  // $(".toggleMenu").removeClass("active");
+  // $(".nav li").removeClass('hover');
+  // $('.toggleMenu .img_show').css('display', 'inline-block');
+
+  if ($('.toggleMenu').hasClass('active')) {
+    // $('.toggleMenu .img_show').css('display', 'none');
+    // $('.nav').show();
+    changeHeightMenu();
+  } else {
+    // $('.toggleMenu .img_hide').css('display', 'none');
+    // $('.nav').hide();
+  }
+});
 
 var ua = navigator.userAgent;
 if (ua.search(/Android/) != -1 || ua.search(/iPad/) != -1 || ua.search(/iPhone/) != -1) {
@@ -84,9 +145,13 @@ if (ua.search(/iPad/) != -1) {
   $("body").addClass("ipad");
 }
 
-//sitemapにclass付与
-if ($("#sitemap")[0]) {
-  $("body").addClass("sitemap");
+/* Add class for mac */
+if (navigator.appVersion.indexOf("Win") != -1) {
+  $('body').addClass('window-os');
+}
+
+if (navigator.platform.toUpperCase().indexOf('MAC') >= 0) {
+  $('body').addClass('mac-os');
 }
 
 
@@ -119,15 +184,25 @@ $(function () {
 ************************************************************/
 $(document).ready(function () {
   if ($(".maxH")[0]) {
-    resizeH(".maxH");
+    resizeH(".maxH", true);
     $(window).bind("orientationchange resize", function () {
-      resizeH(".maxH");
+      resizeH(".maxH", true);
+    });
+  }
+
+  if ($(".maxH__xs")[0]) {
+    resizeH(".maxH__xs", false);
+    $(window).bind("orientationchange resize", function () {
+      resizeH(".maxH__xs", false);
     });
   }
 });
 
-function resizeH(eleH) {
-  if ($(window).width() > 767) {
+function resizeH(eleH, onlyPc) {
+  if ($(window).width() <= 767 && onlyPc) {
+    $(eleH).find(".hTit").css("height", "");
+    $(eleH).find(".hBody").css("height", "");
+  } else {
     $(eleH).find(".hTit").css("height", "");
     $(eleH).find(".hBody").css("height", "");
     $(eleH).each(function () {
@@ -148,16 +223,13 @@ function resizeH(eleH) {
       });
       $(this).find(".hBody").outerHeight(maxH);
     });
-  } else {
-    $(eleH).find(".hTit").css("height", "");
-    $(eleH).find(".hBody").css("height", "");
   }
 }
 
 //Scroll to top
 $(document).ready(function () {
   $(window).scroll(function () {
-    if ($(window).scrollTop() + $(window).height() > $(document).height() - 500) {
+    if ($(window).scrollTop() + $(window).height() > $(document).height() - 1000) {
       $('.btn_toppage img').fadeIn();
     } else {
       $('.btn_toppage img').fadeOut();
@@ -167,8 +239,85 @@ $(document).ready(function () {
   $('.btn_toppage img').click(function () {
     $('html, body').animate({
       scrollTop: 0
-    }, 0);
+    }, 2000);
     return false;
   });
 
 });
+
+//Slider Effect
+$(window).on('load', function () {
+  $('#slider_pc').height($('#slider_pc img').height());
+  $('#slider_pc img').css("position", "absolute");
+  // $('#slider_pc img:not(.show)').css("display", "none");
+  $('#slider_sp').height($('#slider_sp img').height());
+  $('#slider_sp img').css("position", "absolute");
+  // $('#slider_sp img:not(.show)').css("display", "none");
+  $(window).on("resize", function () {
+    $('#slider_pc').height($('#slider_pc img').height());
+    $('#slider_sp').height($('#slider_sp img').height());
+  });
+  setTimeout(slideShowPc, 6000);
+  setTimeout(slideShowSp, 6000);
+
+  function slideShowPc() {
+    var current = $('#slider_pc .show');
+    var next = current.next().length ? current.next() : current.siblings().first();
+    current.fadeOut(8000).removeClass('show');
+    next.fadeIn(8000).addClass('show');
+
+    setTimeout(slideShowPc, 12000);
+  };
+
+  function slideShowSp() {
+    var current = $('#slider_sp .show');
+    var next = current.next().length ? current.next() : current.siblings().first();
+    current.fadeOut(8000).removeClass('show');
+    next.fadeIn(8000).addClass('show');
+
+    setTimeout(slideShowSp, 12000);
+  };
+});
+
+$('a[href="#"]').click(function (e) {
+  e.preventDefault();
+});
+
+/*$(document).on('click', 'a[href^="#"]', function (event) {
+  event.preventDefault();
+
+  $('html, body').animate({
+    scrollTop: $($.attr(this, 'href')).offset().top - 150
+  }, 500);
+});*/
+
+
+// to top right away
+if (window.location.hash) scroll(0, 0);
+// void some browsers issue
+setTimeout(function () {
+  scroll(0, 0);
+}, 1);
+
+$(function () {
+
+  // your current click function
+  $('a[href^="#"]').on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({
+      scrollTop: $($(this).attr('href')).offset().top - 150
+    }, 1000);
+  });
+
+  // *only* if we have anchor on the url
+  if (window.location.hash) {
+    var hash = window.location.hash;
+    // smooth scroll to the anchor id
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top - 150
+    }, 1000);
+  }
+});
+
+var feed_sec1 = "https://blog.vogue.co.jp/rss.xml";
+var feed_sec3 = "https://blog.vogue.co.jp/rss.xml";

@@ -1,0 +1,101 @@
+@import "mixins/custom-mixins";
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.row__wrap {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.row__center {
+  display: flex;
+  justify-content: center;
+}
+
+.row__mid {
+  display: flex;
+  align-items: center;
+}
+
+.row__bottom {
+  display: flex;
+  align-items: flex-end;
+}
+
+.row__cen_mid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-3 {
+  width: 23.5%;
+}
+
+.col-4 {
+  width: 31.6666667%;
+}
+
+.col-5 {
+  width: 48.75%;
+}
+
+.col-6 {
+  width: 48.75%;
+}
+
+.col-8 {
+  width: 65.83%;
+}
+
+.col-9 {
+  width: 74%
+}
+
+.col-12 {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    min-width: 1280px;
+  }
+
+  .container {
+    width: 1260px;
+    max-width: 1260px;
+    padding: 0 30px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    padding: 0 20px !important;
+  }
+
+  .col-4,
+  .col-6,
+  .col-8 {
+    flex-basis: 100%;
+  }
+
+  .col-3,
+  .col-5,
+  .col-9 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .container {
+    padding: 0 20px !important;
+  }
+}
