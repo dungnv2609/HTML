@@ -2,11 +2,11 @@
 
 
 $white:  #fff !default;
-$black:  #000 !default;
+$black:  #333 !default;
 $red:    #aa2619 !default;
-$orange: #e18a50 !default;
-$yellow: #ffd500 !default;
-$green:  #527c68 !default;
+$orange: #F1A647 !default;
+$yellow: #F3C903 !default;
+$green:  #2A8444 !default;
 $blue:   #0275d8 !default;
 $teal:   #5bc0de !default;
 $pink:   #ff5b77 !default;
@@ -18,6 +18,7 @@ $gray:                      #464a4c !default;
 $gray-light:                #636c72 !default;
 $gray-lighter:              #eceeef !default;
 $gray-lightest:             #f7f7f9 !default;
+$green-light:               #C3D673 !default;
 
 
 // Fonts
@@ -26,10 +27,11 @@ $gray-lightest:             #f7f7f9 !default;
 $font-family-sans-serif: "Hannari", Roboto, "Helvetica Neue", Arial, sans-serif !default;
 $font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$font-family-base:       $font-family-sans-serif !default;
-$font-family-alt:        "KozukaGothicPrN-R", Arial, sans-serif !default;
+$font-family-base:       "YuGo-Medium", Arial, sans-serif !default;
+$font-family-alt:        "OpenSans", Arial, sans-serif !default;
 $font-family-alt-2:      "HirakakuStd-W6", Arial, sans-serif !default;
 $font-family-alt-3:      "HirakakuStd-W3", Arial, sans-serif !default;
+$font-family-title:      "YuGo-Bold", Arial, sans-serif !default;
 
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg:   1.25rem !default;

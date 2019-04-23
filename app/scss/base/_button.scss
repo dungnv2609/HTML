@@ -9,36 +9,315 @@ $btn_ls: 0.1em; // button letter-spacing
 %btn {
   display: block;
   width: 100%;
-  max-width: 250px;
-  min-width: 250px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
   text-align: center;
-  @include border-radius(8px);
+  @include transition(.1s, ease-in-out);
+  font-family: $font-family-title;
 }
 
-.btn {
+.btn_round {
   @extend %btn;
   background-color: $orange;
   color: $white;
-  font-size: $btn_fs;
+  font-size: 1.4rem;
   line-height: $btn_lh;
-  transition: $btn_trans;
-  padding: $btn_pd;
+  padding: 12px 10px;
   letter-spacing: $btn_ls;
+  max-width: 250px;
+  @include border-radius(5px);
+
+  span {
+    position: relative;
+    padding-right: 17px;
+
+    &:before {
+      @include pseudo;
+      @include abs-pos(4px, 0);
+      @include size(10px, 10px);
+      @include border-radius(50%);
+      background-color: $white;
+    }
+
+    &:after {
+      @include pseudo;
+      @include abs-pos(7px, 3px);
+      @include size(0, 0);
+      @include triangle-right(2px, 3px, $orange);
+    }
+  }
+
+  &:hover {
+    color: $white !important;
+    opacity: .9;
+  }
+
+  &.small {
+    font-family: $font-family-base;
+    font-size: 2.2rem;
+    letter-spacing: .2em;
+    padding: 4px 10px 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    @include box-shadow(3px, 3px, 5px, 0px, rgba(0, 0, 0, .5));
+    @include border-radius(15px);
+  }
+
+  &.col_green {
+    background: $green;
+
+    span {
+      &:before {
+        background-color: $white;
+      }
+
+      &:after {
+        @include triangle-right(4px, 6px, $green);
+      }
+    }
+  }
+}
+
+.btn_style1 {
+  @extend %btn;
+  background: $orange;
+  color: $white;
+  font-size: 1.8rem;
+  padding: 11px 10px 18px;
+
+  &:hover {
+    color: $white !important;
+    opacity: .9;
+  }
+}
+
+.btn_style2 {
+  @extend %btn;
+  color: $white;
+  font-size: 1.8rem;
+  border: 2px solid $white;
+  padding: 9px 10px 16px;
+
+  &:hover {
+    background: $white;
+    color: $green !important;
+  }
+}
+
+.btn_style3 {
+  @extend %btn;
+  background: $orange;
+  color: $white;
+  font-size: 2.4rem;
   position: relative;
+  padding: 6px 5px 38px 5px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
+  margin-bottom: 0;
+  @include box-shadow(3px, 3px, 10px, 0px, rgba(0, 0, 0, .5));
+  @include border-radius(10px);
+
   &:before {
     @include pseudo;
-    @include abs-pos(50%, 8.5%);
-    @include size(15px, 15px);
+    @include abs-pos($bottom: 9px, $left: 50%);
+    @include size(20px, 20px);
     @include border-radius(50%);
-    @include translate(0, -50%);
+    @include translate(-50%, 0);
     background-color: $white;
   }
+
   &:after {
     @include pseudo;
-    @include abs-pos(50%, 10%);
+    @include abs-pos($bottom: 15px, $left: 50%);
     @include size(0, 0);
-    @include triangle-right(3px, 6px, $orange);
-    @include translate(0, -50%);
+    @include triangle-bottom(4px, 6px, $orange);
+    @include translate(-50%, 0);
+  }
+
+  &:hover {
+    color: $white !important;
+    opacity: .9;
+  }
+}
+
+.btn_style4 {
+  @extend %btn;
+  background: $green;
+  color: $white;
+  font-family: $font-family-base;
+  font-size: 1.6rem;
+  padding: 7px 5px 14px;
+  margin-bottom: 0;
+  max-width: 150px;
+  @include border-radius(5px);
+
+  span {
+    position: relative;
+    display: inline-block;
+    padding-right: 20px;
+
+    &:before {
+      @include pseudo;
+      @include abs-pos(4px, 0);
+      @include size(17px, 17px);
+      @include border-radius(50%);
+      background-color: $white;
+    }
+
+    &:after {
+      @include pseudo;
+      @include abs-pos(8px, 5px);
+      @include size(0, 0);
+      @include triangle-right(4px, 6px, $green);
+    }
+  }
+
+  &:hover {
+    color: $white !important;
+    opacity: .9;
+  }
+}
+
+.btn_style5 {
+  font-family: $font-family-title;
+  font-size: 1.4rem;
+  color: $green;
+  letter-spacing: 0;
+  border: 3px solid $green;
+  padding: 18px 9px;
+  @include border-radius(10px);
+}
+
+.mac-os {
+  .btn_round {
+    padding: 24px 10px;
+
+    span {
+      &:before {
+        top: 2px;
+      }
+
+      &:after {
+        top: 8px;
+      }
+    }
+
+    &.small {
+      padding: 6px 10px 8px;
+    }
+  }
+
+  .btn_style1 {
+    padding: 14px 10px 15px;
+  }
+
+  .btn_style2 {
+    padding: 12px 10px 13px;
+  }
+
+  .btn_style4 {
+    padding: 10px 5px 11px;
+
+    span {
+      &:before {
+        top: 1px;
+      }
+
+      &:after {
+        top: 5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .ios .btn_round {
+    padding: 24px 10px;
+
+    &.small {
+      padding: 6px 10px 8px;
+
+      span {
+        &:before {
+          top: 3px;
+        }
+
+        &:after {
+          top: 9px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .btn_round {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    padding: 12px 10px 18px;
+
+    span {
+      &:before {
+        @include abs-pos(6px, 0);
+      }
+
+      &:after {
+        @include abs-pos(12px, 6px);
+      }
+    }
+  }
+
+  .btn_style3 {
+    font-size: 1.8rem;
+    letter-spacing: 0;
+  }
+
+  .ios .btn_round {
+    padding: 15px 10px;
+
+    span {
+      &:before {
+        top: 0;
+      }
+
+      &:after {
+        top: 6px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .btn_round {
+    font-size: 1.8rem;
+
+    span {
+      &:before {
+        @include abs-pos(4px, 0);
+      }
+
+      &:after {
+        @include abs-pos(10px, 6px);
+      }
+    }
+  }
+
+  .btn_style3 {
+    font-size: 1.4rem;
+  }
+
+  .btn_style4 {
+    max-width: 200px;
+  }
+
+  .ios .btn_style4 {
+    padding: 10px 5px 11px;
+
+    span {
+      &:before {
+        top: 1px;
+      }
+
+      &:after {
+        top: 5px;
+      }
+    }
   }
 }

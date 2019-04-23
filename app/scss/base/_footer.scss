@@ -10,10 +10,13 @@
 
 .ft__logo {
   background-color: #f9f9f9;
-  padding: 22px 0 23px;
+  padding: 20px 0;
+  text-align: center;
 
   img {
     margin: 0 auto;
+    height: 40px;
+    width: auto;
   }
 }
 
@@ -56,11 +59,17 @@
   text-align: center;
   margin-top: 20px;
   @include border-radius(8px);
+
+  img {
+    width: auto;
+    height: 24px;
+  }
 }
 
 .ft__copyright {
   text-align: center;
   padding: 10px 0;
+  font-size: 1rem;
 }
 
 /* ----- Footer Child page ----- */
@@ -104,7 +113,9 @@
 
   img {
     position: absolute;
-    top: 50px;
-    right: 40px;
+    right: 0;
+    bottom: 20px;
+    width: 70px;
+    height: auto;
   }
 }

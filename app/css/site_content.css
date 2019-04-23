@@ -19,84 +19,37 @@
   margin-right: 0;
 }
 
-/* ----- Main Image ----- */
-#main__img img {
-  width: 100%;
-  max-width: 100%;
-}
-
 #present {
-  background-color: #527c68;
-  padding: 30px 0;
+  background-color: #2A8444;
+  padding: 31px 0;
 }
 
 .pres__img {
-  flex-basis: 30%;
+  flex-basis: 21.48%;
+  margin-right: 3.13%;
 }
 
 .pres__txt {
-  flex-basis: 70%;
-  text-align: center;
+  flex-basis: 75.39%;
   color: #fff;
-  line-height: 2.23;
+  line-height: 2;
+  letter-spacing: .08em;
 }
 
 .pres__txt h2 {
+  font-size: 2.6rem;
   margin-bottom: 20px;
 }
 
 /* ----- Section News ----- */
-#info {
-  padding: 65px 0 80px;
-}
-
-.info__list {
-  padding: 5px 150px 0;
-}
-
-.info__list dl {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 15px 0;
-  width: 100%;
-  font-size: 1.4rem;
-}
-
-.info__list dl dt {
-  float: left;
-  width: 10%;
-  color: #527c68;
-  margin-right: 40px;
-  line-height: 2.3;
-}
-
-.info__list dl dd {
-  float: left;
-  width: 85%;
-  line-height: 2.3;
-}
-
-.info__img {
-  padding: 0 150px;
-}
-
-.info__img ul {
-  margin-left: calc(10% + 40px);
-}
-
-.info__img li {
-  margin-right: 30px;
-}
-
-.info__img li:last-child {
-  margin-right: 0;
+#information {
+  padding: 55px 0 80px;
 }
 
 /* ----- Business Information ----- */
-#bus__info {
-  background-color: #c3d673;
-  padding: 80px 0 65px;
+#business {
+  background: #C3D673;
+  padding: 70px 0 0;
 }
 
 .bus__info__inner {
@@ -133,7 +86,7 @@
   left: 20px;
   font-size: 6rem;
   font-style: italic;
-  color: #527c68;
+  color: #2A8444;
 }
 
 .bus__txt {
@@ -159,7 +112,7 @@
 }
 
 #profile .info__img {
-  background: url(../../images/top_bg01.png) center no-repeat;
+  background: url(/images/top_img02.jpg) center no-repeat;
   background-size: cover;
 }
 
@@ -168,7 +121,7 @@
 }
 
 #recruit .info__img {
-  background: url(../../images/top_bg01.png) center no-repeat;
+  background: url(/images/top_img03.jpg) center no-repeat;
   background-size: cover;
 }
 

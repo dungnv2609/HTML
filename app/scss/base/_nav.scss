@@ -10,7 +10,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 22px 0 23px;
+  padding: 20px 0;
 }
 
 .gnav {
@@ -33,6 +33,7 @@ header {
     }
 
     &:hover {
+
       a,
       span {
         color: $green;
@@ -47,6 +48,22 @@ header {
     *zoom: 1;
     cursor: pointer;
     display: inline-block;
+    font-family: $font-family-title;
+    font-size: 1.4rem;
+  }
+}
+
+.nav__btn {
+  display: flex;
+  padding-left: 15px;
+
+  > a:first-child {
+    margin-right: 10px;
+  }
+
+  img {
+    width: auto;
+    height: 60px;
   }
 }
 
@@ -247,8 +264,4 @@ header {
   .nav li span:before {
     background: #fff;
   }
-}
-
-.nav__btn {
-  padding-left: 15px;
 }
